@@ -69,8 +69,8 @@ jobs:
 
       - name: Pre-commit
         run: |
+          python -m pip install --upgrade pip pre-commit
           SKIP=no-commit-to-branch pre-commit run --all-files
-
       - name: Save pre-commit cache
         if: success()  # only save if previous steps succeeded
         uses: actions/cache@v5
