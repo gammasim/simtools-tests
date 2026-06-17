@@ -50,9 +50,12 @@ jobs:
 
       - name: Install and validate pyproject.toml
         run: |
-          pip install validate-pyproject
-          validate-pyproject pyproject.toml
-
+          if [ -f pyproject.toml ]; then
+            python -m pip install validate-pyproject
+            validate-pyproject pyproject.toml
+          else
+            echo "pyproject.toml not present; skipping validation."
+          fi
       - name: Check CITATION.cff metadata
         uses: citation-file-format/cffconvert-github-action@2.0.0
         with:
