@@ -1,5 +1,8 @@
-## [0.1.0](https://github.com/gammasim/simtools-tests/releases/tag/0.1.0) - 2026-06-17
+# CHANGELOG
 
-### New Features
+All notable changes to the simtools project will be documented in this file.
+Changes for upcoming releases can be found in the [docs/changes](docs/changes) directory.
 
-- Add resource generation files for v0.32.0. ([#2](https://github.com/gammasim/simtools-tests/pull/2))
+This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/), see the developer documentation for more information.
+
+<!-- towncrier release notes start -->
