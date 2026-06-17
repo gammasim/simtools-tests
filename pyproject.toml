@@ -30,6 +30,7 @@ urls.repository = "https://github.com/gammasim/simtools-tests"
 py-modules = []
 
 [tool.towncrier]
+version = "0.1.0"
 package = ""
 directory = "docs/changes"
 filename = "CHANGELOG.md"
