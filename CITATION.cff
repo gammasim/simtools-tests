@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: >-
+  simtools-tests - Test resources and generated artifacts for simtools integration and science validation workflows.
+message: >-
+  Please cite this software using these metadata.
+  A full list of code contributors is available at
+  https://github.com/gammasim/simtools-tests/graphs/contributors
+type: software
+authors:
+  - given-names: Gernot
+    family-names: Maier
+    affiliation: DESY
+    orcid: 'https://orcid.org/0000-0001-9868-4700'
+  - given-names: Orel
+    family-names: Gueta
+    orcid: 'https://orcid.org/0000-0002-9440-2398'
+    affiliation: CTAO
+  - given-names: Eshita
+    family-names: Joshi
+    orcid: 'https://orcid.org/0000-0001-8557-1141'
+    affiliation: DESY
+repository-code: 'https://github.com/gammasim/simtools-tests'
+identifiers:
+  - type: url
+    value: 'https://github.com/gammasim/simtools-tests/graphs/contributors'
+    description: Full list of code contributors
+license: BSD-3-Clause
