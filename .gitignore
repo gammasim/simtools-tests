@@ -1,0 +1,6 @@
+# Mac users
+.DS_Store
+
+# VS Code settings
+.vscode
+simtools.code-workspace

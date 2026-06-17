@@ -1,0 +1,47 @@
+[project]
+name = "simtools-tests"
+version = "0.1.0"
+description = "Test resources and generated artifacts for simtools integration and science validation workflows."
+readme = "README.md"
+keywords = [ "CTAO", "gamma-ray astronomy", "simulation", "workflow" ]
+authors = [ { name = "Gernot Maier", email = "gernot.maier@desy.de" } ]
+requires-python = ">=3.14"
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: Astronomy",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+  "gammasimtools",
+]
+optional-dependencies.dev = [
+  "pre-commit",
+  "pylint",
+  "towncrier",
+  "yamllint",
+]
+urls.homepage = "https://gammasim.github.io/simtools-tests"
+urls.repository = "https://github.com/gammasim/simtools-tests"
+
+[tool.setuptools]
+py-modules = []
+
+[tool.towncrier]
+package = ""
+directory = "docs/changes"
+filename = "CHANGELOG.md"
+start_string = "<!-- towncrier release notes start -->\n"
+title_format = "## [{version}](https://github.com/gammasim/simtools-tests/releases/tag/{version}) - {project_date}"
+issue_format = "[#{issue}](https://github.com/gammasim/simtools-tests/pull/{issue})"
+underlines = [ "", "", "" ]
+fragment.bugfix.name = "Bugfixes"
+fragment.bugfix.showcontent = true
+fragment.doc.name = "Documentation"
+fragment.doc.showcontent = true
+fragment.feature.name = "New Features"
+fragment.feature.showcontent = true
+fragment.maintenance.name = "Maintenance"
+fragment.maintenance.showcontent = true
