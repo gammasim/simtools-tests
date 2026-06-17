@@ -1,0 +1,5 @@
+*.gz !text !filter !merge !diff
+*.tar.gz !text !filter !merge !diff
+*.hdf5 !text !filter !merge !diff
+*.zst !text !filter !merge !diff
+* !text !filter !merge !diff
