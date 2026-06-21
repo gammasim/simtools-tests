@@ -16,7 +16,7 @@ applications:
     log_level: DEBUG
     model_version: 6.0.2
     showers_per_run: 5
-    output_path: ./tmp-test-resources/simulate_prod_gamma_20deg_north_alpha
+    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
     primary: gamma
     run_number: 10
     save_reduced_event_lists: true
@@ -26,7 +26,7 @@ applications:
     view_cone: 0 deg 10 deg
     zenith_angle: 20
 collection:
-  output_path: tests/resources/generated/
+  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated
   files:
   - gamma_diffuse_run000010_za20deg_azm000deg_North_alpha_6.0.2_test.simtel.zst
   - gamma_diffuse_run000010_za20deg_azm000deg_North_alpha_6.0.2_test.hdata.zst

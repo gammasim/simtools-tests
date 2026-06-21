@@ -7,11 +7,11 @@ applications:
         "<7.0.0": beta
         ">=7.0.0": CTAO-South-Beta
     model_version: 6.0.2
-    output_path: ./tmp-test-resources/generate_array_config_beta_south_6.0.2
+    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
     site: South
     label: test
 collection:
-  output_path: tests/resources/generated/sim_telarray_configurations/6.0.2/
+  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated
   files:
   - CTA-beta-South_test.cfg
   - CTA-South-LSTS-01_test.cfg
