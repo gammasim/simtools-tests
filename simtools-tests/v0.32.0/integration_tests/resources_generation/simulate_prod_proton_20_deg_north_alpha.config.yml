@@ -16,8 +16,8 @@ applications:
     log_level: DEBUG
     model_version: 6.0.2
     showers_per_run: 5
-    output_path: ./tmp-test-resources/simulate_prod_proton_20deg_north_alpha
-    pack_for_grid_register: ./tmp-test-resources/grid-output
+    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    pack_for_grid_register: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
     primary: proton
     run_number: 1
     save_reduced_event_lists: true
@@ -27,7 +27,7 @@ applications:
     view_cone: 0 deg 5 deg
     zenith_angle: 20
 collection:
-  output_path: tests/resources/generated/
+  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated
   files:
   - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.log_hist.tar.gz
   - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
