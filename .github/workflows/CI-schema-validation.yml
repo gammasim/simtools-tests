@@ -35,7 +35,7 @@ jobs:
 
       - name: Integration test config file validation
         run: |
-          for file in simtools-tests/*/integration_tests/resources_generation/*.config.yml; do
+          for file in simtools-tests/*/integration_tests/config_files/*.config.yml; do
             echo "Testing config file $file"
             simtools-validate-file-using-schema \
             --file_name "$file" \
