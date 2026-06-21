@@ -25,7 +25,7 @@ applications:
     zenith_angle: 40
 - application: simtools-simulate-prod
   configuration:
-    corsika_file: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.corsika.zst
+    corsika_file: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.corsika.zst
     array_layout_name:
       by_version:
         "<7.0.0": subsystem_lsts

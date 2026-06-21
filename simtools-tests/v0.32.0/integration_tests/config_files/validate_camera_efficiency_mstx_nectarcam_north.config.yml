@@ -10,7 +10,7 @@ applications:
     write_reference_nsb_rate_as_parameter: true
     zenith_angle: 0.
 collection:
-  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated
+  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/camera_efficiency
   files:
   - camera_efficiency_North_MSTx-NectarCam_za0.0deg_azm000deg_nsb.dat
   - camera_efficiency_summary_North_MSTx-NectarCam_za0.0deg_azm000deg.yml
