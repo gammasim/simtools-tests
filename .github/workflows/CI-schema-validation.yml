@@ -44,6 +44,6 @@ jobs:
             --log_level DEBUG
           done < <(
             find simtools-tests \
-              -path 'simtools-tests/v0.32.0' -prune -o \
+              -path 'simtools-tests/legacy' -prune -o \
               -path '*/integration_tests/config_files/*.config.yml' -type f -print
           )
