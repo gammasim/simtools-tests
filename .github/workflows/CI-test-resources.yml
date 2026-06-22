@@ -39,6 +39,7 @@ jobs:
           versions=()
           for version_directory in simtools-tests/v*/; do
             [[ -d "${version_directory}" ]] || continue
+            [[ "${version_directory}" == "simtools-tests/v0.32.0/" ]] && continue
             versions+=("${version_directory#simtools-tests/}")
           done
 

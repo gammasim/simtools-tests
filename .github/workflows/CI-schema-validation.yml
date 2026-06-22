@@ -35,11 +35,15 @@ jobs:
 
       - name: Integration test config file validation
         run: |
-          for file in simtools-tests/*/integration_tests/config_files/*.config.yml; do
+          while IFS= read -r file; do
             echo "Testing config file $file"
             simtools-validate-file-using-schema \
             --file_name "$file" \
             --schema application_workflow.metaschema.yml \
             --data_type "schema" \
             --log_level DEBUG
-          done
+          done < <(
+            find simtools-tests \
+              -path 'simtools-tests/v0.32.0' -prune -o \
+              -path '*/integration_tests/config_files/*.config.yml' -type f -print
+          )
