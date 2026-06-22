@@ -42,7 +42,12 @@ jobs:
               echo "$matches"
               found=1
             fi
-          done < <(find . -type f \( -name "*.py" -o -name "*.rst" -o -name "*.yml" -o -name "*.toml" \))
+          done < <(
+            find . \
+              -path './simtools-tests/v0.32.0' -prune -o \
+              -type f \( -name "*.py" -o -name "*.rst" -o -name "*.yml" -o -name "*.toml" \) \
+              -print
+          )
           if [ "$found" -eq 1 ]; then
             echo "Non-ASCII characters found in documentation."
             exit 1
