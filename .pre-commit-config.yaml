@@ -69,13 +69,6 @@ repos:
         "-d",
         '{extends: default, rules: {line-length: {max: 300}, indentation: {spaces: 2, indent-sequences: consistent}, truthy: {allowed-values: ["true", "false", "on", "off"]}}}'
       ]
-# towncrier
-- repo: https://github.com/twisted/towncrier
-  rev: 25.8.0
-  hooks:
-  - id: towncrier-update
-    files: ^docs/changes/
-    args: ['--keep']
 # shellcheck
 - repo: https://github.com/shellcheck-py/shellcheck-py
   rev: v0.11.0.1
