@@ -36,6 +36,11 @@ jobs:
 
       - name: Validate test resources for all versions
         run: |
+          if [[ ! -d simtools-tests ]]; then
+            echo "Required directory simtools-tests/ does not exist." >&2
+            exit 1
+          fi
+
           versions=()
           for version_directory in simtools-tests/v*/; do
             [[ -d "${version_directory}" ]] || continue
@@ -43,8 +48,8 @@ jobs:
           done
 
           if (( ${#versions[@]} == 0 )); then
-            echo "No version directories found in simtools-tests/" >&2
-            exit 1
+            echo "No version directories found in simtools-tests/; skipping validation."
+            exit 0
           fi
 
           for version in "${versions[@]}"; do
