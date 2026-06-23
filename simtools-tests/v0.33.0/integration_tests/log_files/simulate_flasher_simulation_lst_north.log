@@ -1,0 +1,22 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: ['podman', 'run', '--rm', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests:/workdir/external/', '-w', '/workdir/external/', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simpipe:/workdir/external/simpipe:ro', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:20260622-v78010-v2025-11-30-rc-generic']
+================================================================================
+Application: simtools-simulate-flasher
+STDOUT:
+
+STDERR:
+INFO: simtools application simulate_flasher started with activity ID 019ef08f-dc5b-797c-81cc-bc48c88ad46f
+INFO: simtools: 0.32.1.dev99+gb55cc6a0c DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Flasher simulation for telescope(s) ['LSTN-04'] with light source LSFN-design  ([5] events, run mode: full_simulation)
+INFO: Generating pulse-shape table with rise10-90=1.59 ns, fall90-10=0.4 ns, dt=0.1 ns
+INFO: Submitting command /workdir/external/simtools-tests/v0.33.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.sh
+INFO: Job output/error streams /workdir/external/simtools-tests/v0.33.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.out / /workdir/external/simtools-tests/v0.33.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.err
+INFO: Sim_telarray log files validation passed: [PosixPath('/workdir/external/simtools-tests/v0.33.0/integration_tests/tmp_application_output/sim_telarray/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.simtel.log.gz')]
+INFO: Flasher simulation completed.
