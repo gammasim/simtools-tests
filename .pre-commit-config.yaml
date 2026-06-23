@@ -49,7 +49,7 @@ repos:
   - id: codespell
     args: [
       "--skip=tests/resources/example_non_utf-8_file.lis",
-      "--ignore-words-list=als,ARRANG",
+      "--ignore-words-list=als,ARRANG,hel",
     ]
 # markdownlint
 - repo: https://github.com/igorshubovych/markdownlint-cli
