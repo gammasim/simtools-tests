@@ -46,6 +46,7 @@ jobs:
 
           if (( ${#version_directories[@]} == 0 )); then
             echo "No version directories found in simtools-tests/; skipping validation."
+            exit 0
           fi
 
           for version_directory in "${version_directories[@]}"; do
