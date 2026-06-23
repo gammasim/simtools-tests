@@ -6,4 +6,4 @@ runtime_environment:
   env_file: .env
   options:
     - "--arch amd64"
-    - "-v /Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simpipe:/workdir/external/simpipe:ro"
+    - "-v __TEST_DIRECTORY__/simpipe:/workdir/external/simpipe:ro"
