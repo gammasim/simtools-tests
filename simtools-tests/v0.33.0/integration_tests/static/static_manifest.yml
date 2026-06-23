@@ -58,7 +58,7 @@ files:
     sha256: 4f0a55dcb0cd2110c04111844efc9e4a5c343449879ad107525003a981bfc959
     description: Configuration exported from sim_telarray.
   - file_name: telescope_positions-North-ground.ecsv
-    sha256: 5c33111d3687e29ffe6ead424f980aa67dcce12e61b41a163f42106d1355a29a
+    sha256: 552b1f52f771d3bb06acc10925cb831a0ad6e6b58f645f59f11d6ccd0f34e2d2
     description: North-site telescope positions in ground coordinates.
   - file_name: telescope_positions-North-mercator.ecsv
     sha256: 13095c9ffd84f2568fb74940e48953a6c22bd68aae37de1c2ada429d807a2498
@@ -73,10 +73,10 @@ files:
     sha256: 939d09020eae061d4480f1cdb758a42fb1222d806e399389e108c51da4e08816
     description: Metadata for North-site UTM telescope positions.
   - file_name: telescope_positions-North-with-calibration-devices-ground.ecsv
-    sha256: 77ad18c2ad9cd50b2c0684dd2026821abedee5a132d4f6ec8ca4029a1fb1a054
+    sha256: ad4630190880ab77d5a7be7d4b88de69b917e984794b4b48c37c7ee2488cf8d5
     description: North-site ground positions including calibration devices.
   - file_name: telescope_positions-South-ground.ecsv
-    sha256: 038942162efded1fd4b73d9da1db4625843090e805a05241da7de4b2caf23c15
+    sha256: 265447136436d258d8f3fd9902532d0f11ac0790cb1ff7a47da88b7cf2d35bda
     description: South-site telescope positions in ground coordinates.
   - file_name: trigger_rates_user_spectrum_powerlaw.yml
     sha256: fdda243645c38b738e003ba4afec2abd76d0b0ac5407dcc05dda3e5805e4e783
