@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        shell: bash -leo pipefail {0}
+        shell: bash --noprofile --norc -e -o pipefail {0}
 
     permissions:
       contents: read
@@ -32,22 +32,24 @@ jobs:
       - name: Install simtools
         run: |
           python -m pip install \
-            "git+https://github.com/gammasim/simtools.git@generate-tests"
+            "git+https://github.com/gammasim/simtools.git@refactor-tests-resources"
 
       - name: Validate test resources for all versions
         run: |
-          versions=()
-          for version_directory in simtools-tests/v*/; do
-            [[ -d "${version_directory}" ]] || continue
-            versions+=("${version_directory#simtools-tests/}")
-          done
-
-          if (( ${#versions[@]} == 0 )); then
-            echo "No version directories found in simtools-tests/" >&2
+          if [[ ! -d simtools-tests ]]; then
+            echo "Required directory simtools-tests/ does not exist." >&2
             exit 1
           fi
 
-          for version in "${versions[@]}"; do
+          shopt -s nullglob
+          version_directories=(simtools-tests/v*/)
+
+          if (( ${#version_directories[@]} == 0 )); then
+            echo "No version directories found in simtools-tests/; skipping validation."
+          fi
+
+          for version_directory in "${version_directories[@]}"; do
+            version="${version_directory#simtools-tests/}"
             version="${version%/}"
             echo "Validating test resources for ${version}"
             simtools-generate-test-resources \
