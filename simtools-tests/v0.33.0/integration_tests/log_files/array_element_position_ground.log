@@ -1,0 +1,29 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: ['podman', 'run', '--rm', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests:/workdir/external/', '-w', '/workdir/external/', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simpipe:/workdir/external/simpipe:ro', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:20260622-v78010-v2025-11-30-rc-generic']
+================================================================================
+Application: simtools-db-get-parameter-from-db
+STDOUT:
+
+STDERR:
+Trying to pull ghcr.io/gammasim/simtools-prod:20260622-v78010-v2025-11-30-rc-generic...
+Getting image source signatures
+Copying blob sha256:86fa77e3767b440949b233a6147641c62633edf8152018916809c970e632adbd
+Copying blob sha256:e0d5f71ed93b5cb8836edad6cd1ef4933bf54d85ab5ca9e7638a958bb299d4ce
+Copying blob sha256:11f32e7cd74634a738130befc67776dce1f2a3d363eb087a915417be552c01ac
+Copying blob sha256:aef729c61793e329914d9c485921782a021f9f82a1591b70ec8b301c6442d2f9
+Copying blob sha256:d78b5e0bfedcc3cf0229239a2d443c4589be2474d98485aa9c94cf85aa74eebf
+Copying blob sha256:17191b26df69100adda7b9c508639ecc84c29727dade46b74f5e0529acfa81ff
+Copying blob sha256:021db08bc8ccc579ac9b7decbbe41c6f89d1a5f18820cb3a9731b1e9f68a6de7
+Copying blob sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+Copying blob sha256:7ecaf90d37f2ca18de3f4f503fa35233189f2d5d530a8a03b647e0f313895c11
+Copying config sha256:9101f754bbed3d5419a757158b4155b11655970957e8e7e3f1e2d259c1d879d4
+Writing manifest to image destination
+INFO: simtools application db_get_parameter_from_db started with activity ID 019ef08d-46d7-771c-b1df-e04035633294
+INFO: simtools: 0.32.1.dev99+gb55cc6a0c DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
