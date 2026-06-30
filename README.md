@@ -1,5 +1,7 @@
 # simtools-tests
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21070798.svg)](https://doi.org/10.5281/zenodo.21070798)
+
 This repository stores versioned test resources and generated artifacts used by
 simtools integration tests, compatibility checks, and science validation
 workflows.
