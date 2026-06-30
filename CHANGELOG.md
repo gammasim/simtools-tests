@@ -7,12 +7,14 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
 
 <!-- towncrier release notes start -->
 
-## [0.1.0](https://github.com/gammasim/simtools-tests/releases/tag/0.1.0) - 2026-06-22
+## [v1.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v1.0.0) - 2026-06-30
 
 ### New Features
 
 - Add resource generation files for v0.33.0. ([#2](https://github.com/gammasim/simtools-tests/pull/2))
+- Add resource files for v0.32.0 (legacy files; before addition of the static/generated directory structure). ([#4](https://github.com/gammasim/simtools-tests/pull/4))
 
 ### Maintenance
 
 - Use git-lfs for binary files. ([#3](https://github.com/gammasim/simtools-tests/pull/3))
+- Improve file format of `download_files.yml` file list. ([#6](https://github.com/gammasim/simtools-tests/pull/6))
