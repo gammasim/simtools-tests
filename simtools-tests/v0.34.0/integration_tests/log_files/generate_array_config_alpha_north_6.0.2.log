@@ -1,0 +1,43 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: None
+================================================================================
+Application: simtools-generate-array-config
+STDOUT:
+Name: LSTN-01	 Model: LSTN-01
+Name: LSTN-02	 Model: LSTN-02
+Name: LSTN-03	 Model: LSTN-03
+Name: LSTN-04	 Model: LSTN-04
+Name: MSTN-01	 Model: MSTN-01
+Name: MSTN-02	 Model: MSTN-02
+Name: MSTN-03	 Model: MSTN-03
+Name: MSTN-04	 Model: MSTN-04
+Name: MSTN-05	 Model: MSTN-05
+Name: MSTN-06	 Model: MSTN-06
+Name: MSTN-07	 Model: MSTN-07
+Name: MSTN-10	 Model: MSTN-10
+Name: MSTN-15	 Model: MSTN-15
+
+STDERR:
+INFO: simtools application generate_array_config started with activity ID 019f2706-e992-79b1-bb12-ebb2f44e71f2
+INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Writing array configuration file into /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-alpha-North_test.cfg

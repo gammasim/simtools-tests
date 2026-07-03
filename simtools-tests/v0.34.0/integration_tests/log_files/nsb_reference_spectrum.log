@@ -1,0 +1,17 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: None
+================================================================================
+Application: simtools-db-get-parameter-from-db
+STDOUT:
+
+STDERR:
+INFO: simtools application db_get_parameter_from_db started with activity ID 019f2707-0298-7aa6-8da1-a2c4fb46b555
+INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Exported parameter output to /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/Benn_LaPalma_sky_converted.lis

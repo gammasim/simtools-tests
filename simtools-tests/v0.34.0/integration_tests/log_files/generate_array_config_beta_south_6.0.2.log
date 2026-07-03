@@ -1,0 +1,133 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: None
+================================================================================
+Application: simtools-generate-array-config
+STDOUT:
+Name: LSTS-01	 Model: LSTS-01
+Name: LSTS-02	 Model: LSTS-02
+Name: MSTS-01	 Model: MSTS-01
+Name: MSTS-02	 Model: MSTS-02
+Name: MSTS-03	 Model: MSTS-03
+Name: MSTS-04	 Model: MSTS-04
+Name: MSTS-05	 Model: MSTS-05
+Name: MSTS-06	 Model: MSTS-06
+Name: MSTS-07	 Model: MSTS-07
+Name: MSTS-08	 Model: MSTS-08
+Name: MSTS-09	 Model: MSTS-09
+Name: MSTS-10	 Model: MSTS-10
+Name: MSTS-11	 Model: MSTS-11
+Name: MSTS-12	 Model: MSTS-12
+Name: MSTS-13	 Model: MSTS-13
+Name: MSTS-14	 Model: MSTS-14
+Name: SSTS-01	 Model: SSTS-01
+Name: SSTS-02	 Model: SSTS-02
+Name: SSTS-03	 Model: SSTS-03
+Name: SSTS-04	 Model: SSTS-04
+Name: SSTS-05	 Model: SSTS-05
+Name: SSTS-06	 Model: SSTS-06
+Name: SSTS-07	 Model: SSTS-07
+Name: SSTS-08	 Model: SSTS-08
+Name: SSTS-09	 Model: SSTS-09
+Name: SSTS-10	 Model: SSTS-10
+Name: SSTS-11	 Model: SSTS-11
+Name: SSTS-12	 Model: SSTS-12
+Name: SSTS-13	 Model: SSTS-13
+Name: SSTS-14	 Model: SSTS-14
+Name: SSTS-15	 Model: SSTS-15
+Name: SSTS-16	 Model: SSTS-16
+Name: SSTS-17	 Model: SSTS-17
+Name: SSTS-18	 Model: SSTS-18
+Name: SSTS-19	 Model: SSTS-19
+Name: SSTS-20	 Model: SSTS-20
+Name: SSTS-21	 Model: SSTS-21
+Name: SSTS-22	 Model: SSTS-22
+Name: SSTS-23	 Model: SSTS-23
+Name: SSTS-24	 Model: SSTS-24
+Name: SSTS-25	 Model: SSTS-25
+Name: SSTS-26	 Model: SSTS-26
+Name: SSTS-27	 Model: SSTS-27
+Name: SSTS-28	 Model: SSTS-28
+Name: SSTS-29	 Model: SSTS-29
+Name: SSTS-30	 Model: SSTS-30
+Name: SSTS-31	 Model: SSTS-31
+Name: SSTS-32	 Model: SSTS-32
+Name: SSTS-33	 Model: SSTS-33
+Name: SSTS-34	 Model: SSTS-34
+Name: SSTS-35	 Model: SSTS-35
+Name: SSTS-36	 Model: SSTS-36
+Name: SSTS-37	 Model: SSTS-37
+Name: SSTS-38	 Model: SSTS-38
+Name: SSTS-39	 Model: SSTS-39
+Name: SSTS-40	 Model: SSTS-40
+Name: SSTS-41	 Model: SSTS-41
+Name: SSTS-42	 Model: SSTS-42
+
+STDERR:
+INFO: simtools application generate_array_config started with activity ID 019f2706-f08c-7c29-b871-260ee64ae493
+INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
+INFO: Writing array configuration file into /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-beta-South_test.cfg
