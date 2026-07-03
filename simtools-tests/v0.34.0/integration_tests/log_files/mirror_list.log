@@ -1,0 +1,26 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: None
+================================================================================
+Application: simtools-db-get-parameter-from-db
+STDOUT:
+
+STDERR:
+INFO: simtools application db_get_parameter_from_db started with activity ID 019f2706-fbb1-7c63-920a-801b6cafda1c
+INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+
+================================================================================
+Application: simtools-db-get-parameter-from-db
+STDOUT:
+
+STDERR:
+INFO: simtools application db_get_parameter_from_db started with activity ID 019f2706-fbb2-7e5e-95d4-5dd0f15521c0
+INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Exported parameter output to /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.dat
+INFO: Exported parameter output to /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.ecsv
