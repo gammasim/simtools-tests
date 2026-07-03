@@ -3,10 +3,10 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21070798.svg)](https://doi.org/10.5281/zenodo.21070798)
 
 This repository stores versioned test resources and generated artifacts used by
-simtools integration tests, compatibility checks, and science validation
+[simtools](https://github.com/gammasim/simtools) integration tests, compatibility checks, and science validation
 workflows.
 
-The main `simtools` repository should keep the current lightweight test
+The main [simtools](https://github.com/gammasim/simtools) repository should keep the current lightweight test
 resources needed for pull-request CI. This repository is intended for larger,
 frozen, or release-specific resource sets that should be preserved separately.
 
