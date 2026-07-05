@@ -32,7 +32,7 @@ jobs:
       - name: Install simtools
         run: |
           python -m pip install \
-            "git+https://github.com/gammasim/simtools.git@refactor-tests-resources"
+            "git+https://github.com/gammasim/simtools.git@main"
 
       - name: Validate test resources for all versions
         run: |
