@@ -25,8 +25,8 @@ Name: MSTN-10	 Model: MSTN-10
 Name: MSTN-15	 Model: MSTN-15
 
 STDERR:
-INFO: simtools application generate_array_config started with activity ID 019f2706-e992-79b1-bb12-ebb2f44e71f2
-INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application generate_array_config started with activity ID 019f37cd-3799-745d-9d6d-221aa7fdecd6
+INFO: simtools: 0.33.1.dev288+g2be9168a7 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
@@ -40,4 +40,4 @@ INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Writing array configuration file into /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-alpha-North_test.cfg
+INFO: Writing array configuration file into /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTAO-North-alpha.cfg

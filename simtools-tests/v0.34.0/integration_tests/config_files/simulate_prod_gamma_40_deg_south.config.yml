@@ -36,7 +36,7 @@ applications:
     log_level: DEBUG
     model_version: 6.0.2
     output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
-    pack_for_grid_register: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
+    grid_output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
     primary: gamma
     sim_telarray_instrument_seed: 1745
     sim_telarray_seed: [290]
@@ -49,7 +49,7 @@ collection:
   - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.simtel.zst
 - output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/log_files
   files:
-  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.log_hist.tar.gz
+  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.simtel.log.gz
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
 schema_version: 0.4.0
