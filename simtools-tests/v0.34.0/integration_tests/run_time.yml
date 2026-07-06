@@ -6,4 +6,5 @@ runtime_environment:
   environment_file: .env
   options:
     - "--arch amd64"
-    - "-v __TEST_DIRECTORY__/simpipe:/workdir/external/simpipe:ro"
+    - "-v $PWD/..:/workdir/external/:ro"
+    - "-v $PWD/simtools-tests:/workdir/simtools-tests"

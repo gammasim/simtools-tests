@@ -16,7 +16,7 @@ applications:
     log_level: DEBUG
     model_version: 6.0.2
     showers_per_run: 10
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
     primary: gamma
     run_number: 7
     sim_telarray_seed: [1745, 290]
@@ -25,7 +25,7 @@ applications:
     zenith_angle: 40
 - application: simtools-simulate-prod
   configuration:
-    corsika_file: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.corsika.zst
+    corsika_file: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.corsika.zst
     array_layout_name:
       by_version:
         "<7.0.0": subsystem_lsts
@@ -35,8 +35,8 @@ applications:
     label: test
     log_level: DEBUG
     model_version: 6.0.2
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
-    pack_for_grid_register: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
+    pack_for_grid_register: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
     primary: gamma
     sim_telarray_instrument_seed: 1745
     sim_telarray_seed: [290]
