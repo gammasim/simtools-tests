@@ -16,8 +16,8 @@ applications:
     log_level: DEBUG
     model_version: 6.0.2
     showers_per_run: 5
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
-    pack_for_grid_register: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha
+    pack_for_grid_register: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha
     primary: gamma
     run_number: 10
     save_reduced_event_lists: true
