@@ -11,7 +11,7 @@ applications:
     corsika_he_interaction: epos
     corsika_le_interaction: urqmd
     energy_range: 30 GeV 300 GeV
-    corsika_limits: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/corsika_simulation_limits/corsika_limits_north.ecsv
+    corsika_limits: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/corsika_simulation_limits/corsika_limits.ecsv
     model_version: 7.0.0
     showers_per_run: 5
     number_of_runs: 2

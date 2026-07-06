@@ -17,7 +17,7 @@ applications:
     model_version: 6.0.2
     showers_per_run: 5
     output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha
-    pack_for_grid_register: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha
+    grid_output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha
     primary: proton
     run_number: 1
     save_reduced_event_lists: true
@@ -29,12 +29,12 @@ applications:
 collection:
 - output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated
   files:
-  - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.log_hist.tar.gz
+  - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.log.gz
   - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
   - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.reduced_event_data.hdf5
 - output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/log_files
   files:
-  - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.log_hist.tar.gz
+  - proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.log.gz
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
 schema_version: 0.4.0

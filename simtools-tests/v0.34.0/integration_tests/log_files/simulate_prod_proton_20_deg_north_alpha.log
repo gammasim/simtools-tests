@@ -12,8 +12,8 @@ Application: simtools-simulate-prod
 STDOUT:
 
 STDERR:
-INFO: simtools application simulate_prod started with activity ID 019f2707-6ffc-796f-a8a9-fd31d8ea1e8d
-INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application simulate_prod started with activity ID 019f37cd-bab0-7f47-abe7-0ecfae2dd3c0
+INFO: simtools: 0.33.1.dev288+g2be9168a7 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 DEBUG: Build options:
  {'corsika_version': '78010', 'corsika_opt_patch_version': 'v1.1.0', 'corsika_config_version': 'v0.1.0', 'avx_flag': 'generic', 'iact_atmo_version': '1.69 (2025-02-27), IACT_NO_GRID', 'variant': [{'executable': 'corsika_epos_urqmd_curved', 'config': 'config_epos_urqmd_curved', 'atmosphere_geometry': 'curved', 'he_hadronic_model': 'epos', 'le_hadronic_model': 'urqmd'}, {'executable': 'corsika_epos_urqmd_flat', 'config': 'config_epos_urqmd_flat', 'atmosphere_geometry': 'flat', 'he_hadronic_model': 'epos', 'le_hadronic_model': 'urqmd'}, {'executable': 'corsika_qgs3_urqmd_curved', 'config': 'config_qgs3_urqmd_curved', 'atmosphere_geometry': 'curved', 'he_hadronic_model': 'qgs3', 'le_hadronic_model': 'urqmd'}, {'executable': 'corsika_qgs3_urqmd_flat', 'config': 'config_qgs3_urqmd_flat', 'atmosphere_geometry': 'flat', 'he_hadronic_model': 'qgs3', 'le_hadronic_model': 'urqmd'}], 'simtel_version': 'v2025-11-30-rc', 'hessio_version': 'v2025-12-01-rc', 'stdtools_version': 'v2025-06-16-rc', 'extra_defines': '-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99', 'build_date': '2026-05-04T16:23:40Z', 'components': [{'name': 'hessioxxx', 'version': 'v2025-12-01-rc', 'build_flags': 'DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG'}, {'name': 'stdtools', 'version': 'v2025-06-16-rc', 'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG'}, {'name': 'sim_telarray', 'version': 'v2025-11-30-rc', 'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG', 'executables': ['sim_telarray']}, {'name': 'sim_telarray_debug_trace', 'version': 'v2025-11-30-rc', 'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DDEBUG_TRACE_99 -DWITH_GSL -DWITH_GSL_RNG', 'executables': ['sim_telarray_debug_trace']}]}
 DEBUG: Getting site parameters from DB (North)
@@ -21,113 +21,113 @@ DEBUG: Init SiteModel for site North
 DEBUG: MongoDB client initialized successfully.
 DEBUG: MongoDB connection Created: ('simtools-mongodb', 27017). Total in Pool: 1
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmp9e1l38ai/pulse_LST_8dynode_pix6_20200204.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpwk7yxtqp/pulse_LST_8dynode_pix6_20200204.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpbz12b33h/LST_pulse_shape_7dynode_high_intensity_pix1s.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpvvuc40hv/LST_pulse_shape_7dynode_high_intensity_pix1s.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmp7arcs7yw/LST_pulse_shape_7dynode_high_intensity_pix1s.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpk1u3zqiu/LST_pulse_shape_7dynode_high_intensity_pix1s.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpwd8ewz39/LST_pulse_shape_7dynode_high_intensity_pix1s.dat
+DEBUG: Reading sim_telarray table from /tmp/tmprxkum4zm/LST_pulse_shape_7dynode_high_intensity_pix1s.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpg59r2s1j/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpeaicwyv7/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmp9dmve3sh/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmppisrrelh/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpbw19l0rt/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpl562_4nu/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmp89t32n0f/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmprxprq93f/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmp_e2pc6f6/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpk6syohko/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpg7n2ehom/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpx_k3lht2/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpiyh4asf5/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpi0xi0b_e/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpmcj4losl/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpwa2t7i5s/Pulse_template_nectarCam_17042020-noshift.dat
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-DEBUG: Reading sim_telarray table from /tmp/tmpytzbg7du/Pulse_template_nectarCam_17042020-noshift.dat
+DEBUG: Reading sim_telarray table from /tmp/tmpwifpzchp/Pulse_template_nectarCam_17042020-noshift.dat
 DEBUG: Using model version 6.0.2 for CORSIKA parameters from DB
 DEBUG: Interaction parameters: {'FIXHEI': ['0.00', '0'], 'FIXCHI': ['0.0'], 'TSTART': ['T'], 'ECUTS': ['0.3 0.1 0.02 0.02'], 'MUADDI': ['F'], 'MUMULT': ['T'], 'LONGI': ['T', '20.0', 'F', 'F'], 'MAXPRT': ['10'], 'ECTMAP': ['1.e6'], 'EPOPAR fname pathnx': ['/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/'], 'EPOPAR fname inics': ['/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/epos.inics'], 'EPOPAR fname iniev': ['/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/epos.iniev'], 'EPOPAR fname inirj': ['/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/epos.inirj'], 'EPOPAR fname initl': ['/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/epos.initl'], 'EPOPAR fname hpf': ['/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/urqmd34/tables.dat'], 'EPOPAR fname check': ['none'], 'EPOPAR fname histo': ['none'], 'EPOPAR fname data': ['none'], 'EPOPAR fname copy': ['none']}
 DEBUG: Cherenkov parameters: {'CERSIZ': [5.0], 'CERFIL': '0', 'CWAVLG': ['240.0', '1000.0']}
 DEBUG: IACT parameters: {'SPLIT_AUTO': [15000000], 'IO_BUFFER': ['1000MB'], 'MAX_BUNCHES': [1000000]}
 WARNING: Using fixed test seeds: 1745,290
-DEBUG: Data directories for multi_pipe: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/multi_pipe
-DEBUG: Data directories for corsika: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/corsika
-DEBUG: Data directories for sim_telarray: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray
-DEBUG: Data directories for sub: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub
-DEBUG: sub_out: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.out
-DEBUG: sub_err: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.err
-DEBUG: sub_log: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.log
-DEBUG: sub_script: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.sh
-DEBUG: multi_pipe_config: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_alpha__test.multi_pipe.cfg
-DEBUG: multi_pipe_script: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_alpha__test.multi_pipe.sh
-DEBUG: sim_telarray_output: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
-DEBUG: sim_telarray_histogram: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.hdata.zst
-DEBUG: sim_telarray_log: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.log.gz
-DEBUG: sim_telarray_event_data: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.reduced_event_data.hdf5
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-LSTN-01_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-LSTN-01_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-LSTN-02_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-LSTN-02_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-LSTN-03_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-LSTN-03_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-LSTN-04_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-LSTN-04_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-01_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-01_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-02_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-02_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-03_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-03_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-04_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-04_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-05_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-05_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-06_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-06_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-07_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-07_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-10_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-10_test.dat
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-North-MSTN-15_test.cfg
-DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/fadc_pulse_shape-CTA-North-MSTN-15_test.dat
-INFO: Writing array configuration file into /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-alpha-North_test.cfg
+DEBUG: Data directories for multi_pipe: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/multi_pipe
+DEBUG: Data directories for corsika: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/corsika
+DEBUG: Data directories for sim_telarray: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray
+DEBUG: Data directories for sub: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub
+DEBUG: sub_out: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.out
+DEBUG: sub_err: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.err
+DEBUG: sub_log: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.log
+DEBUG: sub_script: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.sh
+DEBUG: multi_pipe_config: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_alpha__test.multi_pipe.cfg
+DEBUG: multi_pipe_script: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_alpha__test.multi_pipe.sh
+DEBUG: sim_telarray_output: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
+DEBUG: sim_telarray_histogram: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.hdata.zst
+DEBUG: sim_telarray_log: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.log.gz
+DEBUG: sim_telarray_event_data: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.reduced_event_data.hdf5
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-LSTN-01.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-LSTN-01.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-LSTN-02.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-LSTN-02.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-LSTN-03.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-LSTN-03.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-LSTN-04.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-LSTN-04.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-01.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-01.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-02.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-02.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-03.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-03.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-04.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-04.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-05.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-05.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-06.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-06.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-07.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-07.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-10.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-10.dat
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-MSTN-15.cfg
+DEBUG: Writing sim_telarray table file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/fadc_pulse_shape-CTAO-MSTN-15.dat
+INFO: Writing array configuration file into /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/CTAO-North-alpha.cfg
 DEBUG: NSB integral between 300.0 nm and 650.0 nm: 0.24053832149999996 1 / (ns sr cm2)
-DEBUG: Writing telescope config file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/InvalidTelescope.cfg
-INFO: Multipipe script: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_alpha__test.multi_pipe.cfg
-DEBUG: corsika_input: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.input
-DEBUG: corsika_output: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.zst
-DEBUG: corsika_log: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.log.gz
-INFO: Exporting CORSIKA input file to /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.input
+DEBUG: Writing telescope config file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/InvalidTelescope.cfg
+INFO: Multipipe script: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_alpha__test.multi_pipe.cfg
+DEBUG: corsika_input: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.input
+DEBUG: corsika_output: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.zst
+DEBUG: corsika_log: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.log.gz
+INFO: Exporting CORSIKA input file to /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/corsika/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.corsika.input
 DEBUG: Extra commands to be added to the run script: None
 DEBUG: Using flat-atmosphere CORSIKA binary.
-INFO: Submitting command /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.sh
-INFO: Job output/error streams /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.out / /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.err
-DEBUG: Setting environment variables for job execution: {'HISTCONTROL': 'ignoredups', 'HOSTNAME': '41a68a95f02d', 'HISTSIZE': '1000', 'PWD': '***REDACTED***', 'LOGNAME': 'root', 'container': 'podman', 'HOME': '/root', 'LANG': 'C.utf8', 'SIMTOOLS_SIM_TELARRAY_PATH': '/workdir/simulation_software/sim_telarray', 'VIRTUAL_ENV': '/workdir/env', 'TERM': 'xterm', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'USER': 'root', 'SHLVL': '1', 'VIRTUAL_ENV_PROMPT': '(env) ', 'SIMTOOLS_CORSIKA_PATH': '/workdir/simulation_software/corsika7', 'LD_LIBRARY_PATH': '/workdir/simulation_software/hessioxxx/lib:/workdir/simulation_software/stdtools/lib:/workdir/simulation_software/sim_telarray/LightEmission/lib:/usr/local/lib', 'PS1': '((env) ) ', 'DEBUGINFOD_IMA_CERT_PATH': '/etc/keys/ima:', 'PATH': '/workdir/env/bin:/root/.local/bin:/root/bin:/workdir/env/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'MAIL': '/var/spool/mail/root', 'OLDPWD': '***REDACTED***', '_': '/workdir/env/bin/simtools-generate-test-resources', 'SIMTOOLS_CORSIKA_HE_INTERACTION': 'epos', 'SIMTOOLS_CORSIKA_LE_INTERACTION': 'urqmd', 'SIMTOOLS_CORSIKA_INTERACTION_TABLE_PATH': '/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/', 'SIMTOOLS_DB_API_AUTHENTICATION_DATABASE': '***REDACTED***', 'SIMTOOLS_DB_API_PORT': '27017', 'SIMTOOLS_DB_API_PW': '***REDACTED***', 'SIMTOOLS_DB_API_USER': 'api', 'SIMTOOLS_DB_SERVER': 'simtools-mongodb', 'SIMTOOLS_DB_SIMULATION_MODEL': 'CTAO-Simulation-Model', 'SIMTOOLS_DB_SIMULATION_MODEL_VERSION': 'v0.16.0', 'SIMTOOLS_USER_NAME': 'G.Maier', 'SIMTOOLS_USER_ORCID': '0000-0001-9868-4700', 'SIMTOOLS_USER_ORGANIZATION': 'DESY', 'SIMTOOLS_USER_EMAIL': 'gernot.maier@desy.de', 'SIM_TELARRAY_CONFIG_PATH': ''}
+INFO: Submitting command /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.sh
+INFO: Job output/error streams /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.out / /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.err
+DEBUG: Setting environment variables for job execution: {'HISTCONTROL': 'ignoredups', 'HOSTNAME': 'be7cbfbda0e4', 'HISTSIZE': '1000', 'PWD': '***REDACTED***', 'LOGNAME': 'root', 'container': 'podman', 'HOME': '/root', 'LANG': 'C.utf8', 'SIMTOOLS_SIM_TELARRAY_PATH': '/workdir/simulation_software/sim_telarray', 'VIRTUAL_ENV': '/workdir/env', 'TERM': 'xterm', 'LESSOPEN': '||/usr/bin/lesspipe.sh %s', 'USER': 'root', 'SHLVL': '1', 'VIRTUAL_ENV_PROMPT': '(env) ', 'SIMTOOLS_CORSIKA_PATH': '/workdir/simulation_software/corsika7', 'LD_LIBRARY_PATH': '/workdir/simulation_software/hessioxxx/lib:/workdir/simulation_software/stdtools/lib:/workdir/simulation_software/sim_telarray/LightEmission/lib:/usr/local/lib', 'PS1': '((env) ) ', 'DEBUGINFOD_IMA_CERT_PATH': '/etc/keys/ima:', 'PATH': '/workdir/env/bin:/root/.local/bin:/root/bin:/workdir/env/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'MAIL': '/var/spool/mail/root', 'OLDPWD': '***REDACTED***', '_': '/workdir/env/bin/python', 'SIMTOOLS_CORSIKA_HE_INTERACTION': 'epos', 'SIMTOOLS_CORSIKA_LE_INTERACTION': 'urqmd', 'SIMTOOLS_CORSIKA_INTERACTION_TABLE_PATH': '/workdir/external/simpipe/simulation_software/corsika7-interaction-tables/interaction-tables/', 'SIMTOOLS_DB_API_AUTHENTICATION_DATABASE': '***REDACTED***', 'SIMTOOLS_DB_API_PORT': '27017', 'SIMTOOLS_DB_API_PW': '***REDACTED***', 'SIMTOOLS_DB_API_USER': 'api', 'SIMTOOLS_DB_SERVER': 'simtools-mongodb', 'SIMTOOLS_DB_SIMULATION_MODEL': 'CTAO-Simulation-Model', 'SIMTOOLS_DB_SIMULATION_MODEL_VERSION': 'v0.16.0', 'SIMTOOLS_USER_NAME': 'G.Maier', 'SIMTOOLS_USER_ORCID': '0000-0001-9868-4700', 'SIMTOOLS_USER_ORGANIZATION': 'DESY', 'SIMTOOLS_USER_EMAIL': 'gernot.maier@desy.de', 'SIM_TELARRAY_CONFIG_PATH': ''}
 DEBUG: Creating converter from 5 to 3
-INFO: Processing file 1/1: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
-INFO: Opening new file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
+INFO: Processing file 1/1: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
+INFO: Opening new file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Opening new file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
+INFO: Opening new file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
 INFO: Found zstd compressed file
 WARNING: Unable to decode metadata with encoding utf8: 'utf-8' codec can't decode byte 0x95 in position 134: invalid start byte. Falling back to 'utf-8' with errors='ignore'.
 INFO: Shower reuse factor: 5 (viewcone: [0. 5.])
 DEBUG: Creating converter from 3 to 5
-INFO: Published complete HDF5 output file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.reduced_event_data.hdf5
+INFO: Published complete HDF5 output file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.reduced_event_data.hdf5
 INFO: Validating simulations with 25 MC events and 5 shower events.
-INFO: Validating metadata for /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
+INFO: Validating metadata for /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
 INFO: Found metadata in sim_telarray file for 13 telescopes
-INFO: Metadata for sim_telarray file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst is valid.
+INFO: Metadata for sim_telarray file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst is valid.
 DEBUG: All expected patterns found: ['Finished.', 'Sim_telarray finished at', 'Run(s) completed as expected after 25 events (5 showers).']
-INFO: Sim_telarray log files validation passed: [PosixPath('/workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.log.gz')]
-INFO: Opening new file /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
+INFO: Sim_telarray log files validation passed: [PosixPath('/workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.log.gz')]
+INFO: Opening new file /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Consistent number of events in sim_telarray output: shower events: 5 (expected 5), MC events: 25 (expected 25) (file: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst)
+INFO: Consistent number of events in sim_telarray output: shower events: 5 (expected 5), MC events: 25 (expected 25) (file: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.simtel.zst)
 DEBUG: All expected patterns found: ['========== END OF RUN =======', 'NUMBER OF GENERATED EVENTS =          5']
-INFO: Consistent number of events in reduced event list: /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.reduced_event_data.hdf5: MC events: 25 (expected: 25)
+INFO: Consistent number of events in reduced event list: /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.reduced_event_data.hdf5: MC events: 25 (expected: 25)
 INFO: Production run complete for primary proton (14, 2212, p) showers from 180 azimuth and 20 zenith at North site, using 6.0.2 model.
-DEBUG: Reading resources from /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.out
+DEBUG: Reading resources from /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_alpha_6.0.2_test.out
 INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 4.0, #events/run: 5
-INFO: Packing output files for registering on the grid (./simtools-tests/v0.34.0/integration_tests/tmp_application_output)
-INFO: Packed model files into /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/model_files_6.0.2.tar.gz
-INFO: Grid output files grid placed in simtools-tests/v0.34.0/integration_tests/tmp_application_output
+INFO: Packing output files for registering on the grid (./simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha)
+INFO: Packed model files into /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/6.0.2/model_files_6.0.2.tar.gz
+INFO: Grid output files grid placed in simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha

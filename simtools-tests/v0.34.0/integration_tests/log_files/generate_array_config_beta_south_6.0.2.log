@@ -70,8 +70,8 @@ Name: SSTS-41	 Model: SSTS-41
 Name: SSTS-42	 Model: SSTS-42
 
 STDERR:
-INFO: simtools application generate_array_config started with activity ID 019f2706-f08c-7c29-b871-260ee64ae493
-INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application generate_array_config started with activity ID 019f37cd-3e3c-7f27-8dbd-fb4d751b3015
+INFO: simtools: 0.33.1.dev288+g2be9168a7 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
@@ -130,4 +130,4 @@ INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Writing array configuration file into /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTA-beta-South_test.cfg
+INFO: Writing array configuration file into /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/6.0.2/CTAO-South-beta.cfg

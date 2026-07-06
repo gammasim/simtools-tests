@@ -12,11 +12,11 @@ Application: simtools-simulate-flasher
 STDOUT:
 
 STDERR:
-INFO: simtools application simulate_flasher started with activity ID 019f2707-122f-7562-8267-b90534472ce2
-INFO: simtools: 0.33.1.dev236+g4ee4209f6 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application simulate_flasher started with activity ID 019f37cd-5f5c-7865-8443-1366e44c61fe
+INFO: simtools: 0.33.1.dev288+g2be9168a7 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Flasher simulation for telescope(s) ['LSTN-04'] with light source LSFN-design  ([5] events, run mode: full_simulation)
 INFO: Generating pulse-shape table with rise10-90=1.59 ns, fall90-10=0.4 ns, dt=0.1 ns
-INFO: Submitting command /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.sh
-INFO: Job output/error streams /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.out / /workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.err
-INFO: Sim_telarray log files validation passed: [PosixPath('/workdir/external/simtools-tests/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.simtel.log.gz')]
+INFO: Submitting command /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.sh
+INFO: Job output/error streams /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.out / /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.err
+INFO: Sim_telarray log files validation passed: [PosixPath('/workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sim_telarray/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.simtel.log.gz')]
 INFO: Flasher simulation completed.

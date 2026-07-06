@@ -13,10 +13,10 @@ applications:
 collection:
   output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/sim_telarray_configurations/6.0.2
   files:
-  - model/6.0.2/CTA-alpha-North_test.cfg
-  - model/6.0.2/CTA-North-LSTN-01_test.cfg
-  - model/6.0.2/CTA-North-LSTN-02_test.cfg
-  - model/6.0.2/CTA-North-MSTN-01_test.cfg
+  - model/6.0.2/CTAO-North-alpha.cfg
+  - model/6.0.2/CTAO-LSTN-01.cfg
+  - model/6.0.2/CTAO-LSTN-02.cfg
+  - model/6.0.2/CTAO-MSTN-01.cfg
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
 schema_version: 0.4.0
