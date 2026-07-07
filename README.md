@@ -20,3 +20,17 @@ Historical resources that predate this structure are stored below
 `simtools-tests/legacy/`. They are preserved for reference and compatibility,
 but are not generated, validated, linted, or otherwise supported by the current
 CI workflows.
+
+## Integration with simtools
+
+To run the integration tests using a specific test resource version, run
+the following command from the `simtools` root directory:
+
+```bash
+pytest --no-cov -n auto --model_version=6.0.2 \
+    --test-resources-path=../simtools-tests/simtools-tests/v0.34.0/integration_tests/ \
+    tests/integration_tests
+```
+
+This assumes that the `simtools-tests` repository is located in a sibling directory
+to `simtools`.
