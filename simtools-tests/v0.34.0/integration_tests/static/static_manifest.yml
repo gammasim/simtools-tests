@@ -9,9 +9,6 @@ files:
   - file_name: dummy_apptainer_image.sif
     sha256: 3238f87efc48cf3ffa8a1aaafe38e9362515191ecf2395de4fcf8227d5747644
     description: Dummy Apptainer image file for testing.
-  - file_name: grid_definition.yaml
-    sha256: 60e405d000c216af64da38f2e8ab2d4a487c54cca69798ccc8d537a75a3c545b
-    description: Example grid definition file for simulations.
   - file_name: info_test_camera_efficiency_change_LSTN-02.yml
     sha256: 3f6c60e7f9715043c67932c38dcac5341e871dc7f5d5f1e51dd011d7f98ce798
     description: Configuration for testing camera-efficiency changes.
@@ -39,9 +36,6 @@ files:
   - file_name: plot_single_pe_config_from_ecsv_file.yml
     sha256: 3a5c11fa076e560733b0f52461537bf1a96ff27bd890b5c865a5a53130c3614f
     description: Plotting configuration for ECSV input.
-  - file_name: production_simulation_config_metrics.yml
-    sha256: 21e4dce5da3b7bafedb2e5707f78a59aa41aa0eb3880ae04ffc16051d79910bb
-    description: Example production-simulation metrics configuration.
   - file_name: ray_tracing_North_LSTN-01_d10.0km_za20.0deg_validate_optics.ecsv
     sha256: 5e6c648779ad90650c900f0af94e0696916fe4064a1001961fd72467a639bb9b
     description: Example ray-tracing result in ECSV format.
