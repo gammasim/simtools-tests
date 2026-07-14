@@ -3,13 +3,13 @@ applications:
 - application: simtools-db-get-parameter-from-db
   configuration:
     export_model_file: true
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
     parameter: pm_photoelectron_spectrum
     parameter_version: 2.0.0
     site: North
     telescope: LSTN-design
 collection:
-  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/model_parameters
+  output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/model_parameters
   files:
   - spe_LST_2022-04-27_AP2.0e-4.dat
 schema_name: application_workflow.metaschema

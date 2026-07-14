@@ -3,20 +3,18 @@ applications:
 - application: simtools-simulate-prod
   configuration:
     array_layout_name:
-      by_version:
-        "<7.0.0": subsystem_lsts
-        ">=7.0.0": CTAO-South-LSTs
+    - subsystem_lsts
     azimuth_angle: South
-    core_scatter: 1 840 m
+    core_scatter: 1 840 m  # test file generation - too small for real production
     corsika_seeds: [534, 220, 1104, 382]
     corsika_he_interaction: epos
     corsika_le_interaction: urqmd
     energy_range: 100 GeV 100 GeV
     label: test
     log_level: DEBUG
-    model_version: 6.0.2
+    model_version: 7.0.0
     showers_per_run: 10
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south
     primary: gamma
     run_number: 7
     sim_telarray_seed: [1745, 290]
@@ -25,31 +23,29 @@ applications:
     zenith_angle: 40
 - application: simtools-simulate-prod
   configuration:
-    corsika_file: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.corsika.zst
+    corsika_file: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
     array_layout_name:
-      by_version:
-        "<7.0.0": subsystem_lsts
-        ">=7.0.0": CTAO-South-LSTs
+    - subsystem_lsts
     corsika_he_interaction: epos
     corsika_le_interaction: urqmd
     label: test
     log_level: DEBUG
-    model_version: 6.0.2
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
-    grid_output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp/simulate_prod_gamma_40_deg_south
+    model_version: 7.0.0
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south
+    grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south
     primary: gamma
     sim_telarray_instrument_seed: 1745
     sim_telarray_seed: [290]
     simulation_software: sim_telarray
     site: South
 collection:
-- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated
+- output_path: __INTEGRATION_TESTS_DIRECTORY__/generated
   files:
-  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.corsika.zst
-  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.simtel.zst
-- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/log_files
+  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+- output_path: __INTEGRATION_TESTS_DIRECTORY__/log_files
   files:
-  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_6.0.2_test.simtel.log.gz
+  - gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.log.gz
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
 schema_version: 0.4.0
