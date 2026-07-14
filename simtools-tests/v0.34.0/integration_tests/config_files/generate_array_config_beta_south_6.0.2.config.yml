@@ -3,15 +3,13 @@ applications:
 - application: simtools-generate-array-config
   configuration:
     array_layout_name:
-      by_version:
-        "<7.0.0": beta
-        ">=7.0.0": CTAO-South-Beta
+    - beta
     model_version: 6.0.2
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
     site: South
     label: test
 collection:
-  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/sim_telarray_configurations/6.0.2
+  output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/sim_telarray_configurations/6.0.2
   files:
   - CTAO-South-beta.cfg
   - CTAO-LSTS-01.cfg

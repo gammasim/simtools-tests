@@ -11,18 +11,18 @@ applications:
     corsika_he_interaction: epos
     corsika_le_interaction: urqmd
     energy_range: 30 GeV 300 GeV
-    corsika_limits: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/corsika_simulation_limits/corsika_limits.ecsv
+    corsika_limits: __INTEGRATION_TESTS_DIRECTORY__/generated/corsika_simulation_limits/corsika_limits.ecsv
     model_version: 7.0.0
     showers_per_run: 5
     number_of_runs: 2
     output_file: production_grid_points_horizontal.ecsv
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
     primary: gamma
     simulation_software: corsika_sim_telarray
     site: North
     view_cone: 0 deg 10 deg
 collection:
-  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated
+  output_path: __INTEGRATION_TESTS_DIRECTORY__/generated
   files:
   - production_grid_points_horizontal.ecsv
 schema_name: application_workflow.metaschema

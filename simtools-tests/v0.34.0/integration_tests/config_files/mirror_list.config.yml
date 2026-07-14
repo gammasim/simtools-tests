@@ -2,7 +2,7 @@
 applications:
 - application: simtools-db-get-parameter-from-db
   configuration:
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
     output_file: mirror_list-2.0.0.json
     parameter: mirror_list
     parameter_version: 2.0.0
@@ -12,13 +12,13 @@ applications:
   configuration:
     export_model_file: true
     export_model_file_as_table: true
-    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
     parameter: mirror_list
     parameter_version: 2.0.0
     site: North
     telescope: LSTN-01
 collection:
-  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/model_parameters
+  output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/model_parameters
   files:
   - mirror_list-2.0.0.json
   - mirror_CTA-N-LST1_v2019-03-31_rotated.dat
