@@ -8,10 +8,23 @@ CORSIKA exe: None
 Build options: None
 Runtime environment: ['podman', 'run', '--rm', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/..:/workdir/external/:ro', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/simtools-tests:/workdir/simtools-tests', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:0.34.0-rc2-v78050-v2025-11-30-rc-generic']
 ================================================================================
-Application: simtools-db-get-parameter-from-db
+Application: simtools-generate-array-config
 STDOUT:
+Name: LSTN-01	 Model: LSTN-01
+Name: LSTN-02	 Model: LSTN-02
+Name: LSTN-03	 Model: LSTN-03
+Name: LSTN-04	 Model: LSTN-04
+Name: MSTN-01	 Model: MSTN-01
+Name: MSTN-02	 Model: MSTN-02
+Name: MSTN-03	 Model: MSTN-03
+Name: MSTN-04	 Model: MSTN-04
+Name: MSTN-05	 Model: MSTN-05
+Name: MSTN-06	 Model: MSTN-06
+Name: MSTN-07	 Model: MSTN-07
+Name: MSTN-10	 Model: MSTN-10
+Name: MSTN-15	 Model: MSTN-15
 
 STDERR:
-INFO: simtools application db_get_parameter_from_db started with activity ID 019f6536-3164-709a-b8ee-7f252bf50076
+INFO: simtools application generate_array_config started with activity ID 019f6531-e3bb-705b-a4fd-6fc90d9f2e31
 INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
-INFO: Exported parameter output to /workdir/simtools-tests/v0.34.0/integration_tests/tmp_application_output/spe_LST_2022-04-27_AP2.0e-4.dat
+INFO: Writing array configuration file into /workdir/simtools-tests/v0.34.0/integration_tests/tmp_application_output/model/7.0.0/CTAO-North-CTAO-North-Alpha.cfg

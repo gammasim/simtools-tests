@@ -11,7 +11,7 @@ applications:
     corsika_le_interaction: urqmd
     energy_range: 100 GeV 100 GeV
     label: test
-    log_level: DEBUG
+    log_level: INFO
     model_version: 7.0.0
     showers_per_run: 10
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south
@@ -29,7 +29,7 @@ applications:
     corsika_he_interaction: epos
     corsika_le_interaction: urqmd
     label: test
-    log_level: DEBUG
+    log_level: INFO
     model_version: 7.0.0
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south
     grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south

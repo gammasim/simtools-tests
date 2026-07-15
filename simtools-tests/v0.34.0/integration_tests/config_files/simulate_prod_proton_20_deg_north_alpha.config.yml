@@ -11,7 +11,7 @@ applications:
     corsika_le_interaction: urqmd
     energy_range: 200 GeV 500 GeV  # test file generation - too narrow for real production
     label: test
-    log_level: DEBUG
+    log_level: INFO
     model_version: 7.0.0
     showers_per_run: 5
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_proton_20_deg_north_alpha

@@ -6,21 +6,21 @@ sim_telarray exe: None
 CORSIKA version: None
 CORSIKA exe: None
 Build options: None
-Runtime environment: None
+Runtime environment: ['podman', 'run', '--rm', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/..:/workdir/external/:ro', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/simtools-tests:/workdir/simtools-tests', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:0.34.0-rc2-v78050-v2025-11-30-rc-generic']
 ================================================================================
 Application: simtools-db-get-parameter-from-db
 STDOUT:
 
 STDERR:
-INFO: simtools application db_get_parameter_from_db started with activity ID 019f37cd-490e-710e-970b-d17e5237ec45
-INFO: simtools: 0.33.1.dev288+g2be9168a7 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application db_get_parameter_from_db started with activity ID 019f6535-b3f0-7365-9b9d-566692642b97
+INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
 
 ================================================================================
 Application: simtools-db-get-parameter-from-db
 STDOUT:
 
 STDERR:
-INFO: simtools application db_get_parameter_from_db started with activity ID 019f37cd-490f-7fe9-abbb-a704aff247d4
-INFO: simtools: 0.33.1.dev288+g2be9168a7 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
-INFO: Exported parameter output to /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.dat
-INFO: Exported parameter output to /workdir/external/simtools-tests-dev/simtools-tests/v0.34.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.ecsv
+INFO: simtools application db_get_parameter_from_db started with activity ID 019f6535-b3f1-7347-bf99-7f62b225971c
+INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
+INFO: Exported parameter output to /workdir/simtools-tests/v0.34.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.dat
+INFO: Exported parameter output to /workdir/simtools-tests/v0.34.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.ecsv
