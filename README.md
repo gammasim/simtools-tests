@@ -21,6 +21,18 @@ Historical resources that predate this structure are stored below
 but are not generated, validated, linted, or otherwise supported by the current
 CI workflows.
 
+## Test generation
+
+Example for test generation:
+
+```bash
+simtools-resources-test-generate \
+    --simtools_version v0.34.0 \
+    --test_directory . \
+    --runtime_environment_file simtools-tests/v0.34.0/integration_tests/run_time.yml \
+    --overwrite_collection_files
+```
+
 ## Integration with simtools
 
 To run the integration tests using a specific test resource version, run
