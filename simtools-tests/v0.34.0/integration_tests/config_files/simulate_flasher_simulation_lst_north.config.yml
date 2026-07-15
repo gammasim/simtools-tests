@@ -1,0 +1,21 @@
+---
+applications:
+- application: simtools-simulate-flasher
+  configuration:
+    run_mode: full_simulation
+    light_source: LSFN-design
+    model_version: 7.0.0
+    number_of_events: 5
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
+    site: North
+    telescope: LSTN-04
+    run_number: 10
+    flasher_photons: 1e6
+    test: true
+collection:
+  output_path: __INTEGRATION_TESTS_DIRECTORY__/generated
+  files:
+  - full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.simtel.zst
+schema_name: application_workflow.metaschema
+schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
+schema_version: 0.4.0

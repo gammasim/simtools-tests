@@ -1,0 +1,59 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: ['podman', 'run', '--rm', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/..:/workdir/external/:ro', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/simtools-tests:/workdir/simtools-tests', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:0.34.0-rc2-v78050-v2025-11-30-rc-generic']
+================================================================================
+Application: simtools-simulate-prod
+STDOUT:
+
+STDERR:
+INFO: simtools application simulate_prod started with activity ID 019f653c-c15d-745d-9806-176914d42a05
+INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
+WARNING: Using fixed test seeds: 1745,290
+INFO: Exporting CORSIKA input file to /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.input
+INFO: Submitting command /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.sh
+INFO: Job output/error streams /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.out / /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.err
+INFO: Validating simulations with 10 MC events and 10 shower events.
+INFO: Opening new file /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: Found zstd compressed file
+INFO: Consistent number of events in: /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst: shower events: 10 (expected: 10)
+INFO: Production run complete for primary gamma (1, 22, gamma) showers from 180 azimuth and 40 zenith at South site, using 7.0.0 model.
+INFO: Computing for corsika Simulations: Mean wall time/run [sec]: 52.0, #events/run: 10
+
+================================================================================
+Application: simtools-simulate-prod
+STDOUT:
+
+STDERR:
+INFO: simtools application simulate_prod started with activity ID 019f653c-c15e-70c3-810a-34695f27d864
+INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
+INFO: Opening new file simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: Found zstd compressed file
+INFO: Opening new file simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: Found zstd compressed file
+INFO: Opening new file simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: Found zstd compressed file
+INFO: Generated sim_telarray seeds - Instrument: 1745, Shower simulation: 290
+INFO: Writing array configuration file into /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/model/run000007/7.0.0/CTAO-South-subsystem_lsts.cfg
+INFO: Submitting command /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.sh
+INFO: Job output/error streams /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.out / /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.err
+INFO: Validating simulations with 10 MC events and 10 shower events.
+INFO: Validating metadata for /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Opening new file /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Found zstd compressed file
+INFO: Found metadata in sim_telarray file for 4 telescopes
+INFO: Metadata for sim_telarray file /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.log.gz')]
+INFO: Opening new file /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Found zstd compressed file
+INFO: Consistent number of events in sim_telarray output: shower events: 10 (expected 10), MC events: 10 (expected 10) (file: /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst)
+INFO: Production run complete for primary gamma (1, 22, gamma) showers from 180 azimuth and 40 zenith at South site, using 7.0.0 model.
+INFO: Computing for sim_telarray Simulations: Mean wall time/run [sec]: 6.0, #events/run: 10
+INFO: Packing output files for registering on the grid (simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south)
+INFO: Packed model files into /workdir/simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/model/run000007/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in simtools-tests/v0.34.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south

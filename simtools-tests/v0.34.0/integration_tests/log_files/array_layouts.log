@@ -1,0 +1,16 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: ['podman', 'run', '--rm', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/..:/workdir/external/:ro', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/simtools-tests:/workdir/simtools-tests', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:0.34.0-rc2-v78050-v2025-11-30-rc-generic']
+================================================================================
+Application: simtools-db-get-parameter-from-db
+STDOUT:
+
+STDERR:
+INFO: simtools application db_get_parameter_from_db started with activity ID 019f6530-b9b5-7c69-a807-47293549e4a1
+INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc

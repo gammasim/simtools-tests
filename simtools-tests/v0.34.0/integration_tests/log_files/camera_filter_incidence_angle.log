@@ -1,0 +1,17 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: ['podman', 'run', '--rm', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/..:/workdir/external/:ro', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/simtools-tests:/workdir/simtools-tests', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:0.34.0-rc2-v78050-v2025-11-30-rc-generic']
+================================================================================
+Application: simtools-db-get-parameter-from-db
+STDOUT:
+
+STDERR:
+INFO: simtools application db_get_parameter_from_db started with activity ID 019f6530-d7ab-72d0-9461-881c7586d705
+INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
+INFO: Exported parameter output to /workdir/simtools-tests/v0.34.0/integration_tests/tmp_application_output/sst_photon_incidence_angle_camera_window.ecsv
