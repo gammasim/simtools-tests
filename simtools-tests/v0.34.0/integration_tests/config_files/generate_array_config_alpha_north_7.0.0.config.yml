@@ -1,0 +1,20 @@
+---
+applications:
+- application: simtools-generate-array-config
+  configuration:
+    array_layout_name:
+    - CTAO-North-Alpha
+    model_version: 7.0.0
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
+    site: North
+    label: test
+collection:
+  output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/sim_telarray_configurations/7.0.0
+  files:
+  - model/7.0.0/CTAO-North-CTAO-North-Alpha.cfg
+  - model/7.0.0/CTAO-LSTN-01.cfg
+  - model/7.0.0/CTAO-LSTN-02.cfg
+  - model/7.0.0/CTAO-MSTN-01.cfg
+schema_name: application_workflow.metaschema
+schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
+schema_version: 0.4.0
