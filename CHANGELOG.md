@@ -16,9 +16,13 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
   - run test production with simtools v0.34.0.
   - update `production_configuration` to v1.1.0 and rename `corsika_limits_north.ecsv` to `corsika_limits.ecsv`.
   - update sim_telarray configuration file naming to new shorter file names.
-  - apply changes in CL for `simtools-simulate-prod` from `pack_for_grid_register` to `grid_output_path`.
-  - changed default simulation production model version to v7.0.0.
-  - remove obsolete static files grid_definition.yaml, production_dl2_fits/prod6_LaPalma-20deg_gamma_cone.N.Am-4LSTs09MSTs_ID0_reduced.fits.gz, production_dl2_fits/prod6_LaPalma-40deg_gamma_cone.N.Am-4LSTs09MSTs_ID0_reduced.fits.gz, production_simulation_config_metrics.yml
+  - apply CLI changes for `simtools-simulate-prod`: rename `pack_for_grid_register` to `grid_output_path`.
+  - change default simulation production model version to v7.0.0.
+  - remove obsolete static files:
+    - `grid_definition.yaml`
+    - `production_dl2_fits/prod6_LaPalma-20deg_gamma_cone.N.Am-4LSTs09MSTs_ID0_reduced.fits.gz`
+    - `production_dl2_fits/prod6_LaPalma-40deg_gamma_cone.N.Am-4LSTs09MSTs_ID0_reduced.fits.gz`
+    - `production_simulation_config_metrics.yml`
 
   ([#9](https://github.com/gammasim/simtools-tests/pull/9))
 
