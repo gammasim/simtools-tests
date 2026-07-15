@@ -53,7 +53,7 @@ jobs:
             version="${version_directory#simtools-tests/}"
             version="${version%/}"
             echo "Validating test resources for ${version}"
-            simtools-generate-test-resources \
+            simtools-resources-test-generate \
               --test_directory . \
               --simtools_version "${version}" \
               --overwrite_collection_files \

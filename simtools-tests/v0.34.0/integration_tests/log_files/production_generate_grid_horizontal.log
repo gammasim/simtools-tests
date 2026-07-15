@@ -1,0 +1,36 @@
+Running simtools applications
+Database name: {}
+Database version: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: ['podman', 'run', '--rm', '--arch', 'amd64', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/..:/workdir/external/:ro', '-v', '/Users/maierg/DESYCloud/CTA/Pipelines/MC-Pipeline/gammasim-tools/simtools-tests/simtools-tests:/workdir/simtools-tests', '--env-file', '.env', '--network', 'simtools-mongo-network', 'ghcr.io/gammasim/simtools-prod:0.34.0-rc2-v78050-v2025-11-30-rc-generic']
+================================================================================
+Application: simtools-production-generate-grid
+STDOUT:
+
+STDERR:
+INFO: simtools application production_generate_grid started with activity ID 019f6536-4fa9-7e04-a897-52c90a0c4055
+INFO: simtools: 0.34.0rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
+INFO: Loaded lookup table with 96 rows and columns: ['production_index', 'primary_particle', 'array_name', 'zenith', 'azimuth', 'nsb_level', 'lower_energy_limit', 'upper_radius_limit', 'viewcone_radius', 'br_energy_min', 'br_energy_max', 'br_core_scatter_max', 'br_viewcone_max']
+INFO: Applying job constraints: energy clipped to configured energy_range, core_scatter_max clipped by configured max and lookup, and view_cone min/max clipped by configured and lookup limits.
+INFO: Energy max zenith scaling: disabled.
+INFO: Generated 24 simulation rows.
+INFO: Minimum energy used by jobs is 30 GeV.
+INFO: Maximum energy used by jobs is 300 GeV.
+INFO: Minimum energy from configuration is 30 GeV.
+INFO: Maximum energy from configuration is 300 GeV.
+INFO: Minimum energy from lookup tables ranges from 4.5 to 6 GeV.
+INFO: Core scatter max used by jobs is 500 m.
+INFO: Core scatter max from configuration is 500 m.
+INFO: Core scatter max from lookup tables ranges from 1466.6 to 1743.73 m.
+INFO: Minimum view cone used by jobs is 0 deg.
+INFO: Maximum view cone used by jobs is 10 deg.
+INFO: Minimum view cone from configuration is 0 deg.
+INFO: Maximum view cone from configuration is 10 deg.
+INFO: Maximum view cone from lookup tables is 10 deg.
+INFO: Showers per job in generated job grid: minimum 5, maximum 5 (configured maximum 5).
+INFO: Total showers for the entire production: 120.
+INFO: Writing job grid with 24 rows to '/workdir/simtools-tests/v0.34.0/integration_tests/tmp_application_output/production_grid_points_horizontal.ecsv'.
