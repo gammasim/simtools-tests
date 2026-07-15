@@ -26,7 +26,7 @@ applications:
     zenith_angle: 20
 - application: simtools-write-trigger-histograms
   configuration:
-    array_element_list:
+    array_layout_name:
     - CTAO-North-Alpha
     event_data_file: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_20deg_north_alpha/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
     model_version: 7.0.0
@@ -35,12 +35,10 @@ applications:
     site: North
     energy_bins_per_decade: 10
     angular_distance_bin_width: 0.5
-
 collection:
 - output_path: __INTEGRATION_TESTS_DIRECTORY__/generated
   files:
   - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
-  - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.hdata.zst
   - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
   - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.trigger_histograms.hdf5
 - output_path: __INTEGRATION_TESTS_DIRECTORY__/log_files
