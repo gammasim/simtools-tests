@@ -1,0 +1,49 @@
+---
+applications:
+- application: simtools-simulate-prod
+  configuration:
+    array_layout_name:
+    - CTAO-North-Alpha
+    azimuth_angle: 0
+    core_scatter: 20 200 m   # test file generation - too small for real production
+    corsika_seeds: [534, 220, 1104, 382]
+    corsika_he_interaction: epos
+    corsika_le_interaction: urqmd
+    energy_range: 300 GeV 3 TeV  # test file generation - too narrow for real production
+    label: test
+    log_level: INFO
+    model_version: 7.0.0
+    showers_per_run: 5
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_20deg_north_alpha
+    grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_20deg_north_alpha
+    primary: gamma
+    run_number: 10
+    save_reduced_event_lists: true
+    sim_telarray_seed: [1745, 290]
+    simulation_software: corsika_sim_telarray
+    site: North
+    view_cone: 0 deg 10 deg
+    zenith_angle: 20
+- application: simtools-write-trigger-histograms
+  configuration:
+    array_layout_name:
+    - CTAO-North-Alpha
+    event_data_file: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_20deg_north_alpha/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
+    model_version: 7.0.0
+    output_file: gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.trigger_histograms.hdf5
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_20deg_north_alpha
+    site: North
+    energy_bins_per_decade: 10
+    angular_distance_bin_width: 0.5
+collection:
+- output_path: __INTEGRATION_TESTS_DIRECTORY__/generated
+  files:
+  - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+  - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
+  - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.trigger_histograms.hdf5
+- output_path: __INTEGRATION_TESTS_DIRECTORY__/log_files
+  files:
+  - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.log.gz
+schema_name: application_workflow.metaschema
+schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
+schema_version: 0.4.0

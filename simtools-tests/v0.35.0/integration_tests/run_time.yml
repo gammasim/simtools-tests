@@ -1,0 +1,10 @@
+---
+runtime_environment:
+  container_engine: podman
+  image: ghcr.io/gammasim/simtools-prod:0.34.0-rc2-v78050-v2025-11-30-rc-generic
+  network: simtools-mongo-network
+  environment_file: .env
+  options:
+    - "--arch amd64"
+    - "-v $PWD/..:/workdir/external/:ro"
+    - "-v $PWD/simtools-tests:/workdir/simtools-tests"
