@@ -1,0 +1,16 @@
+---
+applications:
+- application: simtools-db-get-parameter-from-db
+  configuration:
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
+    output_file: array_layouts-2.0.2.json
+    parameter: array_layouts
+    parameter_version: 2.0.2
+    site: North
+collection:
+  output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/model_parameters
+  files:
+  - array_layouts-2.0.2.json
+schema_name: application_workflow.metaschema
+schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
+schema_version: 0.4.0
