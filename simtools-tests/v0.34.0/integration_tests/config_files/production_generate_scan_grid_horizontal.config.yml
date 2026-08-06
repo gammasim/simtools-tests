@@ -8,41 +8,39 @@ applications:
 
     simulation_software: corsika_sim_telarray
 
-    azimuth_angle: 310 deg
+    azimuth_angle: 180 deg
     zenith_angle: 30 deg
 
     showers_per_run: 5
     number_of_runs: 2
 
-    core_scatter: 10 500 m
+    core_scatter: 10 1900 m
     view_cone: 0 deg 10 deg
 
     corsika_le_interaction: urqmd
     corsika_he_interaction: epos
 
-    nsb_energy_range: 30 GeV 300 GeV
+    nsb_energy_range: 20 GeV 30 GeV
     proton_energy_range: 2 GeV 2000 GeV
 
     nsb_scaling_factor: 2
 
     trigger_thresholds:
     - 220
-    - 2
+    - 1
     - 10
 
     output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
 
 collection:
-- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/nsb
+- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curve_scan_grids/nsb
   files:
-  - nsb/scan_grid.ecsv
   - nsb/overwrite_nsb_asum220.yaml
-  - nsb/overwrite_nsb_asum230.yaml
-- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/proton
+  - nsb/scan_grid.ecsv
+- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curve_scan_grids/proton
   files:
-  - proton/scan_grid.ecsv
   - proton/overwrite_proton_asum220.yaml
-  - proton/overwrite_proton_asum230.yaml
+  - proton/scan_grid.ecsv
 
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
