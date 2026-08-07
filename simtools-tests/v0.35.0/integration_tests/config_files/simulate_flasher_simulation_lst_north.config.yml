@@ -8,7 +8,7 @@ applications:
     number_of_events: 5
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
     site: North
-    telescope: LSTN-04
+    array_layout_name: LSTN-04
     run_number: 10
     flasher_photons: 1e6
     test: true
