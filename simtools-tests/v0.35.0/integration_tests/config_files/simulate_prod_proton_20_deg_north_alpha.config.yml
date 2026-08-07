@@ -18,7 +18,6 @@ applications:
     grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_proton_20_deg_north_alpha
     primary: proton
     run_number: 1
-    save_reduced_event_lists: true
     sim_telarray_seed: [1745, 290]
     simulation_software: corsika_sim_telarray
     site: North
