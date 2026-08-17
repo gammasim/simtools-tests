@@ -39,7 +39,7 @@ jobs:
             echo "Testing config file $file"
             simtools-validate-file-using-schema \
             --file_name "$file" \
-            --schema application_workflow.metaschema.yml \
+            --schema_file application_workflow.metaschema.yml \
             --data_type "schema" \
             --log_level DEBUG
           done < <(

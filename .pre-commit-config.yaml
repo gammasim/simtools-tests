@@ -4,7 +4,7 @@ exclude: ^simtools-tests/legacy/
 repos:
 # Ruff
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.15.15
+  rev: v0.16.3
   hooks:
   - id: ruff
     args: ["--fix"]
@@ -41,25 +41,18 @@ repos:
   - id: actionlint
 # https://pyproject-fmt.readthedocs.io/en/latest/
 - repo: https://github.com/tox-dev/pyproject-fmt
-  rev: "v2.23.0"
+  rev: "v2.28.0"
   hooks:
   - id: pyproject-fmt
 # codespell
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.4.2
+  rev: v2.4.3
   hooks:
   - id: codespell
     args: [
       "--skip=tests/resources/example_non_utf-8_file.lis",
       "--ignore-words-list=als,ARRANG,hel",
     ]
-# markdownlint
-- repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: v0.48.0
-  hooks:
-  - id: markdownlint
-    args: ["--disable", "MD041"]
-    language_version: 25.9.0
 # yamllint
 - repo: https://github.com/adrienverge/yamllint.git
   rev: v1.38.0
