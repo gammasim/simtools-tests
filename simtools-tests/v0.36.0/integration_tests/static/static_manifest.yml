@@ -69,3 +69,6 @@ files:
   - file_name: trigger_rates_user_spectrum_powerlaw.yml
     sha256: fdda243645c38b738e003ba4afec2abd76d0b0ac5407dcc05dda3e5805e4e783
     description: User power-law spectrum for trigger-rate calculations.
+  - file_name: validate_optics_offsets_xy.ecsv
+    sha256: a186a47d3819e798ffd15f1a68a11cd2e33b01e0d4058e8f9ad6f31feba61815
+    description: X and Y offsets in degrees.
