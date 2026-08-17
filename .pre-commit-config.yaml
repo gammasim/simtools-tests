@@ -53,11 +53,6 @@ repos:
       "--skip=tests/resources/example_non_utf-8_file.lis",
       "--ignore-words-list=als,ARRANG,hel",
     ]
-# markdownlint
-- repo: https://github.com/DavidAnson/markdownlint-cli2
-  rev: v0.23.2
-  hooks:
-    - id: markdownlint-cli2
 # yamllint
 - repo: https://github.com/adrienverge/yamllint.git
   rev: v1.38.0

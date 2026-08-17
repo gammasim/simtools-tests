@@ -42,4 +42,3 @@ INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/model/5.0.0/CTAO-North-alpha.cfg
-

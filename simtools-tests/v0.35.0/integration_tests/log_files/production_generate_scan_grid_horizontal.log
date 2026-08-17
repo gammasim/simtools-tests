@@ -59,4 +59,3 @@ INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools
 INFO: Expanding 2 base rows with 1 scan combinations.
 INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
 INFO: Scan grid with 2 rows written to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
-
