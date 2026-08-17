@@ -30,7 +30,6 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
 
 - Fix production configuration to use release version v0.1.0, ensuring test files for v0.33.0 can be downloaded properly. ([#10](https://github.com/gammasim/simtools-tests/pull/10))
 
-
 ## [v1.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v1.0.0) - 2026-06-30
 
 ### New Features

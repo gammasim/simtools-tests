@@ -16,4 +16,3 @@ STDERR:
 INFO: simtools application db_get_parameter_from_db started with activity ID 019fdbdd-4aab-7024-addd-56d3cac074d3
 INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/spe_LST_2022-04-27_AP2.0e-4.dat
-

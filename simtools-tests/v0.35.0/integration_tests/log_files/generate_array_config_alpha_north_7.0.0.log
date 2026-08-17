@@ -29,4 +29,3 @@ STDERR:
 INFO: simtools application generate_array_config started with activity ID 019fdbdd-1112-7295-a252-92003ca30b2b
 INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/model/7.0.0/CTAO-North-CTAO-North-Alpha.cfg
-

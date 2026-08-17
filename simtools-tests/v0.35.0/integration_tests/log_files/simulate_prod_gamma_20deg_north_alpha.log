@@ -58,4 +58,3 @@ INFO: Number of triggered events: 11
 INFO: Total simulated events: 100
 INFO: Total triggered events: 11
 INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.trigger_histograms.hdf5
-
