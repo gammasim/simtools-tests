@@ -16,4 +16,3 @@ STDERR:
 INFO: simtools application db_get_parameter_from_db started with activity ID 01a01a52-7766-7560-a818-e0ba6199cecf
 INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/Benn_LaPalma_sky_converted.lis
-

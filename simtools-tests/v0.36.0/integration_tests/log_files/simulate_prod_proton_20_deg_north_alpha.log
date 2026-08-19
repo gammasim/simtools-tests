@@ -46,4 +46,3 @@ INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 
 INFO: Packing output files for registering on the grid (../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha)
 INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/7.0.0/model_files_7.0.0.tar.gz
 INFO: Grid output files grid placed in ../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha
-

@@ -35,4 +35,3 @@ INFO: Maximum view cone from lookup tables is 10 deg.
 INFO: Showers per job in generated job grid: minimum 5, maximum 5 (configured maximum 5).
 INFO: Total showers for the entire production: 120.
 INFO: Writing job grid with 24 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/production_grid_points_horizontal.ecsv'.
-

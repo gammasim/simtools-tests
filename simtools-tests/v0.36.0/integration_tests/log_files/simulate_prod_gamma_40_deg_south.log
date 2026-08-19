@@ -68,4 +68,3 @@ INFO: Computing for sim_telarray Simulations: Mean wall time/run [sec]: 0.641426
 INFO: Packing output files for registering on the grid (../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south)
 INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/model/run000007/7.0.0/model_files_7.0.0.tar.gz
 INFO: Grid output files grid placed in ../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south
-

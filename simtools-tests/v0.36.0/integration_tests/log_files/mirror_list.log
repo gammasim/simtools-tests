@@ -25,4 +25,3 @@ INFO: simtools application db_get_parameter_from_db started with activity ID 01a
 INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.dat
 INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.ecsv
-

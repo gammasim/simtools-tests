@@ -21,4 +21,3 @@ INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtool
 INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/sub/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.err
 INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/sim_telarray/full_simulation_run000010_North_7.0.0_simtools-simulate-flasher_LSTN-04.simtel.log.gz')]
 INFO: Flasher simulation completed.
-
