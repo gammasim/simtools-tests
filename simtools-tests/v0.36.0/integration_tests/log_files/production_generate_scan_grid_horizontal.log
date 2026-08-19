@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.34.1.dev145+g5cee62a7f.d20260805
+simtools version: 0.35.1.dev47+ge7287e3d9
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -13,8 +13,8 @@ Application: simtools-generate-bias-curve-submissions
 STDOUT:
 
 STDERR:
-INFO: simtools application generate_bias_curve_submissions started with activity ID 019fdbdd-59a7-712d-a88b-0471e29e825b
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application generate_bias_curve_submissions started with activity ID 01a01a52-957d-73c6-b808-d20f719651e5
+INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Applying job constraints: energy clipped to configured energy_range, core_scatter_max clipped by configured max and lookup, and view_cone min/max clipped by configured and lookup limits.
 INFO: Energy max zenith scaling: disabled.
 INFO: Generated 2 simulation rows.
@@ -33,10 +33,10 @@ INFO: Maximum view cone from configuration is 10 deg.
 INFO: Maximum view cone from lookup tables is not available.
 INFO: Showers per job in generated job grid: minimum 5, maximum 5 (configured maximum 5).
 INFO: Total showers for the entire production: 10.
-INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/nsb/base_grid.ecsv'.
+INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/nsb/base_grid.ecsv'.
 INFO: Expanding 2 base rows with 1 scan combinations.
-INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/nsb/scan_grid.ecsv'.
-INFO: Scan grid with 2 rows written to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/nsb/scan_grid.ecsv'.
+INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/nsb/scan_grid.ecsv'.
+INFO: Scan grid with 2 rows written to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/nsb/scan_grid.ecsv'.
 INFO: Applying job constraints: energy clipped to configured energy_range, core_scatter_max clipped by configured max and lookup, and view_cone min/max clipped by configured and lookup limits.
 INFO: Energy max zenith scaling: disabled.
 INFO: Generated 2 simulation rows.
@@ -55,7 +55,8 @@ INFO: Maximum view cone from configuration is 10 deg.
 INFO: Maximum view cone from lookup tables is not available.
 INFO: Showers per job in generated job grid: minimum 5, maximum 5 (configured maximum 5).
 INFO: Total showers for the entire production: 10.
-INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/proton/base_grid.ecsv'.
+INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/proton/base_grid.ecsv'.
 INFO: Expanding 2 base rows with 1 scan combinations.
-INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
-INFO: Scan grid with 2 rows written to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
+INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
+INFO: Scan grid with 2 rows written to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
+

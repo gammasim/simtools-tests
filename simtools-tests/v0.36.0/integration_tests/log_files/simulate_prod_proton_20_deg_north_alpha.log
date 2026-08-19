@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.34.1.dev145+g5cee62a7f.d20260805
+simtools version: 0.35.1.dev47+ge7287e3d9
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -13,33 +13,37 @@ Application: simtools-simulate-prod
 STDOUT:
 
 STDERR:
-INFO: simtools application simulate_prod started with activity ID 019fdbde-0c00-77e6-a357-13c17606d68d
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application simulate_prod started with activity ID 01a01a53-49e1-74cc-92ff-9f4758c550c5
+INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 WARNING: Using fixed test seeds: 1745,290
-INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/7.0.0/CTAO-North-CTAO-North-Alpha.cfg
-INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha__test.multi_pipe.cfg
-INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/corsika/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.corsika.input
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/7.0.0/CTAO-North-CTAO-North-Alpha.cfg
+INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/multi_pipe/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha__test.multi_pipe.cfg
+INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/corsika/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.corsika.input
 INFO: Resolved CORSIKA configuration: HE=epos LE=urqmd HILOW=CORSIKA default geometry=flat executable=/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
-INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.sh
-INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.err
-INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.sh
+INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sub/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.err
+INFO: Executing 1 job(s) with backend local
+INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
+WARNING: Unable to decode metadata with encoding utf8: 'utf-8' codec can't decode byte 0xce in position 137: invalid continuation byte. Falling back to 'utf-8' with errors='ignore'.
 INFO: Shower reuse factor: 5 (viewcone: [0. 5.])
-INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
+INFO: Completed 1 job(s) with backend local
 INFO: Validating simulations with 25 MC events and 5 shower events.
-INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found metadata in sim_telarray file for 13 telescopes
-INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst is valid.
-INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.log.gz')]
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.log.gz')]
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Consistent number of events in sim_telarray output: shower events: 5 (expected 5), MC events: 25 (expected 25) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst)
-INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5: MC events: 25 (expected: 25)
+INFO: Consistent number of events in sim_telarray output: shower events: 5 (expected 5), MC events: 25 (expected 25) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst)
+INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/sim_telarray/run000001/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5: MC events: 25 (expected: 25)
 INFO: Production run complete for primary proton (14, 2212, p) showers from 180 azimuth and 20 zenith at North site, using 7.0.0 model.
-INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 4.822541978006484, #events/run: 5
-INFO: Packing output files for registering on the grid (simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha)
-INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/7.0.0/model_files_7.0.0.tar.gz
-INFO: Grid output files grid placed in simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha
+INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 4.785160256000381, #events/run: 5
+INFO: Packing output files for registering on the grid (../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha)
+INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha/model/run000001/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in ../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha
+

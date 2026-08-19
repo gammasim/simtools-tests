@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.34.1.dev145+g5cee62a7f.d20260805
+simtools version: 0.35.1.dev47+ge7287e3d9
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -13,56 +13,59 @@ Application: simtools-simulate-prod
 STDOUT:
 
 STDERR:
-INFO: simtools application simulate_prod started with activity ID 019fdbdd-e8c5-7780-a2a7-518a987717ff
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application simulate_prod started with activity ID 01a01a53-2666-7649-b854-bc57a012f03b
+INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 WARNING: Using fixed test seeds: 1745,290
-INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.input
+INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.input
 INFO: Resolved CORSIKA configuration: HE=epos LE=urqmd HILOW=CORSIKA default geometry=flat executable=/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
-INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.sh
-INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.err
+INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.sh
+INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.err
 WARNING: Reduced event lists can only be saved for sim_telarray simulations.
 INFO: Validating simulations with 10 MC events and 10 shower events.
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
 INFO: Found zstd compressed file
-INFO: Consistent number of events in: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst: shower events: 10 (expected: 10)
+INFO: Consistent number of events in: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst: shower events: 10 (expected: 10)
 INFO: Production run complete for primary gamma (1, 22, gamma) showers from 180 azimuth and 40 zenith at South site, using 7.0.0 model.
-INFO: Computing for corsika Simulations: Mean wall time/run [sec]: 3.3581833750067744, #events/run: 10
+INFO: Computing for corsika Simulations: Mean wall time/run [sec]: 3.3545500629988965, #events/run: 10
 
 ================================================================================
 Application: simtools-simulate-prod
 STDOUT:
 
 STDERR:
-INFO: simtools application simulate_prod started with activity ID 019fdbdd-e8c5-7780-a2a7-518bbdedc153
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
-INFO: Opening new file simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: simtools application simulate_prod started with activity ID 01a01a53-2666-7649-b854-bc588f4ea246
+INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Opening new file ../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
 INFO: Found zstd compressed file
-INFO: Opening new file simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: Opening new file ../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
 INFO: Found zstd compressed file
-INFO: Opening new file simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
+INFO: Opening new file ../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/corsika/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.zst
 INFO: Found zstd compressed file
 INFO: Generated sim_telarray seeds - Instrument: 1745, Shower simulation: 290
-INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/model/run000007/7.0.0/CTAO-South-subsystem_lsts.cfg
-INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.sh
-INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.err
-INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/model/run000007/7.0.0/CTAO-South-subsystem_lsts.cfg
+INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.sh
+INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sub/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.err
+INFO: Executing 1 job(s) with backend local
+INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
 INFO: Shower reuse factor: 1 (viewcone: [0. 0.])
-INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.reduced_event_data.hdf5
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.reduced_event_data.hdf5
+INFO: Completed 1 job(s) with backend local
 INFO: Validating simulations with 10 MC events and 10 shower events.
-INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
 INFO: Found metadata in sim_telarray file for 4 telescopes
-INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst is valid.
-INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.log.gz')]
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.log.gz')]
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Consistent number of events in sim_telarray output: shower events: 10 (expected 10), MC events: 10 (expected 10) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst)
-INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.reduced_event_data.hdf5: MC events: 10 (expected: 10)
+INFO: Consistent number of events in sim_telarray output: shower events: 10 (expected 10), MC events: 10 (expected 10) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst)
+INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/sim_telarray/run000007/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.reduced_event_data.hdf5: MC events: 10 (expected: 10)
 INFO: Production run complete for primary gamma (1, 22, gamma) showers from 180 azimuth and 40 zenith at South site, using 7.0.0 model.
-INFO: Computing for sim_telarray Simulations: Mean wall time/run [sec]: 0.6198887600039598, #events/run: 10
-INFO: Packing output files for registering on the grid (simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south)
-INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/model/run000007/7.0.0/model_files_7.0.0.tar.gz
-INFO: Grid output files grid placed in simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south
+INFO: Computing for sim_telarray Simulations: Mean wall time/run [sec]: 0.6414267239997571, #events/run: 10
+INFO: Packing output files for registering on the grid (../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south)
+INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south/model/run000007/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in ../simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south
+

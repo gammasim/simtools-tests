@@ -10,57 +10,57 @@
 # - {name: mirror_panel_id, datatype: int64, description: Mirror number in original list}
 # meta: !!omap
 # - {Name: mirror_list}
-# - {File: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.dat}
+# - {File: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.dat}
 # - {Description: Mirror positions and focal lengths}
 # - {context_from_sim_telarray: 'Mirror positions and focal lengths for the LST1 prototype
-#
+# 
 #     on La Palma, as based on the file newMirrorList.txt provided by LST team,
-#
+# 
 #     reformatted to required format by
-#
+# 
 #     awk ''{ printf "  %8.2f\t  %8.2f\t  %6.2f\t  %8.2f\t    %d\t   0.0\t    #%%  id=%d\n",$1,$2,$3,100.*$4,$5,$6 }''
-#
-#
+# 
+# 
 #     Updated on 31/03/19. Two mirrors (IDs 162 and 172) were exchanged for ones with similar focal lengths.
-#
+# 
 #     Updated also in November 2023:
-#
+# 
 #     coordinates were rotated 180 degrees and mirrored following e-mail discussions with the LST team
-#
+# 
 #     (Subject: MAGIC and sim_telarray reflector config files).
-#
-#
+# 
+# 
 #     Size and area covered as reported by ''draw_mirrors'':
-#
+# 
 #     198 mirrors are inside a radius of 12.393 m
-#
+# 
 #     Total surface area: 390.98 m**2
-#
+# 
 #     Total projected area: 388.38 m**2
-#
+# 
 #     Center of gravity at x=0.269 m, y=-0.000 m
-#
-#
+# 
+# 
 #     Columns:
-#
+# 
 #     1: x pos. [cm] (note: x -> down)
-#
+# 
 #     2: y pos. [cm] (note: y -> right when looking from camera)
-#
+# 
 #     3: diameter [cm], flat-to-flat
-#
+# 
 #     4: focal length [cm] or 0.
-#
+# 
 #     Note: positive, no RANDOM_FOCAL_LENGTH based values added in sim_telarray.
-#
+# 
 #     5: shape code (3)
-#
+# 
 #     6: z pos. = 0.0 -> will be calculated automatically based on paraboloid
-#
+# 
 #     #% separator keeping further data as comments.
-#
+# 
 #     7: mirror number in original list (not used)
-#
+# 
 #     '}
 # schema: astropy-2.0
 mirror_x mirror_y mirror_diameter focal_length shape_type mirror_z mirror_panel_id

@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.34.1.dev145+g5cee62a7f.d20260805
+simtools version: 0.35.1.dev47+ge7287e3d9
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -13,8 +13,8 @@ Application: simtools-production-generate-grid
 STDOUT:
 
 STDERR:
-INFO: simtools application production_generate_grid started with activity ID 019fdbdd-51e2-76f5-a4c1-691222b88257
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application production_generate_grid started with activity ID 01a01a52-8d92-70d4-beeb-27129e49dfc7
+INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Loaded lookup table with 96 rows and columns: ['production_index', 'primary_particle', 'array_name', 'zenith', 'azimuth', 'nsb_level', 'lower_energy_limit', 'upper_radius_limit', 'viewcone_radius', 'br_energy_min', 'br_energy_max', 'br_core_scatter_max', 'br_viewcone_max']
 INFO: Applying job constraints: energy clipped to configured energy_range, core_scatter_max clipped by configured max and lookup, and view_cone min/max clipped by configured and lookup limits.
 INFO: Energy max zenith scaling: disabled.
@@ -34,4 +34,5 @@ INFO: Maximum view cone from configuration is 10 deg.
 INFO: Maximum view cone from lookup tables is 10 deg.
 INFO: Showers per job in generated job grid: minimum 5, maximum 5 (configured maximum 5).
 INFO: Total showers for the entire production: 120.
-INFO: Writing job grid with 24 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/production_grid_points_horizontal.ecsv'.
+INFO: Writing job grid with 24 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/production_grid_points_horizontal.ecsv'.
+
