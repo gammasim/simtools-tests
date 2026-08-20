@@ -12,7 +12,7 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
 ### New Features
 
 - Added test and configuration files for simtools v0.35.0. ([#14](https://github.com/gammasim/simtools-tests/pull/14))
-- Add resources files for simtools v0.36.0. ([#17](https://github.com/gammasim/simtools-tests/pull/17))
+- Added resource files for simtools v0.36.0. ([#17](https://github.com/gammasim/simtools-tests/pull/17))
 
 ### Maintenance
 
