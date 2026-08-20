@@ -7,6 +7,19 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
 
 <!-- towncrier release notes start -->
 
+## [v3.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v3.0.0) - 2026-08-20
+
+### New Features
+
+- Added test and configuration files for simtools v0.35.0. ([#14](https://github.com/gammasim/simtools-tests/pull/14))
+- Add resources files for simtools v0.36.0. ([#17](https://github.com/gammasim/simtools-tests/pull/17))
+
+### Maintenance
+
+- Generating test resources for simtools-generate-bias-curve-submissions and
+  simtools-simulate-prod-htcondor-generator ([#15](https://github.com/gammasim/simtools-tests/pull/15))
+
+
 ## [v2.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v2.0.0) - 2026-07-15
 
 ### New Features
