@@ -13,7 +13,7 @@ applications:
     label: test
     log_level: INFO
     model_version: 7.0.0
-    showers_per_run: 5
+    showers_per_run: 15
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_proton_20_deg_north_alpha
     grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_proton_20_deg_north_alpha
     primary: proton

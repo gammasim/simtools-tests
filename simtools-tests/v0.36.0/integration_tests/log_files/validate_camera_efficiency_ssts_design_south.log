@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.35.1.dev47+ge7287e3d9
+simtools version: 0.36.0-rc2
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -19,8 +19,8 @@ STDOUT:
 [0m
 
 STDERR:
-INFO: simtools application validate_camera_efficiency started with activity ID 01a01a53-899e-7364-aa75-cf3ba6b76c3d
-INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application validate_camera_efficiency started with activity ID 01a01f2a-ff66-704e-9098-4d57d87c3924
+INFO: simtools: 0.36.0-rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
 INFO: Simulating CameraEfficiency
 INFO: Using X-max for shower efficiency: 300.00 g/cm2 (at observation level: 2147.00 m)
 WARNING: The camera filter distribution is a 2D one which testeff does not support. Instead of using the 2D distribution, the two dimensional distribution will be averaged, using the photon incidence angle distribution as weights. The incidence angle distribution is taken from the file - sst_photon_incidence_angle_camera_window.ecsv).

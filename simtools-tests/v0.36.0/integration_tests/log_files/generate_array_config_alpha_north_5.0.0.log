@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.35.1.dev47+ge7287e3d9
+simtools version: 0.36.0-rc2
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -26,8 +26,8 @@ Name: MSTN-10	 Model: MSTN-10
 Name: MSTN-15	 Model: MSTN-15
 
 STDERR:
-INFO: simtools application generate_array_config started with activity ID 01a01a52-4101-70ec-8975-d198d63905f4
-INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application generate_array_config started with activity ID 01a01f28-dda5-7378-9eea-cfb0eb7f8cd4
+INFO: simtools: 0.36.0-rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
 INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0

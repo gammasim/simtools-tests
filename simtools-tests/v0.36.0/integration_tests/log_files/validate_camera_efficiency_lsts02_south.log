@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.35.1.dev47+ge7287e3d9
+simtools version: 0.36.0-rc2
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -19,8 +19,8 @@ STDOUT:
 [0m
 
 STDERR:
-INFO: simtools application validate_camera_efficiency started with activity ID 01a01a53-6b82-7239-9592-292663970d88
-INFO: simtools: 0.35.1.dev47+ge7287e3d9 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application validate_camera_efficiency started with activity ID 01a01f2a-e1cd-774c-b426-0e64844f5f47
+INFO: simtools: 0.36.0-rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
 INFO: Simulating CameraEfficiency
 INFO: Using X-max for shower efficiency: 300.00 g/cm2 (at observation level: 2147.00 m)
 INFO: Running (1x) with command: ['/workdir/simulation_software/sim_telarray/bin/testeff', '-I', '-I/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/model/7.0.0', '-fnsb', '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/model/7.0.0/Benn_LaPalma_sky_converted.lis', '-nm', '-nsb-extra', '-alt', '2147.0', '-fatm', 'atm_trans_2147_1_10_2_0_2147.dat', '-flen', '29.237', '-fcur', '56.000', '-hpix', '4.9', '-fmir', 'mirror_CTA-S-LST_v2020-04-07_rotated.dat', '-fref', 'ref_LST_2020-04-23.dat', '-teltrans', '0.969', '-camtrans', '1.0', '-fflt', 'transmission_lst_window_No7-10_ave.dat', '-fang', 'CTA-LST_lightguide_eff_2020-04-12_average.dat', '-fwl', 'none', '-fqe', 'qe_lst2-4_20200318_high+low.dat', '200', '1000', '300.0', 'atmprof_ecmwf_south_winter_fixed.dat', '0.0']
