@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.34.1.dev145+g5cee62a7f.d20260805
+simtools version: 0.36.0-rc2
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -13,48 +13,51 @@ Application: simtools-simulate-prod
 STDOUT:
 
 STDERR:
-INFO: simtools application simulate_prod started with activity ID 019fdbdd-8642-74a6-9bfe-1d70a260a7f9
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application simulate_prod started with activity ID 01a01f29-5c47-72f0-befe-112ced0114ef
+INFO: simtools: 0.36.0-rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
 WARNING: Using fixed test seeds: 1745,290
-INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/model/run000010/7.0.0/CTAO-North-CTAO-North-Alpha.cfg
-INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/multi_pipe/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha__test.multi_pipe.cfg
-INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/corsika/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.corsika.input
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/model/run000010/7.0.0/CTAO-North-CTAO-North-Alpha.cfg
+INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/multi_pipe/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha__test.multi_pipe.cfg
+INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/corsika/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.corsika.input
 INFO: Resolved CORSIKA configuration: HE=epos LE=urqmd HILOW=CORSIKA default geometry=flat executable=/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
-INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sub/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.sh
-INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sub/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sub/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.err
-INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Submitting command /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sub/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.sh
+INFO: Job output/error streams /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sub/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.out / /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sub/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.err
+INFO: Executing 1 job(s) with backend local
+INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
 INFO: Shower reuse factor: 20 (viewcone: [ 0. 10.])
-INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
-INFO: Validating simulations with 100 MC events and 5 shower events.
-INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
+INFO: Completed 1 job(s) with backend local
+INFO: Validating simulations with 300 MC events and 15 shower events.
+INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found metadata in sim_telarray file for 13 telescopes
-INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst is valid.
-INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.log.gz')]
-INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
+INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.log.gz')]
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-INFO: Consistent number of events in sim_telarray output: shower events: 5 (expected 5), MC events: 100 (expected 100) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst)
-INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5: MC events: 100 (expected: 100)
+INFO: Consistent number of events in sim_telarray output: shower events: 15 (expected 15), MC events: 300 (expected 300) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst)
+INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/sim_telarray/run000010/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5: MC events: 300 (expected: 300)
 INFO: Production run complete for primary gamma (1, 22, gamma) showers from 0 azimuth and 20 zenith at North site, using 7.0.0 model.
-INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 17.826657770987367, #events/run: 5
-INFO: Packing output files for registering on the grid (simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha)
-INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/model/run000010/7.0.0/model_files_7.0.0.tar.gz
-INFO: Grid output files grid placed in simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha
+INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 65.70428959600395, #events/run: 15
+INFO: Packing output files for registering on the grid (simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha)
+INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/model/run000010/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha
 
 ================================================================================
 Application: simtools-write-trigger-histograms
 STDOUT:
 
 STDERR:
-INFO: simtools application write_trigger_histograms started with activity ID 019fdbdd-8642-74a6-9bfe-1d719e81b9d7
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application write_trigger_histograms started with activity ID 01a01f29-5c47-72f0-befe-112d4b513db8
+INFO: simtools: 0.36.0-rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
 INFO: Processing 1 trigger-histogram production pattern(s) with max_workers=1
-INFO: Starting ProcessPoolExecutor: n_items=1, max_workers=1, start_method=fork
-INFO: Reading event data from simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5 for {'SHOWERS': 'SHOWERS', 'FILE_INFO': 'FILE_INFO', 'TRIGGERS': 'TRIGGERS'} (1/1)
-INFO: Number of triggered events: 11
-INFO: Total simulated events: 100
-INFO: Total triggered events: 11
-INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.trigger_histograms.hdf5
+INFO: Executing 1 job(s) with backend local
+INFO: Reading event data from simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5 for {'SHOWERS': 'SHOWERS', 'FILE_INFO': 'FILE_INFO', 'TRIGGERS': 'TRIGGERS'} (1/1)
+INFO: Number of triggered events: 103
+INFO: Total simulated events: 300
+INFO: Total triggered events: 103
+INFO: Completed 1 job(s) with backend local
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp/simulate_prod_gamma_20deg_north_alpha/gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.trigger_histograms.hdf5

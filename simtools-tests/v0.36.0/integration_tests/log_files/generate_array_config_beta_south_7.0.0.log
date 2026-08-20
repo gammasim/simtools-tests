@@ -1,5 +1,5 @@
 Running simtools applications
-simtools version: 0.34.1.dev145+g5cee62a7f.d20260805
+simtools version: 0.36.0-rc2
 Database name: {}
 Database version: {}
 sim_telarray version: None
@@ -66,6 +66,6 @@ Name: SSTS-39	 Model: SSTS-39
 Name: SSTS-40	 Model: SSTS-40
 
 STDERR:
-INFO: simtools application generate_array_config started with activity ID 019fdbdd-1c8b-775b-b42d-06f53bcf5007
-INFO: simtools: 0.34.1.dev145+g5cee62a7f.d20260805 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
-INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/model/7.0.0/CTAO-South-CTAO-South-Beta.cfg
+INFO: simtools application generate_array_config started with activity ID 01a01f28-f339-7389-9655-fbc6ec1031b3
+INFO: simtools: 0.36.0-rc2 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/model/7.0.0/CTAO-South-CTAO-South-Beta.cfg

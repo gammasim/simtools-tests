@@ -39,5 +39,5 @@
 #       deg}
 # schema: astropy-2.0
 run_number primary azimuth_angle zenith_angle energy_min energy_max cores_per_shower core_scatter_max view_cone_min view_cone_max showers_per_run nsb_rate model_version array_layout_name corsika_le_interaction corsika_he_interaction overwrite_model_parameters scan_label
-1 proton 180.0 30.0 2.0 2000.0 10 1900.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/proton/overwrite_proton_asum220.yaml asum220
-2 proton 180.0 30.0 2.0 2000.0 10 1900.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.35.0/integration_tests/tmp_application_output/proton/overwrite_proton_asum220.yaml asum220
+1 proton 180.0 30.0 2.0 2000.0 10 1900.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/proton/overwrite_proton_asum220.yaml asum220
+2 proton 180.0 30.0 2.0 2000.0 10 1900.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.36.0/integration_tests/tmp_application_output/proton/overwrite_proton_asum220.yaml asum220

@@ -20,18 +20,18 @@
 # meta: !!omap
 # - cta:
 #     activity:
-#       end: '2026-08-07T10:55:43+00:00'
-#       id: 019fdbdd-51e2-76f5-a4c1-691222b88257
+#       end: '2026-08-20T12:33:07+00:00'
+#       id: 01a01f29-28d8-71bf-aecb-83a3df8a86a6
 #       name: simtools-production-generate-grid
-#       software: {name: simtools, version: 0.34.1.dev145+g5cee62a7f.d20260805}
-#       start: '2026-08-07T10:55:43+00:00'
+#       software: {name: simtools, version: 0.36.0-rc2}
+#       start: '2026-08-20T12:33:07+00:00'
 #       type: software
 #     contact: {name: G.Maier, orcid: 0000-0001-9868-4700, organization: CTAO}
 #     context:
 #       application_configuration:
 #         application: production_generate_grid
 #         arguments:
-#           activity_id: 019fdbdd-51e2-76f5-a4c1-691222b88257
+#           activity_id: 01a01f29-28d8-71bf-aecb-83a3df8a86a6
 #           application_label: production_generate_grid
 #           array_layout_name: [LSTN-01]
 #           axis:
@@ -43,7 +43,7 @@
 #           correct_for_b_field_alignment: true
 #           corsika_he_interaction: epos
 #           corsika_le_interaction: urqmd
-#           corsika_limits: simtools-tests/v0.35.0/integration_tests/downloaded/corsika_limits.ecsv
+#           corsika_limits: simtools-tests/v0.36.0/integration_tests/downloaded/corsika_limits.ecsv
 #           curved_atmosphere_min_zenith_angle: {unit: deg, value: 65.0}
 #           db_api_authentication_database: admin
 #           db_api_port: 27017
@@ -68,7 +68,7 @@
 #           model_version: 7.0.0
 #           number_of_runs: 2
 #           output_file: production_grid_points_horizontal.ecsv
-#           output_path: simtools-tests/v0.35.0/integration_tests/tmp_application_output
+#           output_path: simtools-tests/v0.36.0/integration_tests/tmp_application_output
 #           overwrite_collection_files: false
 #           primary: gamma
 #           primary_id_type: common_name
@@ -107,7 +107,7 @@
 #     instrument: {site: North}
 #     process: {type: simulation}
 #     product:
-#       creation_time: '2026-08-07T10:55:43+00:00'
+#       creation_time: '2026-08-20T12:33:07+00:00'
 #       data:
 #         category: SIM
 #         level: R1
@@ -116,14 +116,14 @@
 #         type: Service
 #       filename: production_grid_points_horizontal.ecsv
 #       format: ecsv
-#       id: 019fdbdd-56e5-7229-8c6b-4aad379311af
+#       id: 01a01f29-2d81-77a3-bcc1-5ce908b06ba0
 #     reference: {version: 2.0.0}
 # - {site: North}
 # - {simulation_software: corsika_sim_telarray}
 # - {coordinate_system: horizontal}
 # - {direction_grid_density: null}
 # - {direction_grid_density_unit: null}
-# - {corsika_limits: simtools-tests/v0.35.0/integration_tests/downloaded/corsika_limits.ecsv}
+# - {corsika_limits: simtools-tests/v0.36.0/integration_tests/downloaded/corsika_limits.ecsv}
 # - {job_grid_format_version: 0.4.0}
 # - job_grid_summary: {core_scatter_max_configured: 500 m, core_scatter_max_lookup_limit: '[1466.6, 1743.73] m', core_scatter_max_used: 500
 #       m, energy_max_configured: 300 GeV, energy_max_used: 300 GeV, energy_min_configured: 30 GeV, energy_min_lookup_limit: '[4.5, 6]

@@ -13,7 +13,7 @@ applications:
     label: test
     log_level: INFO
     model_version: 7.0.0
-    showers_per_run: 10
+    showers_per_run: 20
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_gamma_40_deg_south
     primary: gamma
     run_number: 7
