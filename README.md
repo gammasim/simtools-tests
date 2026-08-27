@@ -105,7 +105,7 @@ rm -rf "simtools-tests/${resource_version}/integration_tests/tmp" \
 ## Run simtools integration tests
 
 From the `simtools` repository root, select resources with the underscore option registered by
-`simtools/tests/conftest.py`:
+`tests/conftest.py`:
 
 ```bash
 resource_version="vX.Y.Z"
