@@ -33,6 +33,22 @@ simtools-resources-test-generate \
     --overwrite_collection_files
 ```
 
+To prepare a new version from an existing resource set, pass the source version
+as a template. The command copies the workflow configuration, static files, and
+runtime file, then creates fresh downloaded and generated resources:
+
+```bash
+simtools-resources-test-generate \
+    --simtools_version v0.37.0 \
+    --template_version v0.36.0 \
+    --test_directory . \
+    --overwrite_collection_files
+```
+
+Review the copied `run_time.yml` and update its container image for the new
+release before running the generation command. The target version must not
+already exist.
+
 ## Integration with simtools
 
 To run the integration tests using a specific test resource version, run
