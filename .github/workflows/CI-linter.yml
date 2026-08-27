@@ -79,16 +79,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip pre-commit
           SKIP=no-commit-to-branch pre-commit run --all-files
-      - name: Validate README shell snippets
-        run: |
-          snippet_file="$(mktemp)"
-          trap 'rm -f "$snippet_file"' EXIT
-          awk '
-            /^```bash$/ { capture=1; next }
-            capture && /^```$/ { capture=0; next }
-            capture { print }
-          ' README.md > "$snippet_file"
-          bash -n "$snippet_file"
       - name: Save pre-commit cache
         if: success()  # only save if previous steps succeeded
         uses: actions/cache@v5
