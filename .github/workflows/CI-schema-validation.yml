@@ -31,7 +31,8 @@ jobs:
 
       - name: Installation
         run: |
-          pip install -e .
+          python -m pip install \
+            "git+https://github.com/gammasim/simtools.git@main"
 
       - name: Integration test config file validation
         run: |
