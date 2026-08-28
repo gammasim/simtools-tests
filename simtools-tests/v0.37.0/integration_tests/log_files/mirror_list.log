@@ -13,7 +13,7 @@ Application: simtools-db-get-parameter-from-db
 STDOUT:
 
 STDERR:
-INFO: simtools application db_get_parameter_from_db started with activity ID 01a042a0-ea9b-72e5-8aa1-970258701b51
+INFO: simtools application db_get_parameter_from_db started with activity ID 01a047a3-511a-7058-803f-eb2d2a692ff0
 INFO: simtools: 0.36.1.dev24+ga7aed0c24 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 
 ================================================================================
@@ -21,7 +21,7 @@ Application: simtools-db-get-parameter-from-db
 STDOUT:
 
 STDERR:
-INFO: simtools application db_get_parameter_from_db started with activity ID 01a042a0-ea9b-72e5-8aa1-9703d0ceced5
+INFO: simtools application db_get_parameter_from_db started with activity ID 01a047a3-511a-7058-803f-eb2eedd7a406
 INFO: simtools: 0.36.1.dev24+ga7aed0c24 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.37.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.dat
 INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.37.0/integration_tests/tmp_application_output/mirror_CTA-N-LST1_v2019-03-31_rotated.ecsv
