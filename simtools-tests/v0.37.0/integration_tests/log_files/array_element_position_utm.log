@@ -13,5 +13,5 @@ Application: simtools-db-get-parameter-from-db
 STDOUT:
 
 STDERR:
-INFO: simtools application db_get_parameter_from_db started with activity ID 01a042a0-acae-7613-83cc-46e279e8aa6b
+INFO: simtools application db_get_parameter_from_db started with activity ID 01a04796-243d-72b1-b60e-2e9e8976d24b
 INFO: simtools: 0.36.1.dev24+ga7aed0c24 DB: CTAO-Simulation-Model v0.16.0 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
