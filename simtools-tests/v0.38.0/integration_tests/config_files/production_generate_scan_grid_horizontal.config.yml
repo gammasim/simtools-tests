@@ -25,12 +25,12 @@ applications:
 collection:
 - output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curve_scan_grids/nsb
   files:
-  - overwrite_nsb_asum220.yaml
-  - scan_grid.ecsv
+  - nsb/overwrite_nsb_asum220.yaml
+  - nsb/scan_grid.ecsv
 - output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curve_scan_grids/proton
   files:
-  - overwrite_proton_asum220.yaml
-  - scan_grid.ecsv
+  - proton/overwrite_proton_asum220.yaml
+  - proton/scan_grid.ecsv
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
 schema_version: 0.4.0
