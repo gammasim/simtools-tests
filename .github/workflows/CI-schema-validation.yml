@@ -23,6 +23,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v6
+        with:
+          # The PR validation below compares the checked-out revision with the
+          # base revision, so the complete history is required.
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -35,16 +39,24 @@ jobs:
             "git+https://github.com/gammasim/simtools.git@main"
 
       - name: Integration test config file validation
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
-          while IFS= read -r file; do
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            git diff --name-only "$BASE_SHA" HEAD -- \
+              'simtools-tests/**/integration_tests/config_files/*.config.yml' \
+              ':(exclude)simtools-tests/legacy/**'
+          else
+            find simtools-tests \
+              -path 'simtools-tests/legacy' -prune -o \
+              -path '*/integration_tests/config_files/*.config.yml' -type f -print
+          fi | while IFS= read -r file; do
+            [[ -f "$file" ]] || continue
             echo "Testing config file $file"
             simtools-validate-file-using-schema \
             --file_name "$file" \
             --schema_file application_workflow.metaschema.yml \
             --data_type "schema" \
             --log_level DEBUG
-          done < <(
-            find simtools-tests \
-              -path 'simtools-tests/legacy' -prune -o \
-              -path '*/integration_tests/config_files/*.config.yml' -type f -print
-          )
+          done
