@@ -1,0 +1,16 @@
+{
+    "file": false,
+    "instrument": "MSTx-NectarCam",
+    "model_parameter_schema_version": "0.1.0",
+    "parameter": "num_gains",
+    "parameter_version": "1.0.0",
+    "schema_version": "0.4.0",
+    "site": [
+        "North",
+        "South"
+    ],
+    "type": "int64",
+    "unique_id": null,
+    "unit": null,
+    "value": 2
+}

@@ -1,0 +1,17 @@
+Running simtools applications
+simtools version: 0.37.0
+Database name: {}
+Database release tag: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: None
+================================================================================
+Application: simtools-db-get-parameter-from-db
+STDOUT:
+
+STDERR:
+INFO: simtools application db_get_parameter_from_db started with activity ID 01a05d04-7c46-7144-8601-c6834ff34eda
+INFO: simtools: 0.37.0 DB: CTAO-Simulation-Model v0.17.1 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
