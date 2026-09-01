@@ -1,0 +1,31 @@
+Running simtools applications
+simtools version: 0.37.0
+Database name: {}
+Database release tag: {}
+sim_telarray version: None
+sim_telarray exe: None
+CORSIKA version: None
+CORSIKA exe: None
+Build options: None
+Runtime environment: None
+================================================================================
+Application: simtools-generate-array-config
+STDOUT:
+Name: LSTN-01	 Model: LSTN-01
+Name: LSTN-02	 Model: LSTN-02
+Name: LSTN-03	 Model: LSTN-03
+Name: LSTN-04	 Model: LSTN-04
+Name: MSTN-01	 Model: MSTN-01
+Name: MSTN-02	 Model: MSTN-02
+Name: MSTN-03	 Model: MSTN-03
+Name: MSTN-04	 Model: MSTN-04
+Name: MSTN-05	 Model: MSTN-05
+Name: MSTN-06	 Model: MSTN-06
+Name: MSTN-07	 Model: MSTN-07
+Name: MSTN-10	 Model: MSTN-10
+Name: MSTN-15	 Model: MSTN-15
+
+STDERR:
+INFO: simtools application generate_array_config started with activity ID 01a05d04-9df4-7280-8f43-330c02536dcb
+INFO: simtools: 0.37.0 DB: CTAO-Simulation-Model v0.17.1 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.38.0/integration_tests/tmp_application_output/model/7.0.0/CTAO-North-CTAO-North-Alpha.cfg
