@@ -21,8 +21,7 @@ collection:
   output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/model_parameters
   files:
   - mirror_list-2.0.0.json
-  - mirror_CTA-N-LST1_v2019-03-31_rotated.dat
-  - mirror_CTA-N-LST1_v2019-03-31_rotated.ecsv
+  - mirror_list-2.0.0.ecsv
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
 schema_version: 0.4.0
