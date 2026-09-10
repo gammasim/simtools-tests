@@ -48,4 +48,3 @@ INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests-de
 INFO: Grid output files grid placed in simtools-tests/v0.38.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha.config-3ac4306567ff4a23b6ed1ef76c1615d4/simulate_prod_proton_20_deg_north_alpha
 INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp/simulate_prod_proton_20_deg_north_alpha.config-3ac4306567ff4a23b6ed1ef76c1615d4/simulate_prod_proton_20_deg_north_alpha/proton_run000001_za20deg_azm180deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-

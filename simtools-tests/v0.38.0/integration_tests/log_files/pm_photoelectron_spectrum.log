@@ -17,4 +17,3 @@ STDERR:
 INFO: simtools application db_get_parameter_from_db started with activity ID 01a08af2-3fd1-73dc-8351-19c8fb51b1fb
 INFO: simtools: 0.36.1.dev29+g6baa4a660 DB: CTAO-Simulation-Model v0.17.2 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/pm_photoelectron_spectrum-2.0.0.ecsv
-

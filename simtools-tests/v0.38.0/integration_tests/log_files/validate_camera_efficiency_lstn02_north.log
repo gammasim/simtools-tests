@@ -25,7 +25,7 @@ INFO: simtools: 0.36.1.dev29+g6baa4a660 DB: CTAO-Simulation-Model v0.17.2 CORSIK
 INFO: Simulating CameraEfficiency
 INFO: Using X-max for shower efficiency: 300.00 g/cm2 (at observation level: 2156.00 m)
 INFO: Analyzing CameraEfficiency
-INFO: 
+INFO:
 {'meta': {'tel': 'LSTN-02', 'model_version': '7.0.0', 'zen': np.float64(0.0), 'az': np.float64(0.0), 'nsb': './simtools-tests/v0.38.0/integration_tests/generated/model_parameters/nsb_reference_spectrum-1.0.0-OBS-North.ecsv'}, 'reflectivity': {'value': np.float64(0.9029802223195403), 'description': 'Spectrum weighted reflectivity'}, 'cam_eff': {'value': np.float64(0.24975231782297724), 'description': 'Camera nominal efficiency with gaps (B-TEL-1170)'}, 'tel_eff': {'value': np.float64(0.24103969376976273), 'description': 'Telescope total efficiency with gaps (was A-PERF-2020)'}, 'tot_sens': {'value': np.float64(0.47960100879582823), 'description': 'Telescope total Cherenkov light efficiency / sqrt(total NSB efficiency) (A-PERF-2025/B-TEL-0090)'}}
 INFO: Exporting camera efficiency table to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_efficiency_North_LSTN-02_za0.0deg_azm000deg_shower.ecsv
 INFO: Exporting summary results to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_efficiency_North_LSTN-02_za0.0deg_azm000deg_shower_summary.yml
@@ -34,7 +34,7 @@ INFO: Saved plot shower efficiency to /cephfs/users/maierg/CTA/simpipe/simtools-
 INFO: Simulating CameraEfficiency
 INFO: Using X-max for nsb efficiency: 300.00 g/cm2 (at observation level: 2156.00 m)
 INFO: Analyzing CameraEfficiency
-INFO: 
+INFO:
 {'meta': {'tel': 'LSTN-02', 'model_version': '7.0.0', 'zen': np.float64(0.0), 'az': np.float64(0.0), 'nsb': './simtools-tests/v0.38.0/integration_tests/generated/model_parameters/nsb_reference_spectrum-1.0.0-OBS-North.ecsv'}, 'nsb_rate': {'value': <Quantity 0.27486936 GHz>, 'description': 'Expected NSB pixel rate for the provided NSB spectrum'}, 'nsb_ref': {'value': <Quantity 0.24832833 GHz>, 'description': 'Expected NSB pixel rate for the reference NSB'}}
 INFO: Exporting camera efficiency table to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_efficiency_North_LSTN-02_za0.0deg_azm000deg_nsb.ecsv
 INFO: Exporting summary results to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_efficiency_North_LSTN-02_za0.0deg_azm000deg_nsb_summary.yml
@@ -45,7 +45,7 @@ INFO: Simulating CameraEfficiency
 INFO: Using X-max for muon efficiency: 799.59 g/cm2 (at observation level: 2156.00 m)
 INFO: Analyzing CameraEfficiency
 INFO: Fraction of light in the wavelength range 200.0-290.0 nm: 0.0122
-INFO: 
+INFO:
 {'meta': {'tel': 'LSTN-02', 'model_version': '7.0.0', 'zen': np.float64(0.0), 'az': np.float64(0.0), 'nsb': './simtools-tests/v0.38.0/integration_tests/generated/model_parameters/nsb_reference_spectrum-1.0.0-OBS-North.ecsv'}, 'muon_frac': {'value': np.float64(0.012185273232140775), 'description': 'Fraction of light (from muons) in the wavelength range 200-290 nm (B-TEL-0095)'}}
 INFO: Exporting camera efficiency table to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_efficiency_North_LSTN-02_za0.0deg_azm000deg_muon.ecsv
 INFO: Exporting summary results to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_efficiency_North_LSTN-02_za0.0deg_azm000deg_muon_summary.yml
@@ -55,4 +55,3 @@ INFO: Plotting muon efficiency vs wavelength
 INFO: Saved plot muon efficiency to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/simtools-validate-camera-efficiency_LSTN-02_muon.png
 INFO: Fraction of light in the wavelength range 200.0-290.0 nm: 0.0122
 INFO: Writing results summary to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_efficiency_summary_North_LSTN-02_za0.0deg_azm000deg.yml
-

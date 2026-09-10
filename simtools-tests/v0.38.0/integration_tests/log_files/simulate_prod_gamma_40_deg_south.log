@@ -71,4 +71,3 @@ INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests-de
 INFO: Grid output files grid placed in simtools-tests/v0.38.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south.config-c2a82c3744bb485ea14a62c56acae607/simulate_prod_gamma_40_deg_south
 INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp/simulate_prod_gamma_40_deg_south.config-c2a82c3744bb485ea14a62c56acae607/simulate_prod_gamma_40_deg_south/gamma_run000007_za40deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
 INFO: Found zstd compressed file
-
