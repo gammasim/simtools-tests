@@ -4,7 +4,7 @@ meta:
   model_version: 7.0.0
   zen: 0.0
   az: 0.0
-  nsb: /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/generated/model_parameters/nsb_reference_spectrum-1.0.0-OBS-North.ecsv
+  nsb: nsb_reference_spectrum-1.0.0-OBS-North.ecsv
 reflectivity:
   value: 0.9389792911665876
   description: Spectrum weighted reflectivity

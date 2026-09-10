@@ -3,7 +3,7 @@ applications:
 - application: simtools-validate-camera-efficiency
   configuration:
     model_version: 7.0.0
-    nsb_spectrum: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/model_parameters/nsb_reference_spectrum-1.0.0-OBS-South.ecsv
+    nsb_spectrum: ${generated:model_parameters/nsb_reference_spectrum-1.0.0-OBS-South.ecsv}
     output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
     site: South
     telescope: MSTx-FlashCam
