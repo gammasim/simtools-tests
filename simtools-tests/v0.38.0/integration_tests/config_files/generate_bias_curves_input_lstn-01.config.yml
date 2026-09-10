@@ -11,14 +11,14 @@ applications:
     array_layout_name: LSTN-01
     azimuth_angle: 0.0
     zenith_angle: 20.0
-    showers_per_run: 5
+    showers_per_run: 1000
     core_scatter: 20 1900 m
     view_cone: 0 deg 5 deg
     number_of_runs: 1
     trigger_thresholds:
     - 290
     - 2
-    - 30
+    - 40
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
 
 - application: simtools-simulate-prod
