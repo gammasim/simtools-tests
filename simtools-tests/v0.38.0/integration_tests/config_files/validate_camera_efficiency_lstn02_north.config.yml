@@ -9,7 +9,7 @@ applications:
     telescope: LSTN-02
     parameter_version: 0.0.99
     write_reference_nsb_rate_as_parameter: true
-    zenith_angle: 0.
+    zenith_angle: 0.0
 collection:
   output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/camera_efficiency
   files:

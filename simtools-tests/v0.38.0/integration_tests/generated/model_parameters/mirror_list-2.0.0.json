@@ -1,13 +1,13 @@
 {
     "file": true,
     "instrument": "LSTN-01",
-    "model_parameter_schema_version": "0.1.0",
+    "model_parameter_schema_version": "0.3.0",
     "parameter": "mirror_list",
     "parameter_version": "2.0.0",
     "schema_version": "0.4.0",
     "site": "North",
-    "type": "string",
+    "type": "file",
     "unique_id": null,
     "unit": null,
-    "value": "mirror_CTA-N-LST1_v2019-03-31_rotated.dat"
+    "value": "mirror_list-2.0.0.ecsv"
 }

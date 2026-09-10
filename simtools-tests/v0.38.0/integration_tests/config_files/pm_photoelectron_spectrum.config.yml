@@ -4,6 +4,7 @@ applications:
   configuration:
     export_model_file: true
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
+    output_file: pm_photoelectron_spectrum-2.0.0.ecsv
     parameter: pm_photoelectron_spectrum
     parameter_version: 2.0.0
     site: North

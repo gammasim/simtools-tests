@@ -1,5 +1,6 @@
 Running simtools applications
-simtools version: 0.37.0
+simtools version: 0.36.1.dev29+g6baa4a660
+Model source: {'type': 'filesystem', 'path': '/cephfs/users/maierg/CTA/simpipe/simulation-models-dev1'}
 Database name: {}
 Database release tag: {}
 sim_telarray version: None
@@ -26,19 +27,7 @@ Name: MSTN-10	 Model: MSTN-10
 Name: MSTN-15	 Model: MSTN-15
 
 STDERR:
-INFO: simtools application generate_array_config started with activity ID 01a05d04-927b-736f-8db0-6e0cfa6451bf
-INFO: simtools: 0.37.0 DB: CTAO-Simulation-Model v0.17.1 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Updating legacy model parameter fadc_pulse_shape from schema version 0.1.0 to 0.2.0
-INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.38.0/integration_tests/tmp_application_output/model/5.0.0/CTAO-North-alpha.cfg
+INFO: simtools application generate_array_config started with activity ID 01a08af1-be55-74d0-9bee-f9604adb955d
+INFO: simtools: 0.36.1.dev29+g6baa4a660 DB: CTAO-Simulation-Model v0.17.2 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/model/5.0.0/CTAO-North-alpha.cfg
+

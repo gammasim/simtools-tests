@@ -1,5 +1,6 @@
 Running simtools applications
-simtools version: 0.37.0
+simtools version: 0.36.1.dev29+g6baa4a660
+Model source: {'type': 'filesystem', 'path': '/cephfs/users/maierg/CTA/simpipe/simulation-models-dev1'}
 Database name: {}
 Database release tag: {}
 sim_telarray version: None
@@ -13,6 +14,7 @@ Application: simtools-db-get-parameter-from-db
 STDOUT:
 
 STDERR:
-INFO: simtools application db_get_parameter_from_db started with activity ID 01a05d04-8b20-7072-ba83-a804f289a8e1
-INFO: simtools: 0.37.0 DB: CTAO-Simulation-Model v0.17.1 CORSIKA: 78050 sim_telarray: v2025-11-30-rc
-INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.38.0/integration_tests/tmp_application_output/sst_photon_incidence_angle_camera_window.ecsv
+INFO: simtools application db_get_parameter_from_db started with activity ID 01a08af1-b51c-7155-80e4-100a6b69c791
+INFO: simtools: 0.36.1.dev29+g6baa4a660 DB: CTAO-Simulation-Model v0.17.2 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Exported parameter output to /cephfs/users/maierg/CTA/simpipe/simtools-tests-dev1/simtools-tests/v0.38.0/integration_tests/tmp_application_output/camera_filter_photon_incident_angle-1.0.0.ecsv
+
