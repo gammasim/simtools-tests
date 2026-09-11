@@ -27,10 +27,12 @@ collection:
   files:
   - nsb/scan_config.yaml
   - nsb/scan_grid.ecsv
+  - nsb/base_grid.ecsv
 - output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curve_scan_grids/proton
   files:
   - proton/scan_config.yaml
   - proton/scan_grid.ecsv
+  - proton/base_grid.ecsv
 schema_name: application_workflow.metaschema
 schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
 schema_version: 0.4.0
