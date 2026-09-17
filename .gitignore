@@ -4,3 +4,6 @@
 # VS Code settings
 .vscode
 simtools.code-workspace
+
+# Local environment variables and secrets
+.env

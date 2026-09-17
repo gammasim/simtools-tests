@@ -4,7 +4,7 @@ exclude: ^simtools-tests/legacy/
 repos:
 # Ruff
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.16.4
+  rev: v0.16.8
   hooks:
   - id: ruff
     args: ["--fix"]
@@ -41,7 +41,7 @@ repos:
   - id: actionlint
 # https://pyproject-fmt.readthedocs.io/en/latest/
 - repo: https://github.com/tox-dev/pyproject-fmt
-  rev: "v2.28.1"
+  rev: "v2.29.4"
   hooks:
   - id: pyproject-fmt
 # codespell
