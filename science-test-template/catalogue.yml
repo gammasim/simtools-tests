@@ -1,0 +1,26 @@
+---
+version: 1
+
+tests:
+  production.gamma.grid:
+    workflow: workflows/production/gamma_job_grid.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: []
+  production.gamma:
+    workflow: workflows/production/gamma_submit.yml
+    sites: [north, south]
+    tier: release-prod
+    # Keep this unlinked until the runner supports a manual approval gate.
+    depends_on: []
+  derive.trigger_histograms:
+    workflow: workflows/derivation/trigger_histograms.yml
+    sites: [north, south]
+    tier: release-light
+    # Production completion is currently a manual gate after HTCondor submission.
+    depends_on: []
+  compare.trigger_histograms:
+    workflow: workflows/comparison/trigger_histograms.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: [derive.trigger_histograms]

@@ -1,0 +1,23 @@
+---
+applications:
+- application: simtools-compare-productions
+  configuration:
+    comparison_level: events
+    baseline_path: __SCIENCE_BASELINE_SITE_ROOT__/derived/trigger_histograms/
+    candidate_path: __SCIENCE_CANDIDATE_SITE_ROOT__/derived/trigger_histograms/
+    select:
+    - configuration.primary=gamma
+    - configuration.site=__SCIENCE_SITE__
+    array_layout_name:
+    - __SCIENCE_ARRAY_LAYOUT__
+    compare_by:
+    - configuration.atmosphere
+    output_path: __SCIENCE_REPORT_ROOT__
+schema_name: application_workflow.metaschema
+schema_version: 0.5.0
+collection:
+  output_path: __SCIENCE_REPORT_ROOT__
+  files:
+  - comparison_statistics.json
+  - comparison_statistics.meta.yml
+  write_inventory: true
