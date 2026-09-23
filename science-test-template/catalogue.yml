@@ -22,3 +22,9 @@ tests:
     sites: [north, south]
     tier: release-light
     depends_on: [derive.trigger_histograms]
+  compare.compute_resources:
+    workflow: workflows/comparison/compute_resources.yml
+    sites: [north, south]
+    tier: release-light
+    # Production completion is currently a manual gate after HTCondor submission.
+    depends_on: []

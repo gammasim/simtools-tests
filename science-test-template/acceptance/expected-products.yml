@@ -6,3 +6,6 @@ tests:
   - south
   compare.trigger_histograms:
   - comparison_statistics.json
+  compare.compute_resources:
+  - resource_requirements.md
+  - resource_requirements.ecsv
