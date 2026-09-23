@@ -1,6 +1,4 @@
 ---
-version: 1
-
 tests:
   production.gamma.grid:
     workflow: workflows/production/gamma_job_grid.yml
