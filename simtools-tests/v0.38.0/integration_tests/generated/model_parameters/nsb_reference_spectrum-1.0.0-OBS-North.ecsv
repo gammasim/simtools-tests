@@ -1,0 +1,542 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: wavelength, unit: nm, datatype: float64, description: Wavelength}
+# - {name: differential_photon_rate, unit: 1e+09 / (nm s sr m2), datatype: float64, description: Differential photon rate}
+# meta: !!omap
+# - {'Description:': NSB spectrum}
+# - {context_from_sim_telarray: "Nightsky spectrum from Benn & Ellison (astro-ph/9909153 actually), in original units and converted\n\
+#     to photons per wavelength interval, time, area, and solid angle.\n\nConversion factor from column two [microJy/(arcsec)^2] to column\
+#     \ 3 [10^9 ph. / (nm s m^2 sr)] is\n1e-6*1e-23*1e-7*1e4/(lambda*1e-9/6.6260696e-34)*(pi/180./3600.)**(-2)/1e9/1e9 = 642.09/lambda\n\
+#     [micro][Jy->erg][erg->J][cm**-2->m**-2][1/(h*nu)/(d lambda/d nu)][arcsec**-2->sr**-1][1/m->1/nm][1/s->1/ns]\nwhere lambda is the\
+#     \ value in column one [nm] and (h*nu)*(d lambda/d nu) = h * lambda, using\nh = 6.6260696e-34 J*s,\n1 Jy = 10^-23 erg s^-1 cm^-2\
+#     \ Hz^-1,\n1 microJy = 1e-6 * 1e-23 erg / s / cm^2 / Hz = 1e-6 * 1e-23 * 1e-7 J / s * 1e4 / m^2 / Hz = 1e-32 J / (s m^2 Hz).\n\n\
+#     See also notes at the end of this file for further units and other sources of NSB.\n\nLambda     fnu (original)     diff. photon\
+#     \ rate\n[nm ]   [microJy/(arcsec)^2] [10^9 / (nm s m^2 sr)]\n\nResults from the conversion into other commonly used units:\nIn the\
+#     \ wavelength range 300 to 650 nm we have:\n2.60862e+12 photons / m^2 / s / sr\nIn a pixel of diameter 4.100 cm at a mirror of 106.3\
+#     \ m^2 area and 15.00 m focal length we get:\n1.79415e+09 photons per pixel / s (without any losses).\nIn the V band we have a mean\
+#     \ flux of 9.98773 microJansky/(arc sec)^2,\ncorresponding to magn. 21.40 / (arc sec)^2.\n\nFor comparison, NSB measurements at the\
+#     \ La Palma HEGRA/MAGIC site are:\nMirzoyan & Lorenz (1994): (1.75+-0.4) * 10^{12} photons/(m^2 s sr) in 300-600 nm range.\nPreuss\
+#     \ et al. (2002): (2.60+-0.35) * 10^{12} photons/(m^2 s sr) in 300-650 nm range\nfor Alt > 60 deg, |b| > 20 deg., no stars brighter\
+#     \ than mag. 6.\nScaling the Mirzoyan & Lorenz measurement to the 300-650 nm range of the Preuss et al.\nmeasurement, using the B&E\
+#     \ spectral shape, would be (2.41+-0.55) * 10^{12} photons/(m^2 s sr)\nand the weighted average of the two would be (2.55+-0.30)\
+#     \ * 10^{12} photons/(m^2 s sr),\nconsistent with the spectrum as in this file.\n\nWhile the astro-ph/9909153 paper describes the\
+#     \ spectrum just as \"typical spectrum\",\nthe \"Technical Note 115\", apparently showing the same spectrum, describes it\nas taken\
+#     \ in March 1991. That would be near solar maximum and the 1990-1992\naverage V band sky brightness on La Palma in Table 1 of TN115\
+#     \ of magn. 21.5 / (arc sec)^2\nis consistent with the 21.40 derived above and with solar maximum expectations.\n\nAmong the other\
+#     \ non-SI units are those for the luminance, like the Lambert (\"la\"),\nor Stilb (\"sb\"), related to the SI unit for luminous intensity\
+#     \ Candela (\"cd\"):\n1 la = (1/pi) sb = (10^4/pi) cd/m^2.\n1 Candela is the luminous intensity of a monochromatic light source of\n\
+#     540e12 Hertz frequency (i.e.555 nm) emitting a radiant intensity of 1/683 Watt / steradian.\nFor other wavelengths the sensitivity\
+#     \ curve of the human eye for bright light is applied.\nThus better avoided and not really applicable for Cherenkov light background.\n\
+#     \nA V band sky brightness of 22.0 mag within 1 (arc sec)^2,\nabout the darkest sky ever observed in zenith for clear sky,\ncorresponds\
+#     \ to f_nu of 5.77 microJy/(arc sec)^2 near 550 nm or\n8.10e9 photons/(nm s m^2 sr). According to darksky.org information sheet #99\n\
+#     it corresponds to a luminance of 2e-4 cd/m^2 or 54 nanoLamberts\n(note: direct conversion at 550 nm - at the peak of the human eye\
+#     \ efficacy -\nwould result in about 84 nanoLamberts; the efficacy curve really matters).\nB&E TN115 quote a V band brightness of\
+#     \ 21.9 mag for high elevation,\nhigh galactic latitude, high ecliptic latitude and near solar minimum,\nwith typical increase of\
+#     \ 0.4 mag at solar maximum, 0.4 mag at low ecliptic\nlatitude, 0.25 mag at airmass 1.5 (zenith angle 48 deg.), and < 0.1 mag\nchange\
+#     \ during the night.\n\nFor any conversion to astronomical magnitude units, keep in mind that\n1 Jy = 10^-23 erg sec^-1 cm^-2 Hz^-1,\n\
+#     resulting in the transformation\n1 Jy = 1.51e7 photons sec^-1 m^-2 (dlambda/lambda)^-1\n\nThe most physical magnitude system is\
+#     \ the AB system, with\nm(AB) = -2.5 log10(f_nu) - 48.60, with f_nu in erg/(s cm^2 Hz)\nor approximately\nm(AB) = -2.5 log10(f_nu\
+#     \ / 3610 Jy).\nThe Johnson system has the following fluxes for magnitude zero:\nFilt. lambda  dlambda   mag 0\nname   [nm]   FWHM[nm]\
+#     \   [Jy]\nU \t 360\t 150 \t1810\nB \t 440\t 220 \t4260\nV \t 550 \t 160\t3640\nR \t 640\t 230\t3080\nI \t 790\t 190\t2550\n\nTransformations\
+#     \ between AB and Johnson magnitudes:\nB\t=   B(AB) + 0.163\nV\t=   V(AB) + 0.044\nR\t=   R(AB) - 0.055\nI\t=   I(AB) - 0.309\n\n\
+#     A conversion between V magnitudes per square arc seconds (ms2) and\nnanoLamberts (nL) is: nL = 34.08 exp(20.7233 - 0.92104 ms2)\n\
+#     [Krisciunas and Schaefer, PASP 103 (1991), 1033.]\nThe S10 unit (one mag 10 star per square degree) is 0.263 nL.\nAlso from Krisciunas\
+#     \ and Schaefer is the sky brightness b [nL] as a\nfunction of zenith angle:\nb(z) = b(0) * 10^(-0.4*k*(X-1)) where X=(1-0.96*sin^2(z))^(-0.5)\n\
+#     and k is the extinction coefficient in magnitudes per air mass X.\nThey give the following set of equations for the sky brightness\
+#     \ due\nto moon light at separations above 10 degrees:\nI = 10^(-0.4*(3.84 + 0.026*abs(alpha) + 4e-9*alpha^4 - o))\nf(rho) = 10^5.36\
+#     \ * (1.06+(cos(rho))^2) + 10^(6.15-rho/40)\nX(z) = (1 - 0.96*(sin(z))^2)^(-0.5)\nbm = f(rho) * I * 10^(-0.4*k*X(zm)) * (1-10^(-0.4*k*X(z)))\n\
+#     with lunar phase angle: alpha [deg], moon/sky separation: rho, extinction\ncoefficient: k, zenith angle of the moon: zm, zenith\
+#     \ angle of the\nsky position: z. This is ignoring the \"opposition effect\" where the\nmoon can be up to 35% brighter (for |alpha|\
+#     \ < 7 deg), i.e. o=0.\nTo include this effect use something like o(alpha)=0.32*exp(-0.5*(alpha/5 deg)^2).\nResulting change in V-band\
+#     \ sky brightness (no moon: b):\nDelta V = -2.5*log10((bm + b(z))/b(z))\n\nThe following are NSB brightess values for different moon\
+#     \ phases\n(data from CTIO (A.R. Walker 1987), via wikipedia or from ESO):\nLunar Age \tU \tB \tV \tR \tI      z\n(days)\n0     22.0\
+#     \    22.7    21.8    20.9    19.9    18.8\n3     21.5    22.4    21.7    20.8    19.9    18.8\n7     19.9    21.6    21.4    20.6\
+#     \    19.7    18.6\n10     18.5    20.7    20.7    20.3    19.5    18.3\n14     17.0    19.5    20.0    19.9    19.2    18.1\nwith\
+#     \ the values in the z filter band coming from\nhttp://www.eso.org/observing/etc/doc/helpfors.html#atmosphere .\n(Note that the spectrum\
+#     \ of moon light is similar to the solar spectrum).\n\nA similar table for La Palma (http://www.tng.iac.es/info/la_palma_sky.html)\n\
+#     Days from new moon\nU       B       V       R       I       z Gunn\n0     22.5    22.8    21.8    20.9    19.7    19.3\n3     22.3\
+#     \    22.5    21.6    20.8    19.6    19.2\n7     21.4    21.4    20.7    20.2    19.1    18.7\n10     20.4    20.3    19.6    19.2\
+#     \    18.2    17.8\n14     19.3    19.1    18.5    18.2    17.3    16.9\n\nBe aware that the two tables differ substantially in spectral\
+#     \ behaviour\n(for CTIO differences in R and I are much smaller than at short\nwavelengths; for La Palma this is not the case).\n\
+#     \nThe Benn & Ellison spectral data should be valid far from the galactic plane,\nalso from the ecliptic (little zodiacal light,\
+#     \ which also has\na different spectrum), apparently near solar maximum (not explicit\nin the paper but indicated in TN115), no moon,\
+#     \ _between_ stars\nbrighter than V=20 mag, corresponding (as reported by B&E TN 115 as 1990-1992 average)\nto values of B=22.5 mag/(arc\
+#     \ sec)^2, V=21.5 mag/(arc sec)^2.\nNote that this is consistent with the value V=21.4 derived from the spectrum.\n\nCloser to the\
+#     \ galactic plane, more and more star light gets included in\nthe NSB seen by a Cherenkov telescope, with a mixture of stellar spectra.\n\
+#     \nZodiacal light as a function of ecliptic coordinates\nbased on Leinert, in units of 10-8 W m^-2 sr^-1 micrometer^-1 m-^1 (????)\
+#     \ at a wavelength of 500 nm\n\"The scale factor to convert these units into photons cm^-2 s^-1 sr-^1 A^-1 is 252 at 5000 A; ie,\n\
+#     the numbers in the table have to be multiplied by 252.\"\n(source: http://tauvex.iiap.res.in/tauwiki/index.php/Zodiacal_Light)\n\
+#     For photons / (nm m^2 s sr) the conversion factor is then 2.52e7. Thus even at the poles\nof the ecliptic about a quarter of a V=22\
+#     \ mag/(arc sec)^2 sky is still zodiacal light.\n\nbeta |   0       5       10      15      20      25      30      45      60  \
+#     \    75      90 <- hel. long.\n---- |   --      --      --      --      --      --      --      --      --      --      --\n0  \
+#     \  |                           3140    1610    985     640     275     150     100     77\n5    |                           2940\
+#     \    1540    945     625     271     150     100     77\n10   |                   4740    2470    1370    865     590     264  \
+#     \   148     100     77\n15   |   11500   6780    3440    1860    1110    755     525     251     146     100     77\n20   |   6400\
+#     \    4480    2410    1410    910     635     454     237     141     99      77\n25   |   3840    2830    1730    1100    749  \
+#     \   545     410     223     136     97      77\n30   |   2480    1870    1220    845     615     467     365     207     131   \
+#     \  95      77\n35   |   1650    1270    910     680     510     397     320     193     125     93      77\n40   |   1180    940\
+#     \     700     530     416     338     282     179     120     92      77\n45   |   910     730     555     442     356     292 \
+#     \    250     166     116     90      77\n60   |   505     442     352     292     243     209     183     134     104     86   \
+#     \   77\n75   |   338     317     269     227     196     172     151     116     93      82      77\n90   |   259     251     225\
+#     \     193     166     147     132     104     86      79      77\n105  |   212     210     197     170     150     133     119 \
+#     \    96      82      77      77\n120  |   188     186     177     154     138     125     113     90      77      74      77\n135\
+#     \  |   179     178     166     147     134     122     110     90      77      73      77\n150  |   179     178     165     148\
+#     \     137     127     116     96      79      72      77\n165  |   196     192     179     165     151     141     131     104 \
+#     \    82      72      77\n180  |   230     212     195     178     163     148     134     105     83      72      77\nwith a spectrum\
+#     \ derived from the solar spectrum but - because of small scattering\nparticles - expected to have somewhat higher relative intensity\
+#     \ in the blue (?)\n\nAnd then there are all the stars brighter than V=20 in addition ..."}
+# - {parameter_name: nsb_reference_spectrum}
+# - {parameter_version: 1.0.0}
+# - {model_parameter_schema_version: 0.3.0}
+# - {instrument: OBS-North}
+# - {site: North}
+# - __serialized_columns__:
+#     differential_photon_rate:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: 1e+09 / (nm s sr m2)}
+#       value: !astropy.table.SerializedColumn {name: differential_photon_rate}
+#     wavelength:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: nm}
+#       value: !astropy.table.SerializedColumn {name: wavelength}
+# schema: astropy-2.0
+wavelength differential_photon_rate
+300.0 0.0
+315.0 0.612
+330.0 1.95
+350.16 3.34512
+350.6 3.03722
+351.26 2.12209
+351.69 3.93612
+352.13 4.83844
+353.22 3.91907
+353.66 6.92517
+354.1 8.11951
+354.54 6.90809
+354.75 4.80267
+355.19 4.49696
+355.63 5.38972
+356.5 3.28564
+357.16 2.68331
+357.81 2.6784
+358.25 3.56684
+359.13 2.07559
+359.78 1.47986
+360.66 3.54306
+360.87 4.13107
+361.75 3.82672
+363.06 4.69279
+364.59 4.38103
+365.9 3.20124
+366.78 2.90328
+367.43 3.47772
+367.87 2.60519
+368.96 3.17469
+370.27 3.16345
+371.15 3.15599
+372.24 4.57706
+372.9 5.14014
+373.99 4.84039
+374.64 3.69499
+375.96 3.6821
+377.05 4.23627
+377.49 4.51345
+378.14 3.37922
+379.02 4.21428
+379.89 4.48488
+380.55 3.63769
+381.86 4.18292
+382.95 4.17098
+383.17 4.72442
+384.04 3.88184
+385.14 2.76487
+386.01 3.31033
+387.1 2.20066
+389.07 3.83168
+390.16 3.82095
+390.6 4.08929
+391.48 3.26412
+392.13 7.87511
+392.13 15.2071
+392.79 18.4349
+393.44 12.4499
+393.44 7.30756
+394.32 4.3208
+395.63 2.96071
+397.16 3.21742
+398.47 3.20683
+399.78 4.26174
+401.53 4.50838
+402.4 3.96934
+403.06 5.54804
+403.72 7.12161
+404.59 5.00067
+405.68 5.51217
+406.99 4.97113
+408.52 5.47383
+409.18 3.12289
+410.05 4.15497
+410.71 4.40761
+411.37 3.62401
+412.01 3.872
+413.65 3.85667
+415.28 5.12195
+416.92 5.73956
+418.56 4.44664
+420.2 4.42931
+422.38 3.14744
+423.47 4.39505
+425.11 4.37812
+425.66 4.99715
+427.29 4.35575
+429.48 4.33361
+430.57 4.94013
+432.21 4.92142
+433.3 4.29539
+434.39 7.34502
+434.93 8.55843
+436.03 6.09786
+437.12 4.25784
+438.21 4.85398
+440.39 6.64114
+442.03 5.41353
+444.21 5.38692
+447.49 4.75333
+449.67 5.32153
+452.4 5.87714
+454.59 5.84891
+457.31 5.814
+460.04 5.77951
+464.41 5.72517
+468.23 5.67845
+469.87 5.09279
+471.51 6.2029
+473.14 5.05754
+475.33 6.71241
+477.51 5.5681
+479.15 6.10398
+481.33 6.07629
+482.97 7.70723
+484.61 5.48656
+486.79 5.46196
+488.43 7.6211
+490.07 5.42545
+492.79 5.93495
+495.52 6.9754
+498.8 5.33046
+500.98 6.36867
+503.17 5.81262
+505.9 6.30683
+506.99 6.81768
+509.72 5.73792
+514.08 6.20638
+516.27 6.69514
+519.0 7.68454
+521.18 6.63203
+523.91 7.10498
+526.09 6.06471
+528.82 6.53619
+529.91 7.02448
+531.0 8.01147
+532.64 7.98684
+534.83 6.95995
+543.01 6.85501
+544.1 9.28456
+545.2 10.2413
+546.83 8.752
+548.47 7.75632
+552.84 7.69506
+554.48 12.4675
+555.57 44.0292
+557.21 83.0279
+558.3 55.72
+559.39 15.6852
+559.39 10.9321
+561.57 8.52231
+564.85 8.00218
+569.21 8.875
+571.94 8.36777
+575.76 9.69761
+579.04 9.64276
+581.22 9.14908
+584.5 8.64293
+586.14 14.0622
+587.23 25.8083
+588.86 35.6699
+589.96 28.8437
+589.96 18.9286
+591.05 14.3952
+592.14 12.5726
+595.41 11.6103
+600.33 9.74372
+606.33 8.77021
+611.24 8.69972
+614.52 12.1147
+617.79 9.46823
+621.07 10.7026
+623.8 13.6394
+626.53 12.7312
+627.62 27.5364
+628.17 49.0991
+629.26 67.6054
+630.35 49.7727
+631.44 22.7379
+631.44 16.0008
+632.53 11.7697
+634.17 15.0934
+634.72 22.2017
+635.81 27.5999
+636.9 22.1256
+637.45 13.7645
+638.54 9.16066
+639.63 8.31366
+642.9 8.27131
+644.54 11.1379
+645.63 12.7663
+647.27 10.6802
+649.45 12.2818
+651.64 10.6086
+653.28 12.21
+656.0 12.5645
+661.46 8.4412
+671.29 7.52549
+679.48 7.43481
+681.11 14.0531
+682.75 19.082
+683.84 15.5523
+685.48 17.4545
+688.21 12.3629
+689.85 13.8752
+690.39 15.4047
+694.21 15.7029
+696.4 13.3629
+699.67 11.0203
+701.86 8.71305
+704.59 9.81138
+710.04 8.23811
+713.86 9.31139
+718.23 8.1442
+720.41 8.11952
+722.05 20.621
+722.6 33.4838
+723.69 36.0051
+724.24 30.104
+725.33 25.6598
+726.42 31.8436
+727.51 35.4505
+728.06 28.8504
+729.15 23.3375
+730.24 27.6718
+731.88 31.6061
+733.52 30.0856
+734.61 27.1454
+736.24 24.196
+737.88 18.3769
+738.97 19.789
+740.07 16.8857
+741.16 13.2734
+742.25 14.3285
+743.89 13.5821
+744.98 17.4881
+746.62 22.4354
+747.71 18.1355
+749.34 12.7735
+750.44 19.841
+751.53 26.1804
+752.62 20.1367
+753.71 14.8161
+754.8 19.0217
+755.9 21.4565
+756.44 22.144
+758.08 18.5888
+758.62 14.3697
+759.72 11.8992
+761.35 13.9689
+762.99 11.1512
+764.63 13.2137
+766.81 11.4423
+768.45 16.6079
+769.0 24.5485
+769.54 38.3514
+770.09 46.2653
+770.63 47.2675
+771.72 38.2429
+772.82 31.308
+773.36 40.2247
+774.45 56.6472
+775.55 63.4241
+777.18 63.2905
+777.73 51.2806
+778.28 41.3373
+779.37 37.5267
+781.0 38.8098
+782.1 33.9962
+783.19 44.1334
+784.28 58.3106
+784.83 62.6742
+785.92 55.4827
+787.01 43.9192
+788.1 37.4483
+788.1 35.424
+789.19 46.4929
+789.74 57.9076
+790.28 63.5871
+791.38 61.1475
+791.38 49.7244
+792.47 36.9064
+793.01 29.5048
+794.1 36.4955
+795.2 44.8044
+796.29 47.0803
+797.38 49.6834
+799.02 43.5918
+799.56 37.5765
+799.56 34.2511
+800.66 39.1856
+802.29 31.8148
+803.38 21.8429
+804.48 24.4573
+805.57 22.4438
+806.11 18.4706
+806.66 14.1732
+808.3 16.1182
+808.84 16.7647
+809.93 15.429
+811.03 11.4742
+812.66 12.4326
+815.39 10.1085
+818.12 14.2996
+821.94 10.3514
+824.67 15.4757
+825.76 46.0437
+827.4 87.0849
+829.04 66.0666
+829.59 47.7546
+830.68 26.2465
+831.77 54.0225
+832.31 74.7513
+832.86 101.518
+834.5 94.6284
+835.04 52.537
+836.14 36.2509
+837.23 56.5284
+838.86 70.6811
+838.86 75.4354
+839.96 65.5245
+840.5 76.8701
+841.05 80.93
+843.23 76.9366
+843.23 68.4232
+843.78 63.6522
+844.32 72.1136
+845.41 63.5289
+845.96 43.6873
+847.05 28.878
+848.69 41.9803
+849.78 32.8528
+850.33 22.2005
+850.87 15.9366
+851.97 20.9095
+853.6 23.9842
+854.15 20.2335
+854.69 15.2432
+855.79 12.1168
+857.42 16.7451
+859.61 26.9097
+860.7 40.7768
+861.79 47.5126
+862.88 45.9119
+864.52 50.4381
+865.61 43.0027
+866.7 33.1317
+867.25 21.7673
+868.89 14.3822
+871.07 10.6833
+872.71 29.5524
+872.71 17.0612
+873.25 48.1069
+873.8 73.6366
+874.34 97.6141
+875.44 133.938
+876.53 114.054
+877.07 74.5743
+877.07 93.6725
+877.62 51.2
+878.71 31.7712
+879.8 63.1613
+880.35 128.962
+880.35 96.3443
+881.44 153.538
+882.53 112.073
+883.08 75.5726
+884.17 49.0164
+885.81 75.3398
+886.35 96.8915
+887.45 102.764
+887.99 98.2099
+888.54 96.6534
+889.08 104.369
+889.63 116.559
+890.72 110.745
+891.27 100.832
+892.36 64.0604
+892.9 83.3765
+893.45 95.8244
+895.09 78.1233
+895.63 52.2484
+896.18 39.4591
+897.27 52.153
+897.82 63.6709
+899.45 46.4099
+900.0 27.4746
+900.55 21.2577
+901.64 33.0275
+902.73 41.2345
+904.37 27.6359
+905.46 14.3886
+907.1 18.4662
+908.19 21.9571
+909.28 16.6674
+910.92 9.6322
+913.1 13.1034
+914.19 15.9961
+915.28 11.6197
+916.92 7.82928
+919.1 11.5714
+920.2 14.1581
+922.38 12.1068
+922.93 17.2852
+923.47 25.9125
+924.56 27.0322
+926.75 18.9353
+927.29 30.1067
+927.84 57.3123
+928.38 137.469
+930.02 174.106
+931.11 100.515
+932.21 53.6212
+933.3 25.6397
+934.39 109.553
+936.03 175.262
+937.12 102.992
+938.21 58.0957
+940.39 106.026
+940.94 145.524
+942.58 171.223
+943.67 129.889
+944.76 168.013
+946.94 124.947
+948.03 95.3553
+949.13 110.093
+951.86 51.3969
+954.59 116.984
+957.31 27.4961
+959.5 53.4815
+962.23 22.9346
+964.41 59.8257
+966.05 103.21
+967.69 123.643
+968.23 138.402
+969.32 146.475
+999.0 142.1

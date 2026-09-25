@@ -20,18 +20,18 @@
 # meta: !!omap
 # - cta:
 #     activity:
-#       end: '2026-09-01T12:49:57+00:00'
-#       id: 01a05d04-e0cc-75bc-95c0-867f574b6def
+#       end: '2026-09-10T10:52:10+00:00'
+#       id: 01a08af2-48cd-7484-b61c-1747c1ffceb9
 #       name: simtools-production-generate-grid
-#       software: {name: simtools, version: 0.37.0}
-#       start: '2026-09-01T12:49:57+00:00'
+#       software: {name: simtools, version: 0.36.1.dev29+g6baa4a660}
+#       start: '2026-09-10T10:52:10+00:00'
 #       type: software
 #     contact: {name: G.Maier, orcid: 0000-0001-9868-4700, organization: CTAO}
 #     context:
 #       application_configuration:
 #         application: production_generate_grid
 #         arguments:
-#           activity_id: 01a05d04-e0cc-75bc-95c0-867f574b6def
+#           activity_id: 01a08af2-48cd-7484-b61c-1747c1ffceb9
 #           application_label: production_generate_grid
 #           array_layout_name: [LSTN-01]
 #           axis:
@@ -45,13 +45,8 @@
 #           corsika_le_interaction: urqmd
 #           corsika_limits: simtools-tests/v0.38.0/integration_tests/downloaded/corsika_limits.ecsv
 #           curved_atmosphere_min_zenith_angle: {unit: deg, value: 65.0}
-#           db_api_authentication_database: admin
-#           db_api_port: 27017
-#           db_api_pw: '***REDACTED***'
-#           db_api_user: api
-#           db_server: cta-simpipe-protodb.zeuthen.desy.de
 #           db_simulation_model: CTAO-Simulation-Model
-#           db_simulation_model_tag: v0.17.1
+#           db_simulation_model_tag: v0.17.2
 #           disable_log_file: true
 #           energy_range:
 #           - {unit: GeV, value: 30.0}
@@ -77,6 +72,7 @@
 #           run_number_offset: 0
 #           showers_per_run: 5
 #           showers_per_run_scaling: fixed
+#           simulation_models_path: /cephfs/users/maierg/CTA/simpipe/simulation-models-dev1
 #           simulation_software: corsika_sim_telarray
 #           site: North
 #           test: false
@@ -92,7 +88,7 @@
 #         sources:
 #           cli: [activity_id, array_layout_name, axis, core_scatter, corsika_he_interaction, corsika_le_interaction, corsika_limits,
 #             disable_log_file, energy_range, label, model_version, number_of_runs, output_file, output_path, primary, showers_per_run,
-#             simulation_software, site, view_cone]
+#             simulation_models_path, simulation_software, site, view_cone]
 #           defaults: [activity_id, apptainer_image, array_layout_name, axis, azimuth_angle, config, core_scatter, correct_for_b_field_alignment,
 #             corsika_hadronic_transition_energy, corsika_he_interaction, corsika_le_interaction, corsika_limits, curved_atmosphere_min_zenith_angle,
 #             db_api_authentication_database, db_api_port, db_api_pw, db_api_user, db_server, db_simulation_model, db_simulation_model_tag,
@@ -101,14 +97,13 @@
 #             local_zenith_range, log_file, log_file_path, log_level, max_total_showers_rounding_warnings, model_version, number_of_runs,
 #             output_file, output_path, overwrite_collection_files, overwrite_model_parameters, primary, primary_id_type, run_number,
 #             run_number_offset, runtime_environment_file, show_options, showers_per_run, showers_per_run_power_law, showers_per_run_scaling,
-#             simulation_models_path, simulation_software, site, test, total_showers, total_showers_scaling, user_email, user_name, user_orcid,
-#             user_organization, view_cone, zenith_angle, zenith_angle_scaling_factor]
-#           environment: [db_api_authentication_database, db_api_port, db_api_pw, db_api_user, db_server, db_simulation_model, db_simulation_model_tag,
-#             user_name, user_orcid]
+#             simulation_models_git_path, simulation_models_git_revision, simulation_models_path, simulation_software, site, test, total_showers,
+#             total_showers_scaling, user_email, user_name, user_orcid, user_organization, view_cone, zenith_angle, zenith_angle_scaling_factor]
+#           environment: [simulation_models_path, user_name, user_orcid]
 #     instrument: {site: North}
 #     process: {type: simulation}
 #     product:
-#       creation_time: '2026-09-01T12:49:57+00:00'
+#       creation_time: '2026-09-10T10:52:10+00:00'
 #       data:
 #         category: SIM
 #         level: R1
@@ -117,7 +112,7 @@
 #         type: Service
 #       filename: production_grid_points_horizontal.ecsv
 #       format: ecsv
-#       id: 01a05d04-e5e2-7547-bd7f-90f966a9ae35
+#       id: 01a08af2-4dfa-73a2-a5a3-d3612cb93e9d
 #     reference: {version: 2.0.0}
 # - {site: North}
 # - {simulation_software: corsika_sim_telarray}
