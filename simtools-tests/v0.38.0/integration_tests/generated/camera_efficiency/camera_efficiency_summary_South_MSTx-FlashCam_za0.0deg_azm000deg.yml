@@ -4,30 +4,30 @@ meta:
   model_version: 7.0.0
   zen: 0.0
   az: 0.0
-  nsb: ./simtools-tests/v0.38.0/integration_tests/generated/model_parameters/Benn_LaPalma_sky_converted.lis
+  nsb: nsb_reference_spectrum-1.0.0-OBS-South.ecsv
 reflectivity:
-  value: 0.9333498341901661
+  value: 0.9333495628241573
   description: Spectrum weighted reflectivity
 cam_eff:
-  value: 0.27920474079962454
+  value: 0.2792057912831162
   description: Camera nominal efficiency with gaps (B-TEL-1170)
 tel_eff:
-  value: 0.27816059022847067
+  value: 0.2781624086585633
   description: Telescope total efficiency with gaps (was A-PERF-2020)
 tot_sens:
-  value: 0.5206017635312028
+  value: 0.5206052083107264
   description: Telescope total Cherenkov light efficiency / sqrt(total NSB efficiency)
     (A-PERF-2025/B-TEL-0090)
 nsb_rate:
   value:
-    value: 0.2430263044557902
+    value: 0.24302626489107193
     unit: GHz
   description: Expected NSB pixel rate for the provided NSB spectrum
 nsb_ref:
   value:
-    value: 0.21955999659004236
+    value: 0.21955996085020998
     unit: GHz
   description: Expected NSB pixel rate for the reference NSB
 muon_frac:
-  value: 0.011889288695861353
+  value: 0.01189446457547248
   description: Fraction of light (from muons) in the wavelength range 200-290 nm (B-TEL-0095)

@@ -6,28 +6,28 @@ meta:
   az: 0.0
   nsb: default sim_telarray spectrum
 reflectivity:
-  value: 0.9166695677793134
+  value: 0.9166692787995487
   description: Spectrum weighted reflectivity
 cam_eff:
-  value: 0.2494233541470387
+  value: 0.24942403772996313
   description: Camera nominal efficiency with gaps (B-TEL-1170)
 tel_eff:
-  value: 0.24436035055730518
+  value: 0.24436158906430394
   description: Telescope total efficiency with gaps (was A-PERF-2020)
 tot_sens:
-  value: 0.4820401634971464
+  value: 0.48204266314054056
   description: Telescope total Cherenkov light efficiency / sqrt(total NSB efficiency)
     (A-PERF-2025/B-TEL-0090)
 nsb_rate:
   value:
-    value: 0.2795853061540784
+    value: 0.2795852396087034
     unit: GHz
   description: Expected NSB pixel rate for the provided NSB spectrum
 nsb_ref:
   value:
-    value: 0.25258890803313144
+    value: 0.252588847918547
     unit: GHz
   description: Expected NSB pixel rate for the reference NSB
 muon_frac:
-  value: 0.012023215072742248
+  value: 0.0120288283322326
   description: Fraction of light (from muons) in the wavelength range 200-290 nm (B-TEL-0095)
