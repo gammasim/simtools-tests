@@ -8,6 +8,6 @@ applications:
     - configuration.site=__SCIENCE_SITE__
     array_layout_name:
     - __SCIENCE_ARRAY_LAYOUT__
-    output_path: __SCIENCE_CANDIDATE_SITE_ROOT__/derived/trigger_histograms/candidate
+    output_path: __SCIENCE_CANDIDATE_SITE_ROOT__/derived/trigger_histograms
 schema_name: application_workflow.metaschema
 schema_version: 0.5.0

@@ -4,7 +4,7 @@ applications:
   configuration:
     comparison_level: events
     baseline_path: __SCIENCE_BASELINE_SITE_ROOT__/histograms
-    candidate_path: __SCIENCE_CANDIDATE_SITE_ROOT__/derived/trigger_histograms/candidate
+    candidate_path: __SCIENCE_CANDIDATE_SITE_ROOT__/derived/trigger_histograms
     select:
     - configuration.primary=gamma
     - configuration.site=__SCIENCE_SITE__
