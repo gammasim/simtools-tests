@@ -6,9 +6,6 @@ files:
   - file_name: MLTdata-preproduction.meta.yml
     sha256: b363cbbb821a91454b67a738600ed770e94d447ac269a73b067d25c110f7b00b
     description: Preproduction MST data metadata.
-  - file_name: dummy_apptainer_image.sif
-    sha256: 3238f87efc48cf3ffa8a1aaafe38e9362515191ecf2395de4fcf8227d5747644
-    description: Dummy Apptainer image file for testing.
   - file_name: info_test_camera_efficiency_change_LSTN-02.yml
     sha256: 3f6c60e7f9715043c67932c38dcac5341e871dc7f5d5f1e51dd011d7f98ce798
     description: Configuration for testing camera-efficiency changes.
