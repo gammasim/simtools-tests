@@ -16,24 +16,29 @@ Current bundles live below `simtools-tests/<resource-version>/integration_tests/
 | `static/` | Hand-maintained inputs; update `static/static_manifest.yml` with every change. |
 | `downloaded/` | Inputs fetched from `config_files/download_files.yml`; regenerated from external GitLab URLs. |
 | `generated/` | Workflow outputs collected as reference products. |
-| `log_files/` | One generation log per workflow. |
-| `tmp/` | Disposable per-application scratch data. |
-| `tmp_application_output/` | Disposable staging output before collection. |
 | `run_time.yml` | Container/runtime image, mounts, network, and environment-file configuration. |
 
-Do not commit `tmp/` or `tmp_application_output/`; the other directories are part of the versioned
-snapshot.
+Science-test releases, when present, live in `<resource-version>/science_tests/` and contain the
+release context and runner instructions for `simtools-run-science-tests`.
+
+Do not commit `tmp/`, `tmp_application_output/`, or `log_files/`; the other directories are part of
+the versioned snapshot.
 
 ## Generation requirements
 
 Run generation from this repository root with the already configured `simtools` environment. The
 runtime in `run_time.yml` requires Podman or Docker and access to the configured image registry.
-Generation also needs network access to the GitLab URLs in `download_files.yml` and, for database
-workflows, MongoDB. The local `.env` must provide the database settings
-(`SIMTOOLS_DB_SERVER`, `SIMTOOLS_DB_API_PORT`, `SIMTOOLS_DB_API_USER`, `SIMTOOLS_DB_API_PW`,
-`SIMTOOLS_DB_API_AUTHENTICATION_DATABASE`, and `SIMTOOLS_DB_SIMULATION_MODEL[_TAG]`) and the
-container paths `SIMTOOLS_SIM_TELARRAY_PATH`, `SIMTOOLS_CORSIKA_PATH`, and
-`SIMTOOLS_CORSIKA_INTERACTION_TABLE_PATH`. Keep `.env` out of commits.
+Generation also needs network access to the GitLab URLs in `download_files.yml`. Simulation models
+are read from a filesystem repository or a local Git repository. Copy `../simtools/.env_template`
+to `.env` and set the container paths `SIMTOOLS_SIM_TELARRAY_PATH`, `SIMTOOLS_CORSIKA_PATH`, and
+`SIMTOOLS_CORSIKA_INTERACTION_TABLE_PATH`, plus one of:
+
+- `SIMTOOLS_SIMULATION_MODELS_PATH` for a checked-out simulation-model repository; or
+- `SIMTOOLS_SIMULATION_MODELS_GIT_PATH` and `SIMTOOLS_SIMULATION_MODELS_GIT_REVISION` for a local
+  Git repository.
+
+Set `SIMTOOLS_TESTS_PATH` when the container needs to resolve versioned resources from this
+checkout. Keep `.env` out of commits.
 
 ## Generate or regenerate
 
@@ -69,43 +74,10 @@ A successful run exits 0, writes one log per workflow, and updates the collected
 `--config_file path/to/workflow.config.yml` to run one workflow or `--download_only` to fetch only
 external inputs.
 
-## Verify and compare
-
-`--test_static_files` verifies the static manifest. Verify all maintained bundles as CI does:
-
-```bash
-for integration_tests in simtools-tests/v*/integration_tests; do
-    resource_version="${integration_tests#simtools-tests/}"
-    resource_version="${resource_version%/integration_tests}"
-    simtools-resources-test-generate \
-        --test_directory . \
-        --simtools_version "${resource_version}" \
-        --test_static_files
-done
-```
-
-Start with a clean working tree, then compare a deterministic regeneration with:
-
-```bash
-resource_version="vX.Y.Z"
-git status --short
-git diff --check
-git diff --exit-code -- "simtools-tests/${resource_version}/integration_tests"
-```
-
-For a new bundle, review the untracked files with `git status --short` before adding them. Remove
-only disposable output after inspection:
-
-```bash
-resource_version="vX.Y.Z"
-rm -rf "simtools-tests/${resource_version}/integration_tests/tmp" \
-       "simtools-tests/${resource_version}/integration_tests/tmp_application_output"
-```
-
 ## Run simtools integration tests
 
-From the `simtools` repository root, select resources with the underscore option registered by
-`tests/conftest.py`:
+From the `simtools` repository root, select a resource directory with
+`--test_resources_path`:
 
 ```bash
 resource_version="vX.Y.Z"
@@ -114,7 +86,31 @@ pytest --no-cov -n auto --model_version=6.0.2 \
     tests/integration_tests
 ```
 
-This assumes sibling `simtools` and `simtools-tests` checkouts. See
+Alternatively, select a versioned resource directory with
+`--simtools_tests_resource_version` (or `SIMTOOLS_TESTS_RESOURCE_VERSION`); the default is the
+`resource-version` in `simtools/dependency_versions.yml`. A full resource path can also be supplied
+through `SIMTOOLS_TEST_RESOURCES`.
+
+When using a local model checkout, set `SIMTOOLS_SIMULATION_MODELS_PATH`. For a Git source, set
+`SIMTOOLS_SIMULATION_MODELS_GIT_PATH` and `SIMTOOLS_SIMULATION_MODELS_GIT_REVISION` instead; the two
+source types cannot be used together. This assumes sibling `simtools` and `simtools-tests` checkouts.
+See
 [CONTRIBUTING.md](https://github.com/gammasim/simtools/blob/main/CONTRIBUTING.md) and the
 [RELEASING.md](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/release.md)
 release guidance for project workflow.
+
+## Run simtools science tests
+
+Science tests are longer-running release-validation workflows. A release directory contains a
+context template and workflow selection; copy the context example outside the repository, fill in
+the production paths, and run:
+
+```bash
+simtools-run-science-tests \
+    --release_dir simtools-tests/vX.Y.Z/science_tests \
+    --context_file /path/to/vX.Y.Z-context.yml \
+    --dry_run
+```
+
+Remove `--dry_run` to execute the selected workflows. See the release directory's `README.md` for
+site and test-selection options.
