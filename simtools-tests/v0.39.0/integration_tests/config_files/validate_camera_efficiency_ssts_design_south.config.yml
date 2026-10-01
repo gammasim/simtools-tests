@@ -1,0 +1,18 @@
+---
+applications:
+- application: simtools-validate-camera-efficiency
+  configuration:
+    model_version: 7.0.0
+    output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
+    site: South
+    telescope: SSTS-design
+    parameter_version: 0.0.99
+    write_reference_nsb_rate_as_parameter: true
+    zenith_angle: 20.
+collection:
+  output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/camera_efficiency
+  files:
+  - camera_efficiency_summary_South_SSTS-design_za20.0deg_azm000deg.yml
+schema_name: application_workflow.metaschema
+schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
+schema_version: 0.4.0

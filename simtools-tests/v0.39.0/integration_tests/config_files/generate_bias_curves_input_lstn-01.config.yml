@@ -1,0 +1,50 @@
+---
+applications:
+- application: simtools-generate-bias-curve-submissions
+  docs:
+    title: Generate LSTN-01 bias curve scan grids
+    summary: >-
+      Create NSB and proton submission grids that scan trigger thresholds for LSTN-01 bias curve derivation.
+  configuration:
+    site: North
+    model_version: 7.0.0
+    array_layout_name: LSTN-01
+    azimuth_angle: 0.0
+    zenith_angle: 20.0
+    showers_per_run: 1000
+    core_scatter: 20 1900 m
+    view_cone: 0 deg 5 deg
+    number_of_runs: 1
+    trigger_thresholds:
+    - 290
+    - 2
+    - 40
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
+
+- application: simtools-simulate-prod
+  docs:
+    title: Simulate NSB runs for bias curve
+    summary: >-
+      Run NSB simulations for bias curve derivation using the generated scan grid.
+  configuration:
+    job_grid_file: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output/nsb/scan_grid.ecsv
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output/simulations/nsb
+    grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output/simulations/nsb-grid
+
+- application: simtools-simulate-prod
+  docs:
+    title: Simulate proton runs for bias curve
+    summary: >-
+      Run proton simulations for bias curve derivation using the generated scan grid.
+  configuration:
+    job_grid_file: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output/proton/scan_grid.ecsv
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output/simulations/proton
+    grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output/simulations/proton-grid
+
+collection:
+- output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/bias_curves_input
+  files:
+  - ./simulations/nsb-grid/*/*reduced_event_data.hdf5
+  - ./simulations/proton-grid/*/*reduced_event_data.hdf5
+schema_name: application_workflow.metaschema
+schema_version: 0.5.0
