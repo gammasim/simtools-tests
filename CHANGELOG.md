@@ -7,6 +7,25 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
 
 <!-- towncrier release notes start -->
 
+## [v4.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v4.0.0) - 2026-09-30
+
+### New Features
+
+- Add resource files for simtools v0.37.0. ([#20](https://github.com/gammasim/simtools-tests/pull/20))
+- Add resource files for simtools v0.38.0. ([#26](https://github.com/gammasim/simtools-tests/pull/26))
+- Test and model parameter updates to reflect usage of Astropy tables for all tabulated simulation model data. ([#28](https://github.com/gammasim/simtools-tests/pull/28))
+- Generate nsb and proton hdf5 files for integration tests, and remove overwrite.yaml files. ([#29](https://github.com/gammasim/simtools-tests/pull/29))
+
+### Maintenance
+
+- Consistent simtools installation from GitHub repository. ([#23](https://github.com/gammasim/simtools-tests/pull/23))
+- Improve schema validation CI such that it only checks changed files. ([#27](https://github.com/gammasim/simtools-tests/pull/27))
+- Remove unused `simtel_config_test_la_palma.cfg` file from static directory for v0.38.0. ([#31](https://github.com/gammasim/simtools-tests/pull/31))
+- Update single-pe spectrum test files (related to change in table format in simulation-models). ([#33](https://github.com/gammasim/simtools-tests/pull/33))
+- Update `sim_telarray` integration test reference configuration files with updates on `fadc_pulse_shape` versions. ([#34](https://github.com/gammasim/simtools-tests/pull/34))
+- Remove obsolete files not required for simtools v0.38.0. ([#35](https://github.com/gammasim/simtools-tests/pull/35))
+
+
 ## [v3.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v3.0.0) - 2026-08-20
 
 ### New Features
