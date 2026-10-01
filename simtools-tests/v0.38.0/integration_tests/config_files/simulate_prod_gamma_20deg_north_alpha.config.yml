@@ -37,7 +37,6 @@ applications:
 collection:
 - output_path: __INTEGRATION_TESTS_DIRECTORY__/generated
   files:
-  - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.simtel.zst
   - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.reduced_event_data.hdf5
   - gamma_diffuse_run000010_za20deg_azm000deg_North_CTAO-North-Alpha_7.0.0_test.trigger_histograms.hdf5
 - output_path: __INTEGRATION_TESTS_DIRECTORY__/log_files
