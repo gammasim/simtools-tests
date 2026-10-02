@@ -1,0 +1,12 @@
+---
+request_cpus: 1
+request_memory: 16GB
+request_disk: 10GB
+container_image: __SCIENCE_CANDIDATE_ROOT__/simtools-production.sif
+environment_file: __SCIENCE_CANDIDATE_ROOT__/env.txt
+poll_interval: 60
+priority: 10
+timeout: 86400
+cancel_on_interrupt: false
+keep_successful_artifacts: false
+extra_submit_attributes: {}

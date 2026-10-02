@@ -1,0 +1,41 @@
+---
+# Stage 1: generate a job grid for manual inspection.
+applications:
+- application: simtools-production-generate-grid
+  configuration:
+    array_layout_name: __SCIENCE_ARRAY_LAYOUT__
+    azimuth_angle:
+    - 31.
+    core_scatter: 10 3500 m
+    corsika_he_interaction:
+    - qgs3
+    corsika_le_interaction: urqmd
+    corsika_limits: __SCIENCE_REFERENCE_ROOT__/corsika_limits/__SCIENCE_SITE_KEY__/gamma-0.00deg/corsika_limits.ecsv
+    energy_range:
+    - 30 GeV 30 GeV
+    - 3 TeV 3 TeV
+    - 30 TeV 30 TeV
+    label: __SCIENCE_RELEASE_LABEL__
+    log_level: DEBUG
+    model_version:
+    - 7.0.0
+    showers_per_run: 50000
+    showers_per_run_power_law: "-0.793 30 GeV"
+    number_of_runs: 4
+    total_showers_scaling: fixed
+    output_file: __SCIENCE_SITE_KEY___job_grid.ecsv
+    output_path: __SCIENCE_CANDIDATE_ROOT__
+    primary:
+    - gamma
+    simulation_software: corsika_sim_telarray
+    site: __SCIENCE_SITE__
+    view_cone: 0 deg 0 deg
+    zenith_angle:
+    - 20
+    - 40
+    - 55
+    - 60
+    - 65
+    - 67.5
+schema_name: application_workflow.metaschema
+schema_version: 0.5.0

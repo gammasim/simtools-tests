@@ -1,0 +1,12 @@
+---
+applications:
+- application: simtools-simulate-prod
+  configuration:
+    job_grid_file: __SCIENCE_CANDIDATE_ROOT__/__SCIENCE_SITE_KEY___job_grid.ecsv
+    label: __SCIENCE_RELEASE_LABEL__
+    log_level: DEBUG
+    output_path: __SCIENCE_CANDIDATE_SITE_ROOT__
+    backend: htcondor
+    backend_config: __CONFIG_DIRECTORY__/../../profiles/htcondor.yml
+schema_name: application_workflow.metaschema
+schema_version: 0.5.0

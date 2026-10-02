@@ -1,0 +1,6 @@
+---
+# Labels and paths required for science integration tests
+__SCIENCE_RELEASE_LABEL__: vX.Y.Z_rcN
+__SCIENCE_CANDIDATE_ROOT__: /lustre/path/to/candidate
+__SCIENCE_BASELINE_ROOT__: /lustre/path/to/approved-baseline
+__SCIENCE_REFERENCE_ROOT__: /lustre/path/to/reference-data
