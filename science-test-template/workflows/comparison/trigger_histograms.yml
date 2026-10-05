@@ -3,8 +3,8 @@ applications:
 - application: simtools-compare-productions
   configuration:
     comparison_level: events
-    baseline_path: __SCIENCE_BASELINE_SITE_ROOT__/histograms
-    candidate_path: __SCIENCE_CANDIDATE_SITE_ROOT__/derived/trigger_histograms
+    baseline_path: __SCIENCE_BASELINE_SITE_PATH__/histograms
+    candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms
     select:
     - configuration.primary=gamma
     - configuration.site=__SCIENCE_SITE__
@@ -12,11 +12,11 @@ applications:
     - __SCIENCE_ARRAY_LAYOUT__
     compare_by:
     - configuration.atmosphere
-    output_path: __SCIENCE_REPORT_ROOT__
+    output_path: __SCIENCE_REPORT_PATH__
 schema_name: application_workflow.metaschema
 schema_version: 0.7.0
 collection:
-  output_path: __SCIENCE_COLLECTION_ROOT__
+  output_path: __SCIENCE_COLLECTION_PATH__
   files:
   - comparison_inventory.json
   - '**/comparison_statistics.json'

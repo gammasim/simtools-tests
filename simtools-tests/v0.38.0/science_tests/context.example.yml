@@ -1,8 +1,0 @@
----
-# Copy outside Git and fill this file for a specific release candidate.
-# Site directories are derived from these roots. __CONFIG_DIRECTORY__ is supplied by
-# simtools-run-application from each workflow's location.
-__SCIENCE_RELEASE_LABEL__: vX.Y.Z_rcN
-__SCIENCE_CANDIDATE_ROOT__: /lustre/.../vX.Y.Z_rcN
-__SCIENCE_BASELINE_ROOT__: /lustre/.../approved-baseline
-__SCIENCE_REFERENCE_ROOT__: /lustre/.../production-configuration/data

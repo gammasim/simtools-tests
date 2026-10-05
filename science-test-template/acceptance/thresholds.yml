@@ -5,24 +5,24 @@ rules:
     mode: advisory
     # Completeness is blocking even while numerical differences are advisory.
     metrics:
-    - file: __SCIENCE_REPORT_ROOT__/comparison_inventory.json
+    - file: __SCIENCE_REPORT_PATH__/comparison_inventory.json
       key: matched_pair_count
       minimum: 1
-    - file: __SCIENCE_REPORT_ROOT__/comparison_inventory.json
+    - file: __SCIENCE_REPORT_PATH__/comparison_inventory.json
       key: pairing_error_count
       maximum: 0
-    - file: __SCIENCE_REPORT_ROOT__/**/comparison_statistics.json
+    - file: __SCIENCE_REPORT_PATH__/**/comparison_statistics.json
       key: baseline.simulated_event_count
       minimum: 1
-    - file: __SCIENCE_REPORT_ROOT__/**/comparison_statistics.json
+    - file: __SCIENCE_REPORT_PATH__/**/comparison_statistics.json
       key: comparison_sets.0.simulated_event_count
       minimum: 1
   computing:
     mode: advisory
     metrics:
-    - file: __SCIENCE_REPORT_ROOT__/resource_requirements.json
+    - file: __SCIENCE_REPORT_PATH__/resource_requirements.json
       key: resource_row_count
       minimum: 1
-    - file: __SCIENCE_REPORT_ROOT__/resource_requirements.json
+    - file: __SCIENCE_REPORT_PATH__/resource_requirements.json
       key: diagnostic_count
       maximum: 0

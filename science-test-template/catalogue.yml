@@ -13,7 +13,7 @@ tests:
     # Explicit selection and --allow_production are required after grid review.
     depends_on: []
     requires:
-    - __SCIENCE_CANDIDATE_ROOT__/__SCIENCE_SITE_KEY___job_grid.ecsv
+    - __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
     produces_production: true
   derive.trigger_histograms:
     workflow: workflows/derivation/trigger_histograms.yml

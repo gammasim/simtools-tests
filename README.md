@@ -124,7 +124,8 @@ results remain advisory until calibrated thresholds are approved.
 
 Science tests are longer-running release-validation workflows. A release directory contains a
 release definition and site selections. Copy its context example outside the repository, fill in
-the candidate, baseline, and reference directories, and check the configuration with a dry run:
+the candidate, baseline, and production-configuration directories, and check the configuration
+with a dry run:
 
 ```bash
 simtools-run-science-tests \

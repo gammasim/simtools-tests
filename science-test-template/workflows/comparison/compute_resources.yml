@@ -3,8 +3,8 @@ applications:
 - application: simtools-compare-productions
   configuration:
     comparison_level: computing
-    baseline_path: __SCIENCE_BASELINE_SITE_ROOT__
-    candidate_path: __SCIENCE_CANDIDATE_SITE_ROOT__
+    baseline_path: __SCIENCE_BASELINE_SITE_PATH__
+    candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__
     baseline_label: baseline
     candidate_label: __SCIENCE_RELEASE_LABEL__
     select:
@@ -12,11 +12,11 @@ applications:
     - configuration.site=__SCIENCE_SITE__
     array_layout_name:
     - __SCIENCE_ARRAY_LAYOUT__
-    output_path: __SCIENCE_REPORT_ROOT__
+    output_path: __SCIENCE_REPORT_PATH__
 schema_name: application_workflow.metaschema
 schema_version: 0.7.0
 collection:
-  output_path: __SCIENCE_COLLECTION_ROOT__
+  output_path: __SCIENCE_COLLECTION_PATH__
   files:
   - resource_requirements.md
   - resource_requirements.ecsv
