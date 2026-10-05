@@ -8,7 +8,7 @@ Versioned test resources and generated artifacts for
 ## Integration tests
 
 Current bundles live below `simtools-tests/<resource-version>/integration_tests/`. Bundles below
-`simtools-tests/legacy/` are historical and are not maintained by current CI.
+`simtools-tests/legacy/` are not maintained by current CI.
 
 | Path | Lifecycle |
 | --- | --- |
@@ -109,11 +109,11 @@ bundles refer to this template instead of copying workflows.
 
 | Path | Purpose |
 | --- | --- |
-| `catalogue.yml` | Test IDs, supported sites, dependencies, tiers, and input gates. |
+| `catalogue.yml` | Test names, supported sites, prerequisite tests, and production requirements. |
 | `workflows/` | Production, derivation, and comparison workflows. |
 | `profiles/` | Shared local and HTCondor execution settings. |
 | `acceptance/expected-products.yml` | Required products for every test. |
-| `acceptance/thresholds.yml` | Numerical and completeness checks for collected products. |
+| `acceptance/thresholds.yml` | Comparison limits and checks for complete simulation outputs. |
 
 The template uses the existing simtools application-workflow schema. Production is always an
 explicit, two-step operation: review the generated grid first, then submit with
@@ -124,7 +124,7 @@ results remain advisory until calibrated thresholds are approved.
 
 Science tests are longer-running release-validation workflows. A release directory contains a
 release definition and site selections. Copy its context example outside the repository, fill in
-the candidate, baseline, and reference roots, and run a dry-run preflight:
+the candidate, baseline, and reference directories, and check the configuration with a dry run:
 
 ```bash
 simtools-run-science-tests \
@@ -158,8 +158,6 @@ simtools-run-science-tests \
     --test compare.compute_resources
 ```
 
-Use repeatable `--site` options to select a site. Dry runs do not write reports; subset runs retain
-the complete required-site result matrix. The runner stages reports on the candidate filesystem
-and collects small products with relative paths and checksums. See the release bundle's
-[`README.md`](simtools-tests/v0.38.0/science_tests/README.md) for release-specific paths,
-selections, and comparison details.
+Repeat `--site` to select sites. Dry runs do not write reports; running selected tests retains
+the summary for all required tests at each site. Reports are prepared in the candidate directory
+and copied into the release directory with file paths and checksums.
