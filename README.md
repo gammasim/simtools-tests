@@ -5,7 +5,7 @@
 Versioned test resources and generated artifacts for
 [simtools](https://github.com/gammasim/simtools) integration and science-validation workflows.
 
-## Resource bundles
+## Integration tests
 
 Current bundles live below `simtools-tests/<resource-version>/integration_tests/`. Bundles below
 `simtools-tests/legacy/` are historical and are not maintained by current CI.
@@ -19,12 +19,13 @@ Current bundles live below `simtools-tests/<resource-version>/integration_tests/
 | `run_time.yml` | Container/runtime image, mounts, network, and environment-file configuration. |
 
 Science-test releases, when present, live in `<resource-version>/science_tests/` and contain the
-release context and runner instructions for `simtools-run-science-tests`.
+release definition, site selections, context example, and runner instructions for
+`simtools-run-science-tests`.
 
 Do not commit `tmp/`, `tmp_application_output/`, or `log_files/`; the other directories are part of
 the versioned snapshot.
 
-## Generation requirements
+### Generation requirements
 
 Run generation from this repository root with the already configured `simtools` environment. The
 runtime in `run_time.yml` requires Podman or Docker and access to the configured image registry.
@@ -40,7 +41,7 @@ to `.env` and set the container paths `SIMTOOLS_SIM_TELARRAY_PATH`, `SIMTOOLS_CO
 Set `SIMTOOLS_TESTS_PATH` when the container needs to resolve versioned resources from this
 checkout. Keep `.env` out of commits.
 
-## Generate or regenerate
+### Generate or regenerate
 
 For a new bundle, replace the version values below. The target must not already exist; the template
 copies `config_files/`, `static/`, and `run_time.yml`, then generation creates `downloaded/`,
@@ -99,11 +100,31 @@ See
 [RELEASING.md](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/release.md)
 release guidance for project workflow.
 
-## Run simtools science tests
+## Science tests
+
+### Science-test template
+
+The shared `science-test-template/` directory contains reusable science-test definitions. Release
+bundles refer to this template instead of copying workflows.
+
+| Path | Purpose |
+| --- | --- |
+| `catalogue.yml` | Test IDs, supported sites, dependencies, tiers, and input gates. |
+| `workflows/` | Production, derivation, and comparison workflows. |
+| `profiles/` | Shared local and HTCondor execution settings. |
+| `acceptance/expected-products.yml` | Required products for every test. |
+| `acceptance/thresholds.yml` | Numerical and completeness checks for collected products. |
+
+The template uses the existing simtools application-workflow schema. Production is always an
+explicit, two-step operation: review the generated grid first, then submit with
+`--allow_production`. Comparison tests never submit production implicitly. Numerical comparison
+results remain advisory until calibrated thresholds are approved.
+
+### Run simtools science tests
 
 Science tests are longer-running release-validation workflows. A release directory contains a
-context template and workflow selection; copy the context example outside the repository, fill in
-the production paths, and run:
+release definition and site selections. Copy its context example outside the repository, fill in
+the candidate, baseline, and reference roots, and run a dry-run preflight:
 
 ```bash
 simtools-run-science-tests \
@@ -112,5 +133,33 @@ simtools-run-science-tests \
     --dry_run
 ```
 
-Remove `--dry_run` to execute the selected workflows. See the release directory's `README.md` for
-site and test-selection options.
+Generate and review the production grids before submitting:
+
+```bash
+simtools-run-science-tests \
+    --release_dir simtools-tests/vX.Y.Z/science_tests \
+    --context_file /path/to/vX.Y.Z-context.yml \
+    --test production.gamma.grid
+
+simtools-run-science-tests \
+    --release_dir simtools-tests/vX.Y.Z/science_tests \
+    --context_file /path/to/vX.Y.Z-context.yml \
+    --test production.gamma \
+    --allow_production
+```
+
+After production completes, run the requested derivation and comparison tests without resubmitting:
+
+```bash
+simtools-run-science-tests \
+    --release_dir simtools-tests/vX.Y.Z/science_tests \
+    --context_file /path/to/vX.Y.Z-context.yml \
+    --test compare.trigger_histograms \
+    --test compare.compute_resources
+```
+
+Use repeatable `--site` options to select a site. Dry runs do not write reports; subset runs retain
+the complete required-site result matrix. The runner stages reports on the candidate filesystem
+and collects small products with relative paths and checksums. See the release bundle's
+[`README.md`](simtools-tests/v0.38.0/science_tests/README.md) for release-specific paths,
+selections, and comparison details.

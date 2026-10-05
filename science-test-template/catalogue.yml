@@ -1,6 +1,7 @@
 ---
 tests:
   production.gamma.grid:
+    affects_production: true
     workflow: workflows/production/gamma_job_grid.yml
     sites: [north, south]
     tier: release-light
@@ -9,22 +10,27 @@ tests:
     workflow: workflows/production/gamma_submit.yml
     sites: [north, south]
     tier: release-prod
-    # Keep this unlinked until the runner supports a manual approval gate.
+    # Explicit selection and --allow_production are required after grid review.
     depends_on: []
+    requires:
+    - __SCIENCE_CANDIDATE_ROOT__/__SCIENCE_SITE_KEY___job_grid.ecsv
+    produces_production: true
   derive.trigger_histograms:
     workflow: workflows/derivation/trigger_histograms.yml
     sites: [north, south]
     tier: release-light
-    # Production completion is currently a manual gate after HTCondor submission.
     depends_on: []
+    requires_completed_production: true
   compare.trigger_histograms:
     workflow: workflows/comparison/trigger_histograms.yml
     sites: [north, south]
     tier: release-light
     depends_on: [derive.trigger_histograms]
+    acceptance_rule: gamma-events
   compare.compute_resources:
     workflow: workflows/comparison/compute_resources.yml
     sites: [north, south]
     tier: release-light
-    # Production completion is currently a manual gate after HTCondor submission.
     depends_on: []
+    requires_completed_production: true
+    acceptance_rule: computing

@@ -7,6 +7,7 @@ applications:
     log_level: DEBUG
     output_path: __SCIENCE_CANDIDATE_SITE_ROOT__
     backend: htcondor
+    wait: true
     backend_config: __CONFIG_DIRECTORY__/../../profiles/htcondor.yml
 schema_name: application_workflow.metaschema
-schema_version: 0.5.0
+schema_version: 0.7.0

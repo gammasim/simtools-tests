@@ -8,5 +8,5 @@ poll_interval: 60
 priority: 10
 timeout: 86400
 cancel_on_interrupt: false
-keep_successful_artifacts: false
+keep_successful_artifacts: true
 extra_submit_attributes: {}

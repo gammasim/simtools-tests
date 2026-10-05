@@ -14,10 +14,13 @@ applications:
     - __SCIENCE_ARRAY_LAYOUT__
     output_path: __SCIENCE_REPORT_ROOT__
 schema_name: application_workflow.metaschema
-schema_version: 0.5.0
+schema_version: 0.7.0
 collection:
-  output_path: __SCIENCE_REPORT_ROOT__
+  output_path: __SCIENCE_COLLECTION_ROOT__
   files:
   - resource_requirements.md
   - resource_requirements.ecsv
+  - resource_requirements.json
+  - '*.png'
   write_inventory: true
+  preserve_relative_paths: true

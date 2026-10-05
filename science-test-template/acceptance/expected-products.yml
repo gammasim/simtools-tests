@@ -1,11 +1,17 @@
 ---
 version: 1
 tests:
+  production.gamma.grid:
+  - __SCIENCE_CANDIDATE_ROOT__/__SCIENCE_SITE_KEY___job_grid.ecsv
   production.gamma:
-  - north
-  - south
+  - __SCIENCE_CANDIDATE_SITE_ROOT__/**/simulate_prod_job_metadata.yml
+  derive.trigger_histograms:
+  - __SCIENCE_CANDIDATE_SITE_ROOT__/derived/trigger_histograms/**/*.hdf5
   compare.trigger_histograms:
-  - comparison_statistics.json
+  - __SCIENCE_REPORT_ROOT__/comparison_inventory.json
+  - __SCIENCE_REPORT_ROOT__/**/comparison_statistics.json
+  - __SCIENCE_REPORT_ROOT__/**/comparison_statistics.meta.yml
   compare.compute_resources:
-  - resource_requirements.md
-  - resource_requirements.ecsv
+  - __SCIENCE_REPORT_ROOT__/resource_requirements.md
+  - __SCIENCE_REPORT_ROOT__/resource_requirements.ecsv
+  - __SCIENCE_REPORT_ROOT__/resource_requirements.json
