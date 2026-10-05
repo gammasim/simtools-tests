@@ -1,0 +1,8 @@
+---
+site: south
+site_label: South
+required_tests:
+- production.gamma
+- compare.trigger_histograms
+- compare.compute_resources
+array_layout_name: CTAO-South-Beta

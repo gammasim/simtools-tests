@@ -1,0 +1,6 @@
+---
+catalogue: ../../../science-test-template/catalogue.yml
+required_sites: [north, south]
+baseline: v0.37.1
+release_label: v0.38.0_rc1
+expected_changes: [configuration.atmosphere]
