@@ -1,6 +1,5 @@
 ---
-# Labels and paths required for science integration tests
-__SCIENCE_RELEASE_LABEL__: v0.38.0
+# External paths required for science integration tests
 __SCIENCE_CANDIDATE_PATH__: /lustre/fs24/group/cta/science_tests/v0.38.0/
 __SCIENCE_BASELINE_PATH__: /lustre/fs24/group/cta/science_tests/v0.37.0/
 __PRODUCTION_CONFIGURATION_PATH__: /cephfs/users/maierg/CTA/simpipe/production-configuration/data/
