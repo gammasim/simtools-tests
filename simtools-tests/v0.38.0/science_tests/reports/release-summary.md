@@ -6,8 +6,8 @@ Qualified: False
 | --- | --- | --- | --- | --- |
 | north | compare.compute_resources | not_run | not_run | - |
 | north | compare.trigger_histograms | not_run | not_run | - |
-| north | production.gamma | not_run | not_run | - |
-| north | production.gamma.grid | completed | pass | [report](north/production.gamma.grid/summary.md) |
+| north | production.gamma | submitted | submitted | [report](north/production.gamma/summary.md) |
+| north | production.gamma.collect | not_run | not_run | - |
 | south | compare.compute_resources | not_run | not_run | - |
 | south | compare.trigger_histograms | not_run | not_run | - |
-| south | production.gamma | not_run | not_run | - |
+| south | production.gamma.collect | not_run | not_run | - |

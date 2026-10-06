@@ -124,7 +124,9 @@ simtools-run-science-tests \
     --allow_production
 ```
 
-After production completes, run the requested derivation and comparison tests without resubmitting:
+Submission returns once jobs are queued. Use `--test production.gamma.collect` to check completion;
+collection returns `pending` while jobs remain queued. Comparison tests collect production
+automatically before running:
 
 ```bash
 simtools-run-science-tests \

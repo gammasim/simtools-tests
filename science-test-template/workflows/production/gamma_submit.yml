@@ -3,11 +3,12 @@ applications:
 - application: simtools-simulate-prod
   configuration:
     job_grid_file: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
+    job_grid_row: 4
     label: __SCIENCE_RELEASE_LABEL__
     log_level: DEBUG
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__
     backend: htcondor
-    wait: true
+    wait: false
     backend_config: __CONFIG_DIRECTORY__/../../profiles/htcondor.yml
 schema_name: application_workflow.metaschema
 schema_version: 0.7.0

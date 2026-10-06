@@ -4,6 +4,8 @@ tests:
   production.gamma.grid:
   - __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
   production.gamma:
+  - __SCIENCE_CANDIDATE_SITE_PATH__/**/submission.json
+  production.gamma.collect:
   - __SCIENCE_CANDIDATE_SITE_PATH__/**/simulate_prod_job_metadata.yml
   derive.trigger_histograms:
   - __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms/**/*.hdf5

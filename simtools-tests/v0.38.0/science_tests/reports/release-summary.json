@@ -6,7 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "bb15440123e9ea5ced0bf1ecfbe4254ef223b23758b41f3e28953cf72994c015",
+  "campaign_sha256": "08cd1cd750bec53b254e4480d3c6633650fc72b08de10a6af316d37d652d489d",
   "qualified": false,
   "results": [
     {
@@ -31,27 +31,28 @@
       "id": "production.gamma.north",
       "test": "production.gamma",
       "site": "north",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma",
+      "report": "reports/north/production.gamma",
+      "run_id": "01a11149-3560-76a2-b020-148ed3ece4e5",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results."
+    },
+    {
+      "id": "production.gamma.collect.north",
+      "test": "production.gamma.collect",
+      "site": "north",
       "report": null,
       "status": "not_run",
       "execution": "not_run",
       "reason": "Not selected or not executed."
-    },
-    {
-      "id": "production.gamma.grid.north",
-      "test": "production.gamma.grid",
-      "site": "north",
-      "workflow": "workflows/production/gamma_job_grid.yml",
-      "baseline": "v0.38.0",
-      "candidate": "v0.38.0_rc1",
-      "execution_provenance": "work/science-tests/north/production.gamma.grid",
-      "report": "reports/north/production.gamma.grid",
-      "run_id": "01a110b4-c1d1-77aa-9d3c-471af7f31f85",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.38.0/"
-      ],
-      "execution": "completed",
-      "status": "pass"
     },
     {
       "id": "compare.compute_resources.south",
@@ -72,8 +73,8 @@
       "reason": "Not selected or not executed."
     },
     {
-      "id": "production.gamma.south",
-      "test": "production.gamma",
+      "id": "production.gamma.collect.south",
+      "test": "production.gamma.collect",
       "site": "south",
       "report": null,
       "status": "not_run",
