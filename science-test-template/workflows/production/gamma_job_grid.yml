@@ -10,7 +10,7 @@ applications:
     corsika_he_interaction:
     - qgs3
     corsika_le_interaction: urqmd
-    corsika_limits: __PRODUCTION_CONFIGURATION_PATH__/corsika_limits/__SCIENCE_SITE_KEY__/gamma-0.00deg/corsika_limits.ecsv
+    corsika_limits: __PRODUCTION_CONFIGURATION_PATH__/corsika_lookups/v1.1.0/__SCIENCE_SITE_KEY__/gamma-0.00deg/corsika_limits.ecsv
     energy_range:
     - 30 GeV 30 GeV
     - 3 TeV 3 TeV

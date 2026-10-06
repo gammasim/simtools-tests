@@ -3,4 +3,4 @@
 __SCIENCE_CANDIDATE_PATH__: /lustre/fs24/group/cta/science_tests/v0.38.0/
 __SCIENCE_BASELINE_PATH__: /lustre/fs24/group/cta/science_tests/v0.37.0/
 __PRODUCTION_CONFIGURATION_PATH__: /cephfs/users/maierg/CTA/simpipe/production-configuration/data/
-__SCIENCE_CONTAINER_IMAGE_PATH__: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_v0.38.1-v78050-v2025-11-30-rc-avx2.sif
+__SCIENCE_CONTAINER_IMAGE_PATH__: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif
