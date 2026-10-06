@@ -1,0 +1,84 @@
+{
+  "release": "v0.38.0_rc1",
+  "baseline": "v0.38.0",
+  "required_sites": [
+    "north",
+    "south"
+  ],
+  "dry_run": false,
+  "campaign_sha256": "bb15440123e9ea5ced0bf1ecfbe4254ef223b23758b41f3e28953cf72994c015",
+  "qualified": false,
+  "results": [
+    {
+      "id": "compare.compute_resources.north",
+      "test": "compare.compute_resources",
+      "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "compare.trigger_histograms.north",
+      "test": "compare.trigger_histograms",
+      "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "production.gamma.north",
+      "test": "production.gamma",
+      "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "production.gamma.grid.north",
+      "test": "production.gamma.grid",
+      "site": "north",
+      "workflow": "workflows/production/gamma_job_grid.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma.grid",
+      "report": "reports/north/production.gamma.grid",
+      "run_id": "01a110b4-c1d1-77aa-9d3c-471af7f31f85",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/"
+      ],
+      "execution": "completed",
+      "status": "pass"
+    },
+    {
+      "id": "compare.compute_resources.south",
+      "test": "compare.compute_resources",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "compare.trigger_histograms.south",
+      "test": "compare.trigger_histograms",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "production.gamma.south",
+      "test": "production.gamma",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    }
+  ]
+}
