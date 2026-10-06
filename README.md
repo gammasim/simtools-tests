@@ -7,7 +7,7 @@ Versioned test resources and generated artifacts for
 
 ## Integration tests
 
-Current bundles live below `simtools-tests/<resource-version>/integration_tests/`. Bundles below
+Directory for integration tests is `simtools-tests/<resource-version>/integration_tests/`. Files below
 `simtools-tests/legacy/` are not maintained by current CI.
 
 | Path | Lifecycle |
@@ -17,13 +17,6 @@ Current bundles live below `simtools-tests/<resource-version>/integration_tests/
 | `downloaded/` | Inputs fetched from `config_files/download_files.yml`; regenerated from external GitLab URLs. |
 | `generated/` | Workflow outputs collected as reference products. |
 | `run_time.yml` | Container/runtime image, mounts, network, and environment-file configuration. |
-
-Science-test releases, when present, live in `<resource-version>/science_tests/` and contain the
-release definition, site selections, context example, and runner instructions for
-`simtools-run-science-tests`.
-
-Do not commit `tmp/`, `tmp_application_output/`, or `log_files/`; the other directories are part of
-the versioned snapshot.
 
 ### Generation requirements
 
@@ -75,31 +68,6 @@ A successful run exits 0, writes one log per workflow, and updates the collected
 `--config_file path/to/workflow.config.yml` to run one workflow or `--download_only` to fetch only
 external inputs.
 
-## Run simtools integration tests
-
-From the `simtools` repository root, select a resource directory with
-`--test_resources_path`:
-
-```bash
-resource_version="vX.Y.Z"
-pytest --no-cov -n auto --model_version=6.0.2 \
-    --test_resources_path="../simtools-tests/simtools-tests/${resource_version}/integration_tests" \
-    tests/integration_tests
-```
-
-Alternatively, select a versioned resource directory with
-`--simtools_tests_resource_version` (or `SIMTOOLS_TESTS_RESOURCE_VERSION`); the default is the
-`resource-version` in `simtools/dependency_versions.yml`. A full resource path can also be supplied
-through `SIMTOOLS_TEST_RESOURCES`.
-
-When using a local model checkout, set `SIMTOOLS_SIMULATION_MODELS_PATH`. For a Git source, set
-`SIMTOOLS_SIMULATION_MODELS_GIT_PATH` and `SIMTOOLS_SIMULATION_MODELS_GIT_REVISION` instead; the two
-source types cannot be used together. This assumes sibling `simtools` and `simtools-tests` checkouts.
-See
-[CONTRIBUTING.md](https://github.com/gammasim/simtools/blob/main/CONTRIBUTING.md) and the
-[RELEASING.md](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/release.md)
-release guidance for project workflow.
-
 ## Science tests
 
 ### Science-test template
@@ -111,11 +79,12 @@ bundles refer to this template instead of copying workflows.
 | --- | --- |
 | `catalogue.yml` | Test names, supported sites, prerequisite tests, and production requirements. |
 | `workflows/` | Production, derivation, and comparison workflows. |
+| `run_time.yml` | Shared Apptainer runtime for grid generation, derivation, and comparison. |
 | `profiles/` | Shared local and HTCondor execution settings. |
 | `acceptance/expected-products.yml` | Required products for every test. |
 | `acceptance/thresholds.yml` | Comparison limits and checks for complete simulation outputs. |
 
-The template uses the existing simtools application-workflow schema. Production is always an
+The template uses the simtools application-workflow schema. Production is always an
 explicit, two-step operation: review the generated grid first, then submit with
 `--allow_production`. Comparison tests never submit production implicitly. Numerical comparison
 results remain advisory until calibrated thresholds are approved.
@@ -123,12 +92,15 @@ results remain advisory until calibrated thresholds are approved.
 ### Run simtools science tests
 
 Science tests are longer-running release-validation workflows. A release directory contains a
-release definition and site selections. Copy its context example outside the repository, fill in
+release definition and site selections. Copy its context example, fill in
 the candidate, baseline, and production-configuration directories, and check the configuration
 with a dry run.
 
 Set `__SCIENCE_CONTAINER_IMAGE_PATH__` to the full path of the Apptainer `.sif` file for
-HTCondor production. The file can have any name and can be stored outside the candidate directory.
+the shared runtime and HTCondor production. The file can have any name and can be stored outside
+the candidate directory. The science runner loads `science-test-template/run_time.yml` automatically;
+`__CONFIG_DIRECTORY__` in that file refers to the template directory. Production submission runs
+on the host using `profiles/htcondor.yml`; the submitted jobs use its container image.
 
 ```bash
 simtools-run-science-tests \
