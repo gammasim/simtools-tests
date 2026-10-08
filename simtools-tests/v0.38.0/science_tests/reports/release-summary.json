@@ -6,7 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "46610165623cc7dd353c36facd7211022af2d44059ed5f283e0fda2438d4ec35",
+  "campaign_sha256": "93b662698c3bab792c805a1ed60d07951c8a187ff6cef469390530c6a92abdf7",
   "qualified": false,
   "results": [
     {
@@ -16,7 +16,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "reason": "Not selected or not executed."
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -25,7 +25,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.north",
@@ -36,7 +36,7 @@
       "candidate": "v0.38.0_rc1",
       "execution_provenance": "work/science-tests/north/production.gamma",
       "report": "reports/north/production.gamma",
-      "run_id": "01a11ab7-ff87-7679-a324-ef24e61ecc2c",
+      "run_id": "01a11ac2-07f2-77e6-96d7-23e6239ed63f",
       "runtime": "host (no container)",
       "output_paths": [
         "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
@@ -52,25 +52,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
-    },
-    {
-      "id": "production.gamma.grid.north",
-      "test": "production.gamma.grid",
-      "site": "north",
-      "workflow": "workflows/production/gamma_job_grid.yml",
-      "baseline": "v0.38.0",
-      "candidate": "v0.38.0_rc1",
-      "execution_provenance": "work/science-tests/north/production.gamma.grid",
-      "report": "reports/north/production.gamma.grid",
-      "run_id": "01a11ab6-961d-7078-9b0a-b9186e23077b",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.38.0/"
-      ],
-      "execution": "not_run",
-      "status": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "reason": "Not selected or not executed."
     },
     {
       "id": "compare.compute_resources.south",

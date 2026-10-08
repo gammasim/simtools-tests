@@ -8,7 +8,6 @@ Qualified: False
 | north | compare.trigger_histograms | not_run | not_run | - |
 | north | production.gamma | submitted | submitted | [report](north/production.gamma/summary.md) |
 | north | production.gamma.collect | not_run | not_run | - |
-| north | production.gamma.grid | not_run | not_run | [report](north/production.gamma.grid/summary.md) |
 | south | compare.compute_resources | not_run | not_run | - |
 | south | compare.trigger_histograms | not_run | not_run | - |
 | south | production.gamma.collect | not_run | not_run | - |
