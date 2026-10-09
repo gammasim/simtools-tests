@@ -95,7 +95,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "compare.trigger_histograms.south",
@@ -104,7 +104,25 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "production.gamma.south",
+      "test": "production.gamma",
+      "site": "south",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/south/production.gamma",
+      "report": "reports/south/production.gamma",
+      "run_id": "01a120d2-beaa-711f-b734-f643f280eaf2",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/south"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results."
     },
     {
       "id": "production.gamma.collect.south",
@@ -113,7 +131,25 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "production.gamma.grid.south",
+      "test": "production.gamma.grid",
+      "site": "south",
+      "workflow": "workflows/production/gamma_job_grid.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/south/production.gamma.grid",
+      "report": "reports/south/production.gamma.grid",
+      "run_id": "01a120cd-f43c-779a-89eb-ac0f71471a29",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/"
+      ],
+      "execution": "not_run",
+      "status": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
     }
   ]
 }

@@ -3,7 +3,6 @@ version: 1
 rules:
   gamma-events:
     mode: advisory
-    # Completeness is blocking even while numerical differences are advisory.
     metrics:
     - file: __SCIENCE_REPORT_PATH__/comparison_inventory.json
       key: matched_pair_count

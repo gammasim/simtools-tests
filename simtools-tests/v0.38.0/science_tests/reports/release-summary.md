@@ -11,4 +11,6 @@ Qualified: False
 | north | production.gamma.collect | completed | pass | [report](north/production.gamma.collect/summary.md) |
 | south | compare.compute_resources | not_run | not_run | - |
 | south | compare.trigger_histograms | not_run | not_run | - |
+| south | production.gamma | submitted | submitted | [report](south/production.gamma/summary.md) |
 | south | production.gamma.collect | not_run | not_run | - |
+| south | production.gamma.grid | not_run | not_run | [report](south/production.gamma.grid/summary.md) |
