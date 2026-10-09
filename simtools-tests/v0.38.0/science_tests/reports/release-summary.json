@@ -13,10 +13,19 @@
       "id": "compare.compute_resources.north",
       "test": "compare.compute_resources",
       "site": "north",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "workflow": "workflows/comparison/compute_resources.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/compare.compute_resources",
+      "report": "reports/north/compare.compute_resources",
+      "run_id": "01a11fe6-419c-7671-b5b9-5c1c87a26416",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.compute_resources/output"
+      ],
+      "execution": "completed",
+      "status": "warn",
+      "reason": "Numerical acceptance is advisory; review required."
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -25,7 +34,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "production.gamma.north",
@@ -49,10 +58,18 @@
       "id": "production.gamma.collect.north",
       "test": "production.gamma.collect",
       "site": "north",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "workflow": "workflows/production/gamma_collect.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma.collect",
+      "report": "reports/north/production.gamma.collect",
+      "run_id": "01a11fe6-419c-7671-b5b9-5c1c87a26416",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
+      ],
+      "execution": "completed",
+      "status": "pass"
     },
     {
       "id": "compare.compute_resources.south",
