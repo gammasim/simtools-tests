@@ -23,9 +23,9 @@
       "output_paths": [
         "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.compute_resources/output"
       ],
-      "execution": "completed",
-      "status": "warn",
-      "reason": "Numerical acceptance is advisory; review required."
+      "execution": "not_run",
+      "status": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -35,6 +35,23 @@
       "status": "not_run",
       "execution": "not_run",
       "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "derive.trigger_histograms.north",
+      "test": "derive.trigger_histograms",
+      "site": "north",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/derive.trigger_histograms",
+      "report": "reports/north/derive.trigger_histograms",
+      "run_id": "01a120c9-3ca3-710d-9eb6-7dd3bc76379e",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms"
+      ],
+      "execution": "completed",
+      "status": "pass"
     },
     {
       "id": "production.gamma.north",
@@ -63,7 +80,7 @@
       "candidate": "v0.38.0_rc1",
       "execution_provenance": "work/science-tests/north/production.gamma.collect",
       "report": "reports/north/production.gamma.collect",
-      "run_id": "01a11fe6-419c-7671-b5b9-5c1c87a26416",
+      "run_id": "01a120c9-3ca3-710d-9eb6-7dd3bc76379e",
       "runtime": "host (no container)",
       "output_paths": [
         "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
