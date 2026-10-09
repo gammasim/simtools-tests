@@ -19,9 +19,9 @@ applications:
     log_level: DEBUG
     model_version:
     - 7.0.0
-    showers_per_run: 50000
-    showers_per_run_power_law: "-0.793 30 GeV"
-    number_of_runs: 4
+    showers_per_run: 20000
+    showers_per_run_power_law: "-1. 30 GeV"
+    number_of_runs: 20
     total_showers_scaling: fixed
     output_file: __SCIENCE_SITE_KEY___job_grid.ecsv
     output_path: __SCIENCE_CANDIDATE_PATH__

@@ -36,7 +36,7 @@ checkout. Keep `.env` out of commits.
 
 ### Generate or regenerate
 
-For a new bundle, replace the version values below. The target must not already exist; the template
+For a new resource set, replace the version values below. The target must not already exist; the template
 copies `config_files/`, `static/`, and `run_time.yml`, then generation creates `downloaded/`,
 `generated/`, and `log_files/`.
 
@@ -44,7 +44,6 @@ copies `config_files/`, `static/`, and `run_time.yml`, then generation creates `
 resource_version="vX.Y.Z"
 template_version="vA.B.C"
 runtime_file="simtools-tests/${template_version}/integration_tests/run_time.yml"
-test ! -e "simtools-tests/${resource_version}"
 simtools-resources-test-generate \
     --simtools_version "${resource_version}" \
     --template_version "${template_version}" \
@@ -53,7 +52,7 @@ simtools-resources-test-generate \
     --overwrite_collection_files
 ```
 
-For an existing bundle, review its `run_time.yml` first and rerun with:
+For an existing resource set, review its `run_time.yml` first and rerun with:
 
 ```bash
 resource_version="vX.Y.Z"
@@ -92,9 +91,20 @@ results remain advisory until calibrated thresholds are approved.
 ### Run simtools science tests
 
 Science tests are longer-running release-validation workflows. A release directory contains a
-release definition and site selections. Copy its context example, fill in
-the candidate, baseline, and production-configuration directories, and check the configuration
-with a dry run.
+release definition, site selections, and context. Fill in the candidate, baseline, production-
+configuration, and container paths in `context.yml`, then check the configuration with a dry run.
+
+Create a minimal release directory from the shared templates with:
+
+```bash
+simtools-run-science-tests \
+    --release_dir simtools-tests/vX.Y.Z/science_tests \
+    --setup
+```
+
+The setup command creates the release definition, site selections, and an editable `context.yml`.
+It does not overwrite existing setup files or copy generated reports. Review the created files and
+context paths before running a dry run.
 
 Set `__SCIENCE_CONTAINER_IMAGE_PATH__` to the full path of the Apptainer `.sif` file for
 the shared runtime and HTCondor production. The file can have any name and can be stored outside
@@ -105,7 +115,6 @@ on the host using `profiles/htcondor.yml`; the submitted jobs use its container 
 ```bash
 simtools-run-science-tests \
     --release_dir simtools-tests/vX.Y.Z/science_tests \
-    --context_file /path/to/vX.Y.Z-context.yml \
     --dry_run
 ```
 
@@ -114,12 +123,10 @@ Generate and review the production grids before submitting:
 ```bash
 simtools-run-science-tests \
     --release_dir simtools-tests/vX.Y.Z/science_tests \
-    --context_file /path/to/vX.Y.Z-context.yml \
     --test production.gamma.grid
 
 simtools-run-science-tests \
     --release_dir simtools-tests/vX.Y.Z/science_tests \
-    --context_file /path/to/vX.Y.Z-context.yml \
     --test production.gamma \
     --allow_production
 ```
@@ -131,7 +138,6 @@ automatically before running:
 ```bash
 simtools-run-science-tests \
     --release_dir simtools-tests/vX.Y.Z/science_tests \
-    --context_file /path/to/vX.Y.Z-context.yml \
     --test compare.trigger_histograms \
     --test compare.compute_resources
 ```

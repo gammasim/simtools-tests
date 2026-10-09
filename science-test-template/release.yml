@@ -1,0 +1,7 @@
+---
+catalogue: ../../../science-test-template/catalogue.yml
+required_sites: [north, south]
+baseline: vX.Y.Z
+release_label: __SCIENCE_RELEASE_LABEL__
+simulation_models_git_revision: vX.Y.Z
+expected_changes: [configuration.atmosphere]
