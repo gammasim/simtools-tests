@@ -1,0 +1,27 @@
+---
+version: 1
+rules:
+  gamma-events:
+    mode: advisory
+    metrics:
+    - file: __SCIENCE_REPORT_PATH__/comparison_inventory.json
+      key: matched_pair_count
+      minimum: 1
+    - file: __SCIENCE_REPORT_PATH__/comparison_inventory.json
+      key: pairing_error_count
+      maximum: 0
+    - file: __SCIENCE_REPORT_PATH__/**/comparison_statistics.json
+      key: baseline.simulated_event_count
+      minimum: 1
+    - file: __SCIENCE_REPORT_PATH__/**/comparison_statistics.json
+      key: comparison_sets.0.simulated_event_count
+      minimum: 1
+  computing:
+    mode: advisory
+    metrics:
+    - file: __SCIENCE_REPORT_PATH__/resource_requirements.json
+      key: resource_row_count
+      minimum: 1
+    - file: __SCIENCE_REPORT_PATH__/resource_requirements.json
+      key: diagnostic_count
+      maximum: 0

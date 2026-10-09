@@ -1,0 +1,17 @@
+{
+  "id": "production.gamma.grid.north",
+  "test": "production.gamma.grid",
+  "site": "north",
+  "workflow": "workflows/production/gamma_job_grid.yml",
+  "baseline": "v0.38.0",
+  "candidate": "v0.38.0_rc1",
+  "execution_provenance": "work/science-tests/north/production.gamma.grid",
+  "report": "reports/north/production.gamma.grid",
+  "run_id": "01a11ab6-961d-7078-9b0a-b9186e23077b",
+  "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
+  "output_paths": [
+    "/lustre/fs24/group/cta/science_tests/v0.38.0/"
+  ],
+  "execution": "completed",
+  "status": "pass"
+}

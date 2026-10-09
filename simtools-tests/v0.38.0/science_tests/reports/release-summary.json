@@ -1,0 +1,155 @@
+{
+  "release": "v0.38.0_rc1",
+  "baseline": "v0.38.0",
+  "required_sites": [
+    "north",
+    "south"
+  ],
+  "dry_run": false,
+  "campaign_sha256": "93b662698c3bab792c805a1ed60d07951c8a187ff6cef469390530c6a92abdf7",
+  "qualified": false,
+  "results": [
+    {
+      "id": "compare.compute_resources.north",
+      "test": "compare.compute_resources",
+      "site": "north",
+      "workflow": "workflows/comparison/compute_resources.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/compare.compute_resources",
+      "report": "reports/north/compare.compute_resources",
+      "run_id": "01a11fe6-419c-7671-b5b9-5c1c87a26416",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.compute_resources/output"
+      ],
+      "execution": "not_run",
+      "status": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "compare.trigger_histograms.north",
+      "test": "compare.trigger_histograms",
+      "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "derive.trigger_histograms.north",
+      "test": "derive.trigger_histograms",
+      "site": "north",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/derive.trigger_histograms",
+      "report": "reports/north/derive.trigger_histograms",
+      "run_id": "01a120c9-3ca3-710d-9eb6-7dd3bc76379e",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms"
+      ],
+      "execution": "completed",
+      "status": "pass"
+    },
+    {
+      "id": "production.gamma.north",
+      "test": "production.gamma",
+      "site": "north",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma",
+      "report": "reports/north/production.gamma",
+      "run_id": "01a11ac2-07f2-77e6-96d7-23e6239ed63f",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results."
+    },
+    {
+      "id": "production.gamma.collect.north",
+      "test": "production.gamma.collect",
+      "site": "north",
+      "workflow": "workflows/production/gamma_collect.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma.collect",
+      "report": "reports/north/production.gamma.collect",
+      "run_id": "01a120c9-3ca3-710d-9eb6-7dd3bc76379e",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
+      ],
+      "execution": "completed",
+      "status": "pass"
+    },
+    {
+      "id": "compare.compute_resources.south",
+      "test": "compare.compute_resources",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "compare.trigger_histograms.south",
+      "test": "compare.trigger_histograms",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "production.gamma.south",
+      "test": "production.gamma",
+      "site": "south",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/south/production.gamma",
+      "report": "reports/south/production.gamma",
+      "run_id": "01a120d2-beaa-711f-b734-f643f280eaf2",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/south"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results."
+    },
+    {
+      "id": "production.gamma.collect.south",
+      "test": "production.gamma.collect",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "production.gamma.grid.south",
+      "test": "production.gamma.grid",
+      "site": "south",
+      "workflow": "workflows/production/gamma_job_grid.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/south/production.gamma.grid",
+      "report": "reports/south/production.gamma.grid",
+      "run_id": "01a120cd-f43c-779a-89eb-ac0f71471a29",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/"
+      ],
+      "execution": "not_run",
+      "status": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    }
+  ]
+}

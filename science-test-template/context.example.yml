@@ -1,0 +1,6 @@
+---
+# External paths required for science integration tests
+__SCIENCE_CANDIDATE_PATH__: /lustre/path/to/candidate
+__SCIENCE_BASELINE_PATH__: /lustre/path/to/baseline
+__PRODUCTION_CONFIGURATION_PATH__: /lustre/path/to/production-configuration/data
+__SCIENCE_CONTAINER_IMAGE_PATH__: /lustre/path/to/simtools-vX.Y.Z.sif

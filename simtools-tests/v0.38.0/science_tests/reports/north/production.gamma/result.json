@@ -1,0 +1,18 @@
+{
+  "id": "production.gamma.north",
+  "test": "production.gamma",
+  "site": "north",
+  "workflow": "workflows/production/gamma_submit.yml",
+  "baseline": "v0.38.0",
+  "candidate": "v0.38.0_rc1",
+  "execution_provenance": "work/science-tests/north/production.gamma",
+  "report": "reports/north/production.gamma",
+  "run_id": "01a11ac2-07f2-77e6-96d7-23e6239ed63f",
+  "runtime": "host (no container)",
+  "output_paths": [
+    "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
+  ],
+  "execution": "submitted",
+  "status": "submitted",
+  "reason": "Jobs submitted; run --test production.gamma.collect to collect results."
+}
