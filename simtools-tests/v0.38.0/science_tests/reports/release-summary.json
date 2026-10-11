@@ -1,12 +1,12 @@
 {
   "release": "v0.38.0_rc1",
-  "baseline": "v0.38.0",
+  "baseline": "v0.37.0",
   "required_sites": [
     "north",
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "4bace7db6f112e1448dd30cca4c018ce8ce3f5134bc1f2a49ec1ae1d27731798",
+  "campaign_sha256": "9370382f18cf47d422250122382b34224ef11a3d7cd603b53733cf0eb8499e1e",
   "qualified": false,
   "results": [
     {
@@ -22,19 +22,24 @@
       "id": "compare.trigger_histograms.north",
       "test": "compare.trigger_histograms",
       "site": "north",
-      "workflow": "trigger_histograms.yml",
-      "baseline": "v0.38.0",
+      "workflow": "workflows/comparison/trigger_histograms.yml",
+      "baseline": "v0.37.0",
       "candidate": "v0.38.0_rc1",
       "execution_provenance": "work/science-tests/north/compare.trigger_histograms",
       "report": "reports/north/compare.trigger_histograms",
-      "run_id": "01a12631-a3d8-76aa-b690-74c4dcd593eb",
+      "run_id": "01a12aa7-ff71-75a6-98ad-1f93758e87f5",
       "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev34+gd2474172a",
+        "simulation_models": "v0.18.0"
+      },
       "output_paths": [
         "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.trigger_histograms/output"
       ],
-      "execution": "completed",
-      "status": "warn",
-      "reason": "Numerical acceptance is advisory; review required."
+      "execution": "failed",
+      "status": "incomplete",
+      "error": "See excerpt from log file above",
+      "execution_log": "work/science-tests/north/compare.trigger_histograms/execution.log"
     },
     {
       "id": "derive.trigger_histograms.north",
@@ -89,6 +94,64 @@
       "status": "not_run",
       "execution": "not_run",
       "reason": "Not selected or not executed."
+    }
+  ],
+  "production_history": [
+    {
+      "id": "production.gamma.grid.north",
+      "test": "production.gamma.grid",
+      "site": "north",
+      "workflow": "workflows/production/gamma_job_grid.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma.grid",
+      "run_id": "01a11ab6-961d-7078-9b0a-b9186e23077b",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
+      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/"],
+      "execution": "completed",
+      "status": "pass"
+    },
+    {
+      "id": "production.gamma.north",
+      "test": "production.gamma",
+      "site": "north",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma",
+      "run_id": "01a11ac2-07f2-77e6-96d7-23e6239ed63f",
+      "runtime": "host (no container)",
+      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/north"],
+      "submission_manifest": "/lustre/fs24/group/cta/science_tests/v0.38.0/north/htcondor-80ec33d9d34441489d737579a4587f6f/submission.json",
+      "job_count": 360,
+      "execution": "completed",
+      "status": "pass"
+    },
+    {
+      "id": "production.gamma.grid.south",
+      "test": "production.gamma.grid",
+      "site": "south",
+      "workflow": "workflows/production/gamma_job_grid.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/south_job_grid.ecsv"],
+      "execution": "completed",
+      "status": "pass",
+      "reason": "Reviewed grid artifact retained; original runner provenance was not published."
+    },
+    {
+      "id": "production.gamma.south",
+      "test": "production.gamma",
+      "site": "south",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/south"],
+      "submission_manifest": "/lustre/fs24/group/cta/science_tests/v0.38.0/south/htcondor-bcd5f7f0b28c414db3425b7c2273fe70/submission.json",
+      "job_count": 360,
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Submission manifest currently reports state: submitted."
     }
   ]
 }
