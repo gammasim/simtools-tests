@@ -1,9 +1,9 @@
 # derive.trigger_histograms.north
 
-Status: pass
+Status: incomplete
 
-Run ID: 01a120c9-3ca3-710d-9eb6-7dd3bc76379e
+Run ID: 01a12532-aec4-768b-bd28-17d581045131
 
 Baseline: v0.38.0; candidate: v0.38.0_rc1
 
-Required products and configured rules passed.
+See excerpt from log file above

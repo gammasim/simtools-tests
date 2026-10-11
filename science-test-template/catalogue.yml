@@ -29,11 +29,15 @@ tests:
     tier: release-light
     depends_on: [production.gamma.collect]
     requires_completed_production: true
+    derived_output: __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms
   compare.trigger_histograms:
     workflow: workflows/comparison/trigger_histograms.yml
     sites: [north, south]
     tier: release-light
     depends_on: [derive.trigger_histograms]
+    requires:
+    - __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms/**/*.hdf5
+    - __SCIENCE_BASELINE_SITE_PATH__/derived/trigger_histograms/**/*.hdf5
     acceptance_rule: gamma-events
   compare.compute_resources:
     workflow: workflows/comparison/compute_resources.yml

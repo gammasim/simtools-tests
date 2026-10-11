@@ -21,6 +21,6 @@ collection:
   - resource_requirements.md
   - resource_requirements.ecsv
   - resource_requirements.json
-  - '*.png'
+  - resources-report.pdf
   write_inventory: true
   preserve_relative_paths: true

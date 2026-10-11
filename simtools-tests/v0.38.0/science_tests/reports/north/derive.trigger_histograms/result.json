@@ -7,11 +7,12 @@
   "candidate": "v0.38.0_rc1",
   "execution_provenance": "work/science-tests/north/derive.trigger_histograms",
   "report": "reports/north/derive.trigger_histograms",
-  "run_id": "01a120c9-3ca3-710d-9eb6-7dd3bc76379e",
+  "run_id": "01a12532-aec4-768b-bd28-17d581045131",
   "runtime": "host (no container)",
   "output_paths": [
     "/lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms"
   ],
-  "execution": "completed",
-  "status": "pass"
+  "execution": "failed",
+  "status": "incomplete",
+  "error": "See excerpt from log file above"
 }

@@ -3,7 +3,7 @@ applications:
 - application: simtools-compare-productions
   configuration:
     comparison_level: events
-    baseline_path: __SCIENCE_BASELINE_SITE_PATH__/histograms
+    baseline_path: __SCIENCE_BASELINE_SITE_PATH__/derived/trigger_histograms
     candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms
     select:
     - configuration.primary=gamma
@@ -21,6 +21,6 @@ collection:
   - comparison_inventory.json
   - '**/comparison_statistics.json'
   - '**/comparison_statistics.meta.yml'
-  - '**/*.png'
+  - trigger-report.pdf
   write_inventory: true
   preserve_relative_paths: true

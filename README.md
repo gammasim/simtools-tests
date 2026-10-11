@@ -83,6 +83,10 @@ bundles refer to this template instead of copying workflows.
 | `acceptance/expected-products.yml` | Required products for every test. |
 | `acceptance/thresholds.yml` | Comparison limits and checks for complete simulation outputs. |
 
+`--test` runs only the named tests. Prerequisites are not launched implicitly: select them explicitly
+when they need to be run, or ensure their declared input products already exist. When several tests
+are selected together, prerequisite order is respected.
+
 The template uses the simtools application-workflow schema. Production is always an
 explicit, two-step operation: review the generated grid first, then submit with
 `--allow_production`. Comparison tests never submit production implicitly. Numerical comparison
@@ -132,12 +136,13 @@ simtools-run-science-tests \
 ```
 
 Submission returns once jobs are queued. Use `--test production.gamma.collect` to check completion;
-collection returns `pending` while jobs remain queued. Comparison tests collect production
-automatically before running:
+collection returns `pending` while jobs remain queued. After collection completes, explicitly select
+derivation and comparisons (or select a comparison alone if its derived inputs already exist):
 
 ```bash
 simtools-run-science-tests \
     --release_dir simtools-tests/vX.Y.Z/science_tests \
+    --test derive.trigger_histograms \
     --test compare.trigger_histograms \
     --test compare.compute_resources
 ```
