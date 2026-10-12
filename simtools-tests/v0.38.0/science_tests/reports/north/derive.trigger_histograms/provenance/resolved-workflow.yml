@@ -1,0 +1,19 @@
+---
+configuration_file: trigger_histograms.yml
+applications:
+- application: simtools-write-trigger-histograms
+  configuration:
+    production_path: /lustre/fs24/group/cta/science_tests/v0.38.0/north
+    select:
+    - configuration.primary=gamma
+    - configuration.site=North
+    array_layout_name:
+    - CTAO-North-Alpha
+    output_path: /lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms
+    activity_id: 01a12ab2-0131-768c-ab53-9d76329c0349
+  run_application: true
+runtime_environment:
+  container_engine: apptainer
+  image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif
+  environment_file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/science-test-template/profiles/htcondor.env
+collection: null

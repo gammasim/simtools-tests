@@ -1,0 +1,34 @@
+{
+  "workflow": {
+    "applications": [
+      {
+        "application": "simtools-write-trigger-histograms",
+        "configuration": {
+          "production_path": "/lustre/fs24/group/cta/science_tests/v0.38.0/north",
+          "select": [
+            "configuration.primary=gamma",
+            "configuration.site=North"
+          ],
+          "array_layout_name": [
+            "CTAO-North-Alpha"
+          ],
+          "output_path": "/lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms"
+        }
+      }
+    ],
+    "schema_name": "application_workflow.metaschema",
+    "schema_version": "0.7.0",
+    "runtime_environment": {
+      "container_engine": "apptainer",
+      "image": "/lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif",
+      "environment_file": "/cephfs/users/maierg/CTA/simpipe/simtools-tests/science-test-template/profiles/htcondor.env"
+    }
+  },
+  "runtime": "host (no container)",
+  "ignore_runtime_environment": true,
+  "model_source": {
+    "simulation_models_git_path": "/lustre/fs24/group/cta/science_tests/simulation-models",
+    "simulation_models_git_revision": "v0.18.0"
+  },
+  "environment_file": ".env"
+}
