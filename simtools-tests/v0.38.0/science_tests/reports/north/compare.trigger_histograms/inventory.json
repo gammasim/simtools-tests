@@ -1,0 +1,17 @@
+[
+  {
+    "source": "comparison_inventory.json",
+    "destination": "comparison_inventory.json",
+    "sha256": "1d35bd5b6efc04785cda110577688b7fe1fae6ad9506ad2f0b9f06b177357359"
+  },
+  {
+    "source": "comparison_statistics.json",
+    "destination": "comparison_statistics.json",
+    "sha256": "aa3e63abe6bb12f78278c3f35e46d003cb403bea9bf8e44980d283479043d760"
+  },
+  {
+    "source": "trigger-report.pdf",
+    "destination": "trigger-report.pdf",
+    "sha256": "a86ff1ad16841643e93621cd0ca8fe71bc3e178c19491dff9717b6ab7307bd1e"
+  }
+]
