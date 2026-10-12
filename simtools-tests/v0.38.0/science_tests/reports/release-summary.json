@@ -13,10 +13,28 @@
       "id": "compare.compute_resources.north",
       "test": "compare.compute_resources",
       "site": "north",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "workflow": "workflows/comparison/compute_resources.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/compare.compute_resources",
+      "report": "reports/north/compare.compute_resources",
+      "run_id": "01a13066-3eab-7730-9b29-84d25c062c26",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev41+g0dfbc19d1",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.compute_resources"
+      ],
+      "execution": "completed",
+      "status": "warn",
+      "reason": "Numerical acceptance is advisory; review required.",
+      "execution_log": "work/science-tests/north/compare.compute_resources/execution.log",
+      "publication": {
+        "file_count": 4,
+        "byte_count": 1795985
+      }
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -27,28 +45,49 @@
       "candidate": "v0.38.0_rc1",
       "execution_provenance": "work/science-tests/north/compare.trigger_histograms",
       "report": "reports/north/compare.trigger_histograms",
-      "run_id": "01a12aa7-ff71-75a6-98ad-1f93758e87f5",
+      "run_id": "01a12f11-45c7-7036-b603-6b3e0f31f2c0",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev36+g4984de6a4",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.trigger_histograms/output"
+      ],
+      "execution": "completed",
+      "status": "warn",
+      "reason": "Numerical acceptance is advisory; review required.",
+      "execution_log": "work/science-tests/north/compare.trigger_histograms/execution.log",
+      "publication": {
+        "file_count": 4,
+        "byte_count": 7216039
+      }
+    },
+    {
+      "id": "derive.trigger_histograms.north",
+      "test": "derive.trigger_histograms",
+      "site": "north",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.38.0_rc1",
+      "execution_provenance": "work/science-tests/north/derive.trigger_histograms",
+      "report": "reports/north/derive.trigger_histograms",
+      "run_id": "01a12ab1-ffb5-76c6-8f9a-fefb3ac780ba",
       "runtime": "host (no container)",
       "software": {
         "simtools": "0.38.4.dev34+gd2474172a",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.trigger_histograms/output"
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms"
       ],
-      "execution": "failed",
-      "status": "incomplete",
-      "error": "See excerpt from log file above",
-      "execution_log": "work/science-tests/north/compare.trigger_histograms/execution.log"
-    },
-    {
-      "id": "derive.trigger_histograms.north",
-      "test": "derive.trigger_histograms",
-      "site": "north",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "work/science-tests/north/derive.trigger_histograms/execution.log",
+      "publication": {
+        "file_count": 0,
+        "byte_count": 0
+      }
     },
     {
       "id": "production.gamma.collect.north",
@@ -98,20 +137,6 @@
   ],
   "production_history": [
     {
-      "id": "production.gamma.grid.north",
-      "test": "production.gamma.grid",
-      "site": "north",
-      "workflow": "workflows/production/gamma_job_grid.yml",
-      "baseline": "v0.38.0",
-      "candidate": "v0.38.0_rc1",
-      "execution_provenance": "work/science-tests/north/production.gamma.grid",
-      "run_id": "01a11ab6-961d-7078-9b0a-b9186e23077b",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
-      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/"],
-      "execution": "completed",
-      "status": "pass"
-    },
-    {
       "id": "production.gamma.north",
       "test": "production.gamma",
       "site": "north",
@@ -121,23 +146,29 @@
       "execution_provenance": "work/science-tests/north/production.gamma",
       "run_id": "01a11ac2-07f2-77e6-96d7-23e6239ed63f",
       "runtime": "host (no container)",
-      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/north"],
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
+      ],
       "submission_manifest": "/lustre/fs24/group/cta/science_tests/v0.38.0/north/htcondor-80ec33d9d34441489d737579a4587f6f/submission.json",
       "job_count": 360,
       "execution": "completed",
       "status": "pass"
     },
     {
-      "id": "production.gamma.grid.south",
+      "id": "production.gamma.grid.north",
       "test": "production.gamma.grid",
-      "site": "south",
+      "site": "north",
       "workflow": "workflows/production/gamma_job_grid.yml",
       "baseline": "v0.38.0",
       "candidate": "v0.38.0_rc1",
-      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/south_job_grid.ecsv"],
+      "execution_provenance": "work/science-tests/north/production.gamma.grid",
+      "run_id": "01a11ab6-961d-7078-9b0a-b9186e23077b",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/"
+      ],
       "execution": "completed",
-      "status": "pass",
-      "reason": "Reviewed grid artifact retained; original runner provenance was not published."
+      "status": "pass"
     },
     {
       "id": "production.gamma.south",
@@ -146,12 +177,28 @@
       "workflow": "workflows/production/gamma_submit.yml",
       "baseline": "v0.38.0",
       "candidate": "v0.38.0_rc1",
-      "output_paths": ["/lustre/fs24/group/cta/science_tests/v0.38.0/south"],
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/south"
+      ],
       "submission_manifest": "/lustre/fs24/group/cta/science_tests/v0.38.0/south/htcondor-bcd5f7f0b28c414db3425b7c2273fe70/submission.json",
       "job_count": 360,
       "execution": "submitted",
       "status": "submitted",
       "reason": "Submission manifest currently reports state: submitted."
+    },
+    {
+      "id": "production.gamma.grid.south",
+      "test": "production.gamma.grid",
+      "site": "south",
+      "workflow": "workflows/production/gamma_job_grid.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.38.0_rc1",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/south_job_grid.ecsv"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "reason": "Reviewed grid artifact retained; original runner provenance was not published."
     }
   ]
 }
