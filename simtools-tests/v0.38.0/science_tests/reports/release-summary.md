@@ -5,8 +5,8 @@ Qualified: False
 | Site | Test | Execution | Status | Reason |
 | --- | --- | --- | --- | --- |
 | north | compare.compute_resources | completed | warn | Numerical acceptance is advisory; review required. |
-| north | compare.trigger_histograms | completed | warn | Numerical acceptance is advisory; review required. |
-| north | derive.trigger_histograms | completed | pass | - |
+| north | compare.trigger_histograms | not_run | not_run | Not selected or not executed. |
+| north | derive.trigger_histograms | reused | pass | Reused complete derived products; use --overwrite to rebuild them. |
 | north | production.gamma.collect | not_run | not_run | Not selected or not executed. |
 | south | compare.compute_resources | not_run | not_run | Not selected or not executed. |
 | south | compare.trigger_histograms | not_run | not_run | Not selected or not executed. |

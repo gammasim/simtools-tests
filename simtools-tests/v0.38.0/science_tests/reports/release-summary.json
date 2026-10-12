@@ -6,7 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "9370382f18cf47d422250122382b34224ef11a3d7cd603b53733cf0eb8499e1e",
+  "campaign_sha256": "950ecab5cbf03c04c7176fe594344d662c3aedb5f7745823d4558017a5e9ec95",
   "qualified": false,
   "results": [
     {
@@ -18,10 +18,10 @@
       "candidate": "v0.38.0_rc1",
       "execution_provenance": "work/science-tests/north/compare.compute_resources",
       "report": "reports/north/compare.compute_resources",
-      "run_id": "01a13066-3eab-7730-9b29-84d25c062c26",
+      "run_id": "01a13174-b4f0-741e-80f3-ea110df25350",
       "runtime": "host (no container)",
       "software": {
-        "simtools": "0.38.4.dev41+g0dfbc19d1",
+        "simtools": "0.38.4.dev47+gba3413354.d20261012",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
@@ -32,36 +32,18 @@
       "reason": "Numerical acceptance is advisory; review required.",
       "execution_log": "work/science-tests/north/compare.compute_resources/execution.log",
       "publication": {
-        "file_count": 4,
-        "byte_count": 1795985
+        "file_count": 3,
+        "byte_count": 58654
       }
     },
     {
       "id": "compare.trigger_histograms.north",
       "test": "compare.trigger_histograms",
       "site": "north",
-      "workflow": "workflows/comparison/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.38.0_rc1",
-      "execution_provenance": "work/science-tests/north/compare.trigger_histograms",
-      "report": "reports/north/compare.trigger_histograms",
-      "run_id": "01a12f11-45c7-7036-b603-6b3e0f31f2c0",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev36+g4984de6a4",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.trigger_histograms/output"
-      ],
-      "execution": "completed",
-      "status": "warn",
-      "reason": "Numerical acceptance is advisory; review required.",
-      "execution_log": "work/science-tests/north/compare.trigger_histograms/execution.log",
-      "publication": {
-        "file_count": 4,
-        "byte_count": 7216039
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "derive.trigger_histograms.north",
@@ -72,21 +54,22 @@
       "candidate": "v0.38.0_rc1",
       "execution_provenance": "work/science-tests/north/derive.trigger_histograms",
       "report": "reports/north/derive.trigger_histograms",
-      "run_id": "01a12ab1-ffb5-76c6-8f9a-fefb3ac780ba",
+      "run_id": "01a1316e-5e33-7480-ba04-fc185272b327",
       "runtime": "host (no container)",
       "software": {
-        "simtools": "0.38.4.dev34+gd2474172a",
+        "simtools": "0.38.4.dev47+gba3413354.d20261012",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
         "/lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms"
       ],
-      "execution": "completed",
+      "execution": "reused",
       "status": "pass",
+      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
       "execution_log": "work/science-tests/north/derive.trigger_histograms/execution.log",
       "publication": {
-        "file_count": 0,
-        "byte_count": 0
+        "file_count": 2,
+        "byte_count": 1992
       }
     },
     {

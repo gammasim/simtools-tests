@@ -15,5 +15,4 @@ tests:
   - __SCIENCE_REPORT_PATH__/**/comparison_statistics.meta.yml
   compare.compute_resources:
   - __SCIENCE_REPORT_PATH__/resource_requirements.md
-  - __SCIENCE_REPORT_PATH__/resource_requirements.ecsv
   - __SCIENCE_REPORT_PATH__/resource_requirements.json
