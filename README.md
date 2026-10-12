@@ -71,7 +71,7 @@ external inputs.
 
 ### Science-test template
 
-The shared `science-test-template/` directory contains reusable science-test definitions. Release
+The shared `science-test-template/` directory contains a reusable set of science-test definitions. Release
 bundles refer to this template instead of copying workflows.
 
 | Path | Purpose |
@@ -97,6 +97,8 @@ results remain advisory until calibrated thresholds are approved.
 Science tests are longer-running release-validation workflows. A release directory contains a
 release definition, site selections, and context. Fill in the candidate, baseline, production-
 configuration, and container paths in `context.yml`, then check the configuration with a dry run.
+The runner implementation is provided by the companion [simtools science-test change](https://github.com/gammasim/simtools/pull/2606);
+use an environment containing that change when running these templates.
 
 Create a minimal release directory from the shared templates with:
 

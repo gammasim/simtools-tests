@@ -15,12 +15,3 @@ applications:
     output_path: __SCIENCE_REPORT_PATH__
 schema_name: application_workflow.metaschema
 schema_version: 0.7.0
-collection:
-  output_path: __SCIENCE_COLLECTION_PATH__
-  files:
-  - comparison_inventory.json
-  - '**/comparison_statistics.json'
-  - '**/comparison_statistics.meta.yml'
-  - trigger-report.pdf
-  write_inventory: true
-  preserve_relative_paths: true

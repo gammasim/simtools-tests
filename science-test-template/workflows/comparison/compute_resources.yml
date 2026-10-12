@@ -15,11 +15,3 @@ applications:
     output_path: __SCIENCE_REPORT_PATH__
 schema_name: application_workflow.metaschema
 schema_version: 0.7.0
-collection:
-  output_path: __SCIENCE_COLLECTION_PATH__
-  files:
-  - resource_requirements.md
-  - resource_requirements.json
-  - resources-report.pdf
-  write_inventory: true
-  preserve_relative_paths: true
