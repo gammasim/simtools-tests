@@ -1,0 +1,92 @@
+{
+  "release": "v0.37.0_rc1",
+  "baseline": "v0.38.0",
+  "required_sites": [
+    "north",
+    "south"
+  ],
+  "dry_run": false,
+  "campaign_sha256": "b380dcba2a09a3e99ef550b27a8d472435d30a3894290123b0083ec2650597fc",
+  "qualified": false,
+  "results": [
+    {
+      "id": "compare.compute_resources.north",
+      "test": "compare.compute_resources",
+      "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "compare.trigger_histograms.north",
+      "test": "compare.trigger_histograms",
+      "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "derive.trigger_histograms.north",
+      "test": "derive.trigger_histograms",
+      "site": "north",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.37.0_rc1",
+      "execution_provenance": "work/science-tests/north/derive.trigger_histograms",
+      "report": "reports/north/derive.trigger_histograms",
+      "run_id": "01a12531-0891-716e-882c-e8fbc82f2283",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/derived/trigger_histograms"
+      ],
+      "execution": "completed",
+      "status": "pass"
+    },
+    {
+      "id": "production.gamma.collect.north",
+      "test": "production.gamma.collect",
+      "site": "north",
+      "workflow": "workflows/production/gamma_collect.yml",
+      "baseline": "v0.38.0",
+      "candidate": "v0.37.0_rc1",
+      "execution_provenance": "work/science-tests/north/production.gamma.collect",
+      "report": "reports/north/production.gamma.collect",
+      "run_id": "01a12531-0891-716e-882c-e8fbc82f2283",
+      "runtime": "host (no container)",
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north"
+      ],
+      "execution": "completed",
+      "status": "pass"
+    },
+    {
+      "id": "compare.compute_resources.south",
+      "test": "compare.compute_resources",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "compare.trigger_histograms.south",
+      "test": "compare.trigger_histograms",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "production.gamma.collect.south",
+      "test": "production.gamma.collect",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    }
+  ]
+}
