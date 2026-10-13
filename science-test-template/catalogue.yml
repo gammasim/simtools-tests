@@ -21,6 +21,7 @@ tests:
     tier: release-light
     depends_on: []
     collect_production: true
+    reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
     requires:
     - __SCIENCE_CANDIDATE_SITE_PATH__/**/submission.json
   derive.trigger_histograms:
@@ -29,6 +30,7 @@ tests:
     tier: release-light
     depends_on: [production.gamma.collect]
     requires_completed_production: true
+    reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
     derived_output: __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms
   compare.trigger_histograms:
     workflow: workflows/comparison/trigger_histograms.yml
@@ -39,10 +41,12 @@ tests:
     - __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms/**/*.hdf5
     - __SCIENCE_BASELINE_SITE_PATH__/derived/trigger_histograms/**/*.hdf5
     acceptance_rule: gamma-events
+    reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
   compare.compute_resources:
     workflow: workflows/comparison/compute_resources.yml
     sites: [north, south]
     tier: release-light
     depends_on: [production.gamma.collect]
     requires_completed_production: true
+    reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
     acceptance_rule: computing

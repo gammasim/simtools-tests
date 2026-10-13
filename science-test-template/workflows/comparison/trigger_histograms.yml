@@ -8,6 +8,7 @@ applications:
     select:
     - configuration.primary=gamma
     - configuration.site=__SCIENCE_SITE__
+    - configuration.model_version=__SCIENCE_MODEL_VERSION__
     array_layout_name:
     - __SCIENCE_ARRAY_LAYOUT__
     compare_by:

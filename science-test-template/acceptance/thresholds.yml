@@ -10,10 +10,10 @@ rules:
     - file: __SCIENCE_REPORT_PATH__/comparison_inventory.json
       key: pairing_error_count
       maximum: 0
-    - file: __SCIENCE_REPORT_PATH__/**/comparison_statistics.json
+    - file: __SCIENCE_REPORT_PATH__/comparison_statistics.json
       key: baseline.simulated_event_count
       minimum: 1
-    - file: __SCIENCE_REPORT_PATH__/**/comparison_statistics.json
+    - file: __SCIENCE_REPORT_PATH__/comparison_statistics.json
       key: comparison_sets.0.simulated_event_count
       minimum: 1
   computing:

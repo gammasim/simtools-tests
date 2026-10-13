@@ -11,8 +11,7 @@ tests:
   - __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms/**/*.hdf5
   compare.trigger_histograms:
   - __SCIENCE_REPORT_PATH__/comparison_inventory.json
-  - __SCIENCE_REPORT_PATH__/**/comparison_statistics.json
-  - __SCIENCE_REPORT_PATH__/**/comparison_statistics.meta.yml
+  - __SCIENCE_REPORT_PATH__/comparison_statistics.json
   compare.compute_resources:
   - __SCIENCE_REPORT_PATH__/resource_requirements.md
   - __SCIENCE_REPORT_PATH__/resource_requirements.json

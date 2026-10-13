@@ -4,6 +4,7 @@ required_sites: [north, south]
 baseline: vX.Y.Z
 release_label: __SCIENCE_RELEASE_LABEL__
 simulation_models_git_revision: vX.Y.Z
+model_version: 7.0.0
 expected_changes: [configuration.atmosphere]
 report_mode: compact
 comparison_parameters:
