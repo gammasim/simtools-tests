@@ -9,12 +9,12 @@
   "campaign_sha256": "34a7969764eefd6af481fb41477b78cd2082af1ee5ecbf50423097ee1516f037",
   "evidence_sha256": {
     "north": {
-      "production": "5043247d84da649d1db4b949944c772f86f06ba900c0145e00d0cc7eb17b855b",
-      "analysis": "38738fc5134bed795e75ddf67e0030c6809c3e1b10db87c75770df10a4f18eef"
+      "production": "c89121be0ff68d7a1e92c2cb025a6bc791cfe170e15560dc524b4499a509bf76",
+      "analysis": "f76fd2804e1360897df9a92840425ba8a7ecd0198ef89f7e83bc6dabf7b99036"
     },
     "south": {
-      "production": "1d98551fe6cf673d2b6d90dfefabbaa9645ca0a8cab7c9c41545e16df210938c",
-      "analysis": "ccc11b746744f277af48538e91a237260096520cc48ede5a70f6aacdca68f814"
+      "production": "3af1e74e5983c0323ec7080a8fa877dfd8e1172e4ad31e72f5eff76b8a5a6610",
+      "analysis": "7ebd8befd7d3ccbe609e4d56a843799b959484b32fb8e89c9ff2722b2ac206ed"
     }
   },
   "qualified": false,
@@ -26,7 +26,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -35,7 +35,34 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "production.gamma.north",
+      "test": "production.gamma",
+      "site": "north",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.37.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma",
+      "report": "reports/north/production.gamma",
+      "run_id": "01a135a2-00a3-76b8-921d-780c274e450a",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev12+g6b6cea4b8",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results.",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma/execution.log",
+      "publication": {
+        "file_count": 0,
+        "byte_count": 0
+      }
     },
     {
       "id": "production.gamma.collect.north",
@@ -44,7 +71,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "production.gamma.grid.north",
@@ -64,13 +91,14 @@
       "output_paths": [
         "/lustre/fs24/group/cta/science_tests/v0.37.0/"
       ],
-      "execution": "completed",
-      "status": "pass",
+      "execution": "not_run",
+      "status": "not_run",
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma.grid/execution.log",
       "publication": {
         "file_count": 0,
         "byte_count": 0
-      }
+      },
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "compare.compute_resources.south",
@@ -79,7 +107,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "compare.trigger_histograms.south",
@@ -88,7 +116,34 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
+    },
+    {
+      "id": "production.gamma.south",
+      "test": "production.gamma",
+      "site": "south",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.37.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma",
+      "report": "reports/south/production.gamma",
+      "run_id": "01a135a2-00a3-76b8-921d-780c274e450a",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev12+g6b6cea4b8",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/south"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results.",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma/execution.log",
+      "publication": {
+        "file_count": 0,
+        "byte_count": 0
+      }
     },
     {
       "id": "production.gamma.collect.south",
@@ -97,7 +152,7 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "reason": "Upstream evidence changed; rerun required."
     },
     {
       "id": "production.gamma.grid.south",
@@ -117,16 +172,44 @@
       "output_paths": [
         "/lustre/fs24/group/cta/science_tests/v0.37.0/"
       ],
-      "execution": "completed",
-      "status": "pass",
+      "execution": "not_run",
+      "status": "not_run",
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma.grid/execution.log",
       "publication": {
         "file_count": 0,
         "byte_count": 0
-      }
+      },
+      "reason": "Upstream evidence changed; rerun required."
     }
   ],
   "production_history": [
+    {
+      "id": "production.gamma.north",
+      "test": "production.gamma",
+      "site": "north",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.37.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma",
+      "report": "reports/north/production.gamma",
+      "run_id": "01a135a2-00a3-76b8-921d-780c274e450a",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev12+g6b6cea4b8",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results.",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma/execution.log",
+      "publication": {
+        "file_count": 0,
+        "byte_count": 0
+      }
+    },
     {
       "id": "production.gamma.grid.north",
       "test": "production.gamma.grid",
@@ -148,6 +231,33 @@
       "execution": "completed",
       "status": "pass",
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma.grid/execution.log",
+      "publication": {
+        "file_count": 0,
+        "byte_count": 0
+      }
+    },
+    {
+      "id": "production.gamma.south",
+      "test": "production.gamma",
+      "site": "south",
+      "workflow": "workflows/production/gamma_submit.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.37.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma",
+      "report": "reports/south/production.gamma",
+      "run_id": "01a135a2-00a3-76b8-921d-780c274e450a",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev12+g6b6cea4b8",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/south"
+      ],
+      "execution": "submitted",
+      "status": "submitted",
+      "reason": "Jobs submitted; run --test production.gamma.collect to collect results.",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma/execution.log",
       "publication": {
         "file_count": 0,
         "byte_count": 0

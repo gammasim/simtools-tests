@@ -6,6 +6,7 @@ applications:
     label: __SCIENCE_RELEASE_LABEL__
     log_level: DEBUG
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__
+    corsika_interaction_table_path: __CORSIKA_INTERACTION_TABLE_PATH__
     backend: htcondor
     wait: false
     # Inline settings are resolved with the workflow's science-test replacement map.
