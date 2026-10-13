@@ -72,5 +72,5 @@ external inputs.
 This repository owns the shared `science-test-template/` resources and versioned
 `simtools-tests/<version>/science_tests/` release configurations and reports. The `simtools`
 repository owns the runner and its operating instructions. See the [science-test guide in
-simtools](https://github.com/gammasim/simtools/blob/improved-science-tests/docs/source/developer-guide/testing_science.md)
+simtools](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/testing_science.md)
 for setup, execution, and result interpretation.
