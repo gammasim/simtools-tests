@@ -18,7 +18,7 @@ applications:
     label: __SCIENCE_RELEASE_LABEL__
     log_level: DEBUG
     model_version:
-    - 7.0.0
+    - __SCIENCE_MODEL_VERSION__
     showers_per_run: 20000
     showers_per_run_power_law: "-1. 30 GeV"
     number_of_runs: 20
