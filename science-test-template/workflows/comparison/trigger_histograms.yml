@@ -1,0 +1,18 @@
+---
+applications:
+- application: simtools-compare-productions
+  configuration:
+    comparison_level: events
+    baseline_path: __SCIENCE_BASELINE_SITE_PATH__/derived/trigger_histograms
+    candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms
+    select:
+    - configuration.primary=gamma
+    - configuration.site=__SCIENCE_SITE__
+    - configuration.model_version=__SCIENCE_MODEL_VERSION__
+    array_layout_name:
+    - __SCIENCE_ARRAY_LAYOUT__
+    compare_by:
+    - configuration.atmosphere
+    output_path: __SCIENCE_REPORT_PATH__
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0

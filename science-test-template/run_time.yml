@@ -1,0 +1,5 @@
+---
+runtime_environment:
+  container_engine: apptainer
+  image: __SCIENCE_CONTAINER_IMAGE_PATH__
+  environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env

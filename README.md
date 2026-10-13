@@ -5,10 +5,10 @@
 Versioned test resources and generated artifacts for
 [simtools](https://github.com/gammasim/simtools) integration and science-validation workflows.
 
-## Resource bundles
+## Integration tests
 
-Current bundles live below `simtools-tests/<resource-version>/integration_tests/`. Bundles below
-`simtools-tests/legacy/` are historical and are not maintained by current CI.
+Directory for integration tests is `simtools-tests/<resource-version>/integration_tests/`. Files below
+`simtools-tests/legacy/` are not maintained by current CI.
 
 | Path | Lifecycle |
 | --- | --- |
@@ -18,13 +18,7 @@ Current bundles live below `simtools-tests/<resource-version>/integration_tests/
 | `generated/` | Workflow outputs collected as reference products. |
 | `run_time.yml` | Container/runtime image, mounts, network, and environment-file configuration. |
 
-Science-test releases, when present, live in `<resource-version>/science_tests/` and contain the
-release context and runner instructions for `simtools-run-science-tests`.
-
-Do not commit `tmp/`, `tmp_application_output/`, or `log_files/`; the other directories are part of
-the versioned snapshot.
-
-## Generation requirements
+### Generation requirements
 
 Run generation from this repository root with the already configured `simtools` environment. The
 runtime in `run_time.yml` requires Podman or Docker and access to the configured image registry.
@@ -40,9 +34,9 @@ to `.env` and set the container paths `SIMTOOLS_SIM_TELARRAY_PATH`, `SIMTOOLS_CO
 Set `SIMTOOLS_TESTS_PATH` when the container needs to resolve versioned resources from this
 checkout. Keep `.env` out of commits.
 
-## Generate or regenerate
+### Generate or regenerate
 
-For a new bundle, replace the version values below. The target must not already exist; the template
+For a new resource set, replace the version values below. The target must not already exist; the template
 copies `config_files/`, `static/`, and `run_time.yml`, then generation creates `downloaded/`,
 `generated/`, and `log_files/`.
 
@@ -50,7 +44,6 @@ copies `config_files/`, `static/`, and `run_time.yml`, then generation creates `
 resource_version="vX.Y.Z"
 template_version="vA.B.C"
 runtime_file="simtools-tests/${template_version}/integration_tests/run_time.yml"
-test ! -e "simtools-tests/${resource_version}"
 simtools-resources-test-generate \
     --simtools_version "${resource_version}" \
     --template_version "${template_version}" \
@@ -59,7 +52,7 @@ simtools-resources-test-generate \
     --overwrite_collection_files
 ```
 
-For an existing bundle, review its `run_time.yml` first and rerun with:
+For an existing resource set, review its `run_time.yml` first and rerun with:
 
 ```bash
 resource_version="vX.Y.Z"
@@ -74,43 +67,10 @@ A successful run exits 0, writes one log per workflow, and updates the collected
 `--config_file path/to/workflow.config.yml` to run one workflow or `--download_only` to fetch only
 external inputs.
 
-## Run simtools integration tests
+## Science tests
 
-From the `simtools` repository root, select a resource directory with
-`--test_resources_path`:
-
-```bash
-resource_version="vX.Y.Z"
-pytest --no-cov -n auto --model_version=6.0.2 \
-    --test_resources_path="../simtools-tests/simtools-tests/${resource_version}/integration_tests" \
-    tests/integration_tests
-```
-
-Alternatively, select a versioned resource directory with
-`--simtools_tests_resource_version` (or `SIMTOOLS_TESTS_RESOURCE_VERSION`); the default is the
-`resource-version` in `simtools/dependency_versions.yml`. A full resource path can also be supplied
-through `SIMTOOLS_TEST_RESOURCES`.
-
-When using a local model checkout, set `SIMTOOLS_SIMULATION_MODELS_PATH`. For a Git source, set
-`SIMTOOLS_SIMULATION_MODELS_GIT_PATH` and `SIMTOOLS_SIMULATION_MODELS_GIT_REVISION` instead; the two
-source types cannot be used together. This assumes sibling `simtools` and `simtools-tests` checkouts.
-See
-[CONTRIBUTING.md](https://github.com/gammasim/simtools/blob/main/CONTRIBUTING.md) and the
-[RELEASING.md](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/release.md)
-release guidance for project workflow.
-
-## Run simtools science tests
-
-Science tests are longer-running release-validation workflows. A release directory contains a
-context template and workflow selection; copy the context example outside the repository, fill in
-the production paths, and run:
-
-```bash
-simtools-run-science-tests \
-    --release_dir simtools-tests/vX.Y.Z/science_tests \
-    --context_file /path/to/vX.Y.Z-context.yml \
-    --dry_run
-```
-
-Remove `--dry_run` to execute the selected workflows. See the release directory's `README.md` for
-site and test-selection options.
+This repository owns the shared `science-test-template/` resources and versioned
+`simtools-tests/<version>/science_tests/` release configurations and reports. The `simtools`
+repository owns the runner and its operating instructions. See the [science-test guide in
+simtools](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/testing_science.md)
+for setup, execution, and result interpretation.

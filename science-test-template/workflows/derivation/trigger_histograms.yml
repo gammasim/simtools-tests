@@ -1,0 +1,19 @@
+---
+applications:
+- application: simtools-write-trigger-histograms
+  configuration:
+    require_complete_runs: true
+    energy_bins_per_decade: 10
+    angular_distance_bin_width: 0.5 deg
+    core_distance_bin_width: 20 m
+    minimum_triggered_telescopes: 2
+    production_path: __SCIENCE_CANDIDATE_SITE_PATH__
+    select:
+    - configuration.primary=gamma
+    - configuration.site=__SCIENCE_SITE__
+    - configuration.model_version=__SCIENCE_MODEL_VERSION__
+    array_layout_name:
+    - __SCIENCE_ARRAY_LAYOUT__
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0
