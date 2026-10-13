@@ -2,16 +2,23 @@
 
 Qualified: False
 
-| Site | Test | Execution | Status | Reason |
-| --- | --- | --- | --- | --- |
-| north | compare.compute_resources | not_run | not_run | Not selected or not executed. |
-| north | compare.trigger_histograms | not_run | not_run | Not selected or not executed. |
-| north | derive.trigger_histograms | not_run | not_run | Not selected or not executed. |
-| north | production.gamma.collect | completed | pass | - |
-| south | compare.compute_resources | not_run | not_run | Not selected or not executed. |
-| south | compare.trigger_histograms | not_run | not_run | Not selected or not executed. |
-| south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. |
-| south | production.gamma.collect | not_run | not_run | Not selected or not executed. |
+| Site | Test | Execution | Status | Reason | Report |
+| --- | --- | --- | --- | --- | --- |
+| north | compare.compute_resources | completed | warn | Numerical acceptance is advisory; review required. | [report](north/compare.compute_resources) |
+| north | compare.trigger_histograms | completed | warn | Numerical acceptance is advisory; review required. | [report](north/compare.trigger_histograms) |
+| north | derive.trigger_histograms | completed | pass | - | [report](north/derive.trigger_histograms) |
+| north | production.gamma.collect | completed | pass | - | [report](north/production.gamma.collect) |
+| south | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
+| south | compare.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+
+## Execution details
+
+- north/compare.compute_resources: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.compute_resources/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.compute_resources`.
+- north/compare.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/compare.trigger_histograms`.
+- north/derive.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/derive.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/derive.trigger_histograms`.
+- north/production.gamma.collect: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/production.gamma.collect/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/production.gamma.collect`.
 
 ## Production history
 

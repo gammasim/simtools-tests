@@ -14,7 +14,7 @@
   "comparisons": [
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30tev-za40deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za40deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30tev-za40deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za40deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -34,7 +34,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e3tev-za40deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za40deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e3tev-za40deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za40deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -54,7 +54,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30gev-za40deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za40deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30gev-za40deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za40deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -74,7 +74,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30tev-za55deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za55deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30tev-za55deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za55deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -94,7 +94,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e3tev-za55deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za55deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e3tev-za55deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za55deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -114,7 +114,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30gev-za55deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za55deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30gev-za55deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za55deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -134,7 +134,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30tev-za60deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za60deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30tev-za60deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za60deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -154,7 +154,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e3tev-za60deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za60deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e3tev-za60deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za60deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -174,7 +174,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30gev-za60deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za60deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30gev-za60deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za60deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -194,7 +194,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30tev-za20deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za20deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30tev-za20deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za20deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -214,7 +214,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e3tev-za20deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za20deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e3tev-za20deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za20deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -234,7 +234,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30gev-za20deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za20deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30gev-za20deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za20deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -254,7 +254,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30tev-za65deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za65deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30tev-za65deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za65deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -274,7 +274,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30tev-za67.5deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za67.5deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30tev-za67.5deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30tev-za67.5deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -294,7 +294,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e3tev-za65deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za65deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e3tev-za65deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za65deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -314,7 +314,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e3tev-za67.5deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za67.5deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e3tev-za67.5deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e3tev-za67.5deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -334,7 +334,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30gev-za65deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za65deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30gev-za65deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za65deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",
@@ -354,7 +354,7 @@
     },
     {
       "array_layout": "CTAO-North-Alpha",
-      "pair": "gamma-e30gev-za67.5deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za67.5deg-azm31deg-qgs3-site-north-ctao-north-alpha.trigger_histograms",
+      "pair": "gamma-e30gev-za67.5deg-azm211deg-qgs3-site-north-ctao-north-alpha.trigger_histograms-vs-gamma-e30gev-za67.5deg-azm31deg-qgs3-site-north-model-version-7-0-0-ctao-north-alpha.trigger_histograms",
       "statistics": {
         "baseline": {
           "label": "v0.37.0",

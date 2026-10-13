@@ -4,7 +4,7 @@
   "diagnostic_count": 0,
   "summary": [
     {
-      "production_label": "baseline",
+      "production_label": "v0.37.0",
       "role": "corsika",
       "job_count": 360,
       "wall_time_seconds_per_event_median": 17.024539973642504,
@@ -21,7 +21,7 @@
       "sim_telarray_storage_bytes_per_event_p95": null
     },
     {
-      "production_label": "baseline",
+      "production_label": "v0.37.0",
       "role": "sim_telarray",
       "job_count": 360,
       "wall_time_seconds_per_event_median": 16.547533223662505,
