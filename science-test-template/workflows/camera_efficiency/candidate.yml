@@ -1,0 +1,11 @@
+---
+applications:
+- application: simtools-validate-camera-efficiency
+  configuration:
+    model_version: 7.0.0
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/camera_efficiency
+    site: __SCIENCE_SITE__
+    telescope: __SCIENCE_CAMERA_TELESCOPE__
+    zenith_angle: 0.0
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0

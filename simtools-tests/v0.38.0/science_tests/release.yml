@@ -5,7 +5,7 @@ baseline: v0.37.0
 release_label: v0.38.0_rc1
 simulation_models_git_revision: v0.18.0
 model_version: 7.0.0
-expected_changes: [configuration.azimuth_angle]
+expected_changes: [configuration.azimuth_angle, case.azimuth_angle]
 report_mode: compact
 comparison_requirements:
   trigger_histograms:
@@ -13,3 +13,5 @@ comparison_requirements:
 comparison_parameters:
   trigger_histograms:
     compare_by: [configuration.azimuth_angle]
+  camera_efficiency:
+    compare_by: [case.azimuth_angle]

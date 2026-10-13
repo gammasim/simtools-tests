@@ -50,3 +50,25 @@ tests:
     requires_completed_production: true
     reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
     acceptance_rule: computing
+
+  camera_efficiency.baseline:
+    workflow: workflows/camera_efficiency/baseline.yml
+    sites: [north, south]
+    tier: release-light
+    runtime_role: baseline
+    result_type: camera_efficiency
+    depends_on: []
+  camera_efficiency.candidate:
+    workflow: workflows/camera_efficiency/candidate.yml
+    sites: [north, south]
+    tier: release-light
+    runtime_role: candidate
+    result_type: camera_efficiency
+    depends_on: []
+  compare.camera_efficiency:
+    workflow: workflows/camera_efficiency/compare.yml
+    sites: [north, south]
+    tier: release-light
+    runtime_role: analysis
+    depends_on: [camera_efficiency.baseline, camera_efficiency.candidate]
+    result_status_file: __SCIENCE_REPORT_PATH__/science-comparison.json

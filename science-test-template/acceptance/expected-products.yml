@@ -15,3 +15,11 @@ tests:
   compare.compute_resources:
   - __SCIENCE_REPORT_PATH__/resource_requirements.md
   - __SCIENCE_REPORT_PATH__/resource_requirements.json
+  camera_efficiency.baseline:
+  - __SCIENCE_BASELINE_PATH__/__SCIENCE_SITE_KEY__/camera_efficiency/camera_efficiency_manifest.json
+  camera_efficiency.candidate:
+  - __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY__/camera_efficiency/camera_efficiency_manifest.json
+  compare.camera_efficiency:
+  - __SCIENCE_REPORT_PATH__/science-comparison.json
+  - __SCIENCE_REPORT_PATH__/science-comparison.png
+  - __SCIENCE_REPORT_PATH__/science-comparison.pdf
