@@ -74,3 +74,12 @@ This repository owns the shared `science-test-template/` resources and versioned
 repository owns the runner and its operating instructions. See the [science-test guide in
 simtools](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/testing_science.md)
 for setup, execution, and result interpretation.
+
+### Examples for science tests
+
+```bash
+simtools-run-science-tests \
+    --release_dir ../simtools-tests/simtools-tests/v0.38.0/science_tests \
+    --test compare.compute_resources \
+    --site North
+```

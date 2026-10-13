@@ -3,5 +3,6 @@ catalogue: ../../../science-test-template/catalogue.yml
 required_sites: [north, south]
 baseline: v0.37.0
 release_label: v0.37.0
-simulation_models_git_revision: v0.17.2
+simulation_models_git_revision: null
+model_version: 7.0.0
 expected_changes: [configuration.atmosphere]
