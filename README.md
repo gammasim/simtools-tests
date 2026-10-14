@@ -78,19 +78,37 @@ for setup, execution, and result interpretation.
 ### Science-test dependencies
 
 Before running a release, configure the external paths in that release's `science_tests/context.yml`.
-All paths must be readable from both the submit host and the HTCondor worker inside Apptainer:
+Set the shared storage root locally, using an absolute path:
 
-| Context entry | Shared location |
+```bash
+export SIMTOOLS_SCIENCE_TESTS_ROOT=/path/to/shared/science_tests
+```
+
+Alternatively, put `SIMTOOLS_SCIENCE_TESTS_ROOT=/path/to/shared/science_tests` in an untracked `.env`
+in the working directory, or in a file selected with `--env_file`. Context paths can then use
+`${SIMTOOLS_SCIENCE_TESTS_ROOT}`, for example:
+
+```yaml
+__SCIENCE_CANDIDATE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/v0.39.0
+__SCIENCE_BASELINE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/v0.37.0
+```
+
+The runner resolves the root before validating paths and preparing workflows, and rejects an
+unset, empty, or relative root when the context references it. Explicit absolute context paths
+remain supported. Keep filesystem-specific roots in local configuration. The shared dependencies
+use these locations below the root:
+
+| Context entry | Location below the root |
 | --- | --- |
-| `simulation_models_path` or `simulation_models_git_path` | `/lustre/fs24/group/cta/science_tests/simulation-models` |
-| `__CORSIKA_INTERACTION_TABLE_PATH__` | `/lustre/fs24/group/cta/science_tests/corsika7-interaction-tables/interaction-tables` |
-| `__PRODUCTION_CONFIGURATION_PATH__` | `/lustre/fs24/group/cta/science_tests/production-configuration/data` |
+| `simulation_models_path` or `simulation_models_git_path` | `simulation-models` |
+| `__CORSIKA_INTERACTION_TABLE_PATH__` | `corsika7-interaction-tables/interaction-tables` |
+| `__PRODUCTION_CONFIGURATION_PATH__` | `production-configuration/data` |
 
 The release context also requires the candidate/baseline directories and the versioned Apptainer image.
 HTCondor workflows share their job settings through `science-test-template/profiles/htcondor.yml`.
-Avoid personal `/cephfs/users/...` paths in shared release configurations. Run the recommended
-`--preflight` before production submission; it validates these paths on the worker before submitting
-the production job set.
+All resolved paths must be readable at the same location on the submit host and the HTCondor worker
+inside Apptainer. Run the recommended `--preflight` before production submission; it validates these
+paths on the worker before submitting the production job set.
 
 ### Examples for science tests
 
