@@ -1,5 +1,5 @@
 ---
-catalogue: ../../../science-test-template/catalogue.yml
+catalogue: catalogue.yml
 required_sites: [north, south]
 baseline: v0.37.0
 release_label: v0.37.0
