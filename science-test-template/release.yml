@@ -5,8 +5,8 @@ baseline: vX.Y.Z
 release_label: __SCIENCE_RELEASE_LABEL__
 simulation_models_git_revision: vX.Y.Z
 model_version: 7.0.0
-expected_changes: [configuration.atmosphere]
+expected_changes: []
 report_mode: compact
 comparison_parameters:
   trigger_histograms:
-    compare_by: [configuration.atmosphere]
+    compare_by: []
