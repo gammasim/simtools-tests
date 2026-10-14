@@ -75,6 +75,22 @@ repository owns the runner and its operating instructions. See the [science-test
 simtools](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/testing_science.md)
 for setup, execution, and result interpretation.
 
+### Science-test dependencies
+
+Before running a release, configure the external paths in that release's `science_tests/context.yml`.
+All paths must be readable from both the submit host and the HTCondor worker inside Apptainer:
+
+| Context entry | Shared location |
+| --- | --- |
+| `simulation_models_path` or `simulation_models_git_path` | `/lustre/fs24/group/cta/science_tests/simulation-models` |
+| `__CORSIKA_INTERACTION_TABLE_PATH__` | `/lustre/fs24/group/cta/science_tests/corsika7-interaction-tables/interaction-tables` |
+| `__PRODUCTION_CONFIGURATION_PATH__` | `/lustre/fs24/group/cta/science_tests/production-configuration/data` |
+
+The release context also requires the candidate/baseline directories and the versioned Apptainer image.
+Avoid personal `/cephfs/users/...` paths in shared release configurations. Run the recommended
+`--preflight` before production submission; it validates these paths on the worker before submitting
+the production job set.
+
 ### Examples for science tests
 
 ```bash
