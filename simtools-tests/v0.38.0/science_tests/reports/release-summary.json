@@ -6,15 +6,15 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "695b8d5645b35cf52598eb3589bbed4e6672f4ad77ef6ac0e34e099c930afccb",
+  "campaign_sha256": "9188a8abcb856928bb13e3c37fa2582e34f0080130b0b0f3e764c68c483e7cf5",
   "evidence_sha256": {
     "north": {
-      "production": "1c7cefa1962fb2ee1c4667ca03fe503ebb01381d34fb4bebac15b734a9f9c03f",
-      "analysis": "e03bb756f5f70cbd067e10c632ea52ad7b58b16bb1cf7e147a05e3311502b39a"
+      "production": "e4b5c55641eb540e2e96fa1ba29276135586b27b258a2176ec5163c55ecda408",
+      "analysis": "bb0d06c966aee4e6019c85341780c444233fb1678a8fc0f7b8aea2e6049672ed"
     },
     "south": {
-      "production": "9b7b136a23421632df17db6a5bd75705c8f174b5bee934ad40d6febda2243c05",
-      "analysis": "f002a0983e415e2b993eca96afa1b13aeabf0a5a8639b9e51b284c7e70290074"
+      "production": "da23a2e146ce2cc20355a8256de971e23ba04ab6f30a417774ccae5ff501c005",
+      "analysis": "f1e7b4fa7c5092b3e5091c6e5b8624f6a4d512a7654ff5a219c5560484436ba3"
     }
   },
   "qualified": false,
@@ -41,33 +41,23 @@
       "id": "derive.trigger_histograms.north",
       "test": "derive.trigger_histograms",
       "site": "north",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
-    },
-    {
-      "id": "production.gamma.north",
-      "test": "production.gamma",
-      "site": "north",
-      "workflow": "workflows/production/gamma_submit.yml",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.38.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/production.gamma",
-      "report": "reports/north/production.gamma",
-      "run_id": "01a1368d-f191-7362-8474-592314cba19a",
-      "runtime": "host (no container)",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/derive.trigger_histograms",
+      "report": "reports/north/derive.trigger_histograms",
+      "run_id": "01a13a7a-4630-74e5-9fd7-b2ae99536b2a",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev12+g6b6cea4b8.d20261013",
+        "simtools": "0.38.4.dev13+gb54b1f9d7",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.38.0/north"
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/north/derived/trigger_histograms"
       ],
-      "execution": "submitted",
-      "status": "submitted",
-      "reason": "Jobs submitted; run --test production.gamma.collect to collect results.",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/production.gamma/execution.log",
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/derive.trigger_histograms/execution.log",
       "publication": {
         "file_count": 0,
         "byte_count": 0
@@ -104,37 +94,24 @@
       "id": "derive.trigger_histograms.south",
       "test": "derive.trigger_histograms",
       "site": "south",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
-    },
-    {
-      "id": "production.gamma.south",
-      "test": "production.gamma",
-      "site": "south",
-      "workflow": "workflows/production/gamma_submit.yml",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.38.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/production.gamma",
-      "report": "reports/south/production.gamma",
-      "run_id": "01a1368d-f191-7362-8474-592314cba19a",
-      "runtime": "host (no container)",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/derive.trigger_histograms",
+      "report": null,
+      "run_id": "01a13a7a-4630-74e5-9fd7-b2ae99536b2a",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev12+g6b6cea4b8.d20261013",
+        "simtools": "0.38.4.dev13+gb54b1f9d7",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.38.0/south"
+        "/lustre/fs24/group/cta/science_tests/v0.38.0/south/derived/trigger_histograms"
       ],
-      "execution": "submitted",
-      "status": "submitted",
-      "reason": "Jobs submitted; run --test production.gamma.collect to collect results.",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/production.gamma/execution.log",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "execution": "failed",
+      "status": "incomplete",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/derive.trigger_histograms/execution.log",
+      "error": "See excerpt from log file above"
     },
     {
       "id": "production.gamma.collect.south",

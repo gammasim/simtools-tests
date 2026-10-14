@@ -93,9 +93,26 @@ the production job set.
 
 ### Examples for science tests
 
+Create a release configuration from the shared templates, then edit `context.yml` with the
+candidate, baseline (for comparison tests), production-configuration, simulation-model, and CORSIKA
+paths required by your environment:
+
 ```bash
+release_dir="simtools-tests/vX.Y.Z/science_tests"
+simtools-run-science-tests --release_dir "${release_dir}" --setup
+```
+
+Validate the configuration without running workflows, then select a test. For example, compare
+compute resources for the North site:
+
+```bash
+simtools-run-science-tests --release_dir "${release_dir}" --dry_run
 simtools-run-science-tests \
-    --release_dir ../simtools-tests/simtools-tests/v0.38.0/science_tests \
+    --release_dir "${release_dir}" \
     --test compare.compute_resources \
     --site North
 ```
+
+For production tests, review the generated grid and run `--preflight` before submission; production
+also requires `--allow_production`. See the [science-test guide in simtools](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/testing_science.md)
+for the full workflow and result interpretation.

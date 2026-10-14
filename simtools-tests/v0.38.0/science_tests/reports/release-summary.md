@@ -6,19 +6,17 @@ Qualified: False
 | --- | --- | --- | --- | --- | --- |
 | north | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
 | north | compare.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
-| north | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
-| north | production.gamma | submitted | submitted | Jobs submitted; run --test production.gamma.collect to collect results. | [report](north/production.gamma) |
+| north | derive.trigger_histograms | completed | pass | - | [report](north/derive.trigger_histograms) |
 | north | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
 | south | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
 | south | compare.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
-| south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
-| south | production.gamma | submitted | submitted | Jobs submitted; run --test production.gamma.collect to collect results. | [report](south/production.gamma) |
+| south | derive.trigger_histograms | failed | incomplete | See excerpt from log file above | - |
 | south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
 
 ## Execution details
 
-- north/production.gamma: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/production.gamma/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/production.gamma`.
-- south/production.gamma: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/production.gamma/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/production.gamma`.
+- north/derive.trigger_histograms: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/derive.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/north/derive.trigger_histograms`.
+- south/derive.trigger_histograms: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.38.0/simtools-prod_20261006-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/derive.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.38.0/work/science-tests/south/derive.trigger_histograms`.
 
 ## Production history
 
