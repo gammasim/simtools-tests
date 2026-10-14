@@ -87,6 +87,7 @@ All paths must be readable from both the submit host and the HTCondor worker ins
 | `__PRODUCTION_CONFIGURATION_PATH__` | `/lustre/fs24/group/cta/science_tests/production-configuration/data` |
 
 The release context also requires the candidate/baseline directories and the versioned Apptainer image.
+HTCondor workflows share their job settings through `science-test-template/profiles/htcondor.yml`.
 Avoid personal `/cephfs/users/...` paths in shared release configurations. Run the recommended
 `--preflight` before production submission; it validates these paths on the worker before submitting
 the production job set.
