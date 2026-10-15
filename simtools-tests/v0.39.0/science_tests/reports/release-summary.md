@@ -4,20 +4,18 @@ Qualified: False
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
-| north | compare.compute_resources | not_run | not_run | See excerpt from log file above | - |
-| north | compare.trigger_histograms | completed | warn | Numerical acceptance is advisory; review required. | [report](north/compare.trigger_histograms) |
-| north | derive.trigger_histograms | reused | pass | Reused complete derived products; use --overwrite to rebuild them. | - |
-| north | production.gamma.collect | completed | pass | - | - |
-| south | compare.compute_resources | not_run | not_run | See excerpt from log file above | - |
-| south | compare.trigger_histograms | completed | warn | Numerical acceptance is advisory; review required. | [report](south/compare.trigger_histograms) |
-| south | derive.trigger_histograms | reused | pass | Reused complete derived products; use --overwrite to rebuild them. | - |
-| south | production.gamma.collect | completed | pass | - | - |
+| north | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
+| north | compare.trigger_histograms | completed | warn | Acceptance warning: Acceptance failed for telescope_participation_fraction whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.08698 exceeds 0.05 (PDF page 136). | [report](north/compare.trigger_histograms) |
+| north | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| north | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| south | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
+| south | compare.trigger_histograms | completed | warn | Acceptance warning: Acceptance failed for distribution_core_distance whole_array gamma-e30gev-za55deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.06853 exceeds 0.05 (PDF page 111). | [report](south/compare.trigger_histograms) |
+| south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
 
 ## Execution details
 
-- north/compare.compute_resources: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.compute_resources/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.compute_resources`.
 - north/compare.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms`.
-- south/compare.compute_resources: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.compute_resources/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.compute_resources`.
 - south/compare.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms`.
 
 ## Production history

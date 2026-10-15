@@ -6,7 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "dd588d5ebf8cb0fa4760b8c004f64407ac73201e122380d20fa72ee4c5557f33",
+  "campaign_sha256": "e8ab7eb1bd45a5afba85c4fa766a232539ffdc575f936bfc9a6a7b73f29a4bcd",
   "evidence_sha256": null,
   "qualified": false,
   "results": [
@@ -14,25 +14,10 @@
       "id": "compare.compute_resources.north",
       "test": "compare.compute_resources",
       "site": "north",
-      "workflow": "workflows/comparison/compute_resources.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.compute_resources",
       "report": null,
-      "run_id": "01a13e3d-358f-75c6-98db-67f780638545",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.compute_resources"
-      ],
-      "execution": "not_run",
       "status": "not_run",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.compute_resources/execution.log",
-      "error": "See excerpt from log file above",
-      "reason": "Analysis runtime changed; rerun required."
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -43,7 +28,7 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms",
       "report": "reports/north/compare.trigger_histograms",
-      "run_id": "01a13ea0-d3fa-71de-8ed6-695c84851087",
+      "run_id": "01a13eec-a67e-7368-b31d-e5267eafdbd9",
       "runtime": "host (no container)",
       "software": {
         "simtools": "0.38.4.dev21+gf92a3bf3b.d20261015",
@@ -54,91 +39,39 @@
       ],
       "execution": "completed",
       "status": "warn",
-      "reason": "Numerical acceptance is advisory; review required.",
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms/execution.log",
+      "reason": "Acceptance warning: Acceptance failed for telescope_participation_fraction whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.08698 exceeds 0.05 (PDF page 136).",
       "publication": {
-        "file_count": 3,
-        "byte_count": 1144101
+        "file_count": 4,
+        "byte_count": 1277775
       }
     },
     {
       "id": "derive.trigger_histograms.north",
       "test": "derive.trigger_histograms",
       "site": "north",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/derive.trigger_histograms",
       "report": null,
-      "run_id": "01a13e9d-b349-778c-8d71-fdd9e7a6ff6e",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/derived/trigger_histograms"
-      ],
-      "execution": "reused",
-      "status": "pass",
-      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.north",
       "test": "production.gamma.collect",
       "site": "north",
-      "workflow": "workflows/production/gamma_collect.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/production.gamma.collect",
       "report": null,
-      "run_id": "01a13e82-5738-7740-999d-431e71f07f8d",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "coverage": {
-        "expected_jobs": 360,
-        "observed_jobs": 360
-      },
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "compare.compute_resources.south",
       "test": "compare.compute_resources",
       "site": "south",
-      "workflow": "workflows/comparison/compute_resources.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.compute_resources",
       "report": null,
-      "run_id": "01a13e3d-358f-75c6-98db-67f780638545",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.compute_resources"
-      ],
-      "execution": "not_run",
       "status": "not_run",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.compute_resources/execution.log",
-      "error": "See excerpt from log file above",
-      "reason": "Analysis runtime changed; rerun required."
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "compare.trigger_histograms.south",
@@ -149,7 +82,7 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms",
       "report": "reports/south/compare.trigger_histograms",
-      "run_id": "01a13ea0-d3fa-71de-8ed6-695c84851087",
+      "run_id": "01a13eec-a67e-7368-b31d-e5267eafdbd9",
       "runtime": "host (no container)",
       "software": {
         "simtools": "0.38.4.dev21+gf92a3bf3b.d20261015",
@@ -160,67 +93,30 @@
       ],
       "execution": "completed",
       "status": "warn",
-      "reason": "Numerical acceptance is advisory; review required.",
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms/execution.log",
+      "reason": "Acceptance warning: Acceptance failed for distribution_core_distance whole_array gamma-e30gev-za55deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.06853 exceeds 0.05 (PDF page 111).",
       "publication": {
-        "file_count": 3,
-        "byte_count": 1586209
+        "file_count": 4,
+        "byte_count": 1747030
       }
     },
     {
       "id": "derive.trigger_histograms.south",
       "test": "derive.trigger_histograms",
       "site": "south",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/derive.trigger_histograms",
       "report": null,
-      "run_id": "01a13e9d-b349-778c-8d71-fdd9e7a6ff6e",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/derived/trigger_histograms"
-      ],
-      "execution": "reused",
-      "status": "pass",
-      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.south",
       "test": "production.gamma.collect",
       "site": "south",
-      "workflow": "workflows/production/gamma_collect.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/production.gamma.collect",
       "report": null,
-      "run_id": "01a13e82-5738-7740-999d-431e71f07f8d",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "coverage": {
-        "expected_jobs": 360,
-        "observed_jobs": 360
-      },
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     }
   ],
   "production_history": [
