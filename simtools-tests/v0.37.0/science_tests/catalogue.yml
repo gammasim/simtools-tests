@@ -1,0 +1,34 @@
+---
+tests:
+  production.gamma.grid:
+    affects_production: true
+    workflow: workflows/production/gamma_job_grid.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: []
+  production.gamma:
+    workflow: workflows/production/gamma_submit.yml
+    sites: [north, south]
+    tier: release-prod
+    # Explicit selection and --allow_production are required after grid review.
+    depends_on: []
+    requires:
+    - __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
+    produces_production: true
+  production.gamma.collect:
+    workflow: workflows/production/gamma_collect.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: []
+    collect_production: true
+    reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
+    requires:
+    - __SCIENCE_CANDIDATE_SITE_PATH__/**/submission.json
+  derive.trigger_histograms:
+    workflow: workflows/derivation/trigger_histograms.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: [production.gamma.collect]
+    requires_completed_production: true
+    reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
+    derived_output: __SCIENCE_CANDIDATE_SITE_PATH__/derived/trigger_histograms

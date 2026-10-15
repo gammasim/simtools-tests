@@ -74,3 +74,72 @@ This repository owns the shared `science-test-template/` resources and versioned
 repository owns the runner and its operating instructions. See the [science-test guide in
 simtools](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/testing_science.md)
 for setup, execution, and result interpretation.
+
+### Science-test dependencies
+
+Before running a release, configure the external paths in that release's `science_tests/context.yml`.
+Set the shared storage root locally, using an absolute path:
+
+```bash
+export SIMTOOLS_SCIENCE_TESTS_ROOT=/path/to/shared/science_tests
+```
+
+Alternatively, put `SIMTOOLS_SCIENCE_TESTS_ROOT=/path/to/shared/science_tests` in an untracked `.env`
+in the working directory, or in a file selected with `--env_file`. Context paths can then use
+`${SIMTOOLS_SCIENCE_TESTS_ROOT}`, for example:
+
+```yaml
+__SCIENCE_CANDIDATE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/v0.39.0
+__SCIENCE_BASELINE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/v0.37.0
+```
+
+The runner resolves the root before validating paths and preparing workflows, and rejects an
+unset, empty, or relative root when the context references it. Explicit absolute context paths
+remain supported. Keep filesystem-specific roots in local configuration. The shared dependencies
+use these locations below the root:
+
+| Context entry | Location below the root |
+| --- | --- |
+| `simulation_models_path` or `simulation_models_git_path` | `simulation-models` |
+| `__CORSIKA_INTERACTION_TABLE_PATH__` | `corsika7-interaction-tables/interaction-tables` |
+| `__PRODUCTION_CONFIGURATION_PATH__` | `production-configuration/data` |
+
+The release context also requires the candidate/baseline directories and the versioned Apptainer image.
+HTCondor workflows share their job settings through `science-test-template/profiles/htcondor.yml`.
+The worker environment profile derives `SIMTOOLS_CORSIKA_INTERACTION_TABLE_PATH` from
+`SIMTOOLS_SCIENCE_TESTS_ROOT`, so keep the matching `corsika7-interaction-tables/interaction-tables`
+directory below that root. The HTCondor submit environment expands the variable before creating the
+worker bind.
+All resolved paths must be readable at the same location on the submit host and the HTCondor worker
+inside Apptainer. Run the recommended `--preflight` before production submission; it validates these
+paths on the worker before submitting the production job set.
+
+### Examples for science tests
+
+Create a release configuration from the shared templates, then edit `context.yml` with the
+candidate, baseline (for comparison tests), production-configuration, simulation-model, and CORSIKA
+paths required by your environment:
+
+```bash
+release_dir="simtools-tests/vX.Y.Z/science_tests"
+simtools-run-science-tests --release_dir "${release_dir}" --setup \
+    --baseline_version vA.B.C --simulation_models_git_revision v0.18.0
+```
+
+The optional version arguments set the baseline and model Git ref in `release.yml`, and the
+baseline directory in `context.yml`. Review the generated release and context settings before running.
+
+Validate the configuration without running workflows, then select a test. For example, compare
+compute resources for the North site:
+
+```bash
+simtools-run-science-tests --release_dir "${release_dir}" --dry_run
+simtools-run-science-tests \
+    --release_dir "${release_dir}" \
+    --test compare.compute_resources \
+    --site North
+```
+
+For production tests, review the generated grid and run `--preflight` before submission; production
+also requires `--allow_production`. See the [science-test guide in simtools](https://github.com/gammasim/simtools/blob/main/docs/source/developer-guide/testing_science.md)
+for the full workflow and result interpretation.
