@@ -1,7 +1,8 @@
 ---
-# External paths required for science integration tests
-__SCIENCE_CANDIDATE_PATH__: /lustre/path/to/candidate
-__SCIENCE_BASELINE_PATH__: /lustre/path/to/baseline
-__PRODUCTION_CONFIGURATION_PATH__: /lustre/path/to/production-configuration/data
-__SCIENCE_CONTAINER_IMAGE_PATH__: /lustre/path/to/simtools-vX.Y.Z.sif
-__CORSIKA_INTERACTION_TABLE_PATH__: /lustre/path/to/corsika7-interaction-tables/interaction-tables
+# Set SIMTOOLS_SCIENCE_TESTS_ROOT in the local environment or an untracked .env file.
+__SCIENCE_CANDIDATE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/__SCIENCE_RELEASE_LABEL__
+__SCIENCE_BASELINE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/vA.B.C
+__PRODUCTION_CONFIGURATION_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/production-configuration/data
+__SCIENCE_CONTAINER_IMAGE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/__SCIENCE_RELEASE_LABEL__/simtools-vX.Y.Z.sif
+__CORSIKA_INTERACTION_TABLE_PATH__: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/corsika7-interaction-tables/interaction-tables
+simulation_models_git_path: ${SIMTOOLS_SCIENCE_TESTS_ROOT}/simulation-models

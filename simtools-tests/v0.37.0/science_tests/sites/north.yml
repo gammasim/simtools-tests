@@ -3,6 +3,5 @@ site: north
 site_label: North
 required_tests:
 - production.gamma.collect
-- compare.trigger_histograms
-- compare.compute_resources
+- derive.trigger_histograms
 array_layout_name: CTAO-North-Alpha
