@@ -4,14 +4,14 @@ Qualified: False
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
-| north | compare.compute_resources | failed | incomplete | See excerpt from log file above | - |
+| north | compare.compute_resources | not_run | not_run | See excerpt from log file above | - |
 | north | compare.trigger_histograms | completed | warn | Numerical acceptance is advisory; review required. | [report](north/compare.trigger_histograms) |
 | north | derive.trigger_histograms | not_run | not_run | Analysis runtime changed; rerun required. | - |
-| north | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
-| south | compare.compute_resources | failed | incomplete | See excerpt from log file above | - |
+| north | production.gamma.collect | completed | pass | - | - |
+| south | compare.compute_resources | not_run | not_run | See excerpt from log file above | - |
 | south | compare.trigger_histograms | completed | warn | Numerical acceptance is advisory; review required. | [report](south/compare.trigger_histograms) |
 | south | derive.trigger_histograms | not_run | not_run | Analysis runtime changed; rerun required. | - |
-| south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| south | production.gamma.collect | completed | pass | - | - |
 
 ## Execution details
 
