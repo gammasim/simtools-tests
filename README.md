@@ -118,8 +118,12 @@ paths required by your environment:
 
 ```bash
 release_dir="simtools-tests/vX.Y.Z/science_tests"
-simtools-run-science-tests --release_dir "${release_dir}" --setup
+simtools-run-science-tests --release_dir "${release_dir}" --setup \
+    --baseline_version vA.B.C --simulation_models_git_revision v0.18.0
 ```
+
+The optional version arguments set the baseline and model Git ref in `release.yml`, and the
+baseline directory in `context.yml`. Review the generated release and context settings before running.
 
 Validate the configuration without running workflows, then select a test. For example, compare
 compute resources for the North site:

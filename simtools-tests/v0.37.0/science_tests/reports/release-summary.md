@@ -1,22 +1,18 @@
 # Science-test summary: v0.37.0
 
-Qualified: False
+Qualified: True
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
-| north | compare.compute_resources | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| north | compare.trigger_histograms | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| north | production.gamma | submitted | submitted | Jobs submitted; run --test production.gamma.collect to collect results. | [report](north/production.gamma) |
-| north | production.gamma.collect | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| south | compare.compute_resources | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| south | compare.trigger_histograms | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| south | production.gamma | submitted | submitted | Jobs submitted; run --test production.gamma.collect to collect results. | [report](south/production.gamma) |
-| south | production.gamma.collect | not_run | not_run | Upstream evidence changed; rerun required. | - |
+| north | derive.trigger_histograms | completed | pass | - | [report](north/derive.trigger_histograms) |
+| north | production.gamma.collect | completed | pass | - | [report](north/production.gamma.collect) |
+| south | derive.trigger_histograms | completed | pass | - | [report](south/derive.trigger_histograms) |
+| south | production.gamma.collect | completed | pass | - | [report](south/production.gamma.collect) |
 
 ## Execution details
 
-- north/production.gamma: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma`.
-- south/production.gamma: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma`.
+- north/derive.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/derive.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/derive.trigger_histograms`.
+- south/derive.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/derive.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/derive.trigger_histograms`.
 
 ## Production history
 
