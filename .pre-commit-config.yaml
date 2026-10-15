@@ -22,6 +22,11 @@ repos:
         "-rn",  # Only display messages
         "-sn",  # Don't display the score
       ]
+  - id: max-line-count
+    name: Check maximum line count (max 5000 lines)
+    entry: bash -c 'fail=0; for f in "$@"; do if [ $(wc -l < "$f") -gt 5000 ]; then echo "Error - $f exceeds 5000 lines ($(wc -l < "$f") lines)"; fail=1; fi; done; exit $fail' --
+    language: system
+    types: [text]
 # https://github.com/pre-commit/pre-commit-hooks
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v6.0.0
