@@ -106,6 +106,10 @@ use these locations below the root:
 
 The release context also requires the candidate/baseline directories and the versioned Apptainer image.
 HTCondor workflows share their job settings through `science-test-template/profiles/htcondor.yml`.
+The worker environment profile derives `SIMTOOLS_CORSIKA_INTERACTION_TABLE_PATH` from
+`SIMTOOLS_SCIENCE_TESTS_ROOT`, so keep the matching `corsika7-interaction-tables/interaction-tables`
+directory below that root. The HTCondor submit environment expands the variable before creating the
+worker bind.
 All resolved paths must be readable at the same location on the submit host and the HTCondor worker
 inside Apptainer. Run the recommended `--preflight` before production submission; it validates these
 paths on the worker before submitting the production job set.
