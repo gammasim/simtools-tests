@@ -6,7 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "e8ab7eb1bd45a5afba85c4fa766a232539ffdc575f936bfc9a6a7b73f29a4bcd",
+  "campaign_sha256": "e65f050b4a5e1686ec61d350c6a7c3e04f52875ec4f2d95b427fb4c53d6c85c6",
   "evidence_sha256": null,
   "qualified": false,
   "results": [
@@ -28,10 +28,10 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms",
       "report": "reports/north/compare.trigger_histograms",
-      "run_id": "01a13eec-a67e-7368-b31d-e5267eafdbd9",
+      "run_id": "01a14389-0d75-77bc-9175-adb583a65b78",
       "runtime": "host (no container)",
       "software": {
-        "simtools": "0.38.4.dev21+gf92a3bf3b.d20261015",
+        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
@@ -39,21 +39,39 @@
       ],
       "execution": "completed",
       "status": "warn",
+      "reason": "Acceptance warning (29): distribution_core_distance whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.0352 exceeds warning limit 0.03 (PDF page 137).",
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms/execution.log",
-      "reason": "Acceptance warning: Acceptance failed for telescope_participation_fraction whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.08698 exceeds 0.05 (PDF page 136).",
+      "acceptance_report": "reports/north/compare.trigger_histograms/acceptance.md",
       "publication": {
-        "file_count": 4,
-        "byte_count": 1277775
+        "file_count": 5,
+        "byte_count": 1286195
       }
     },
     {
       "id": "derive.trigger_histograms.north",
       "test": "derive.trigger_histograms",
       "site": "north",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/derive.trigger_histograms",
       "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "run_id": "01a14383-54e7-7683-a1fa-8da5e0601915",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/derived/trigger_histograms"
+      ],
+      "execution": "reused",
+      "status": "pass",
+      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
+      "publication": {
+        "file_count": 0,
+        "byte_count": 0
+      }
     },
     {
       "id": "production.gamma.collect.north",
@@ -82,10 +100,10 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms",
       "report": "reports/south/compare.trigger_histograms",
-      "run_id": "01a13eec-a67e-7368-b31d-e5267eafdbd9",
+      "run_id": "01a14389-0d75-77bc-9175-adb583a65b78",
       "runtime": "host (no container)",
       "software": {
-        "simtools": "0.38.4.dev21+gf92a3bf3b.d20261015",
+        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
@@ -93,21 +111,39 @@
       ],
       "execution": "completed",
       "status": "warn",
+      "reason": "Acceptance warning (55): distribution_core_distance whole_array gamma-e30tev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.03098 exceeds warning limit 0.03 (PDF page 5).",
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms/execution.log",
-      "reason": "Acceptance warning: Acceptance failed for distribution_core_distance whole_array gamma-e30gev-za55deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.06853 exceeds 0.05 (PDF page 111).",
+      "acceptance_report": "reports/south/compare.trigger_histograms/acceptance.md",
       "publication": {
-        "file_count": 4,
-        "byte_count": 1747030
+        "file_count": 5,
+        "byte_count": 1760536
       }
     },
     {
       "id": "derive.trigger_histograms.south",
       "test": "derive.trigger_histograms",
       "site": "south",
+      "workflow": "workflows/derivation/trigger_histograms.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/derive.trigger_histograms",
       "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "run_id": "01a14383-54e7-7683-a1fa-8da5e0601915",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/derived/trigger_histograms"
+      ],
+      "execution": "reused",
+      "status": "pass",
+      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
+      "publication": {
+        "file_count": 0,
+        "byte_count": 0
+      }
     },
     {
       "id": "production.gamma.collect.south",

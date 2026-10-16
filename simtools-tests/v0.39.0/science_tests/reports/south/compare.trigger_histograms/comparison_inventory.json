@@ -1,5 +1,127 @@
 {
   "format_version": 1,
   "matched_pair_count": 18,
-  "pairing_error_count": 0
+  "pairing_error_count": 0,
+  "metric_scopes": {
+    "gamma-e30tev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e3tev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e30gev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS"
+      ]
+    },
+    "gamma-e30tev-za40deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e3tev-za40deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e30gev-za40deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS"
+      ]
+    },
+    "gamma-e30tev-za55deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e3tev-za55deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e30gev-za55deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS"
+      ]
+    },
+    "gamma-e30tev-za60deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e3tev-za60deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e30gev-za60deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS"
+      ]
+    },
+    "gamma-e30tev-za65deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e30tev-za67.5deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e3tev-za65deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e3tev-za67.5deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS",
+        "SSTS"
+      ]
+    },
+    "gamma-e30gev-za65deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS"
+      ]
+    },
+    "gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms": {
+      "CTAO-South-Beta": [
+        "LSTS",
+        "MSTS"
+      ]
+    }
+  }
 }
