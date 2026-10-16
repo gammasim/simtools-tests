@@ -1,0 +1,31 @@
+# Acceptance deviations
+
+- distribution_core_distance whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.0352 exceeds warning limit 0.03 ([PDF page 137](trigger-report.pdf#page=137)).
+- distribution_core_distance whole_array gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([33, 22]) ([PDF page 148](trigger-report.pdf#page=148)).
+- distribution_core_distance whole_array gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([18, 15]) ([PDF page 159](trigger-report.pdf#page=159)).
+- distribution_core_distance_MSTN telescope_type gamma-e30gev-za40deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.0454 exceeds warning limit 0.03 ([PDF page 32](trigger-report.pdf#page=32)).
+- distribution_core_distance_LSTN telescope_type gamma-e30tev-za55deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.04911 exceeds warning limit 0.03 ([PDF page 40](trigger-report.pdf#page=40)).
+- distribution_core_distance_MSTN telescope_type gamma-e30gev-za55deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([6, 13]) ([PDF page 65](trigger-report.pdf#page=65)).
+- distribution_core_distance_LSTN telescope_type gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.04465 exceeds warning limit 0.03 ([PDF page 139](trigger-report.pdf#page=139)).
+- distribution_core_distance_MSTN telescope_type gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([5, 9]) ([PDF page 142](trigger-report.pdf#page=142)).
+- distribution_core_distance_LSTN telescope_type gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([28, 13]) ([PDF page 150](trigger-report.pdf#page=150)).
+- distribution_core_distance_MSTN telescope_type gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([4, 4]) ([PDF page 153](trigger-report.pdf#page=153)).
+- distribution_core_distance_LSTN telescope_type gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([12, 11]) ([PDF page 161](trigger-report.pdf#page=161)).
+- distribution_core_distance_MSTN telescope_type gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([7, 4]) ([PDF page 164](trigger-report.pdf#page=164)).
+- trigger_multiplicity whole_array gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([33, 22]) ([PDF page 144](trigger-report.pdf#page=144)).
+- trigger_multiplicity whole_array gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([18, 15]) ([PDF page 155](trigger-report.pdf#page=155)).
+- trigger_multiplicity_MSTN telescope_type gamma-e30gev-za55deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([6, 13]) ([PDF page 64](trigger-report.pdf#page=64)).
+- trigger_multiplicity_MSTN telescope_type gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([5, 9]) ([PDF page 141](trigger-report.pdf#page=141)).
+- trigger_multiplicity_LSTN telescope_type gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([28, 13]) ([PDF page 149](trigger-report.pdf#page=149)).
+- trigger_multiplicity_MSTN telescope_type gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([4, 4]) ([PDF page 152](trigger-report.pdf#page=152)).
+- trigger_multiplicity_LSTN telescope_type gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([12, 11]) ([PDF page 160](trigger-report.pdf#page=160)).
+- trigger_multiplicity_MSTN telescope_type gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([7, 4]) ([PDF page 163](trigger-report.pdf#page=163)).
+- Acceptance failed for telescope_participation_fraction whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.08698 exceeds 0.05 ([PDF page 136](trigger-report.pdf#page=136)).
+- telescope_participation_fraction whole_array gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([77, 62]) ([PDF page 147](trigger-report.pdf#page=147)).
+- telescope_participation_fraction whole_array gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([61, 48]) ([PDF page 158](trigger-report.pdf#page=158)).
+- telescope_participation_fraction_MSTN telescope_type gamma-e30gev-za55deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([75, 101]).
+- telescope_participation_fraction_MSTN telescope_type gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([29, 31]).
+- telescope_participation_fraction_LSTN telescope_type gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([62, 38]).
+- telescope_participation_fraction_MSTN telescope_type gamma-e30gev-za65deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([15, 24]).
+- telescope_participation_fraction_LSTN telescope_type gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([38, 30]).
+- telescope_participation_fraction_MSTN telescope_type gamma-e30gev-za67.5deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: insufficient statistics ([23, 18]).
