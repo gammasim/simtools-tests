@@ -22,14 +22,14 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803  # v6
         with:
           # The PR validation below compares the checked-out revision with the
           # base revision, so the complete history is required.
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1  # v6
         with:
           python-version: "3.14"
 
@@ -43,35 +43,41 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [[ "$EVENT_NAME" == "pull_request" ]]; then
-            git diff --name-only "$BASE_SHA" HEAD -- \
-              'simtools-tests/**/integration_tests/config_files/*.config.yml' \
-              'science-test-template/*.yml' \
-              'science-test-template/**/*.yml' \
-              ':(exclude)simtools-tests/legacy/**'
-          else
+          set -euo pipefail
+          {
+            if [[ "$EVENT_NAME" == "pull_request" ]]; then
+              git diff --name-only "$BASE_SHA" HEAD -- \
+                'simtools-tests/**/integration_tests/config_files/*.config.yml' \
+                ':(exclude)simtools-tests/legacy/**'
+            else
+              git ls-files -- \
+                'simtools-tests/**/integration_tests/config_files/*.config.yml' \
+                ':(exclude)simtools-tests/legacy/**'
+            fi
             git ls-files -- \
-              'simtools-tests/**/integration_tests/config_files/*.config.yml' \
               'science-test-template/*.yml' \
               'science-test-template/**/*.yml' \
-              ':(exclude)simtools-tests/legacy/**'
-          fi | while IFS= read -r file; do
+              'simtools-tests/*/science_tests/catalogue.yml' \
+              'simtools-tests/*/science_tests/release.yml' \
+              'simtools-tests/*/science_tests/context.yml' \
+              'simtools-tests/*/science_tests/sites/*.yml'
+          } | sort -u | while IFS= read -r file; do
             [[ -f "$file" ]] || continue
             echo "Testing config file $file"
             case "$file" in
               simtools-tests/**/integration_tests/config_files/*.config.yml)
                 schema_file=application_workflow.metaschema.yml
                 ;;
-              science-test-template/release.yml)
+              science-test-template/release.yml|simtools-tests/*/science_tests/release.yml)
                 schema_file=science_tests/release.schema.yml
                 ;;
-              science-test-template/catalogue.yml)
+              science-test-template/catalogue.yml|simtools-tests/*/science_tests/catalogue.yml)
                 schema_file=science_tests/catalogue.schema.yml
                 ;;
-              science-test-template/context.example.yml)
+              science-test-template/context.example.yml|simtools-tests/*/science_tests/context.yml)
                 schema_file=science_tests/context.schema.yml
                 ;;
-              science-test-template/sites/*.yml)
+              science-test-template/sites/*.yml|simtools-tests/*/science_tests/sites/*.yml)
                 schema_file=science_tests/site.schema.yml
                 ;;
               science-test-template/acceptance/expected-products.yml)
@@ -101,7 +107,8 @@ jobs:
               --file_name "$file" \
               --schema_file "$schema_file" \
               --data_type schema \
-              --log_level DEBUG
+              --log_level DEBUG \
+              --disable_log_file
           done
 
       - name: HTCondor environment schema validation
