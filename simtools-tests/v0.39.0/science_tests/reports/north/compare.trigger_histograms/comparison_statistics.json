@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "label": "v0.37.0",
+    "simulated_event_count": 24264000,
+    "triggered_event_count": 343355
+  },
+  "comparison_sets": [
+    {
+      "label": "v0.39.0",
+      "simulated_event_count": 24264000,
+      "triggered_event_count": 344085
+    }
+  ],
+  "comparisons": [],
+  "format_version": 2,
+  "plot_statistics": {}
+}

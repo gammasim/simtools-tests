@@ -2,7 +2,7 @@
 version: 1
 rules:
   gamma-events:
-    mode: advisory
+    mode: thresholds
     metrics:
     - file: __SCIENCE_REPORT_PATH__/comparison_inventory.json
       key: matched_pair_count
@@ -16,6 +16,81 @@ rules:
     - file: __SCIENCE_REPORT_PATH__/comparison_statistics.json
       key: comparison_sets.0.simulated_event_count
       minimum: 1
+    - file: __SCIENCE_REPORT_PATH__/comparison_metrics.csv
+      key: value
+      format: csv
+      select:
+        plot: distribution_core_distance
+        scope: whole_array
+        population: triggered
+        metric: ks
+      minimum_entries: 100
+      warning_maximum: 0.03
+      maximum: 0.05
+    - file: __SCIENCE_REPORT_PATH__/comparison_metrics.csv
+      key: value
+      format: csv
+      select:
+        plot:
+        - distribution_core_distance_LST?
+        - distribution_core_distance_MST?
+        - distribution_core_distance_SST?
+        scope: telescope_type
+        population: triggered
+        metric: ks
+      minimum_entries: 100
+      warning_maximum: 0.03
+      maximum: 0.05
+    - file: __SCIENCE_REPORT_PATH__/comparison_metrics.csv
+      key: normalized_value
+      format: csv
+      select:
+        plot: trigger_multiplicity
+        scope: whole_array
+        population: triggered
+        metric: wasserstein
+      minimum_entries: 100
+      warning_maximum: 0.02
+      maximum: 0.05
+    - file: __SCIENCE_REPORT_PATH__/comparison_metrics.csv
+      key: normalized_value
+      format: csv
+      select:
+        plot:
+        - trigger_multiplicity_LST?
+        - trigger_multiplicity_MST?
+        - trigger_multiplicity_SST?
+        scope: telescope_type
+        population: triggered
+        metric: wasserstein
+      minimum_entries: 100
+      warning_maximum: 0.02
+      maximum: 0.05
+    - file: __SCIENCE_REPORT_PATH__/comparison_metrics.csv
+      key: value
+      format: csv
+      select:
+        plot: telescope_participation_fraction
+        scope: whole_array
+        population: triggered
+        metric: jensen_shannon
+      minimum_entries: 100
+      warning_maximum: 0.03
+      maximum: 0.05
+    - file: __SCIENCE_REPORT_PATH__/comparison_metrics.csv
+      key: value
+      format: csv
+      select:
+        plot:
+        - telescope_participation_fraction_LST?
+        - telescope_participation_fraction_MST?
+        - telescope_participation_fraction_SST?
+        scope: telescope_type
+        population: triggered
+        metric: jensen_shannon
+      minimum_entries: 100
+      warning_maximum: 0.03
+      maximum: 0.05
   computing:
     mode: advisory
     metrics:

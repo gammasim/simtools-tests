@@ -22,14 +22,14 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803  # v6
         with:
           # The PR validation below compares the checked-out revision with the
           # base revision, so the complete history is required.
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1  # v6
         with:
           python-version: "3.14"
 
@@ -38,27 +38,89 @@ jobs:
           python -m pip install \
             "git+https://github.com/gammasim/simtools.git@main"
 
-      - name: Workflow config file validation
+      - name: Workflow and science-test config validation
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [[ "$EVENT_NAME" == "pull_request" ]]; then
-            git diff --name-only "$BASE_SHA" HEAD -- \
-              'simtools-tests/**/integration_tests/config_files/*.config.yml' \
-              'science-test-template/workflows/**/*.yml' \
-              ':(exclude)simtools-tests/legacy/**'
-          else
+          set -euo pipefail
+          {
+            if [[ "$EVENT_NAME" == "pull_request" ]]; then
+              git diff --name-only "$BASE_SHA" HEAD -- \
+                'simtools-tests/**/integration_tests/config_files/*.config.yml' \
+                ':(exclude)simtools-tests/legacy/**'
+            else
+              git ls-files -- \
+                'simtools-tests/**/integration_tests/config_files/*.config.yml' \
+                ':(exclude)simtools-tests/legacy/**'
+            fi
             git ls-files -- \
-              'simtools-tests/**/integration_tests/config_files/*.config.yml' \
-              'science-test-template/workflows/**/*.yml' \
-              ':(exclude)simtools-tests/legacy/**'
-          fi | while IFS= read -r file; do
+              'science-test-template/*.yml' \
+              'science-test-template/**/*.yml' \
+              'simtools-tests/*/science_tests/catalogue.yml' \
+              'simtools-tests/*/science_tests/release.yml' \
+              'simtools-tests/*/science_tests/context.yml' \
+              'simtools-tests/*/science_tests/sites/*.yml'
+          } | sort -u | while IFS= read -r file; do
             [[ -f "$file" ]] || continue
             echo "Testing config file $file"
+            case "$file" in
+              simtools-tests/**/integration_tests/config_files/*.config.yml)
+                schema_file=application_workflow.metaschema.yml
+                ;;
+              science-test-template/release.yml|simtools-tests/*/science_tests/release.yml)
+                schema_file=science_tests/release.schema.yml
+                ;;
+              science-test-template/catalogue.yml|simtools-tests/*/science_tests/catalogue.yml)
+                schema_file=science_tests/catalogue.schema.yml
+                ;;
+              science-test-template/context.example.yml|simtools-tests/*/science_tests/context.yml)
+                schema_file=science_tests/context.schema.yml
+                ;;
+              science-test-template/sites/*.yml|simtools-tests/*/science_tests/sites/*.yml)
+                schema_file=science_tests/site.schema.yml
+                ;;
+              science-test-template/acceptance/expected-products.yml)
+                schema_file=science_tests/expected_products.schema.yml
+                ;;
+              science-test-template/acceptance/thresholds.yml)
+                schema_file=science_tests/thresholds.schema.yml
+                ;;
+              science-test-template/profiles/htcondor.yml)
+                schema_file=science_tests/htcondor_backend.schema.yml
+                ;;
+              science-test-template/profiles/local.yml)
+                schema_file=science_tests/local_backend.schema.yml
+                ;;
+              science-test-template/run_time.yml)
+                schema_file=run_time_environment.schema.yml
+                ;;
+              science-test-template/workflows/*.yml)
+                schema_file=application_workflow.metaschema.yml
+                ;;
+              *)
+                echo "No schema mapping for $file" >&2
+                exit 1
+                ;;
+            esac
             simtools-validate-file-using-schema \
-            --file_name "$file" \
-            --schema_file application_workflow.metaschema.yml \
-            --data_type "schema" \
-            --log_level DEBUG
+              --file_name "$file" \
+              --schema_file "$schema_file" \
+              --data_type schema \
+              --log_level DEBUG \
+              --disable_log_file
           done
+
+      - name: HTCondor environment schema validation
+        run: |
+          python - <<'PY'
+          from dotenv import dotenv_values
+          from simtools.data_model import schema
+
+          config = dict(dotenv_values("science-test-template/profiles/htcondor.env"))
+          schema.validate_dict_using_schema(
+              config,
+              schema_file="science_tests/htcondor_environment.schema.yml",
+              offline=True,
+          )
+          PY
