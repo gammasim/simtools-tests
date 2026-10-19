@@ -2,6 +2,7 @@
 applications:
 - application: simtools-validate-camera-efficiency
   configuration:
+    figure_format: [pdf]
     model_version: __SCIENCE_MODEL_VERSION__
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/camera_efficiency
     site: __SCIENCE_SITE__

@@ -10,25 +10,17 @@ runtime_environments:
     environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
     options:
     - --bind
-    - __SCIENCE_MODELS_SOURCE_PATH__:__SCIENCE_MODELS_SOURCE_PATH__:ro
-    - --env
-    - SIMTOOLS_IMAGE_ID=sha256:b806cef7d23e9dea666e2572efe85f6f179a945d0b6ef0d2c623977732d6a8a8
-    - --env
-    - SIMTOOLS_VERSION=0.38.1
+    - __SCIENCE_BASELINE_PATH__/simulation-models:__SCIENCE_BASELINE_PATH__/simulation-models:ro
   candidate:
     container_engine: apptainer
-    image: __SCIENCE_CANDIDATE_IMAGE_PATH__
+    image: __SCIENCE_CONTAINER_IMAGE_PATH__
     environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
     options:
     - --bind
     - __SCIENCE_MODELS_SOURCE_PATH__:__SCIENCE_MODELS_SOURCE_PATH__:ro
-    - --env
-    - SIMTOOLS_IMAGE_ID=sha256:736eb00dd606acba0a6c5363926beb5fb4444a38d28cf96030cd1c965bd7488f
-    - --env
-    - SIMTOOLS_VERSION=0.38.1+gece71b2
   analysis:
     container_engine: apptainer
-    image: __SCIENCE_CANDIDATE_IMAGE_PATH__
+    image: __SCIENCE_ANALYSIS_IMAGE_PATH__
     environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
     options:
     - --bind

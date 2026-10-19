@@ -52,6 +52,8 @@ tests:
     acceptance_rule: computing
 
   camera_efficiency.baseline:
+    publish_report: false
+
     workflow: workflows/camera_efficiency/baseline.yml
     sites: [north, south]
     tier: release-light
@@ -59,6 +61,8 @@ tests:
     result_type: camera_efficiency
     depends_on: []
   camera_efficiency.candidate:
+    publish_report: false
+
     workflow: workflows/camera_efficiency/candidate.yml
     sites: [north, south]
     tier: release-light
@@ -66,6 +70,8 @@ tests:
     result_type: camera_efficiency
     depends_on: []
   compare.camera_efficiency:
+    publish_report: true
+
     workflow: workflows/camera_efficiency/compare.yml
     sites: [north, south]
     tier: release-light

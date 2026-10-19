@@ -10,5 +10,4 @@ required_tests:
 - camera_efficiency.candidate
 - compare.camera_efficiency
 array_layout_name: CTAO-North-Alpha
-replacements:
-  __SCIENCE_CAMERA_TELESCOPE__: LSTN-02
+camera_telescopes: [LSTN-02]

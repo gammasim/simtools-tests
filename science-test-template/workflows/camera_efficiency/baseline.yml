@@ -2,7 +2,9 @@
 applications:
 - application: simtools-validate-camera-efficiency
   configuration:
+    figure_format: [pdf]
     model_version: __SCIENCE_MODEL_VERSION__
+    simulation_models_path: __SCIENCE_BASELINE_PATH__/simulation-models
     output_path: __SCIENCE_BASELINE_SITE_PATH__/camera_efficiency
     site: __SCIENCE_SITE__
     telescope: __SCIENCE_CAMERA_TELESCOPE__

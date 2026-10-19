@@ -6,10 +6,80 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "e65f050b4a5e1686ec61d350c6a7c3e04f52875ec4f2d95b427fb4c53d6c85c6",
+  "campaign_sha256": "d7194e691ba6635de1f19f5e15aea8702a84be9f9fb00c4c59c55cddaff8311f",
   "evidence_sha256": null,
   "qualified": false,
   "results": [
+    {
+      "id": "camera_efficiency.baseline.north",
+      "test": "camera_efficiency.baseline",
+      "site": "north",
+      "workflow": "workflows/camera_efficiency/baseline.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.baseline",
+      "report": null,
+      "run_id": "01a154f4-cbd2-7023-bf09-08f9f08dfd29",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/camera_efficiency"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.baseline/execution.log"
+    },
+    {
+      "id": "camera_efficiency.candidate.north",
+      "test": "camera_efficiency.candidate",
+      "site": "north",
+      "workflow": "workflows/camera_efficiency/candidate.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.candidate",
+      "report": null,
+      "run_id": "01a154f4-cbd2-7023-bf09-08f9f08dfd29",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/camera_efficiency"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.candidate/execution.log"
+    },
+    {
+      "id": "compare.camera_efficiency.north",
+      "test": "compare.camera_efficiency",
+      "site": "north",
+      "workflow": "workflows/camera_efficiency/compare.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency",
+      "report": "reports/north/compare.camera_efficiency",
+      "run_id": "01a154f4-cbd2-7023-bf09-08f9f08dfd29",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261019-science-analysis-v5.sif)",
+      "software": {
+        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency/execution.log",
+      "publication": {
+        "file_count": 2,
+        "byte_count": 65809
+      }
+    },
     {
       "id": "compare.compute_resources.north",
       "test": "compare.compute_resources",
@@ -23,60 +93,51 @@
       "id": "compare.trigger_histograms.north",
       "test": "compare.trigger_histograms",
       "site": "north",
-      "workflow": "workflows/comparison/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms",
-      "report": "reports/north/compare.trigger_histograms",
-      "run_id": "01a14389-0d75-77bc-9175-adb583a65b78",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms"
-      ],
-      "execution": "completed",
-      "status": "warn",
-      "reason": "Acceptance warning (29): distribution_core_distance whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.0352 exceeds warning limit 0.03 (PDF page 137).",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms/execution.log",
-      "acceptance_report": "reports/north/compare.trigger_histograms/acceptance.md",
-      "publication": {
-        "file_count": 5,
-        "byte_count": 1286195
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "derive.trigger_histograms.north",
       "test": "derive.trigger_histograms",
       "site": "north",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/derive.trigger_histograms",
       "report": null,
-      "run_id": "01a14383-54e7-7683-a1fa-8da5e0601915",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/derived/trigger_histograms"
-      ],
-      "execution": "reused",
-      "status": "pass",
-      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.north",
       "test": "production.gamma.collect",
       "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "camera_efficiency.baseline.south",
+      "test": "camera_efficiency.baseline",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "camera_efficiency.candidate.south",
+      "test": "camera_efficiency.candidate",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "compare.camera_efficiency.south",
+      "test": "compare.camera_efficiency",
+      "site": "south",
       "report": null,
       "status": "not_run",
       "execution": "not_run",
@@ -95,55 +156,19 @@
       "id": "compare.trigger_histograms.south",
       "test": "compare.trigger_histograms",
       "site": "south",
-      "workflow": "workflows/comparison/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms",
-      "report": "reports/south/compare.trigger_histograms",
-      "run_id": "01a14389-0d75-77bc-9175-adb583a65b78",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms"
-      ],
-      "execution": "completed",
-      "status": "warn",
-      "reason": "Acceptance warning (55): distribution_core_distance whole_array gamma-e30tev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.03098 exceeds warning limit 0.03 (PDF page 5).",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms/execution.log",
-      "acceptance_report": "reports/south/compare.trigger_histograms/acceptance.md",
-      "publication": {
-        "file_count": 5,
-        "byte_count": 1760536
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "derive.trigger_histograms.south",
       "test": "derive.trigger_histograms",
       "site": "south",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/derive.trigger_histograms",
       "report": null,
-      "run_id": "01a14383-54e7-7683-a1fa-8da5e0601915",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/derived/trigger_histograms"
-      ],
-      "execution": "reused",
-      "status": "pass",
-      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.south",

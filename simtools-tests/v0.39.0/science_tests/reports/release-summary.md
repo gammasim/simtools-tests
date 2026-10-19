@@ -4,19 +4,26 @@ Qualified: False
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
+| north | camera_efficiency.baseline | completed | pass | - | - |
+| north | camera_efficiency.candidate | completed | pass | - | - |
+| north | compare.camera_efficiency | completed | pass | - | [report](north/compare.camera_efficiency) |
 | north | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
-| north | compare.trigger_histograms | completed | warn | Acceptance warning (29): distribution_core_distance whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.0352 exceeds warning limit 0.03 (PDF page 137). | [report](north/compare.trigger_histograms); [deviations](north/compare.trigger_histograms/acceptance.md) |
-| north | derive.trigger_histograms | reused | pass | Reused complete derived products; use --overwrite to rebuild them. | - |
+| north | compare.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| north | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
 | north | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| south | camera_efficiency.baseline | not_run | not_run | Not selected or not executed. | - |
+| south | camera_efficiency.candidate | not_run | not_run | Not selected or not executed. | - |
+| south | compare.camera_efficiency | not_run | not_run | Not selected or not executed. | - |
 | south | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
-| south | compare.trigger_histograms | completed | warn | Acceptance warning (55): distribution_core_distance whole_array gamma-e30tev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.03098 exceeds warning limit 0.03 (PDF page 5). | [report](south/compare.trigger_histograms); [deviations](south/compare.trigger_histograms/acceptance.md) |
-| south | derive.trigger_histograms | reused | pass | Reused complete derived products; use --overwrite to rebuild them. | - |
+| south | compare.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
 | south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
 
 ## Execution details
 
-- north/compare.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms`.
-- south/compare.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms`.
+- north/camera_efficiency.baseline: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.baseline/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.baseline`.
+- north/camera_efficiency.candidate: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.candidate/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.candidate`.
+- north/compare.camera_efficiency: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261019-science-analysis-v5.sif); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency`.
 
 ## Production history
 

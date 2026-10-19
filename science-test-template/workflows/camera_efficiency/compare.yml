@@ -7,6 +7,7 @@ applications:
     baseline_label: v0.37.0
     candidate_label: __SCIENCE_RELEASE_LABEL__
     output_path: __SCIENCE_REPORT_PATH__
+    require_wavelength_tables: true
     tolerance:
     - reflectivity=0.05
     - cam_eff=0.05
