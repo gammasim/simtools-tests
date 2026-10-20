@@ -49,4 +49,3 @@ collection:
   - ./simulations/proton-grid/*/*reduced_event_data.hdf5
 schema_name: application_workflow.metaschema
 schema_version: 0.5.0
-
