@@ -7,18 +7,19 @@ applications:
       Create NSB and proton submission grids that scan trigger thresholds for LSTN-01 bias curve derivation.
   configuration:
     site: North
-    model_version: 7.0.0
-    array_layout_name: LSTN-01
+    model_version: 6.0.1
+    array_layout_name: MSTN-01
     azimuth_angle: 0.0
     zenith_angle: 20.0
-    showers_per_run: 1000
+    showers_per_run: 3000
     core_scatter: 20 1900 m
-    view_cone: 0 deg 5 deg
+    view_cone: 0 deg 20 deg
+    proton_energy_range: 20 GeV 20 TeV
     number_of_runs: 1
     trigger_thresholds:
-    - 290
+    - 30
     - 2
-    - 40
+    - 4
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
 
 - application: simtools-simulate-prod
@@ -48,3 +49,4 @@ collection:
   - ./simulations/proton-grid/*/*reduced_event_data.hdf5
 schema_name: application_workflow.metaschema
 schema_version: 0.5.0
+
