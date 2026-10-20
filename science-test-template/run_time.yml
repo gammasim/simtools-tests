@@ -4,14 +4,7 @@ runtime_environment:
   image: __SCIENCE_CONTAINER_IMAGE_PATH__
   environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
 runtime_environments:
-  baseline:
-    container_engine: apptainer
-    image: __SCIENCE_BASELINE_IMAGE_PATH__
-    environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
-    options:
-    - --bind
-    - __SCIENCE_BASELINE_PATH__/simulation-models:__SCIENCE_BASELINE_PATH__/simulation-models:ro
-  candidate:
+  camera:
     container_engine: apptainer
     image: __SCIENCE_CONTAINER_IMAGE_PATH__
     environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
@@ -22,6 +15,3 @@ runtime_environments:
     container_engine: apptainer
     image: __SCIENCE_ANALYSIS_IMAGE_PATH__
     environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
-    options:
-    - --bind
-    - __SCIENCE_MODELS_SOURCE_PATH__:__SCIENCE_MODELS_SOURCE_PATH__:ro

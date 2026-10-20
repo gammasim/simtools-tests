@@ -4,8 +4,6 @@ applications:
   configuration:
     baseline_path: __SCIENCE_BASELINE_SITE_PATH__/camera_efficiency
     candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__/camera_efficiency
-    baseline_label: v0.37.0
-    candidate_label: __SCIENCE_RELEASE_LABEL__
     output_path: __SCIENCE_REPORT_PATH__
     require_wavelength_tables: true
     tolerance:

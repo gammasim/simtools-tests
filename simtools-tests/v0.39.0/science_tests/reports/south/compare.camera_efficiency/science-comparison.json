@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "baseline": {
+    "label": "v0.37.0"
+  },
+  "candidate": {
+    "label": "v0.39.0"
+  },
+  "changes": {},
+  "diagnostics": [],
+  "comparisons": {
+    "LSTS-design": {
+      "schema_version": 1,
+      "status": "complete",
+      "baseline": {
+        "site": "South",
+        "telescope": "LSTS-design",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.37.0",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:92c942bcebe1e4373ec52bc14ac77d81c1e0c4095c0ef7fa7c92618d771753d5"
+      },
+      "candidate": {
+        "site": "South",
+        "telescope": "LSTS-design",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.38.3+g65f2426",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:e5ae0a252883635821dd587ecaef847449f11b5f98d0c1707abb0e87a559dce3"
+      },
+      "changes": {
+        "reflectivity": {
+          "baseline": {
+            "value": 0.9166695677793134,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.9166692787995487,
+            "unit": ""
+          },
+          "absolute": -2.8897976467323616e-07,
+          "relative": -3.152496546528831e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "cam_eff": {
+          "baseline": {
+            "value": 0.2494233541470387,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.24942403772996313,
+            "unit": ""
+          },
+          "absolute": 6.835829244322689e-07,
+          "relative": 2.7406532430370846e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tel_eff": {
+          "baseline": {
+            "value": 0.24436035055730518,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.24436158906430394,
+            "unit": ""
+          },
+          "absolute": 1.2385069987630448e-06,
+          "relative": 5.068363160956431e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tot_sens": {
+          "baseline": {
+            "value": 0.4820401634971464,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.48204266314054056,
+            "unit": ""
+          },
+          "absolute": 2.4996433941604224e-06,
+          "relative": 5.1855500504891436e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_rate": {
+          "baseline": {
+            "value": 0.2795853061540784,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.2795852396087034,
+            "unit": "GHz"
+          },
+          "absolute": -6.654537498818058e-08,
+          "relative": -2.3801456486954175e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_ref": {
+          "baseline": {
+            "value": 0.25258890803313144,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.252588847918547,
+            "unit": "GHz"
+          },
+          "absolute": -6.011458442145567e-08,
+          "relative": -2.379937618383884e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "muon_frac": {
+          "baseline": {
+            "value": 0.012023215072742248,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.012028828332232601,
+            "unit": ""
+          },
+          "absolute": 5.613259490352615e-06,
+          "relative": 0.0004668684254911483,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        }
+      },
+      "diagnostics": [],
+      "plots": {}
+    },
+    "MSTx-FlashCam": {
+      "schema_version": 1,
+      "status": "complete",
+      "baseline": {
+        "site": "South",
+        "telescope": "MSTx-FlashCam",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.37.0",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:92c942bcebe1e4373ec52bc14ac77d81c1e0c4095c0ef7fa7c92618d771753d5"
+      },
+      "candidate": {
+        "site": "South",
+        "telescope": "MSTx-FlashCam",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.38.3+g65f2426",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:e5ae0a252883635821dd587ecaef847449f11b5f98d0c1707abb0e87a559dce3"
+      },
+      "changes": {
+        "reflectivity": {
+          "baseline": {
+            "value": 0.9333498341901661,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.9333495628241573,
+            "unit": ""
+          },
+          "absolute": -2.7136600888599816e-07,
+          "relative": -2.907441550267726e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "cam_eff": {
+          "baseline": {
+            "value": 0.27920474079962454,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.2792057912831162,
+            "unit": ""
+          },
+          "absolute": 1.0504834916380545e-06,
+          "relative": 3.76241280369931e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tel_eff": {
+          "baseline": {
+            "value": 0.27816059022847067,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.2781624086585633,
+            "unit": ""
+          },
+          "absolute": 1.8184300926149533e-06,
+          "relative": 6.537339064176428e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tot_sens": {
+          "baseline": {
+            "value": 0.5206017635312028,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.5206052083107264,
+            "unit": ""
+          },
+          "absolute": 3.444779523631425e-06,
+          "relative": 6.616918660178451e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_rate": {
+          "baseline": {
+            "value": 0.2430263044557902,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.24302626489107193,
+            "unit": "GHz"
+          },
+          "absolute": -3.956471827937236e-08,
+          "relative": -1.6280014777811724e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_ref": {
+          "baseline": {
+            "value": 0.21955999659004236,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.21955996085020998,
+            "unit": "GHz"
+          },
+          "absolute": -3.5739832371373126e-08,
+          "relative": -1.6277934471872745e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "muon_frac": {
+          "baseline": {
+            "value": 0.011889288695861353,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.011894464575472479,
+            "unit": ""
+          },
+          "absolute": 5.175879611126616e-06,
+          "relative": 0.0004353397199386986,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        }
+      },
+      "diagnostics": [],
+      "plots": {}
+    },
+    "SSTS-design": {
+      "schema_version": 1,
+      "status": "complete",
+      "baseline": {
+        "site": "South",
+        "telescope": "SSTS-design",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.37.0",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:92c942bcebe1e4373ec52bc14ac77d81c1e0c4095c0ef7fa7c92618d771753d5"
+      },
+      "candidate": {
+        "site": "South",
+        "telescope": "SSTS-design",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.38.3+g65f2426",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:e5ae0a252883635821dd587ecaef847449f11b5f98d0c1707abb0e87a559dce3"
+      },
+      "changes": {
+        "reflectivity": {
+          "baseline": {
+            "value": 0.8713247078500215,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.8713248339787983,
+            "unit": ""
+          },
+          "absolute": 1.2612877686724033e-07,
+          "relative": 1.4475519370782093e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "cam_eff": {
+          "baseline": {
+            "value": 0.3378419541849506,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.33784081161325746,
+            "unit": ""
+          },
+          "absolute": -1.1425716931467989e-06,
+          "relative": -3.3819710044694488e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tel_eff": {
+          "baseline": {
+            "value": 0.3134450241530826,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.31345152262903875,
+            "unit": ""
+          },
+          "absolute": 6.49847595612929e-06,
+          "relative": 2.0732426599171394e-05,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tot_sens": {
+          "baseline": {
+            "value": 0.4484366966845458,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.4480594752482751,
+            "unit": ""
+          },
+          "absolute": -0.0003772214362706694,
+          "relative": -0.000841192166162144,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_rate": {
+          "baseline": {
+            "value": 0.03651486431764738,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.036577890471004716,
+            "unit": "GHz"
+          },
+          "absolute": 6.302615335733452e-05,
+          "relative": 0.0017260410119304323,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_ref": {
+          "baseline": {
+            "value": 0.03298903591124209,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.0330459763408564,
+            "unit": "GHz"
+          },
+          "absolute": 5.6940429614314725e-05,
+          "relative": 0.0017260410327696305,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "muon_frac": {
+          "baseline": {
+            "value": 0.03982639514498123,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.039858901522572,
+            "unit": ""
+          },
+          "absolute": 3.250637759077274e-05,
+          "relative": 0.0008162018548864086,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        }
+      },
+      "diagnostics": [],
+      "plots": {}
+    }
+  },
+  "plots": {
+    "report": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.camera_efficiency/report.pdf"
+  }
+}

@@ -6,8 +6,7 @@ required_tests:
 - derive.trigger_histograms
 - compare.trigger_histograms
 - compare.compute_resources
-- camera_efficiency.baseline
-- camera_efficiency.candidate
+- camera_efficiency
 - compare.camera_efficiency
 array_layout_name: CTAO-North-Alpha
-camera_telescopes: [LSTN-02]
+camera_telescopes: [LSTN-design, LSTN-01, MSTx-NectarCam]

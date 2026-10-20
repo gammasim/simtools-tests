@@ -6,119 +6,89 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "1254286e46b01dee9c3c565d76e6b96a890d3af9851752fb87d47da166cbdb67",
+  "campaign_sha256": "ce8978a50974f69ded9a47a544a9e38765459b0094b3c9fc1aa62a83d9caaa75",
   "evidence_sha256": null,
-  "qualified": true,
+  "qualified": false,
   "results": [
+    {
+      "id": "camera_efficiency.north",
+      "test": "camera_efficiency",
+      "site": "north",
+      "workflow": "workflows/camera_efficiency/run.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.37.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/camera_efficiency",
+      "report": null,
+      "run_id": "01a15866-f3ca-7106-8ec1-98a88c57e32d",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/camera_efficiency"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/camera_efficiency/execution.log"
+    },
     {
       "id": "derive.trigger_histograms.north",
       "test": "derive.trigger_histograms",
       "site": "north",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.37.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/derive.trigger_histograms",
-      "report": "reports/north/derive.trigger_histograms",
-      "run_id": "01a13e1a-e261-734d-8156-bdeae36da4a5",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": null
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/derived/trigger_histograms"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/derive.trigger_histograms/execution.log",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.north",
       "test": "production.gamma.collect",
       "site": "north",
-      "workflow": "workflows/production/gamma_collect.yml",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "camera_efficiency.south",
+      "test": "camera_efficiency",
+      "site": "south",
+      "workflow": "workflows/camera_efficiency/run.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.37.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/production.gamma.collect",
-      "report": "reports/north/production.gamma.collect",
-      "run_id": "01a13e19-35a7-705c-b503-1776e656d276",
-      "runtime": "host (no container)",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/camera_efficiency",
+      "report": null,
+      "run_id": "01a15866-f3ca-7106-8ec1-98a88c57e32d",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
+        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
         "simulation_models": null
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.37.0/north"
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/south/camera_efficiency"
       ],
       "execution": "completed",
       "status": "pass",
-      "coverage": {
-        "expected_jobs": 360,
-        "observed_jobs": 360
-      },
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/camera_efficiency/execution.log"
     },
     {
       "id": "derive.trigger_histograms.south",
       "test": "derive.trigger_histograms",
       "site": "south",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.37.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/derive.trigger_histograms",
-      "report": "reports/south/derive.trigger_histograms",
-      "run_id": "01a13e1a-e261-734d-8156-bdeae36da4a5",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": null
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.37.0/south/derived/trigger_histograms"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/derive.trigger_histograms/execution.log",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.south",
       "test": "production.gamma.collect",
       "site": "south",
-      "workflow": "workflows/production/gamma_collect.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.37.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/production.gamma.collect",
-      "report": "reports/south/production.gamma.collect",
-      "run_id": "01a13e19-35a7-705c-b503-1776e656d276",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev14+gf4955eac5",
-        "simulation_models": null
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.37.0/south"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "coverage": {
-        "expected_jobs": 360,
-        "observed_jobs": 360
-      },
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     }
   ],
   "production_history": [

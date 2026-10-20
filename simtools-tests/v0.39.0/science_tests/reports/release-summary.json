@@ -6,42 +6,20 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "d7194e691ba6635de1f19f5e15aea8702a84be9f9fb00c4c59c55cddaff8311f",
+  "campaign_sha256": "3e850c2bb426fb57f4288cc4665851770cf02f7bd37d4c768b07df313ec08b65",
   "evidence_sha256": null,
   "qualified": false,
   "results": [
     {
-      "id": "camera_efficiency.baseline.north",
-      "test": "camera_efficiency.baseline",
+      "id": "camera_efficiency.north",
+      "test": "camera_efficiency",
       "site": "north",
-      "workflow": "workflows/camera_efficiency/baseline.yml",
+      "workflow": "workflows/camera_efficiency/run.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.baseline",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency",
       "report": null,
-      "run_id": "01a154f4-cbd2-7023-bf09-08f9f08dfd29",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/camera_efficiency"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.baseline/execution.log"
-    },
-    {
-      "id": "camera_efficiency.candidate.north",
-      "test": "camera_efficiency.candidate",
-      "site": "north",
-      "workflow": "workflows/camera_efficiency/candidate.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.candidate",
-      "report": null,
-      "run_id": "01a154f4-cbd2-7023-bf09-08f9f08dfd29",
+      "run_id": "01a15869-69f6-76c9-83a0-497121c849c1",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
         "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
@@ -52,7 +30,7 @@
       ],
       "execution": "completed",
       "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency.candidate/execution.log"
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency/execution.log"
     },
     {
       "id": "compare.camera_efficiency.north",
@@ -63,8 +41,8 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency",
       "report": "reports/north/compare.camera_efficiency",
-      "run_id": "01a154f4-cbd2-7023-bf09-08f9f08dfd29",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261019-science-analysis-v5.sif)",
+      "run_id": "01a15869-ed5b-7200-801c-79823df55d77",
+      "runtime": "host (no container)",
       "software": {
         "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
         "simulation_models": "v0.18.0"
@@ -77,7 +55,7 @@
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency/execution.log",
       "publication": {
         "file_count": 2,
-        "byte_count": 65809
+        "byte_count": 372818
       }
     },
     {
@@ -117,31 +95,52 @@
       "reason": "Not selected or not executed."
     },
     {
-      "id": "camera_efficiency.baseline.south",
-      "test": "camera_efficiency.baseline",
+      "id": "camera_efficiency.south",
+      "test": "camera_efficiency",
       "site": "south",
+      "workflow": "workflows/camera_efficiency/run.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/camera_efficiency",
       "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
-    },
-    {
-      "id": "camera_efficiency.candidate.south",
-      "test": "camera_efficiency.candidate",
-      "site": "south",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "run_id": "01a15864-b057-72e5-bf6c-68a21d741f4f",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/camera_efficiency"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/camera_efficiency/execution.log"
     },
     {
       "id": "compare.camera_efficiency.south",
       "test": "compare.camera_efficiency",
       "site": "south",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Not selected or not executed."
+      "workflow": "workflows/camera_efficiency/compare.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.camera_efficiency",
+      "report": "reports/south/compare.camera_efficiency",
+      "run_id": "01a1586b-3686-7069-a7a6-17a2de195f7a",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.camera_efficiency"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.camera_efficiency/execution.log",
+      "publication": {
+        "file_count": 2,
+        "byte_count": 467578
+      }
     },
     {
       "id": "compare.compute_resources.south",

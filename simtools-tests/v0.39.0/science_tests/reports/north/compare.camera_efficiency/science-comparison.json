@@ -2,141 +2,438 @@
   "schema_version": 1,
   "status": "complete",
   "baseline": {
-    "site": "North",
-    "telescope": "LSTN-02",
-    "zenith_angle": 0.0,
-    "azimuth_angle": 0.0,
-    "nsb_spectrum": "default sim_telarray spectrum",
-    "skip_correction_to_nsb_spectrum": false,
-    "model_version": "7.0.0",
-    "software": {
-      "simtools_version": "0.37.0",
-      "model_version": "7.0.0"
-    },
-    "image": "sha256:92c942bcebe1e4373ec52bc14ac77d81c1e0c4095c0ef7fa7c92618d771753d5"
+    "label": "v0.37.0"
   },
   "candidate": {
-    "site": "North",
-    "telescope": "LSTN-02",
-    "zenith_angle": 0.0,
-    "azimuth_angle": 0.0,
-    "nsb_spectrum": "default sim_telarray spectrum",
-    "skip_correction_to_nsb_spectrum": false,
-    "model_version": "7.0.0",
-    "software": {
-      "simtools_version": "0.38.3+g65f2426",
-      "model_version": "7.0.0"
-    },
-    "image": "sha256:e5ae0a252883635821dd587ecaef847449f11b5f98d0c1707abb0e87a559dce3"
+    "label": "v0.39.0"
   },
-  "changes": {
-    "reflectivity": {
+  "changes": {},
+  "diagnostics": [],
+  "comparisons": {
+    "LSTN-design": {
+      "schema_version": 1,
+      "status": "complete",
       "baseline": {
-        "value": 0.9029806823032989,
-        "unit": ""
+        "site": "North",
+        "telescope": "LSTN-design",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.37.0",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:92c942bcebe1e4373ec52bc14ac77d81c1e0c4095c0ef7fa7c92618d771753d5"
       },
       "candidate": {
-        "value": 0.9029802223195403,
-        "unit": ""
+        "site": "North",
+        "telescope": "LSTN-design",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.38.3+g65f2426",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:e5ae0a252883635821dd587ecaef847449f11b5f98d0c1707abb0e87a559dce3"
       },
-      "absolute": -4.5998375852729367e-07,
-      "relative": -5.094059790448445e-07,
-      "relative_reason": null,
-      "tolerance": 0.05,
-      "advisory": false
+      "changes": {
+        "reflectivity": {
+          "baseline": {
+            "value": 0.9029806823032989,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.9029802223195403,
+            "unit": ""
+          },
+          "absolute": -4.5998375852729367e-07,
+          "relative": -5.094059790448445e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "cam_eff": {
+          "baseline": {
+            "value": 0.2497512975947151,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.24975231782297724,
+            "unit": ""
+          },
+          "absolute": 1.0202282621496472e-06,
+          "relative": 4.084976822844087e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tel_eff": {
+          "baseline": {
+            "value": 0.24103783667305248,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.24103969376976273,
+            "unit": ""
+          },
+          "absolute": 1.857096710244921e-06,
+          "relative": 7.704585868665575e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tot_sens": {
+          "baseline": {
+            "value": 0.4795972574327183,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.47960100879582823,
+            "unit": ""
+          },
+          "absolute": 3.751363109927297e-06,
+          "relative": 7.821902756509336e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_rate": {
+          "baseline": {
+            "value": 0.2748694282637911,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.27486936276956914,
+            "unit": "GHz"
+          },
+          "absolute": -6.549422199020327e-08,
+          "relative": -2.3827394120872809e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_ref": {
+          "baseline": {
+            "value": 0.24832838925583636,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.2483283300908183,
+            "unit": "GHz"
+          },
+          "absolute": -5.916501805147689e-08,
+          "relative": -2.3825313822868265e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "muon_frac": {
+          "baseline": {
+            "value": 0.012181580491589194,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.012185273232140777,
+            "unit": ""
+          },
+          "absolute": 3.692740551583182e-06,
+          "relative": 0.00030314133327221743,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        }
+      },
+      "diagnostics": [],
+      "plots": {}
     },
-    "cam_eff": {
+    "LSTN-01": {
+      "schema_version": 1,
+      "status": "complete",
       "baseline": {
-        "value": 0.2497512975947151,
-        "unit": ""
+        "site": "North",
+        "telescope": "LSTN-01",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.37.0",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:92c942bcebe1e4373ec52bc14ac77d81c1e0c4095c0ef7fa7c92618d771753d5"
       },
       "candidate": {
-        "value": 0.24975231782297724,
-        "unit": ""
+        "site": "North",
+        "telescope": "LSTN-01",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.38.3+g65f2426",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:e5ae0a252883635821dd587ecaef847449f11b5f98d0c1707abb0e87a559dce3"
       },
-      "absolute": 1.0202282621496472e-06,
-      "relative": 4.084976822844087e-06,
-      "relative_reason": null,
-      "tolerance": 0.05,
-      "advisory": false
+      "changes": {
+        "reflectivity": {
+          "baseline": {
+            "value": 0.9032079188588067,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.9032076405882157,
+            "unit": ""
+          },
+          "absolute": -2.7827059101426244e-07,
+          "relative": -3.080913986735793e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "cam_eff": {
+          "baseline": {
+            "value": 0.24531323600395707,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.24531458561339248,
+            "unit": ""
+          },
+          "absolute": 1.3496094354026322e-06,
+          "relative": 5.5015760966964784e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tel_eff": {
+          "baseline": {
+            "value": 0.23753177943301557,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.23753419001375864,
+            "unit": ""
+          },
+          "absolute": 2.4105807430729875e-06,
+          "relative": 1.0148455709071873e-05,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tot_sens": {
+          "baseline": {
+            "value": 0.48018722835080907,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.4801921577405699,
+            "unit": ""
+          },
+          "absolute": 4.929389760821579e-06,
+          "relative": 1.0265557827831955e-05,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_rate": {
+          "baseline": {
+            "value": 0.26627574837329193,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.2662756850412471,
+            "unit": "GHz"
+          },
+          "absolute": -6.333204483066623e-08,
+          "relative": -2.3784383376093663e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_ref": {
+          "baseline": {
+            "value": 0.24056450405962643,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.24056444684784697,
+            "unit": "GHz"
+          },
+          "absolute": -5.7211779452837064e-08,
+          "relative": -2.3782303077704484e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "muon_frac": {
+          "baseline": {
+            "value": 0.014909297046332386,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.014913868812897225,
+            "unit": ""
+          },
+          "absolute": 4.571766564839472e-06,
+          "relative": 0.0003066386396777911,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        }
+      },
+      "diagnostics": [],
+      "plots": {}
     },
-    "tel_eff": {
+    "MSTx-NectarCam": {
+      "schema_version": 1,
+      "status": "complete",
       "baseline": {
-        "value": 0.24103783667305248,
-        "unit": ""
+        "site": "North",
+        "telescope": "MSTx-NectarCam",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.37.0",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:92c942bcebe1e4373ec52bc14ac77d81c1e0c4095c0ef7fa7c92618d771753d5"
       },
       "candidate": {
-        "value": 0.24103969376976273,
-        "unit": ""
+        "site": "North",
+        "telescope": "MSTx-NectarCam",
+        "zenith_angle": 0.0,
+        "azimuth_angle": 0.0,
+        "nsb_spectrum": "default sim_telarray spectrum",
+        "skip_correction_to_nsb_spectrum": false,
+        "model_version": "7.0.0",
+        "software": {
+          "simtools_version": "0.38.3+g65f2426",
+          "model_version": "7.0.0"
+        },
+        "image": "sha256:e5ae0a252883635821dd587ecaef847449f11b5f98d0c1707abb0e87a559dce3"
       },
-      "absolute": 1.857096710244921e-06,
-      "relative": 7.704585868665575e-06,
-      "relative_reason": null,
-      "tolerance": 0.05,
-      "advisory": false
-    },
-    "tot_sens": {
-      "baseline": {
-        "value": 0.4795972574327183,
-        "unit": ""
+      "changes": {
+        "reflectivity": {
+          "baseline": {
+            "value": 0.9389795235000029,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.9389792911665876,
+            "unit": ""
+          },
+          "absolute": -2.3233341528428042e-07,
+          "relative": -2.474318230266282e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "cam_eff": {
+          "baseline": {
+            "value": 0.27480515918085935,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.27480653265176497,
+            "unit": ""
+          },
+          "absolute": 1.373470905619012e-06,
+          "relative": 4.997980786507289e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tel_eff": {
+          "baseline": {
+            "value": 0.2753378440779259,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.2753404323695544,
+            "unit": ""
+          },
+          "absolute": 2.588291628524697e-06,
+          "relative": 9.400420916320392e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "tot_sens": {
+          "baseline": {
+            "value": 0.5178491709845622,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.517854105841612,
+            "unit": ""
+          },
+          "absolute": 4.9348570497764754e-06,
+          "relative": 9.529525827750318e-06,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_rate": {
+          "baseline": {
+            "value": 0.24056609840622503,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.24056603541414612,
+            "unit": "GHz"
+          },
+          "absolute": -6.299207891413694e-08,
+          "relative": -2.618493600364552e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "nsb_ref": {
+          "baseline": {
+            "value": 0.21733734487724557,
+            "unit": "GHz"
+          },
+          "candidate": {
+            "value": 0.21733728797212218,
+            "unit": "GHz"
+          },
+          "absolute": -5.6905123391182144e-08,
+          "relative": -2.6182855699890306e-07,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        },
+        "muon_frac": {
+          "baseline": {
+            "value": 0.01356898834976382,
+            "unit": ""
+          },
+          "candidate": {
+            "value": 0.013573136467042262,
+            "unit": ""
+          },
+          "absolute": 4.148117278442859e-06,
+          "relative": 0.00030570571449529325,
+          "relative_reason": null,
+          "tolerance": 0.05,
+          "advisory": false
+        }
       },
-      "candidate": {
-        "value": 0.47960100879582823,
-        "unit": ""
-      },
-      "absolute": 3.751363109927297e-06,
-      "relative": 7.821902756509336e-06,
-      "relative_reason": null,
-      "tolerance": 0.05,
-      "advisory": false
-    },
-    "nsb_rate": {
-      "baseline": {
-        "value": 0.2748694282637911,
-        "unit": "GHz"
-      },
-      "candidate": {
-        "value": 0.27486936276956914,
-        "unit": "GHz"
-      },
-      "absolute": -6.549422199020327e-08,
-      "relative": -2.3827394120872809e-07,
-      "relative_reason": null,
-      "tolerance": 0.05,
-      "advisory": false
-    },
-    "nsb_ref": {
-      "baseline": {
-        "value": 0.24832838925583636,
-        "unit": "GHz"
-      },
-      "candidate": {
-        "value": 0.2483283300908183,
-        "unit": "GHz"
-      },
-      "absolute": -5.916501805147689e-08,
-      "relative": -2.3825313822868265e-07,
-      "relative_reason": null,
-      "tolerance": 0.05,
-      "advisory": false
-    },
-    "muon_frac": {
-      "baseline": {
-        "value": 0.012181580491589194,
-        "unit": ""
-      },
-      "candidate": {
-        "value": 0.012185273232140777,
-        "unit": ""
-      },
-      "absolute": 3.692740551583182e-06,
-      "relative": 0.00030314133327221743,
-      "relative_reason": null,
-      "tolerance": 0.05,
-      "advisory": false
+      "diagnostics": [],
+      "plots": {}
     }
   },
-  "diagnostics": [],
   "plots": {
     "report": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency/report.pdf"
   }
