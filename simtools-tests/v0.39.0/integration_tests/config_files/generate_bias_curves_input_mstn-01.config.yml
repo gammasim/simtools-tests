@@ -7,7 +7,7 @@ applications:
       Create NSB and proton submission grids that scan trigger thresholds for LSTN-01 bias curve derivation.
   configuration:
     site: North
-    model_version: 6.0.1
+    model_version: 7.0.0
     array_layout_name: MSTN-01
     azimuth_angle: 0.0
     zenith_angle: 20.0
