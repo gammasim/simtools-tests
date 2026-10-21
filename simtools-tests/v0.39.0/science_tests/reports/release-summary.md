@@ -5,18 +5,24 @@ Qualified: False
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
 | north | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
-| north | compare.trigger_histograms | completed | warn | Acceptance warning (29): distribution_core_distance whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.0352 exceeds warning limit 0.03 (PDF page 137). | [report](north/compare.trigger_histograms); [deviations](north/compare.trigger_histograms/acceptance.md) |
-| north | derive.trigger_histograms | reused | pass | Reused complete derived products; use --overwrite to rebuild them. | - |
+| north | compare.telescope_throughput | completed | pass | - | [report](north/compare.telescope_throughput) |
+| north | compare.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| north | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
 | north | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| north | telescope_throughput | completed | pass | - | - |
 | south | compare.compute_resources | not_run | not_run | Not selected or not executed. | - |
-| south | compare.trigger_histograms | completed | warn | Acceptance warning (55): distribution_core_distance whole_array gamma-e30tev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.03098 exceeds warning limit 0.03 (PDF page 5). | [report](south/compare.trigger_histograms); [deviations](south/compare.trigger_histograms/acceptance.md) |
-| south | derive.trigger_histograms | reused | pass | Reused complete derived products; use --overwrite to rebuild them. | - |
+| south | compare.telescope_throughput | completed | pass | - | [report](south/compare.telescope_throughput) |
+| south | compare.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
 | south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| south | telescope_throughput | completed | pass | - | - |
 
 ## Execution details
 
-- north/compare.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms`.
-- south/compare.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms`.
+- north/compare.telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput`.
+- north/telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput`.
+- south/compare.telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput`.
+- south/telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput`.
 
 ## Production history
 

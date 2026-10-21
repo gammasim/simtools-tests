@@ -5,3 +5,4 @@ required_tests:
 - production.gamma.collect
 - derive.trigger_histograms
 array_layout_name: CTAO-South-Beta
+camera_telescopes: [LSTS-design, MSTx-FlashCam, SSTS-design]

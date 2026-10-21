@@ -5,3 +5,4 @@ required_tests:
 - production.gamma.collect
 - derive.trigger_histograms
 array_layout_name: CTAO-North-Alpha
+camera_telescopes: [LSTN-design, LSTN-01, MSTx-NectarCam]

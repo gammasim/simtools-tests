@@ -3,3 +3,15 @@ runtime_environment:
   container_engine: apptainer
   image: __SCIENCE_CONTAINER_IMAGE_PATH__
   environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
+runtime_environments:
+  camera:
+    container_engine: apptainer
+    image: __SCIENCE_CONTAINER_IMAGE_PATH__
+    environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env
+    options:
+    - --bind
+    - __SCIENCE_MODELS_SOURCE_PATH__:__SCIENCE_MODELS_SOURCE_PATH__:ro
+  analysis:
+    container_engine: apptainer
+    image: __SCIENCE_CONTAINER_IMAGE_PATH__
+    environment_file: __CONFIG_DIRECTORY__/profiles/htcondor.env

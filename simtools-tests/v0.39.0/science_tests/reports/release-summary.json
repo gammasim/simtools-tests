@@ -6,7 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "e65f050b4a5e1686ec61d350c6a7c3e04f52875ec4f2d95b427fb4c53d6c85c6",
+  "campaign_sha256": "4af1d9512863e21c48cabf430b20d7f995421bf5c994b0487390f3f9a3c5bce5",
   "evidence_sha256": null,
   "qualified": false,
   "results": [
@@ -20,58 +20,48 @@
       "reason": "Not selected or not executed."
     },
     {
-      "id": "compare.trigger_histograms.north",
-      "test": "compare.trigger_histograms",
+      "id": "compare.telescope_throughput.north",
+      "test": "compare.telescope_throughput",
       "site": "north",
-      "workflow": "workflows/comparison/trigger_histograms.yml",
+      "workflow": "workflows/telescope_throughput/compare.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms",
-      "report": "reports/north/compare.trigger_histograms",
-      "run_id": "01a14389-0d75-77bc-9175-adb583a65b78",
-      "runtime": "host (no container)",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput",
+      "report": "reports/north/compare.telescope_throughput",
+      "run_id": "01a15e47-4c7a-76f9-b956-508554412a68",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms"
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput"
       ],
       "execution": "completed",
-      "status": "warn",
-      "reason": "Acceptance warning (29): distribution_core_distance whole_array gamma-e30gev-za60deg-azm31deg-qgs3-ctao-north-alpha.trigger_histograms: value=0.0352 exceeds warning limit 0.03 (PDF page 137).",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.trigger_histograms/execution.log",
-      "acceptance_report": "reports/north/compare.trigger_histograms/acceptance.md",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput/execution.log",
       "publication": {
-        "file_count": 5,
-        "byte_count": 1286195
+        "file_count": 2,
+        "byte_count": 372816
       }
+    },
+    {
+      "id": "compare.trigger_histograms.north",
+      "test": "compare.trigger_histograms",
+      "site": "north",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "derive.trigger_histograms.north",
       "test": "derive.trigger_histograms",
       "site": "north",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/derive.trigger_histograms",
       "report": null,
-      "run_id": "01a14383-54e7-7683-a1fa-8da5e0601915",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/derived/trigger_histograms"
-      ],
-      "execution": "reused",
-      "status": "pass",
-      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.north",
@@ -83,6 +73,28 @@
       "reason": "Not selected or not executed."
     },
     {
+      "id": "telescope_throughput.north",
+      "test": "telescope_throughput",
+      "site": "north",
+      "workflow": "workflows/telescope_throughput/run.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput",
+      "report": null,
+      "run_id": "01a15e1e-3c1d-708e-95a1-71d742e37b09",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput/execution.log"
+    },
+    {
       "id": "compare.compute_resources.south",
       "test": "compare.compute_resources",
       "site": "south",
@@ -92,58 +104,48 @@
       "reason": "Not selected or not executed."
     },
     {
-      "id": "compare.trigger_histograms.south",
-      "test": "compare.trigger_histograms",
+      "id": "compare.telescope_throughput.south",
+      "test": "compare.telescope_throughput",
       "site": "south",
-      "workflow": "workflows/comparison/trigger_histograms.yml",
+      "workflow": "workflows/telescope_throughput/compare.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms",
-      "report": "reports/south/compare.trigger_histograms",
-      "run_id": "01a14389-0d75-77bc-9175-adb583a65b78",
-      "runtime": "host (no container)",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput",
+      "report": "reports/south/compare.telescope_throughput",
+      "run_id": "01a15e47-4c7a-76f9-b956-508554412a68",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms"
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput"
       ],
       "execution": "completed",
-      "status": "warn",
-      "reason": "Acceptance warning (55): distribution_core_distance whole_array gamma-e30tev-za20deg-azm31deg-qgs3-ctao-south-beta.trigger_histograms: value=0.03098 exceeds warning limit 0.03 (PDF page 5).",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.trigger_histograms/execution.log",
-      "acceptance_report": "reports/south/compare.trigger_histograms/acceptance.md",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput/execution.log",
       "publication": {
-        "file_count": 5,
-        "byte_count": 1760536
+        "file_count": 2,
+        "byte_count": 467586
       }
+    },
+    {
+      "id": "compare.trigger_histograms.south",
+      "test": "compare.trigger_histograms",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "derive.trigger_histograms.south",
       "test": "derive.trigger_histograms",
       "site": "south",
-      "workflow": "workflows/derivation/trigger_histograms.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/derive.trigger_histograms",
       "report": null,
-      "run_id": "01a14383-54e7-7683-a1fa-8da5e0601915",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev20+g40f06d663.d20261016",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/derived/trigger_histograms"
-      ],
-      "execution": "reused",
-      "status": "pass",
-      "reason": "Reused complete derived products; use --overwrite to rebuild them.",
-      "publication": {
-        "file_count": 0,
-        "byte_count": 0
-      }
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.gamma.collect.south",
@@ -153,6 +155,28 @@
       "status": "not_run",
       "execution": "not_run",
       "reason": "Not selected or not executed."
+    },
+    {
+      "id": "telescope_throughput.south",
+      "test": "telescope_throughput",
+      "site": "south",
+      "workflow": "workflows/telescope_throughput/run.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput",
+      "report": null,
+      "run_id": "01a15e1e-3c1d-708e-95a1-71d742e37b09",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput/execution.log"
     }
   ],
   "production_history": [

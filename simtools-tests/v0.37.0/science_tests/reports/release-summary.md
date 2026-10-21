@@ -1,18 +1,20 @@
 # Science-test summary: v0.37.0
 
-Qualified: True
+Qualified: False
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
-| north | derive.trigger_histograms | completed | pass | - | [report](north/derive.trigger_histograms) |
-| north | production.gamma.collect | completed | pass | - | [report](north/production.gamma.collect) |
-| south | derive.trigger_histograms | completed | pass | - | [report](south/derive.trigger_histograms) |
-| south | production.gamma.collect | completed | pass | - | [report](south/production.gamma.collect) |
+| north | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| north | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| north | telescope_throughput | completed | pass | - | - |
+| south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
+| south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| south | telescope_throughput | completed | pass | - | - |
 
 ## Execution details
 
-- north/derive.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/derive.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/derive.trigger_histograms`.
-- south/derive.trigger_histograms: host (no container); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/derive.trigger_histograms/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/derive.trigger_histograms`.
+- north/telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/telescope_throughput`.
+- south/telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/telescope_throughput`.
 
 ## Production history
 
