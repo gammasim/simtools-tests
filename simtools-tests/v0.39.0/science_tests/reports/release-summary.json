@@ -28,7 +28,7 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput",
       "report": "reports/north/compare.telescope_throughput",
-      "run_id": "01a15e22-f895-7760-a74e-b770607a668e",
+      "run_id": "01a15e47-4c7a-76f9-b956-508554412a68",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
         "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
@@ -112,7 +112,7 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput",
       "report": "reports/south/compare.telescope_throughput",
-      "run_id": "01a15e22-f895-7760-a74e-b770607a668e",
+      "run_id": "01a15e47-4c7a-76f9-b956-508554412a68",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
         "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
