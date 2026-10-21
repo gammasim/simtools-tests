@@ -4,7 +4,7 @@ applications:
   configuration:
     figure_format: [pdf]
     model_version: __SCIENCE_MODEL_VERSION__
-    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/telescope_throughput
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/telescope_throughput/__SCIENCE_CAMERA_TELESCOPE__
     site: __SCIENCE_SITE__
     telescope: __SCIENCE_CAMERA_TELESCOPE__
     zenith_angle: 0.0

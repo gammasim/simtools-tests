@@ -6,8 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "405f67aa97c9b971d6780d13555021cde9df12608075de0b1cbdc0d2bbbe8808",
-  "evidence_sha256": null,
+  "campaign_sha256": "b4ed6922049bc1ee15cf85d92d9d370e1a552fcfc4a260752fe487113801d672",
   "qualified": false,
   "results": [
     {
@@ -32,19 +31,21 @@
       "id": "telescope_throughput.north",
       "test": "telescope_throughput",
       "site": "north",
-      "workflow": "run.yml",
+      "workflow": "workflows/telescope_throughput/run.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.37.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/telescope_throughput",
       "report": null,
-      "run_id": "01a15e21-5e8b-7218-9c9a-101ccdd16b3a",
+      "run_id": "01a15e98-7176-717e-804d-f336a2ea541a",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
         "simulation_models": null
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/telescope_throughput"
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/telescope_throughput/LSTN-design",
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/telescope_throughput/LSTN-01",
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/north/telescope_throughput/MSTx-NectarCam"
       ],
       "execution": "completed",
       "status": "pass",
@@ -72,19 +73,21 @@
       "id": "telescope_throughput.south",
       "test": "telescope_throughput",
       "site": "south",
-      "workflow": "run.yml",
+      "workflow": "workflows/telescope_throughput/run.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.37.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/telescope_throughput",
       "report": null,
-      "run_id": "01a15e21-5e8b-7218-9c9a-101ccdd16b3a",
+      "run_id": "01a15e98-7176-717e-804d-f336a2ea541a",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
         "simulation_models": null
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.37.0/south/telescope_throughput"
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/south/telescope_throughput/LSTS-design",
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/south/telescope_throughput/MSTx-FlashCam",
+        "/lustre/fs24/group/cta/science_tests/v0.37.0/south/telescope_throughput/SSTS-design"
       ],
       "execution": "completed",
       "status": "pass",

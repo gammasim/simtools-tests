@@ -6,7 +6,6 @@ release_label: v0.39.0
 simulation_models_git_revision: v0.18.0
 model_version: 7.0.0
 expected_changes: []
-report_mode: compact
-comparison_parameters:
-  trigger_histograms:
+configuration_overrides:
+  compare.trigger_histograms:
     compare_by: []

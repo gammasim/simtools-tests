@@ -35,6 +35,7 @@ jobs:
 
       - name: Installation
         run: |
+          # Temporary CI check against the simtools feature branch.
           python -m pip install \
             "git+https://github.com/gammasim/simtools.git@main"
 

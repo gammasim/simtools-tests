@@ -5,8 +5,9 @@ applications:
     comparison_level: computing
     baseline_path: __SCIENCE_BASELINE_SITE_PATH__
     candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__
-    baseline_label: baseline
+    baseline_label: __SCIENCE_BASELINE_LABEL__
     candidate_label: __SCIENCE_RELEASE_LABEL__
+    report_mode: compact
     select:
     - configuration.primary=gamma
     - configuration.site=__SCIENCE_SITE__
