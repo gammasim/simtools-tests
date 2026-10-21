@@ -4,17 +4,17 @@ Qualified: False
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
-| north | camera_efficiency | completed | pass | - | - |
 | north | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
 | north | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
-| south | camera_efficiency | completed | pass | - | - |
+| north | telescope_throughput | completed | pass | - | - |
 | south | derive.trigger_histograms | not_run | not_run | Not selected or not executed. | - |
 | south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
+| south | telescope_throughput | completed | pass | - | - |
 
 ## Execution details
 
-- north/camera_efficiency: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/camera_efficiency/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/camera_efficiency`.
-- south/camera_efficiency: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/camera_efficiency/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/camera_efficiency`.
+- north/telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/north/telescope_throughput`.
+- south/telescope_throughput: apptainer (image: /lustre/fs24/group/cta/science_tests/v0.37.0/simtools-prod_v0.37.0-v78050-v2025-11-30-rc-avx2.sif); [log](/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/telescope_throughput/execution.log); work: `/lustre/fs24/group/cta/science_tests/v0.37.0/work/science-tests/south/telescope_throughput`.
 
 ## Production history
 

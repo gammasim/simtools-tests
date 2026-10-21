@@ -6,58 +6,10 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "3e850c2bb426fb57f4288cc4665851770cf02f7bd37d4c768b07df313ec08b65",
+  "campaign_sha256": "4af1d9512863e21c48cabf430b20d7f995421bf5c994b0487390f3f9a3c5bce5",
   "evidence_sha256": null,
   "qualified": false,
   "results": [
-    {
-      "id": "camera_efficiency.north",
-      "test": "camera_efficiency",
-      "site": "north",
-      "workflow": "workflows/camera_efficiency/run.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency",
-      "report": null,
-      "run_id": "01a15869-69f6-76c9-83a0-497121c849c1",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/camera_efficiency"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/camera_efficiency/execution.log"
-    },
-    {
-      "id": "compare.camera_efficiency.north",
-      "test": "compare.camera_efficiency",
-      "site": "north",
-      "workflow": "workflows/camera_efficiency/compare.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency",
-      "report": "reports/north/compare.camera_efficiency",
-      "run_id": "01a15869-ed5b-7200-801c-79823df55d77",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.camera_efficiency/execution.log",
-      "publication": {
-        "file_count": 2,
-        "byte_count": 372818
-      }
-    },
     {
       "id": "compare.compute_resources.north",
       "test": "compare.compute_resources",
@@ -66,6 +18,32 @@
       "status": "not_run",
       "execution": "not_run",
       "reason": "Not selected or not executed."
+    },
+    {
+      "id": "compare.telescope_throughput.north",
+      "test": "compare.telescope_throughput",
+      "site": "north",
+      "workflow": "workflows/telescope_throughput/compare.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput",
+      "report": "reports/north/compare.telescope_throughput",
+      "run_id": "01a15e22-f895-7760-a74e-b770607a668e",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput/execution.log",
+      "publication": {
+        "file_count": 2,
+        "byte_count": 372816
+      }
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -95,52 +73,26 @@
       "reason": "Not selected or not executed."
     },
     {
-      "id": "camera_efficiency.south",
-      "test": "camera_efficiency",
-      "site": "south",
-      "workflow": "workflows/camera_efficiency/run.yml",
+      "id": "telescope_throughput.north",
+      "test": "telescope_throughput",
+      "site": "north",
+      "workflow": "workflows/telescope_throughput/run.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/camera_efficiency",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput",
       "report": null,
-      "run_id": "01a15864-b057-72e5-bf6c-68a21d741f4f",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261014-v78050-v2025-11-30-rc-avx2.sif)",
+      "run_id": "01a15e1e-3c1d-708e-95a1-71d742e37b09",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/camera_efficiency"
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput"
       ],
       "execution": "completed",
       "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/camera_efficiency/execution.log"
-    },
-    {
-      "id": "compare.camera_efficiency.south",
-      "test": "compare.camera_efficiency",
-      "site": "south",
-      "workflow": "workflows/camera_efficiency/compare.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.camera_efficiency",
-      "report": "reports/south/compare.camera_efficiency",
-      "run_id": "01a1586b-3686-7069-a7a6-17a2de195f7a",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.38.4.dev73+gce5d065b6.d20261019",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.camera_efficiency"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.camera_efficiency/execution.log",
-      "publication": {
-        "file_count": 2,
-        "byte_count": 467578
-      }
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput/execution.log"
     },
     {
       "id": "compare.compute_resources.south",
@@ -150,6 +102,32 @@
       "status": "not_run",
       "execution": "not_run",
       "reason": "Not selected or not executed."
+    },
+    {
+      "id": "compare.telescope_throughput.south",
+      "test": "compare.telescope_throughput",
+      "site": "south",
+      "workflow": "workflows/telescope_throughput/compare.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput",
+      "report": "reports/south/compare.telescope_throughput",
+      "run_id": "01a15e22-f895-7760-a74e-b770607a668e",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput/execution.log",
+      "publication": {
+        "file_count": 2,
+        "byte_count": 467586
+      }
     },
     {
       "id": "compare.trigger_histograms.south",
@@ -177,6 +155,28 @@
       "status": "not_run",
       "execution": "not_run",
       "reason": "Not selected or not executed."
+    },
+    {
+      "id": "telescope_throughput.south",
+      "test": "telescope_throughput",
+      "site": "south",
+      "workflow": "workflows/telescope_throughput/run.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput",
+      "report": null,
+      "run_id": "01a15e1e-3c1d-708e-95a1-71d742e37b09",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simulation_models": "v0.18.0"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput/execution.log"
     }
   ],
   "production_history": [

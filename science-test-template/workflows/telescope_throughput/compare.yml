@@ -2,8 +2,8 @@
 applications:
 - application: simtools-compare-science-results
   configuration:
-    baseline_path: __SCIENCE_BASELINE_SITE_PATH__/camera_efficiency
-    candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__/camera_efficiency
+    baseline_path: __SCIENCE_BASELINE_SITE_PATH__/telescope_throughput
+    candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__/telescope_throughput
     output_path: __SCIENCE_REPORT_PATH__
     require_wavelength_tables: true
     tolerance:

@@ -6,7 +6,7 @@ required_tests:
 - derive.trigger_histograms
 - compare.trigger_histograms
 - compare.compute_resources
-- camera_efficiency
-- compare.camera_efficiency
+- telescope_throughput
+- compare.telescope_throughput
 array_layout_name: CTAO-South-Beta
 camera_telescopes: [LSTS-design, MSTx-FlashCam, SSTS-design]
