@@ -6,8 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "4af1d9512863e21c48cabf430b20d7f995421bf5c994b0487390f3f9a3c5bce5",
-  "evidence_sha256": null,
+  "campaign_sha256": "6e3f85e26f45644e3bd59566cf3e55e2970fad42da485ff35bb9c3e89c09b9c2",
   "qualified": false,
   "results": [
     {
@@ -28,10 +27,10 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput",
       "report": "reports/north/compare.telescope_throughput",
-      "run_id": "01a15e47-4c7a-76f9-b956-508554412a68",
+      "run_id": "01a15ec3-32f7-7093-8db5-6f531179a6a9",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
@@ -42,7 +41,7 @@
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput/execution.log",
       "publication": {
         "file_count": 2,
-        "byte_count": 372816
+        "byte_count": 363914
       }
     },
     {
@@ -81,14 +80,16 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput",
       "report": null,
-      "run_id": "01a15e1e-3c1d-708e-95a1-71d742e37b09",
+      "run_id": "01a15e99-6a63-76db-a8f5-b363122de4ff",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput"
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput/LSTN-design",
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput/LSTN-01",
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput/MSTx-NectarCam"
       ],
       "execution": "completed",
       "status": "pass",
@@ -112,10 +113,10 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput",
       "report": "reports/south/compare.telescope_throughput",
-      "run_id": "01a15e47-4c7a-76f9-b956-508554412a68",
+      "run_id": "01a15ec3-32f7-7093-8db5-6f531179a6a9",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
@@ -126,7 +127,7 @@
       "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput/execution.log",
       "publication": {
         "file_count": 2,
-        "byte_count": 467586
+        "byte_count": 457265
       }
     },
     {
@@ -165,14 +166,16 @@
       "candidate": "v0.39.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput",
       "report": null,
-      "run_id": "01a15e1e-3c1d-708e-95a1-71d742e37b09",
+      "run_id": "01a15e99-6a63-76db-a8f5-b363122de4ff",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
-        "simtools": "0.38.4.dev84+g1045c21c7.d20261021",
+        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
         "simulation_models": "v0.18.0"
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput"
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput/LSTS-design",
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput/MSTx-FlashCam",
+        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput/SSTS-design"
       ],
       "execution": "completed",
       "status": "pass",

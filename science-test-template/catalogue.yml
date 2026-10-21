@@ -57,7 +57,6 @@ tests:
     sites: [north, south]
     tier: release-light
     runtime_role: camera
-    result_type: telescope_throughput
     depends_on: []
   compare.telescope_throughput:
     workflow: workflows/telescope_throughput/compare.yml
