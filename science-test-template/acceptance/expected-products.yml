@@ -16,8 +16,8 @@ tests:
   compare.compute_resources:
   - __SCIENCE_REPORT_PATH__/resource_requirements.md
   - __SCIENCE_REPORT_PATH__/resource_requirements.json
-  camera_efficiency:
-  - __SCIENCE_CANDIDATE_SITE_PATH__/camera_efficiency/**/camera_efficiency_manifest.json
-  compare.camera_efficiency:
+  telescope_throughput:
+  - __SCIENCE_CANDIDATE_SITE_PATH__/telescope_throughput/**/camera_efficiency_manifest.json
+  compare.telescope_throughput:
   - __SCIENCE_REPORT_PATH__/science-comparison.json
   - __SCIENCE_REPORT_PATH__/report.pdf
