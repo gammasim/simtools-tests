@@ -6,9 +6,37 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "6e3f85e26f45644e3bd59566cf3e55e2970fad42da485ff35bb9c3e89c09b9c2",
+  "campaign_sha256": "d461e744cfdacf3f9f7f52a43c980962c3cf4f70f800075d773ce29fc0f3f720",
   "qualified": false,
   "results": [
+    {
+      "id": "compare.atmospheres.north",
+      "test": "compare.atmospheres",
+      "site": "north",
+      "workflow": "workflows/comparison/atmospheres.yml",
+      "baseline": "v0.37.0",
+      "candidate": "v0.39.0",
+      "execution_provenance": "/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres",
+      "report": "reports/north/compare.atmospheres",
+      "run_id": "01a162bd-253e-76bd-ab6d-4ec2ceaead14",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference",
+        "/tmp/atmosphere-science-candidate/north/atmosphere-comparison/candidate",
+        "/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres/execution.log",
+      "publication": {
+        "file_count": 3,
+        "byte_count": 200760
+      }
+    },
     {
       "id": "compare.compute_resources.north",
       "test": "compare.compute_resources",
@@ -22,27 +50,10 @@
       "id": "compare.telescope_throughput.north",
       "test": "compare.telescope_throughput",
       "site": "north",
-      "workflow": "workflows/telescope_throughput/compare.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput",
-      "report": "reports/north/compare.telescope_throughput",
-      "run_id": "01a15ec3-32f7-7093-8db5-6f531179a6a9",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/compare.telescope_throughput/execution.log",
-      "publication": {
-        "file_count": 2,
-        "byte_count": 363914
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "compare.trigger_histograms.north",
@@ -75,25 +86,38 @@
       "id": "telescope_throughput.north",
       "test": "telescope_throughput",
       "site": "north",
-      "workflow": "workflows/telescope_throughput/run.yml",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    },
+    {
+      "id": "compare.atmospheres.south",
+      "test": "compare.atmospheres",
+      "site": "south",
+      "workflow": "workflows/comparison/atmospheres.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput",
-      "report": null,
-      "run_id": "01a15e99-6a63-76db-a8f5-b363122de4ff",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
+      "execution_provenance": "/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres",
+      "report": "reports/south/compare.atmospheres",
+      "run_id": "01a162bd-253e-76bd-ab6d-4ec2ceaead14",
+      "runtime": "host (no container)",
       "software": {
         "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
-        "simulation_models": "v0.18.0"
+        "simulation_models": null
       },
       "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput/LSTN-design",
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput/LSTN-01",
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/north/telescope_throughput/MSTx-NectarCam"
+        "/tmp/atmosphere-science-candidate/south/atmosphere-comparison/reference",
+        "/tmp/atmosphere-science-candidate/south/atmosphere-comparison/candidate",
+        "/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres"
       ],
       "execution": "completed",
       "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/north/telescope_throughput/execution.log"
+      "execution_log": "/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres/execution.log",
+      "publication": {
+        "file_count": 3,
+        "byte_count": 167322
+      }
     },
     {
       "id": "compare.compute_resources.south",
@@ -108,27 +132,10 @@
       "id": "compare.telescope_throughput.south",
       "test": "compare.telescope_throughput",
       "site": "south",
-      "workflow": "workflows/telescope_throughput/compare.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput",
-      "report": "reports/south/compare.telescope_throughput",
-      "run_id": "01a15ec3-32f7-7093-8db5-6f531179a6a9",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/compare.telescope_throughput/execution.log",
-      "publication": {
-        "file_count": 2,
-        "byte_count": 457265
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "compare.trigger_histograms.south",
@@ -161,25 +168,10 @@
       "id": "telescope_throughput.south",
       "test": "telescope_throughput",
       "site": "south",
-      "workflow": "workflows/telescope_throughput/run.yml",
-      "baseline": "v0.37.0",
-      "candidate": "v0.39.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput",
       "report": null,
-      "run_id": "01a15e99-6a63-76db-a8f5-b363122de4ff",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.39.0/simtools-prod_20261021-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
-        "simulation_models": "v0.18.0"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput/LSTS-design",
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput/MSTx-FlashCam",
-        "/lustre/fs24/group/cta/science_tests/v0.39.0/south/telescope_throughput/SSTS-design"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.39.0/work/science-tests/south/telescope_throughput/execution.log"
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     }
   ],
   "production_history": [

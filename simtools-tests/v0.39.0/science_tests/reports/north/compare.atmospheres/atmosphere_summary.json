@@ -1,0 +1,59 @@
+{
+  "reference": "North profile /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_profile-1.0.0-OBS-North.ecsv transmission /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_transmission-1.0.0-OBS-North.ecsv",
+  "emission_altitude_km_asl": 10.0,
+  "profile_units": {
+    "density": "g / cm3",
+    "thickness": "g / cm2",
+    "temperature": "K",
+    "pressure": "mbar",
+    "refractive_index": "n-1",
+    "water_vapor_partial_pressure": "p_w/p"
+  },
+  "transmission_definition": "exp(-vertical optical depth) to each table observation level",
+  "atmospheres": [
+    {
+      "label": "North profile /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_profile-1.0.0-OBS-North.ecsv transmission /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_transmission-1.0.0-OBS-North.ecsv",
+      "site": "North",
+      "profile_version": null,
+      "transmission_version": null,
+      "observation_level_km": 2.158,
+      "profile_at_10_km": {
+        "density": 0.00042515,
+        "thickness": 283.604,
+        "refractive_index": 9.80958e-05,
+        "temperature": 226.53,
+        "pressure": 276.354,
+        "water_vapor_partial_pressure": 0.000155311
+      },
+      "transmission_difference": {
+        "common_wavelength_count": 767,
+        "wavelength_min_nm": 234.0,
+        "wavelength_max_nm": 1000.0,
+        "max_absolute_difference": 0.0,
+        "rms_difference": 0.0
+      }
+    },
+    {
+      "label": "North profile /tmp/atmosphere-science-candidate/north/atmosphere-comparison/candidate/atmospheric_profile-1.0.0-OBS-North.ecsv transmission /tmp/atmosphere-science-candidate/north/atmosphere-comparison/candidate/atmospheric_transmission-2.0.0-OBS-North.ecsv",
+      "site": "North",
+      "profile_version": null,
+      "transmission_version": null,
+      "observation_level_km": 2.156,
+      "profile_at_10_km": {
+        "density": 0.00042515,
+        "thickness": 283.604,
+        "refractive_index": 9.80958e-05,
+        "temperature": 226.53,
+        "pressure": 276.354,
+        "water_vapor_partial_pressure": 0.000155311
+      },
+      "transmission_difference": {
+        "common_wavelength_count": 767,
+        "wavelength_min_nm": 234.0,
+        "wavelength_max_nm": 1000.0,
+        "max_absolute_difference": 0.22748990441969535,
+        "rms_difference": 0.023941818901309104
+      }
+    }
+  ]
+}
