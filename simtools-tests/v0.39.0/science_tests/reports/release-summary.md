@@ -21,8 +21,7 @@ Qualified: False
 
 ## Execution details
 
-- north/compare.atmospheres: host (no container); [log](/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres/execution.log); work: `/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres`.
-- south/compare.atmospheres: host (no container); [log](/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres/execution.log); work: `/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres`.
+Temporary work and log paths are omitted from this published summary.
 
 ## Production history
 

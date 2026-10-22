@@ -16,25 +16,18 @@
       "workflow": "workflows/comparison/atmospheres.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.39.0",
-      "execution_provenance": "/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres",
       "report": "reports/north/compare.atmospheres",
-      "run_id": "01a162cc-6a47-760c-a1ed-7418ef5ffa0d",
+      "run_id": "01a162e4-052e-754c-ae03-9b8904ec5776",
       "runtime": "host (no container)",
       "software": {
-        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
+        "simtools": "0.38.4.dev75+g7d65e910e.d20261022",
         "simulation_models": null
       },
-      "output_paths": [
-        "/tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference",
-        "/tmp/atmosphere-science-candidate/north/atmosphere-comparison/candidate",
-        "/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres"
-      ],
       "execution": "completed",
       "status": "pass",
-      "execution_log": "/tmp/atmosphere-science-candidate/work/science-tests/north/compare.atmospheres/execution.log",
       "publication": {
         "file_count": 3,
-        "byte_count": 190469
+        "byte_count": 190765
       }
     },
     {
@@ -98,25 +91,18 @@
       "workflow": "workflows/comparison/atmospheres.yml",
       "baseline": "v0.37.0",
       "candidate": "v0.39.0",
-      "execution_provenance": "/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres",
       "report": "reports/south/compare.atmospheres",
-      "run_id": "01a162cc-6a47-760c-a1ed-7418ef5ffa0d",
+      "run_id": "01a162e4-052e-754c-ae03-9b8904ec5776",
       "runtime": "host (no container)",
       "software": {
-        "simtools": "0.38.4.dev70+g06198bdc4.d20261021",
+        "simtools": "0.38.4.dev75+g7d65e910e.d20261022",
         "simulation_models": null
       },
-      "output_paths": [
-        "/tmp/atmosphere-science-candidate/south/atmosphere-comparison/reference",
-        "/tmp/atmosphere-science-candidate/south/atmosphere-comparison/candidate",
-        "/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres"
-      ],
       "execution": "completed",
       "status": "pass",
-      "execution_log": "/tmp/atmosphere-science-candidate/work/science-tests/south/compare.atmospheres/execution.log",
       "publication": {
         "file_count": 3,
-        "byte_count": 157971
+        "byte_count": 158270
       }
     },
     {

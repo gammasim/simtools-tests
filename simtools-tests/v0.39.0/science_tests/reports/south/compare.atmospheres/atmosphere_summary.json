@@ -14,8 +14,8 @@
     {
       "label": "South reference",
       "site": "South",
-      "profile_version": null,
-      "transmission_version": null,
+      "profile_version": "1.0.0",
+      "transmission_version": "1.0.0",
       "observation_level_km": 2.147,
       "profile_at_10_km": {
         "density": 0.000422121,
@@ -36,8 +36,8 @@
     {
       "label": "South candidate",
       "site": "South",
-      "profile_version": null,
-      "transmission_version": null,
+      "profile_version": "1.0.0",
+      "transmission_version": "1.0.0",
       "observation_level_km": 2.147,
       "profile_at_10_km": {
         "density": 0.000422121,

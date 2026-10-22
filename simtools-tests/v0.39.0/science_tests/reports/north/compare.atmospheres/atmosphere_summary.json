@@ -14,8 +14,8 @@
     {
       "label": "North reference",
       "site": "North",
-      "profile_version": null,
-      "transmission_version": null,
+      "profile_version": "1.0.0",
+      "transmission_version": "1.0.0",
       "observation_level_km": 2.158,
       "profile_at_10_km": {
         "density": 0.00042515,
@@ -36,8 +36,8 @@
     {
       "label": "North candidate",
       "site": "North",
-      "profile_version": null,
-      "transmission_version": null,
+      "profile_version": "1.0.0",
+      "transmission_version": "2.0.0",
       "observation_level_km": 2.156,
       "profile_at_10_km": {
         "density": 0.00042515,
