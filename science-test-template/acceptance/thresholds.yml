@@ -91,6 +91,12 @@ rules:
       minimum_entries: 100
       warning_maximum: 0.03
       maximum: 0.05
+  atmosphere-common-wavelengths:
+    mode: thresholds
+    metrics:
+    - file: __SCIENCE_REPORT_PATH__/atmosphere_summary.json
+      key: atmospheres.1.transmission_difference.common_wavelength_count
+      minimum: 1
   computing:
     mode: advisory
     metrics:

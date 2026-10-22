@@ -1,7 +1,13 @@
 ---
 site: north
 site_label: North
+replacements:
+  __ATMOSPHERE_REFERENCE_PROFILE_VERSION__: 1.0.0
+  __ATMOSPHERE_REFERENCE_TRANSMISSION_VERSION__: 1.0.0
+  __ATMOSPHERE_CANDIDATE_PROFILE_VERSION__: 1.0.0
+  __ATMOSPHERE_CANDIDATE_TRANSMISSION_VERSION__: 2.0.0
 required_tests:
+- compare.atmospheres
 - production.gamma.collect
 - derive.trigger_histograms
 - compare.trigger_histograms
