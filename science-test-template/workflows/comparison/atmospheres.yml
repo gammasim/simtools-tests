@@ -2,6 +2,7 @@
 applications:
 - application: simtools-get-model-parameter
   configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_profile
     parameter_version: __ATMOSPHERE_REFERENCE_PROFILE_VERSION__
     site: __SCIENCE_SITE__
@@ -10,6 +11,7 @@ applications:
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference
 - application: simtools-get-model-parameter
   configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_transmission
     parameter_version: __ATMOSPHERE_REFERENCE_TRANSMISSION_VERSION__
     site: __SCIENCE_SITE__
@@ -18,6 +20,7 @@ applications:
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference
 - application: simtools-get-model-parameter
   configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_profile
     parameter_version: __ATMOSPHERE_CANDIDATE_PROFILE_VERSION__
     site: __SCIENCE_SITE__
@@ -26,6 +29,7 @@ applications:
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate
 - application: simtools-get-model-parameter
   configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_transmission
     parameter_version: __ATMOSPHERE_CANDIDATE_TRANSMISSION_VERSION__
     site: __SCIENCE_SITE__

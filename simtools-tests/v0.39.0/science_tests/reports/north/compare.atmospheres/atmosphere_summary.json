@@ -1,5 +1,5 @@
 {
-  "reference": "North profile /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_profile-1.0.0-OBS-North.ecsv transmission /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_transmission-1.0.0-OBS-North.ecsv",
+  "reference": "North reference",
   "emission_altitude_km_asl": 10.0,
   "profile_units": {
     "density": "g / cm3",
@@ -12,7 +12,7 @@
   "transmission_definition": "exp(-vertical optical depth) to each table observation level",
   "atmospheres": [
     {
-      "label": "North profile /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_profile-1.0.0-OBS-North.ecsv transmission /tmp/atmosphere-science-candidate/north/atmosphere-comparison/reference/atmospheric_transmission-1.0.0-OBS-North.ecsv",
+      "label": "North reference",
       "site": "North",
       "profile_version": null,
       "transmission_version": null,
@@ -34,7 +34,7 @@
       }
     },
     {
-      "label": "North profile /tmp/atmosphere-science-candidate/north/atmosphere-comparison/candidate/atmospheric_profile-1.0.0-OBS-North.ecsv transmission /tmp/atmosphere-science-candidate/north/atmosphere-comparison/candidate/atmospheric_transmission-2.0.0-OBS-North.ecsv",
+      "label": "North candidate",
       "site": "North",
       "profile_version": null,
       "transmission_version": null,

@@ -1,5 +1,5 @@
 {
-  "reference": "South profile /tmp/atmosphere-science-candidate/south/atmosphere-comparison/reference/atmospheric_profile-1.0.0-OBS-South.ecsv transmission /tmp/atmosphere-science-candidate/south/atmosphere-comparison/reference/atmospheric_transmission-1.0.0-OBS-South.ecsv",
+  "reference": "South reference",
   "emission_altitude_km_asl": 10.0,
   "profile_units": {
     "density": "g / cm3",
@@ -12,7 +12,7 @@
   "transmission_definition": "exp(-vertical optical depth) to each table observation level",
   "atmospheres": [
     {
-      "label": "South profile /tmp/atmosphere-science-candidate/south/atmosphere-comparison/reference/atmospheric_profile-1.0.0-OBS-South.ecsv transmission /tmp/atmosphere-science-candidate/south/atmosphere-comparison/reference/atmospheric_transmission-1.0.0-OBS-South.ecsv",
+      "label": "South reference",
       "site": "South",
       "profile_version": null,
       "transmission_version": null,
@@ -34,7 +34,7 @@
       }
     },
     {
-      "label": "South profile /tmp/atmosphere-science-candidate/south/atmosphere-comparison/candidate/atmospheric_profile-1.0.0-OBS-South.ecsv transmission /tmp/atmosphere-science-candidate/south/atmosphere-comparison/candidate/atmospheric_transmission-1.0.0-OBS-South.ecsv",
+      "label": "South candidate",
       "site": "South",
       "profile_version": null,
       "transmission_version": null,
