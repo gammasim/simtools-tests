@@ -1,0 +1,99 @@
+---
+schema_name: simulate_prod_job_metadata
+schema_version: 1.1.0
+product_type: simulate_prod_job
+production_id: test
+job_id: grid
+status: complete
+catalog_metadata:
+  array_layout:
+  - subsystem_lsts
+  site: Paranal
+  particle: gamma
+  phiP: 0.0
+  thetaP: 20.0
+  view_cone_min: 0.0
+  view_cone_max: 0.0
+  runNumber: 1
+  model_version: 7.0.0
+  sct: 'False'
+configuration:
+  run_number: 1
+  primary: gamma
+  site: South
+  array_layout_name:
+  - subsystem_lsts
+  model_version: 7.0.0
+  simulation_software: corsika_sim_telarray
+  azimuth_angle:
+    value: 180.0
+    unit: deg
+  zenith_angle:
+    value: 20.0
+    unit: deg
+  energy_min:
+    value: 200.0
+    unit: GeV
+  energy_max:
+    value: 200.0
+    unit: GeV
+  view_cone_min:
+    value: 0.0
+    unit: deg
+  view_cone_max:
+    value: 0.0
+    unit: deg
+  cores_per_shower: 1
+  core_scatter_max:
+    value: 200.0
+    unit: m
+  showers_per_run: 5
+  eslope: -2.0
+  corsika_he_interaction: epos
+  corsika_le_interaction: urqmd
+  model_parameter_overrides: {}
+  atmosphere:
+    curved_atmosphere_min_zenith_angle:
+      value: 65.0
+      unit: deg
+    use_curved_atmosphere: false
+    site_parameters:
+      atmospheric_profile: atmospheric_profile-1.0.0-OBS-South.ecsv
+      atmospheric_transmission: atmospheric_transmission-1.0.0-OBS-South.ecsv
+      reference_point_altitude: 2162.0
+  corsika_seeds:
+  - 611
+  - 342
+  - 907
+  - 125
+  event_number_first_shower: 1
+  correct_for_b_field_alignment: true
+  sim_telarray_random_instrument_instances: 1
+  sim_telarray_seed:
+  - 1811
+  - 377
+  sim_telarray_seed_file: sim_telarray_instrument_seeds.txt
+files:
+  corsika_log:
+  - gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.err.gz
+  - gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.log.gz
+  sim_telarray_histogram:
+  - gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.hdata.zst
+  reduced_event_data:
+  - gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.reduced_event_data.hdf5
+  sim_telarray_log:
+  - gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.err.gz
+  - gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.log.gz
+  sim_telarray:
+  - gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst
+file_sizes:
+  gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.err.gz: 732
+  gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.corsika.log.gz: 51880
+  gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.hdata.zst: 21567
+  gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.reduced_event_data.hdf5: 293368
+  gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.err.gz: 837
+  gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.log.gz: 35563
+  gamma_run000001_za20deg_azm180deg_South_subsystem_lsts_7.0.0_test.simtel.zst: 2628124
+statistics:
+  simulated_events: 5
+  triggered_events: 5

@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat"
+  ],
+  "available_cpu_count": 64,
+  "container_image": "/lustre/fs22/group/cta/users/maierg/apptainer/cache/oci-tmp/910f5db3a328cb724b2670f372c16d9aeff6bcb1997520aa1031a86905d7255b",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "end_time": "2026-10-23T10:41:53.351147+00:00",
+  "hostname": "wgs51.zeuthen.desy.de",
+  "logical_cpu_count": 64,
+  "measurement_method": "linux_procfs_direct_pid",
+  "model_version": "7.0.0",
+  "peak_rss_bytes": 157265920,
+  "pid": 317840,
+  "platform": "Linux-5.14.0-687.54.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "return_code": 0,
+  "role": "corsika",
+  "run_id": "1",
+  "schema_name": "process_resource_record",
+  "schema_version": "1.1.0",
+  "signal": null,
+  "simtools_version": "0.38.4.dev81+gac20fbcea.d20261023",
+  "start_time": "2026-10-23T10:41:48.154004+00:00",
+  "system_cpu_seconds": 0.02,
+  "user_cpu_seconds": 4.44,
+  "wall_time_seconds": 5.1971439379267395
+}

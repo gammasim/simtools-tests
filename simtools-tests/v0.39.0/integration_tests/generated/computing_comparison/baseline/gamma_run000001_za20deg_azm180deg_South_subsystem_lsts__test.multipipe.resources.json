@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "/workdir/simulation_software/sim_telarray/bin/multipipe_corsika",
+    "-c",
+    "/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.39.0/integration_tests/tmp/simulate_prod_computing_comparison_baseline/multi_pipe/run000001/gamma_run000001_za20deg_azm180deg_South_subsystem_lsts__test.multi_pipe.cfg"
+  ],
+  "available_cpu_count": 64,
+  "container_image": "/lustre/fs22/group/cta/users/maierg/apptainer/cache/oci-tmp/910f5db3a328cb724b2670f372c16d9aeff6bcb1997520aa1031a86905d7255b",
+  "cpu_model": "AMD EPYC 9354 32-Core Processor",
+  "end_time": "2026-10-23T10:41:42.299943+00:00",
+  "hostname": "wgs51.zeuthen.desy.de",
+  "logical_cpu_count": 64,
+  "measurement_method": "linux_procfs_direct_pid",
+  "model_version": "7.0.0",
+  "peak_rss_bytes": 4222976,
+  "pid": 317475,
+  "platform": "Linux-5.14.0-687.54.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "return_code": 0,
+  "role": "multipipe",
+  "run_id": "1",
+  "schema_name": "process_resource_record",
+  "schema_version": "1.1.0",
+  "signal": null,
+  "simtools_version": "0.38.4.dev81+gac20fbcea.d20261023",
+  "start_time": "2026-10-23T10:41:39.019100+00:00",
+  "system_cpu_seconds": 0.0,
+  "user_cpu_seconds": 0.0,
+  "wall_time_seconds": 3.2808455280028284
+}
