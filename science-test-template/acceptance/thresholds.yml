@@ -95,8 +95,11 @@ rules:
     mode: thresholds
     metrics:
     - file: __SCIENCE_REPORT_PATH__/atmosphere_summary.json
-      key: atmospheres.1.transmission_difference.common_wavelength_count
+      key: candidate_common_wavelength_count
       minimum: 1
+    - file: __SCIENCE_REPORT_PATH__/atmosphere_summary.json
+      key: fallback_to_candidate
+      maximum: 0
   computing:
     mode: advisory
     metrics:

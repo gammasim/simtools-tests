@@ -4,8 +4,8 @@ applications:
   configuration:
     model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_profile
-    parameter_version: __ATMOSPHERE_REFERENCE_PROFILE_VERSION__
     site: __SCIENCE_SITE__
+    output_file: atmospheric_profile
     export_model_file: true
     export_model_file_as_table: true
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference
@@ -13,8 +13,8 @@ applications:
   configuration:
     model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_transmission
-    parameter_version: __ATMOSPHERE_REFERENCE_TRANSMISSION_VERSION__
     site: __SCIENCE_SITE__
+    output_file: atmospheric_transmission
     export_model_file: true
     export_model_file_as_table: true
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference
@@ -22,8 +22,8 @@ applications:
   configuration:
     model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_profile
-    parameter_version: __ATMOSPHERE_CANDIDATE_PROFILE_VERSION__
     site: __SCIENCE_SITE__
+    output_file: atmospheric_profile
     export_model_file: true
     export_model_file_as_table: true
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate
@@ -31,8 +31,8 @@ applications:
   configuration:
     model_version: __SCIENCE_MODEL_VERSION__
     parameter: atmospheric_transmission
-    parameter_version: __ATMOSPHERE_CANDIDATE_TRANSMISSION_VERSION__
     site: __SCIENCE_SITE__
+    output_file: atmospheric_transmission
     export_model_file: true
     export_model_file_as_table: true
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate
@@ -41,14 +41,15 @@ applications:
     atmosphere:
     - [
       __SCIENCE_SITE__,
-      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference/atmospheric_profile-__ATMOSPHERE_REFERENCE_PROFILE_VERSION__-OBS-__SCIENCE_SITE__.ecsv,
-      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference/atmospheric_transmission-__ATMOSPHERE_REFERENCE_TRANSMISSION_VERSION__-OBS-__SCIENCE_SITE__.ecsv,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference/atmospheric_profile.ecsv,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference/atmospheric_transmission.ecsv,
     ]
     - [
       __SCIENCE_SITE__,
-      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate/atmospheric_profile-__ATMOSPHERE_CANDIDATE_PROFILE_VERSION__-OBS-__SCIENCE_SITE__.ecsv,
-      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate/atmospheric_transmission-__ATMOSPHERE_CANDIDATE_TRANSMISSION_VERSION__-OBS-__SCIENCE_SITE__.ecsv,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate/atmospheric_profile.ecsv,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate/atmospheric_transmission.ecsv,
     ]
+    fallback_to_candidate: true
     figure_format: [pdf]
     output_path: __SCIENCE_REPORT_PATH__
 schema_name: application_workflow.metaschema

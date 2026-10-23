@@ -15,8 +15,8 @@
       "label": "North reference",
       "site": "North",
       "profile_version": "1.0.0",
-      "transmission_version": "1.0.0",
-      "observation_level_km": 2.158,
+      "transmission_version": "2.0.0",
+      "observation_level_km": 2.156,
       "profile_at_10_km": {
         "density": 0.00042515,
         "thickness": 283.604,
@@ -51,9 +51,11 @@
         "common_wavelength_count": 767,
         "wavelength_min_nm": 234.0,
         "wavelength_max_nm": 1000.0,
-        "max_absolute_difference": 0.22748990441969535,
-        "rms_difference": 0.023941818901309104
+        "max_absolute_difference": 0.0,
+        "rms_difference": 0.0
       }
     }
-  ]
+  ],
+  "fallback_to_candidate": 0,
+  "candidate_common_wavelength_count": 767
 }

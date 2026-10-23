@@ -19,10 +19,6 @@ Qualified: False
 | south | production.gamma.collect | not_run | not_run | Not selected or not executed. | - |
 | south | telescope_throughput | not_run | not_run | Not selected or not executed. | - |
 
-## Execution details
-
-Temporary work and log paths are omitted from this published summary.
-
 ## Production history
 
 - production.gamma.north: submitted (submitted); run ID `01a13bda-daab-71bc-81e9-062d520d3a12`.

@@ -55,5 +55,7 @@
         "rms_difference": 0.0
       }
     }
-  ]
+  ],
+  "fallback_to_candidate": 0,
+  "candidate_common_wavelength_count": 767
 }
