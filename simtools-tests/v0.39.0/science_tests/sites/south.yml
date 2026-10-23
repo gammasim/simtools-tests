@@ -2,6 +2,7 @@
 site: south
 site_label: South
 required_tests:
+- compare.atmospheres
 - production.gamma.collect
 - derive.trigger_histograms
 - compare.trigger_histograms

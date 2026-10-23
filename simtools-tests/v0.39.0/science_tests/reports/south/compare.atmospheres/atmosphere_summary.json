@@ -1,0 +1,61 @@
+{
+  "reference": "South reference",
+  "emission_altitude_km_asl": 10.0,
+  "profile_units": {
+    "density": "g / cm3",
+    "thickness": "g / cm2",
+    "temperature": "K",
+    "pressure": "mbar",
+    "refractive_index": "n-1",
+    "water_vapor_partial_pressure": "p_w/p"
+  },
+  "transmission_definition": "exp(-vertical optical depth) to each table observation level",
+  "atmospheres": [
+    {
+      "label": "South reference",
+      "site": "South",
+      "profile_version": "1.0.0",
+      "transmission_version": "1.0.0",
+      "observation_level_km": 2.147,
+      "profile_at_10_km": {
+        "density": 0.000422121,
+        "thickness": 290.611,
+        "refractive_index": 9.74023e-05,
+        "temperature": 233.76,
+        "pressure": 283.167,
+        "water_vapor_partial_pressure": 0.000230824
+      },
+      "transmission_difference": {
+        "common_wavelength_count": 767,
+        "wavelength_min_nm": 234.0,
+        "wavelength_max_nm": 1000.0,
+        "max_absolute_difference": 0.0,
+        "rms_difference": 0.0
+      }
+    },
+    {
+      "label": "South candidate",
+      "site": "South",
+      "profile_version": "1.0.0",
+      "transmission_version": "1.0.0",
+      "observation_level_km": 2.147,
+      "profile_at_10_km": {
+        "density": 0.000422121,
+        "thickness": 290.611,
+        "refractive_index": 9.74023e-05,
+        "temperature": 233.76,
+        "pressure": 283.167,
+        "water_vapor_partial_pressure": 0.000230824
+      },
+      "transmission_difference": {
+        "common_wavelength_count": 767,
+        "wavelength_min_nm": 234.0,
+        "wavelength_max_nm": 1000.0,
+        "max_absolute_difference": 0.0,
+        "rms_difference": 0.0
+      }
+    }
+  ],
+  "fallback_to_candidate": 0,
+  "candidate_common_wavelength_count": 767
+}

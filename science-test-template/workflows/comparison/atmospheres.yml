@@ -1,0 +1,56 @@
+---
+applications:
+- application: simtools-get-model-parameter
+  configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
+    parameter: atmospheric_profile
+    site: __SCIENCE_SITE__
+    output_file: atmospheric_profile
+    export_model_file: true
+    export_model_file_as_table: true
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference
+- application: simtools-get-model-parameter
+  configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
+    parameter: atmospheric_transmission
+    site: __SCIENCE_SITE__
+    output_file: atmospheric_transmission
+    export_model_file: true
+    export_model_file_as_table: true
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference
+- application: simtools-get-model-parameter
+  configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
+    parameter: atmospheric_profile
+    site: __SCIENCE_SITE__
+    output_file: atmospheric_profile
+    export_model_file: true
+    export_model_file_as_table: true
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate
+- application: simtools-get-model-parameter
+  configuration:
+    model_version: __SCIENCE_MODEL_VERSION__
+    parameter: atmospheric_transmission
+    site: __SCIENCE_SITE__
+    output_file: atmospheric_transmission
+    export_model_file: true
+    export_model_file_as_table: true
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate
+- application: simtools-compare-atmospheres
+  configuration:
+    atmosphere:
+    - [
+      __SCIENCE_SITE__,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference/atmospheric_profile.ecsv,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/reference/atmospheric_transmission.ecsv,
+    ]
+    - [
+      __SCIENCE_SITE__,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate/atmospheric_profile.ecsv,
+      __SCIENCE_CANDIDATE_SITE_PATH__/atmosphere-comparison/candidate/atmospheric_transmission.ecsv,
+    ]
+    fallback_to_candidate: true
+    figure_format: [pdf]
+    output_path: __SCIENCE_REPORT_PATH__
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0

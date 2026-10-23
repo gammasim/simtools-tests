@@ -2,6 +2,7 @@
 site: north
 site_label: North
 required_tests:
+- compare.atmospheres
 - production.gamma.collect
 - derive.trigger_histograms
 - compare.trigger_histograms

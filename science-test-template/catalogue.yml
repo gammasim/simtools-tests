@@ -51,6 +51,13 @@ tests:
     reviewed_grid: __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
     acceptance_rule: computing
 
+  compare.atmospheres:
+    workflow: workflows/comparison/atmospheres.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: []
+    runtime_role: camera
+    acceptance_rule: atmosphere-common-wavelengths
   telescope_throughput:
     publish_report: false
     workflow: workflows/telescope_throughput/run.yml
