@@ -7,6 +7,34 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
 
 <!-- towncrier release notes start -->
 
+## [v5.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v5.0.0) - 2026-11-05
+
+### New Features
+
+- Add integration tests resources for simtools v0.39.0. ([#37](https://github.com/gammasim/simtools-tests/pull/37))
+- Add science tests for simtools v0.38.0.
+  Compare trigger histograms across baseline and candidate productions.
+  Validate the expected change in azimuth angle configuration. ([#38](https://github.com/gammasim/simtools-tests/pull/38))
+- Add trigger-histogram related science tests for v0.39.0. ([#40](https://github.com/gammasim/simtools-tests/pull/40))
+- Validate science-test template configuration files against simtools schemas in CI. ([#43](https://github.com/gammasim/simtools-tests/pull/43))
+- Add telescope-throughput science-test workflows and telescope selections for North and South,
+  with comparisons of results from different simtools versions. ([#46](https://github.com/gammasim/simtools-tests/pull/46))
+- Add per-site reference-versus-candidate atmosphere comparisons to the shared
+  science-test template and v0.39.0 release configuration. North and South
+  produce separate atmosphere plots and JSON summaries.
+  Atmosphere comparisons now publish candidate-only plots with a warning when baseline ECSV
+  files are missing. ([#51](https://github.com/gammasim/simtools-tests/pull/51))
+- Add the metadata of two small grid-packed production jobs (job manifests with recorded output
+  file sizes and process resource records) as baseline and candidate inputs for the simtools
+  computing-comparison integration test. ([#52](https://github.com/gammasim/simtools-tests/pull/52))
+- Update `sim_telarray` test files for v0.39.0 including the updated metadata definitions. ([#53](https://github.com/gammasim/simtools-tests/pull/53))
+- Update HDF5 histogram objects, which now carry axis names and units. ([#54](https://github.com/gammasim/simtools-tests/pull/54))
+
+### Maintenance
+
+- Add pre-commit setting to prevent submitting files with more than 5,000 lines. ([#42](https://github.com/gammasim/simtools-tests/pull/42))
+
+
 ## [v4.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v4.0.0) - 2026-09-30
 
 ### New Features
