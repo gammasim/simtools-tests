@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat"
+  ],
+  "available_cpu_count": 8,
+  "container_image": null,
+  "cpu_model": "CPU implementer: 0x61, CPU part: 0x000",
+  "end_time": "2026-11-06T11:05:14.870356+00:00",
+  "hostname": "3765e89b18ad",
+  "logical_cpu_count": 8,
+  "measurement_method": "linux_procfs_direct_pid",
+  "model_version": "7.0.0",
+  "peak_rss_bytes": 51621888,
+  "pid": 3763,
+  "platform": "Linux-7.2.7-200.fc44.aarch64-aarch64-with-glibc2.34",
+  "return_code": 0,
+  "role": "corsika",
+  "run_id": "1",
+  "signal": null,
+  "simtools_version": "0.39.1.dev2+g1224d6745",
+  "start_time": "2026-11-06T11:05:12.012943+00:00",
+  "system_cpu_seconds": 0.0,
+  "user_cpu_seconds": 2.05,
+  "wall_time_seconds": 2.857413846999407
+}

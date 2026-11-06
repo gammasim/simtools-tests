@@ -1,0 +1,25 @@
+---
+label: nsb
+parameter_scan:
+  overwrite:
+    model_version: 7.0.0
+    model_update: patch_update
+    model_version_history:
+    - 7.0.0
+    description: Tune for NSB telescope trigger scan
+    changes:
+      LSTN-01:
+        min_photons:
+          value: 0
+        min_photoelectrons:
+          value: 0
+      OBS-North:
+        nsb_scaling_factor:
+          value: 2.0
+  parameters:
+  - name: asum_threshold
+    path: changes.LSTN-01.asum_threshold
+    values:
+    - 220.0
+    label: asum
+    label_separator: ''
