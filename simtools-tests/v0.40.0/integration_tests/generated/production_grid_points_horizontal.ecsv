@@ -1,0 +1,152 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: run_number, datatype: int64}
+# - {name: primary, datatype: string}
+# - {name: azimuth_angle, unit: deg, datatype: float64}
+# - {name: zenith_angle, unit: deg, datatype: float64}
+# - {name: energy_min, unit: GeV, datatype: float64}
+# - {name: energy_max, unit: GeV, datatype: float64}
+# - {name: cores_per_shower, datatype: int64}
+# - {name: core_scatter_max, unit: m, datatype: float64}
+# - {name: view_cone_min, unit: deg, datatype: float64}
+# - {name: view_cone_max, unit: deg, datatype: float64}
+# - {name: showers_per_run, datatype: int64}
+# - {name: nsb_rate, unit: 1 / (ns sr cm2), datatype: float64}
+# - {name: model_version, datatype: string}
+# - {name: array_layout_name, datatype: string}
+# - {name: corsika_le_interaction, datatype: string}
+# - {name: corsika_he_interaction, datatype: string}
+# meta: !!omap
+# - cta:
+#     activity:
+#       end: '2026-11-06T11:05:10+00:00'
+#       id: 01a1b088-aa22-7538-a0cc-325688475510
+#       name: simtools-production-generate-grid
+#       software: {name: simtools, version: 0.39.1.dev2+g1224d6745}
+#       start: '2026-11-06T11:05:10+00:00'
+#       type: software
+#     contact: {name: G.Maier, orcid: 0000-0001-9868-4700, organization: CTAO}
+#     context:
+#       application_configuration:
+#         application: production_generate_grid
+#         arguments:
+#           activity_id: 01a1b088-aa22-7538-a0cc-325688475510
+#           application_label: production_generate_grid
+#           array_layout_name: [LSTN-01]
+#           axis:
+#           - [azimuth 310 deg 20 deg 3 linear, zenith 30 deg 40 deg 2 linear, offset 0 deg 10 deg 2 linear]
+#           azimuth_angle: {unit: deg, value: 0.0}
+#           core_scatter:
+#           - 10
+#           - {unit: m, value: 500.0}
+#           correct_for_b_field_alignment: true
+#           corsika_he_interaction: epos
+#           corsika_le_interaction: urqmd
+#           corsika_limits: simtools-tests/v0.40.0/integration_tests/downloaded/corsika_limits.ecsv
+#           curved_atmosphere_min_zenith_angle: {unit: deg, value: 65.0}
+#           disable_log_file: true
+#           energy_range:
+#           - {unit: GeV, value: 30.0}
+#           - {unit: GeV, value: 300.0}
+#           env_file: .env
+#           eslope: -2.0
+#           event_number_first_shower: 1
+#           figure_dpi: 300
+#           figure_format: [png]
+#           figure_png_palette: false
+#           ignore_runtime_environment: false
+#           label: simtools-production-generate-grid
+#           log_level: info
+#           max_total_showers_rounding_warnings: 20
+#           model_version: 7.0.0
+#           number_of_runs: 2
+#           output_file: production_grid_points_horizontal.ecsv
+#           output_path: simtools-tests/v0.40.0/integration_tests/tmp_application_output
+#           overwrite_collection_files: false
+#           primary: gamma
+#           primary_id_type: common_name
+#           run_number: 1
+#           run_number_offset: 0
+#           showers_per_run: 5
+#           showers_per_run_scaling: fixed
+#           simulation_models_git_path: /workdir/external/simulation-models.git
+#           simulation_models_git_revision: v0.19.0
+#           simulation_software: corsika_sim_telarray
+#           site: North
+#           test: false
+#           total_showers_scaling: fixed
+#           user_name: G.Maier
+#           user_orcid: 0000-0001-9868-4700
+#           user_organization: DESY
+#           view_cone:
+#           - {unit: deg, value: 0.0}
+#           - {unit: deg, value: 10.0}
+#           zenith_angle: {unit: deg, value: 20.0}
+#           zenith_angle_scaling_factor: 3.9781
+#         schema_version: 2.0.0
+#         sources: {activity_id: cli, apptainer_image: default, array_layout_name: cli, axis: cli, azimuth_angle: default, build_info: default,
+#           config: default, core_scatter: cli, correct_for_b_field_alignment: default, corsika_hadronic_transition_energy: default, corsika_he_interaction: cli,
+#           corsika_le_interaction: cli, corsika_limits: cli, curved_atmosphere_min_zenith_angle: default, direction_grid_density: default,
+#           disable_log_file: cli, energy_max_scaling: default, energy_range: cli, env_file: default, eslope: default, event_number_first_shower: default,
+#           export_build_info: default, figure_dpi: default, figure_format: default, figure_png_palette: default, ignore_runtime_environment: default,
+#           label: cli, local_azimuth_range: default, local_zenith_range: default, log_file: default, log_file_path: default, log_level: default,
+#           max_showers_per_run: default, max_total_showers_rounding_warnings: default, model_version: cli, number_of_runs: cli, output_file: cli,
+#           output_path: cli, overwrite_collection_files: default, overwrite_model_parameters: default, primary: cli, primary_id_type: default,
+#           run_number: default, run_number_offset: default, runtime_environment_file: default, show_options: default, showers_per_run: cli,
+#           showers_per_run_power_law: default, showers_per_run_scaling: default, simulation_models_git_path: cli, simulation_models_git_revision: cli,
+#           simulation_models_path: default, simulation_software: cli, site: cli, test: default, total_showers: default, total_showers_scaling: default,
+#           user_email: default, user_name: environment, user_orcid: environment, user_organization: environment, version: default, view_cone: cli,
+#           zenith_angle: default, zenith_angle_scaling_factor: default}
+#     instrument: {site: North}
+#     process: {type: simulation}
+#     product:
+#       creation_time: '2026-11-06T11:05:10+00:00'
+#       data:
+#         category: SIM
+#         level: R1
+#         model: {name: undefined_model_name, url: 'https://raw.githubusercontent.com/gammasim/simtools/main/src/simtools/schemas/job_grid_density.schema.yml',
+#           version: 0.0.0}
+#         type: Service
+#       filename: production_grid_points_horizontal.ecsv
+#       format: ecsv
+#       id: 01a1b088-af40-72e2-abb6-33f78060a435
+#     reference: {version: 2.1.0}
+# - {site: North}
+# - {simulation_software: corsika_sim_telarray}
+# - {coordinate_system: horizontal}
+# - {direction_grid_density: null}
+# - {direction_grid_density_unit: null}
+# - {corsika_limits: simtools-tests/v0.40.0/integration_tests/downloaded/corsika_limits.ecsv}
+# - {job_grid_format_version: 0.4.0}
+# - job_grid_summary: {core_scatter_max_configured: 500 m, core_scatter_max_lookup_limit: '[1466.6, 1743.73] m', core_scatter_max_used: 500
+#       m, energy_max_configured: 300 GeV, energy_max_used: 300 GeV, energy_min_configured: 30 GeV, energy_min_lookup_limit: '[4.5, 6]
+#       GeV', energy_min_used: 30 GeV, showers_per_run_configured: '5', showers_per_run_configured_max: 5, showers_per_run_max: 5, showers_per_run_min: 5,
+#     showers_per_run_used: '5', simulation_rows: 24, total_showers: 120, view_cone_max_configured: 10 deg, view_cone_max_lookup_limit: 10
+#       deg, view_cone_max_used: 10 deg, view_cone_min_configured: 0 deg, view_cone_min_used: 0 deg}
+# schema: astropy-2.0
+run_number primary azimuth_angle zenith_angle energy_min energy_max cores_per_shower core_scatter_max view_cone_min view_cone_max showers_per_run nsb_rate model_version array_layout_name corsika_le_interaction corsika_he_interaction
+1 gamma 310.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+2 gamma 310.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+3 gamma 310.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+4 gamma 310.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+5 gamma 345.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+6 gamma 345.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+7 gamma 345.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+8 gamma 345.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+9 gamma 20.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+10 gamma 20.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+11 gamma 20.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+12 gamma 20.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+13 gamma 310.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+14 gamma 310.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+15 gamma 310.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+16 gamma 310.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+17 gamma 345.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+18 gamma 345.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+19 gamma 345.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+20 gamma 345.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+21 gamma 20.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+22 gamma 20.0 30.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+23 gamma 20.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
+24 gamma 20.0 40.0 30.0 300.0 10 500.0 0.0 10.0 5 0.24053832149999996 7.0.0 LSTN-01 urqmd epos
