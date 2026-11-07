@@ -9,5 +9,6 @@ required_tests:
 - compare.compute_resources
 - telescope_throughput
 - compare.telescope_throughput
+- saturation.scan
 array_layout_name: CTAO-South-Beta
 camera_telescopes: [LSTS-design, MSTx-FlashCam, SSTS-design]

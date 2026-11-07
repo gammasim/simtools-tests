@@ -9,5 +9,6 @@ required_tests:
 - compare.compute_resources
 - telescope_throughput
 - compare.telescope_throughput
+- saturation.scan
 array_layout_name: CTAO-North-Alpha
 camera_telescopes: [LSTN-design, LSTN-01, MSTx-NectarCam]
