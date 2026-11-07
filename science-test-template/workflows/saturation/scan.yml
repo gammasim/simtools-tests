@@ -1,0 +1,66 @@
+---
+applications:
+- application: simtools-simulate-flasher
+  configuration:
+    run_mode: direct_injection
+    light_source_type: flat_fielding
+    telescopes:
+    - __SCIENCE_CAMERA_TELESCOPE__
+    model_version: __SCIENCE_MODEL_VERSION__
+    site: __SCIENCE_SITE__
+    run_number: 100
+    number_of_events: 20
+    flasher_photons:
+    - 10
+    - 30
+    - 100
+    - 300
+    - 1000
+    - 2000
+    - 4000
+    - 6000
+    - 10000
+    - 20000
+    - 30000
+    - 50000
+    label: saturation
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation
+    sim_telarray_seed:
+    - 101
+    - 102
+- application: simtools-analyze-flasher-response
+  configuration:
+    simtel_files:
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000100/direct_injection_run000100_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000101/direct_injection_run000101_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000102/direct_injection_run000102_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000103/direct_injection_run000103_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000104/direct_injection_run000104_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000105/direct_injection_run000105_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000106/direct_injection_run000106_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000107/direct_injection_run000107_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000108/direct_injection_run000108_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000109/direct_injection_run000109_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000110/direct_injection_run000110_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/sim_telarray/run000111/direct_injection_run000111_za20deg_azm000deg___SCIENCE_SITE____SCIENCE_MODEL_VERSION___saturation.simtel.zst
+    illumination:
+    - 10
+    - 30
+    - 100
+    - 300
+    - 1000
+    - 2000
+    - 4000
+    - 6000
+    - 10000
+    - 20000
+    - 30000
+    - 50000
+    events_per_level:
+    - 20
+    telescope: __SCIENCE_CAMERA_TELESCOPE__
+    pixels:
+    - 0
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/analysis
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0
