@@ -7,6 +7,23 @@ This changelog is generated using [Towncrier](https://towncrier.readthedocs.io/)
 
 <!-- towncrier release notes start -->
 
+## [v5.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v5.0.0) - 2026-11-05
+
+### New Features
+
+- Add simtools v0.39.0 integration-test resources, including updated `sim_telarray` files and metadata definitions. ([#37](https://github.com/gammasim/simtools-tests/pull/37), [#53](https://github.com/gammasim/simtools-tests/pull/53))
+- Add science tests for simtools v0.38.0 and v0.39.0, including baseline-versus-candidate trigger histogram comparisons and validation of the expected azimuth configuration change. ([#38](https://github.com/gammasim/simtools-tests/pull/38), [#40](https://github.com/gammasim/simtools-tests/pull/40))
+- Validate science-test template configurations against simtools schemas in CI. ([#43](https://github.com/gammasim/simtools-tests/pull/43))
+- Add telescope-throughput science-test workflows and telescope selections for North and South, comparing results across simtools versions. ([#46](https://github.com/gammasim/simtools-tests/pull/46))
+- Add per-site reference-versus-candidate atmosphere comparisons to the shared science-test template and v0.39.0 configuration. North and South each produce plots and JSON summaries; missing baseline ECSV files trigger a warning and candidate-only plots. ([#51](https://github.com/gammasim/simtools-tests/pull/51))
+- Add baseline and candidate metadata from two small grid-packed production jobs for the simtools computing-comparison integration test, including job manifests with output file sizes and process resource records. ([#52](https://github.com/gammasim/simtools-tests/pull/52))
+- Update HDF5 histogram objects to include axis names and units. ([#54](https://github.com/gammasim/simtools-tests/pull/54))
+
+### Maintenance
+
+- Prevent files longer than 5,000 lines from being submitted using pre-commit. ([#42](https://github.com/gammasim/simtools-tests/pull/42))
+
+
 ## [v4.0.0](https://github.com/gammasim/simtools-tests/releases/tag/v4.0.0) - 2026-09-30
 
 ### New Features
