@@ -4,4 +4,4 @@ site_label: North
 required_tests:
 - saturation.scan
 array_layout_name: CTAO-North-Alpha
-camera_telescopes: [LSTN-design, MSTx-NectarCam]
+camera_telescopes: [LSTN-01, LSTN-02, MSTN-01]
