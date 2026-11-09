@@ -2,9 +2,15 @@
 site: south
 site_label: South
 required_tests:
+- production.bias_curves.grid
+- production.bias_curves.submit
+- production.bias_curves.collect
+- derive.bias_curves
+- compare.bias_curves
 - compare.atmospheres
 - production.gamma.collect
 - derive.trigger_histograms
 - compare.trigger_histograms
 - compare.compute_resources
 array_layout_name: CTAO-South-Beta
+camera_telescopes: [LSTS-01, MSTS-01, SSTS-01]
