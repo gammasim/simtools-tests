@@ -2,9 +2,9 @@
 applications:
 - application: simtools-generate-bias-curve-submissions
   docs:
-    title: Generate LSTN-01 bias curve scan grids
+    title: Generate MSTN-01 bias curve scan grids
     summary: >-
-      Create NSB and proton submission grids that scan trigger thresholds for LSTN-01 bias curve derivation.
+      Create NSB and proton submission grids that scan trigger thresholds for MSTN-01 bias curve derivation.
   configuration:
     site: North
     model_version: 7.0.0
