@@ -1,0 +1,34 @@
+---
+# Metadata of a small grid-packed production job: baseline for computing-comparison tests.
+applications:
+- application: simtools-simulate-prod
+  configuration:
+    array_layout_name:
+    - subsystem_lsts
+    azimuth_angle: South
+    core_scatter: 1 200 m  # test file generation - too small for real production
+    corsika_seeds: [534, 220, 1104, 382]
+    corsika_he_interaction: epos
+    corsika_le_interaction: urqmd
+    energy_range: 200 GeV 200 GeV  # test file generation - too narrow for real production
+    label: test
+    log_level: INFO
+    model_version: 7.0.0
+    showers_per_run: 5
+    output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_computing_comparison_baseline
+    grid_output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp/simulate_prod_computing_comparison_baseline/grid
+    primary: gamma
+    run_number: 1
+    sim_telarray_seed: [1745, 290]
+    simulation_software: corsika_sim_telarray
+    site: South
+    zenith_angle: 20
+collection:
+- output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/computing_comparison/baseline
+  source_directory: grid_output_path
+  files:  # metadata only; output sizes are recorded in the job manifest
+  - simulate_prod_job_metadata.yml
+  - '*.resources.json'
+schema_name: application_workflow.metaschema
+schema_url: https://github.com/gammasim/simtools/blob/main/src/simtools/schemas/application_workflow.metaschema.yml
+schema_version: 0.4.0

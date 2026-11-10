@@ -1,0 +1,219 @@
+Running simtools applications
+simtools version: 0.39.1.dev3+g0a569ddfc
+Model source: None
+sim_telarray version: 2025.246.0
+sim_telarray exe: /workdir/simulation_software/sim_telarray/bin/sim_telarray
+CORSIKA version: 7.8010
+CORSIKA exe: /workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
+Build options: {'corsika_build_id': '78010', 'corsika_source_tag': 'v7.8010', 'corsika_revision': '6b720388124871f8e07741e40e3446a7375efe78', 'corsika_source_url': 'https://gitlab.iap.kit.edu/AirShowerPhysics/corsika-legacy/corsika7.git', 'corsika_opt_patch_tag': 'v1.1.0', 'corsika_opt_patch_revision': 'e481fdf9eaa45c2f1846823f5d3d68ea24cf3a47', 'corsika_opt_patch_source_url': 'https://gitlab.cta-observatory.org/cta-computing/dpps/simpipe/simulation_software/corsika-opt-patches.git', 'corsika_config_tag': 'main', 'corsika_config_revision': '755d445ba63223706ff54ca2333f7e2f18296d53', 'corsika_config_source_url': 'https://gitlab.cta-observatory.org/cta-computing/dpps/simpipe/simulation_software/corsika7-config.git', 'autoconf_version': '2.71', 'autoconf_sha256': '431075ad0bf529ef13cb41e9042c542381103e80015686222b8a9d4abef42a1c', 'avx_flag': 'generic', 'iact_atmo_version': '1.69 (2025-02-27), IACT_NO_GRID', 'variant': [{'executable': 'corsika_epos_urqmd_curved', 'config': 'config_epos_urqmd_curved', 'atmosphere_geometry': 'curved', 'he_hadronic_model': 'epos', 'le_hadronic_model': 'urqmd', 'hadronic_transition_energy_default_gev': 30.0, 'optimization': 'generic', 'cerenkopt': False, 'vlibm': False}, {'executable': 'corsika_epos_urqmd_flat', 'config': 'config_epos_urqmd_flat', 'atmosphere_geometry': 'flat', 'he_hadronic_model': 'epos', 'le_hadronic_model': 'urqmd', 'hadronic_transition_energy_default_gev': 30.0, 'optimization': 'generic', 'cerenkopt': False, 'vlibm': False}, {'executable': 'corsika_qgs2_urqmd_curved', 'config': 'config_qgs2_urqmd_curved', 'atmosphere_geometry': 'curved', 'he_hadronic_model': 'qgs2', 'le_hadronic_model': 'urqmd', 'hadronic_transition_energy_default_gev': 80.0, 'optimization': 'generic', 'cerenkopt': False, 'vlibm': False}, {'executable': 'corsika_qgs2_urqmd_flat', 'config': 'config_qgs2_urqmd_flat', 'atmosphere_geometry': 'flat', 'he_hadronic_model': 'qgs2', 'le_hadronic_model': 'urqmd', 'hadronic_transition_energy_default_gev': 80.0, 'optimization': 'generic', 'cerenkopt': False, 'vlibm': False}, {'executable': 'corsika_qgs3_urqmd_curved', 'config': 'config_qgs3_urqmd_curved', 'atmosphere_geometry': 'curved', 'he_hadronic_model': 'qgs3', 'le_hadronic_model': 'urqmd', 'hadronic_transition_energy_default_gev': 80.0, 'optimization': 'generic', 'cerenkopt': False, 'vlibm': False}, {'executable': 'corsika_qgs3_urqmd_flat', 'config': 'config_qgs3_urqmd_flat', 'atmosphere_geometry': 'flat', 'he_hadronic_model': 'qgs3', 'le_hadronic_model': 'urqmd', 'hadronic_transition_energy_default_gev': 80.0, 'optimization': 'generic', 'cerenkopt': False, 'vlibm': False}], 'extra_defines': '-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99', 'build_date': '2026-05-04T14:56:02Z', 'components': [{'name': 'hessioxxx', 'version': 'v2025-12-01-rc', 'build_flags': 'DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG'}, {'name': 'stdtools', 'version': 'v2025-06-16-rc', 'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG'}, {'name': 'sim_telarray', 'version': 'v2025-11-30-rc', 'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG', 'executables': ['sim_telarray']}, {'name': 'sim_telarray_debug_trace', 'version': 'v2025-11-30-rc', 'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DDEBUG_TRACE_99 -DWITH_GSL -DWITH_GSL_RNG', 'executables': ['sim_telarray_debug_trace']}], 'hessio_tag': 'v2025-12-01-rc', 'simtel_tag': 'v2025-11-30-rc', 'stdtools_tag': 'v2025-06-16-rc'}
+Runtime environment: None
+Runtime simtools: {'revision': 'e9c9661597f2f027368b0594810a84463463c3c5', 'version': 'not-installed'}
+Runtime build options: {'autoconf_sha256': '431075ad0bf529ef13cb41e9042c542381103e80015686222b8a9d4abef42a1c', 'autoconf_version': '2.71', 'avx_flag': 'generic', 'components': [{'build_flags': 'DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG', 'name': 'hessioxxx', 'version': 'v2025-12-01-rc'}, {'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG', 'name': 'stdtools', 'version': 'v2025-06-16-rc'}, {'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DWITH_GSL -DWITH_GSL_RNG', 'executables': ['sim_telarray'], 'name': 'sim_telarray', 'version': 'v2025-11-30-rc'}, {'build_flags': 'EXTRA_DEFINES=-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99 -DDEBUG_TRACE_99 -DWITH_GSL -DWITH_GSL_RNG', 'executables': ['sim_telarray_debug_trace'], 'name': 'sim_telarray_debug_trace', 'version': 'v2025-11-30-rc'}], 'corsika_build_id': '78010', 'corsika_config_revision': '755d445ba63223706ff54ca2333f7e2f18296d53', 'corsika_config_source_url': 'https://gitlab.cta-observatory.org/cta-computing/dpps/simpipe/simulation_software/corsika7-config.git', 'corsika_config_tag': 'main', 'corsika_opt_patch_revision': 'e481fdf9eaa45c2f1846823f5d3d68ea24cf3a47', 'corsika_opt_patch_source_url': 'https://gitlab.cta-observatory.org/cta-computing/dpps/simpipe/simulation_software/corsika-opt-patches.git', 'corsika_opt_patch_tag': 'v1.1.0', 'corsika_revision': '6b720388124871f8e07741e40e3446a7375efe78', 'corsika_source_tag': 'v7.8010', 'corsika_source_url': 'https://gitlab.iap.kit.edu/AirShowerPhysics/corsika-legacy/corsika7.git', 'extra_defines': '-DCTA_PROD6 -DMAXIMUM_TELESCOPES=99', 'hessio_tag': 'v2025-12-01-rc', 'iact_atmo_version': '1.69 (2025-02-27), IACT_NO_GRID', 'simtel_tag': 'v2025-11-30-rc', 'stdtools_tag': 'v2025-06-16-rc', 'variant': [{'atmosphere_geometry': 'curved', 'cerenkopt': False, 'config': 'config_epos_urqmd_curved', 'executable': 'corsika_epos_urqmd_curved', 'hadronic_transition_energy_default_gev': 30.0, 'he_hadronic_model': 'epos', 'le_hadronic_model': 'urqmd', 'optimization': 'generic', 'vlibm': False}, {'atmosphere_geometry': 'flat', 'cerenkopt': False, 'config': 'config_epos_urqmd_flat', 'executable': 'corsika_epos_urqmd_flat', 'hadronic_transition_energy_default_gev': 30.0, 'he_hadronic_model': 'epos', 'le_hadronic_model': 'urqmd', 'optimization': 'generic', 'vlibm': False}, {'atmosphere_geometry': 'curved', 'cerenkopt': False, 'config': 'config_qgs2_urqmd_curved', 'executable': 'corsika_qgs2_urqmd_curved', 'hadronic_transition_energy_default_gev': 80.0, 'he_hadronic_model': 'qgs2', 'le_hadronic_model': 'urqmd', 'optimization': 'generic', 'vlibm': False}, {'atmosphere_geometry': 'flat', 'cerenkopt': False, 'config': 'config_qgs2_urqmd_flat', 'executable': 'corsika_qgs2_urqmd_flat', 'hadronic_transition_energy_default_gev': 80.0, 'he_hadronic_model': 'qgs2', 'le_hadronic_model': 'urqmd', 'optimization': 'generic', 'vlibm': False}, {'atmosphere_geometry': 'curved', 'cerenkopt': False, 'config': 'config_qgs3_urqmd_curved', 'executable': 'corsika_qgs3_urqmd_curved', 'hadronic_transition_energy_default_gev': 80.0, 'he_hadronic_model': 'qgs3', 'le_hadronic_model': 'urqmd', 'optimization': 'generic', 'vlibm': False}, {'atmosphere_geometry': 'flat', 'cerenkopt': False, 'config': 'config_qgs3_urqmd_flat', 'executable': 'corsika_qgs3_urqmd_flat', 'hadronic_transition_energy_default_gev': 80.0, 'he_hadronic_model': 'qgs3', 'le_hadronic_model': 'urqmd', 'optimization': 'generic', 'vlibm': False}]}
+================================================================================
+Application: simtools-generate-bias-curve-submissions
+STDOUT:
+
+STDERR:
+INFO: simtools application generate_bias_curve_submissions started with activity ID 01a1c4a4-b11b-734d-9713-de41f8e4fa58
+INFO: simtools: 0.39.1.dev3+g0a569ddfc CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Applying job constraints: energy clipped to configured energy_range, core_scatter_max clipped by configured max and lookup, and view_cone min/max clipped by configured and lookup limits.
+INFO: Energy max zenith scaling: disabled.
+INFO: Generated 1 simulation rows.
+INFO: Minimum energy used by jobs is 20 MeV.
+INFO: Maximum energy used by jobs is 25 MeV.
+INFO: Minimum energy from configuration is 20 MeV.
+INFO: Maximum energy from configuration is 25 MeV.
+INFO: Minimum energy from lookup tables is not available.
+INFO: Core scatter max used by jobs is 1900 m.
+INFO: Core scatter max from configuration is 1900 m.
+INFO: Core scatter max from lookup tables is not available.
+INFO: Minimum view cone used by jobs is 0 deg.
+INFO: Maximum view cone used by jobs is 20 deg.
+INFO: Minimum view cone from configuration is 0 deg.
+INFO: Maximum view cone from configuration is 20 deg.
+INFO: Maximum view cone from lookup tables is not available.
+INFO: Showers per job in generated job grid: minimum 3000, maximum 3000 (configured maximum 3000).
+INFO: Total showers for the entire production: 3000.
+INFO: Writing job grid with 1 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/nsb/base_grid.ecsv'.
+INFO: Expanding 1 base rows with 2 scan combinations.
+INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/nsb/scan_grid.ecsv'.
+INFO: Scan grid with 2 rows written to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/nsb/scan_grid.ecsv'.
+INFO: Applying job constraints: energy clipped to configured energy_range, core_scatter_max clipped by configured max and lookup, and view_cone min/max clipped by configured and lookup limits.
+INFO: Energy max zenith scaling: disabled.
+INFO: Generated 1 simulation rows.
+INFO: Minimum energy used by jobs is 20 GeV.
+INFO: Maximum energy used by jobs is 20 TeV.
+INFO: Minimum energy from configuration is 20 GeV.
+INFO: Maximum energy from configuration is 20 TeV.
+INFO: Minimum energy from lookup tables is not available.
+INFO: Core scatter max used by jobs is 1900 m.
+INFO: Core scatter max from configuration is 1900 m.
+INFO: Core scatter max from lookup tables is not available.
+INFO: Minimum view cone used by jobs is 0 deg.
+INFO: Maximum view cone used by jobs is 20 deg.
+INFO: Minimum view cone from configuration is 0 deg.
+INFO: Maximum view cone from configuration is 20 deg.
+INFO: Maximum view cone from lookup tables is not available.
+INFO: Showers per job in generated job grid: minimum 3000, maximum 3000 (configured maximum 3000).
+INFO: Total showers for the entire production: 3000.
+INFO: Writing job grid with 1 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/proton/base_grid.ecsv'.
+INFO: Expanding 1 base rows with 2 scan combinations.
+INFO: Writing job grid with 2 rows to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
+INFO: Scan grid with 2 rows written to '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/proton/scan_grid.ecsv'.
+
+================================================================================
+Application: simtools-simulate-prod
+STDOUT:
+
+STDERR:
+INFO: simtools application simulate_prod started with activity ID 01a1c4a4-b11b-734d-9713-de424c6169de
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools: 0.39.1.dev3+g0a569ddfc CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Checking models for target simtools 0.39.1.dev3+g0a569ddfc (host 0.39.1.dev3+g0a569ddfc)
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools application simulate_prod started with activity ID 01a1c4a4-c694-77bd-95a5-2beb2082f921
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools application simulate_prod started with activity ID 01a1c4a4-c6a9-709b-a675-b0379194f45a
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools: 0.39.1.dev3+g0a569ddfc CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools: 0.39.1.dev3+g0a569ddfc CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Generated sim_telarray seeds - Instrument: 1703099501, Shower simulation: 828886758
+INFO: Generated sim_telarray seeds - Instrument: 1410613980, Shower simulation: 916139444
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/model/run000001/7.0.0/CTAO-North-MSTN-01.cfg
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/model/run000001/7.0.0/CTAO-North-MSTN-01.cfg
+INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/multi_pipe/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01__simtools-simulate-prod_discriminator30.multi_pipe.cfg
+INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/corsika/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.corsika.input
+INFO: Resolved CORSIKA configuration: HE=epos LE=urqmd HILOW=CORSIKA default geometry=flat executable=/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
+INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/multi_pipe/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01__simtools-simulate-prod_discriminator34.multi_pipe.cfg
+INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/corsika/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.corsika.input
+INFO: Resolved CORSIKA configuration: HE=epos LE=urqmd HILOW=CORSIKA default geometry=flat executable=/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
+INFO: Executing 1 job(s) with backend local
+INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Shower reuse factor: 20 (viewcone: [ 0. 20.])
+WARNING: No triggered events found in input file '/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst'.
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.reduced_event_data.hdf5
+INFO: Completed 1 job(s) with backend local
+INFO: Validating simulations with 60000 MC events and 3000 shower events.
+INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found metadata in sim_telarray file for 1 telescopes
+INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.log.gz')]
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Consistent number of events in sim_telarray output: shower events: 3000 (expected 3000), MC events: 60000 (expected 60000) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst)
+INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.reduced_event_data.hdf5: MC events: 60000 (expected: 60000)
+INFO: Production run complete for primary gamma (1, 22, gamma) showers from 0.0 azimuth and 20.0 zenith at North site, using 7.0.0 model.
+INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 6569.130163848982, #events/run: 3000
+INFO: Packing output files for registering on the grid (/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb-grid/job-000002)
+INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000002/model/run000001/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb-grid/job-000002
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb-grid/job-000002/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Executing 1 job(s) with backend local
+INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Shower reuse factor: 20 (viewcone: [ 0. 20.])
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.reduced_event_data.hdf5
+INFO: Completed 1 job(s) with backend local
+INFO: Validating simulations with 60000 MC events and 3000 shower events.
+INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found metadata in sim_telarray file for 1 telescopes
+INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.log.gz')]
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Consistent number of events in sim_telarray output: shower events: 3000 (expected 3000), MC events: 60000 (expected 60000) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst)
+INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/sim_telarray/run000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.reduced_event_data.hdf5: MC events: 60000 (expected: 60000)
+INFO: Production run complete for primary gamma (1, 22, gamma) showers from 0.0 azimuth and 20.0 zenith at North site, using 7.0.0 model.
+INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 6572.0253302720375, #events/run: 3000
+INFO: Packing output files for registering on the grid (/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb-grid/job-000001)
+INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb/job-000001/model/run000001/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb-grid/job-000001
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/nsb-grid/job-000001/gamma_diffuse_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Completed 2 job(s) synchronously with backend local
+
+================================================================================
+Application: simtools-simulate-prod
+STDOUT:
+
+STDERR:
+INFO: simtools application simulate_prod started with activity ID 01a1c4a4-b11b-734d-9713-de432a3c5af9
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools: 0.39.1.dev3+g0a569ddfc CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Checking models for target simtools 0.39.1.dev3+g0a569ddfc (host 0.39.1.dev3+g0a569ddfc)
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools application simulate_prod started with activity ID 01a1c509-2c32-749d-8533-e96476de6385
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools application simulate_prod started with activity ID 01a1c509-2c50-77f9-b02e-19f5b791f4d0
+WARNING: Models development; not production-qualified; version 0.19.0 at /cephfs/users/maierg/CTA/simpipe/simulation-models; allowed >=0.18.0 (target catalog range)
+INFO: simtools: 0.39.1.dev3+g0a569ddfc CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools: 0.39.1.dev3+g0a569ddfc CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: Generated sim_telarray seeds - Instrument: 263725533, Shower simulation: 44566689
+INFO: Generated sim_telarray seeds - Instrument: 1032071306, Shower simulation: 1880993425
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/model/run000001/7.0.0/CTAO-North-MSTN-01.cfg
+INFO: Writing array configuration file into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/model/run000001/7.0.0/CTAO-North-MSTN-01.cfg
+INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/multi_pipe/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01__simtools-simulate-prod_discriminator34.multi_pipe.cfg
+INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/corsika/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.corsika.input
+INFO: Multipipe script: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/multi_pipe/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01__simtools-simulate-prod_discriminator30.multi_pipe.cfg
+INFO: Exporting CORSIKA input file to /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/corsika/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.corsika.input
+INFO: Resolved CORSIKA configuration: HE=epos LE=urqmd HILOW=CORSIKA default geometry=flat executable=/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
+INFO: Resolved CORSIKA configuration: HE=epos LE=urqmd HILOW=CORSIKA default geometry=flat executable=/workdir/simulation_software/corsika7/corsika_epos_urqmd_flat
+INFO: Executing 1 job(s) with backend local
+INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Shower reuse factor: 20 (viewcone: [ 0. 20.])
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.reduced_event_data.hdf5
+INFO: Completed 1 job(s) with backend local
+INFO: Validating simulations with 60000 MC events and 3000 shower events.
+INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found metadata in sim_telarray file for 1 telescopes
+INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.log.gz')]
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Consistent number of events in sim_telarray output: shower events: 3000 (expected 3000), MC events: 60000 (expected 60000) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst)
+INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.reduced_event_data.hdf5: MC events: 60000 (expected: 60000)
+INFO: Production run complete for primary proton (14, 2212, p) showers from 0.0 azimuth and 20.0 zenith at North site, using 7.0.0 model.
+INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 617.2469922439195, #events/run: 3000
+INFO: Packing output files for registering on the grid (/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton-grid/job-000001)
+INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000001/model/run000001/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton-grid/job-000001
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton-grid/job-000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator30.simtel.zst
+INFO: Found zstd compressed file
+INFO: Executing 1 job(s) with backend local
+INFO: Processing file 1/1: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Shower reuse factor: 20 (viewcone: [ 0. 20.])
+INFO: Finished writing verified HDF5 output file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.reduced_event_data.hdf5
+INFO: Completed 1 job(s) with backend local
+INFO: Validating simulations with 60000 MC events and 3000 shower events.
+INFO: Validating metadata for /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found metadata in sim_telarray file for 1 telescopes
+INFO: Metadata for sim_telarray file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst is valid.
+INFO: Sim_telarray log files validation passed: [PosixPath('/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.log.gz')]
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Consistent number of events in sim_telarray output: shower events: 3000 (expected 3000), MC events: 60000 (expected 60000) (file: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst)
+INFO: Consistent number of events in reduced event list: /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/sim_telarray/run000001/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.reduced_event_data.hdf5: MC events: 60000 (expected: 60000)
+INFO: Production run complete for primary proton (14, 2212, p) showers from 0.0 azimuth and 20.0 zenith at North site, using 7.0.0 model.
+INFO: Computing for corsika_sim_telarray Simulations: Mean wall time/run [sec]: 744.6789201919455, #events/run: 3000
+INFO: Packing output files for registering on the grid (/cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton-grid/job-000002)
+INFO: Packed model files into /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton/job-000002/model/run000001/7.0.0/model_files_7.0.0.tar.gz
+INFO: Grid output files grid placed in /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton-grid/job-000002
+INFO: Opening new file /cephfs/users/maierg/CTA/simpipe/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/simulations/proton-grid/job-000002/proton_run000001_za20deg_azm000deg_North_MSTN-01_7.0.0_simtools-simulate-prod_discriminator34.simtel.zst
+INFO: Found zstd compressed file
+INFO: Completed 2 job(s) synchronously with backend local
