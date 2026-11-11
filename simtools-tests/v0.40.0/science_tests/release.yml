@@ -7,7 +7,7 @@ baseline: v0.39.0
 release_label: v0.40.0
 # Intensity-dependent fadc_pulse_shape 3.0.0 (LSTN-design, model 8.0.0) is not yet in a
 # simulation-models tag; replace by the release tag containing it when available.
-# simulation_models_git_revision: lst-saturation
-simulation_models_git_revision: main
+simulation_models_git_revision: lst-staturation
+# simulation_models_git_revision: main
 model_version: 8.0.0
 expected_changes: []
