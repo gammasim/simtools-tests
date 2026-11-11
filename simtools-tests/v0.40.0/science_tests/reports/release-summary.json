@@ -1,0 +1,76 @@
+{
+  "release": "v0.40.0",
+  "baseline": "v0.39.0",
+  "required_sites": [
+    "north",
+    "south"
+  ],
+  "dry_run": false,
+  "campaign_sha256": "1a5cd5b7698e443c56ff5d0b9ecbb5ef9a039f1ecb6ab1ddb8a088bac7d63371",
+  "qualified": true,
+  "results": [
+    {
+      "id": "saturation.scan.north",
+      "test": "saturation.scan",
+      "site": "north",
+      "workflow": "workflows/saturation/scan.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan",
+      "report": "reports/north/saturation.scan",
+      "run_id": "01a1c08e-e306-7114-a276-52df5e2cd216",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261109-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.39.1.dev3+gb184e5e0b",
+        "simulation_models": "main"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/saturation/LSTN-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/saturation/LSTN-02/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/saturation/MSTN-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-02",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/MSTN-01"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/execution.log",
+      "publication": {
+        "file_count": 9,
+        "byte_count": 404769
+      }
+    },
+    {
+      "id": "saturation.scan.south",
+      "test": "saturation.scan",
+      "site": "south",
+      "workflow": "workflows/saturation/scan.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan",
+      "report": "reports/south/saturation.scan",
+      "run_id": "01a1c091-2f61-7239-b872-54772f3d90b5",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261109-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.39.1.dev3+gb184e5e0b",
+        "simulation_models": "main"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/saturation/LSTS-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/saturation/MSTS-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/saturation/SSTS-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/LSTS-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/SSTS-01"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/execution.log",
+      "publication": {
+        "file_count": 9,
+        "byte_count": 284876
+      }
+    }
+  ],
+  "production_history": []
+}

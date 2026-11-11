@@ -25,3 +25,7 @@ tests:
   compare.telescope_throughput:
   - __SCIENCE_REPORT_PATH__/science-comparison.json
   - __SCIENCE_REPORT_PATH__/report.pdf
+  saturation.scan:
+  - __SCIENCE_REPORT_PATH__/*/flasher_response.ecsv
+  - __SCIENCE_REPORT_PATH__/*/flasher_response_summary.ecsv
+  - __SCIENCE_REPORT_PATH__/*/flasher_response.pdf
