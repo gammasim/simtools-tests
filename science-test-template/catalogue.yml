@@ -38,6 +38,7 @@ tests:
     requires_completed_production: true
     derived_output: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves
   compare.bias_curves:
+    acceptance_rule: bias-curves-provisional
     workflow: workflows/comparison/bias_curves.yml
     sites: [north, south]
     tier: release-light
