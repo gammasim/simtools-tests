@@ -1,0 +1,54 @@
+{
+  "release": "v0.40.0",
+  "baseline": "v0.39.0",
+  "required_sites": [
+    "north",
+    "south"
+  ],
+  "dry_run": false,
+  "campaign_sha256": "743bc5727461c8cc2b0f39802ff98117ea72130a150775a5d4da3ca61eff75ca",
+  "qualified": false,
+  "results": [
+    {
+      "id": "saturation.scan.north",
+      "test": "saturation.scan",
+      "site": "north",
+      "workflow": "workflows/saturation/scan.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/work/science-tests/north/saturation.scan",
+      "report": "reports/north/saturation.scan",
+      "run_id": "01a1ca85-54cc-75de-b91f-9a77888595f7",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261111-v78050-lst-saturation-override-a8d4cd2d16a5580b-avx2.sif)",
+      "software": {
+        "simtools": "0.39.1.dev60+ge7f6c0426",
+        "simulation_models": "lst-staturation"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/north/saturation/LSTN-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/north/saturation/LSTN-02/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/north/saturation/MSTN-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/work/science-tests/north/saturation.scan/LSTN-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/work/science-tests/north/saturation.scan/LSTN-02",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/work/science-tests/north/saturation.scan/MSTN-01"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/variants/non-linear/work/science-tests/north/saturation.scan/execution.log",
+      "publication": {
+        "file_count": 9,
+        "byte_count": 423957
+      }
+    },
+    {
+      "id": "saturation.scan.south",
+      "test": "saturation.scan",
+      "site": "south",
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
+    }
+  ],
+  "production_history": []
+}
