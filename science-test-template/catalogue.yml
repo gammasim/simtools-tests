@@ -114,3 +114,10 @@ tests:
     runtime_role: analysis
     depends_on: [telescope_throughput]
     result_status_file: __SCIENCE_REPORT_PATH__/science-comparison.json
+  saturation.scan:
+    # Direct-injection intensity scan of every telescope in the site's camera_telescopes.
+    workflow: workflows/saturation/scan.yml
+    sites: [north, south]
+    tier: release-light
+    runtime_role: camera
+    depends_on: []

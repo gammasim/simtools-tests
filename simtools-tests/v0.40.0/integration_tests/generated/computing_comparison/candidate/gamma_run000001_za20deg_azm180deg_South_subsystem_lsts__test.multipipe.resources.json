@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/workdir/simulation_software/sim_telarray/bin/multipipe_corsika",
+    "-c",
+    "/workdir/external/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp/simulate_prod_computing_comparison_candidate/multi_pipe/run000001/gamma_run000001_za20deg_azm180deg_South_subsystem_lsts__test.multi_pipe.cfg"
+  ],
+  "available_cpu_count": 8,
+  "container_image": null,
+  "cpu_model": "CPU implementer: 0x61, CPU part: 0x000",
+  "end_time": "2026-11-06T11:05:16.834118+00:00",
+  "hostname": "3765e89b18ad",
+  "logical_cpu_count": 8,
+  "measurement_method": "linux_procfs_direct_pid",
+  "model_version": "7.0.0",
+  "peak_rss_bytes": 3239936,
+  "pid": 4891,
+  "platform": "Linux-7.2.7-200.fc44.aarch64-aarch64-with-glibc2.34",
+  "return_code": 0,
+  "role": "multipipe",
+  "run_id": "1",
+  "signal": null,
+  "simtools_version": "0.39.1.dev2+g1224d6745",
+  "start_time": "2026-11-06T11:05:15.072485+00:00",
+  "system_cpu_seconds": 0.0,
+  "user_cpu_seconds": 0.0,
+  "wall_time_seconds": 1.761632219000603
+}

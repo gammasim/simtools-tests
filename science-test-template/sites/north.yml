@@ -12,5 +12,6 @@ required_tests:
 - derive.trigger_histograms
 - compare.trigger_histograms
 - compare.compute_resources
+- saturation.scan
 array_layout_name: CTAO-North-Alpha
 camera_telescopes: [LSTN-01, LSTN-02, MSTN-01]

@@ -7,5 +7,6 @@ required_tests:
 - production.bias_curves.collect
 - derive.bias_curves
 - compare.bias_curves
+- saturation.scan
 array_layout_name: CTAO-South-Beta
 camera_telescopes: [LSTS-01, MSTS-01, SSTS-01]
