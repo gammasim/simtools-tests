@@ -2,6 +2,11 @@
 site: north
 site_label: North
 required_tests:
+- production.bias_curves.grid
+- production.bias_curves.submit
+- production.bias_curves.collect
+- derive.bias_curves
+- compare.bias_curves
 - saturation.scan
 array_layout_name: CTAO-North-Alpha
 camera_telescopes: [LSTN-01, LSTN-02, MSTN-01]

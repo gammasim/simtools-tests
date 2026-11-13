@@ -1,0 +1,16 @@
+---
+applications:
+- application: simtools-derive-bias-curves
+  configuration:
+    event_data_directory: __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/jobs
+    scaling_factor: 1.35
+    telescope: __SCIENCE_CAMERA_TELESCOPE__
+    site: __SCIENCE_SITE__
+    model_version: __SCIENCE_MODEL_VERSION__
+    parameter_version: 0.0.99
+    figure_file: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/bias_curve.png
+    nsb_table_file: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/nsb_rates.ecsv
+    proton_table_file: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/proton_rates.ecsv
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0

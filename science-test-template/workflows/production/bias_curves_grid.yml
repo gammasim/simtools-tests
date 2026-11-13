@@ -1,0 +1,19 @@
+---
+# Generate scan grids for review before submitting production jobs.
+applications:
+- application: simtools-generate-bias-curve-submissions
+  configuration:
+    site: __SCIENCE_SITE__
+    model_version: __SCIENCE_MODEL_VERSION__
+    array_layout_name: __SCIENCE_CAMERA_TELESCOPE__
+    simulation_software: corsika_sim_telarray
+    azimuth_angle: 0 deg
+    zenith_angle: 20 deg
+    showers_per_run: 3000
+    number_of_runs: 1
+    core_scatter: 20 1900 m
+    view_cone: 0 deg 20 deg
+    proton_energy_range: 20 GeV 20 TeV
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/scan_grids
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0

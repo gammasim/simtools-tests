@@ -6,6 +6,48 @@ tests:
     sites: [north, south]
     tier: release-light
     depends_on: []
+  production.bias_curves.grid:
+    affects_production: true
+    workflow: workflows/production/bias_curves_grid.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: []
+  production.bias_curves.submit:
+    workflow: workflows/production/bias_curves_submit.yml
+    sites: [north, south]
+    tier: release-prod
+    depends_on: [production.bias_curves.grid]
+    requires:
+    - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/scan_grids/nsb/scan_grid.ecsv
+    - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/scan_grids/proton/scan_grid.ecsv
+    produces_production: true
+  production.bias_curves.collect:
+    workflow: workflows/production/bias_curves_collect.yml
+    sites: [north, south]
+    tier: release-light
+    depends_on: []
+    collect_production: true
+    requires:
+    - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/**/submission.json
+  derive.bias_curves:
+    workflow: workflows/derivation/bias_curves.yml
+    sites: [north, south]
+    tier: release-light
+    runtime_role: camera
+    depends_on: [production.bias_curves.collect]
+    requires_completed_production: true
+    derived_output: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves
+  compare.bias_curves:
+    acceptance_rule: bias-curves-provisional
+    workflow: workflows/comparison/bias_curves.yml
+    sites: [north, south]
+    tier: release-light
+    runtime_role: analysis
+    depends_on: [derive.bias_curves]
+    requires:
+    - __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/*/bias_curve.ecsv
+    - __SCIENCE_BASELINE_SITE_PATH__/derived/bias_curves/*/bias_curve.ecsv
+    result_status_file: __SCIENCE_REPORT_PATH__/science-comparison.json
   production.gamma:
     workflow: workflows/production/gamma_submit.yml
     sites: [north, south]

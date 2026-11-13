@@ -1,13 +1,8 @@
 ---
-# v0.40.0 science tests: detector saturation (direct-injection intensity scans).
-# Saturation is steered by model version (8.0.0); the v0.39.0 baseline uses 7.0.0.
 catalogue: ../../../science-test-template/catalogue.yml
 required_sites: [north, south]
 baseline: v0.39.0
 release_label: v0.40.0
-# Intensity-dependent fadc_pulse_shape 3.0.0 (LSTN-design, model 8.0.0) is not yet in a
-# simulation-models tag; replace by the release tag containing it when available.
-simulation_models_git_revision: main
-# simulation_models_git_revision: main
+simulation_models_git_revision: eb7334da8cce40712a067024bc03eaee1ecbca4b
 model_version: 8.0.0
 expected_changes: []

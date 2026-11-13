@@ -3,8 +3,23 @@ version: 1
 tests:
   production.gamma.grid:
   - __SCIENCE_CANDIDATE_PATH__/__SCIENCE_SITE_KEY___job_grid.ecsv
+  production.bias_curves.grid:
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/scan_grids/nsb/scan_grid.ecsv
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/scan_grids/proton/scan_grid.ecsv
   production.gamma:
   - __SCIENCE_CANDIDATE_SITE_PATH__/**/submission.json
+  production.bias_curves.submit:
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/nsb/submission.json
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/proton/submission.json
+  production.bias_curves.collect:
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/nsb/submission.json
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/proton/submission.json
+  derive.bias_curves:
+  - __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/*/bias_curve.ecsv
+  - __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/*/bias_curve.png
+  compare.bias_curves:
+  - __SCIENCE_REPORT_PATH__/science-comparison.json
+  - __SCIENCE_REPORT_PATH__/report.pdf
   production.gamma.collect:
   - __SCIENCE_CANDIDATE_SITE_PATH__/**/simulate_prod_job_metadata.yml
   derive.trigger_histograms:
