@@ -44,7 +44,7 @@ copies `config_files/`, `static/`, and `run_time.yml`, then generation creates `
 resource_version="vX.Y.Z"
 template_version="vA.B.C"
 runtime_file="simtools-tests/${template_version}/integration_tests/run_time.yml"
-simtools-resources-test-generate \
+simtools-generate-test-resources \
     --simtools_version "${resource_version}" \
     --template_version "${template_version}" \
     --test_directory . \
@@ -56,7 +56,7 @@ For an existing resource set, review its `run_time.yml` first and rerun with:
 
 ```bash
 resource_version="vX.Y.Z"
-simtools-resources-test-generate \
+simtools-generate-test-resources \
     --simtools_version "${resource_version}" \
     --test_directory . \
     --runtime_environment_file "simtools-tests/${resource_version}/integration_tests/run_time.yml" \
