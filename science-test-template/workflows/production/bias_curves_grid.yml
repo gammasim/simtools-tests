@@ -11,7 +11,7 @@ applications:
     zenith_angle: 20 deg
     showers_per_run: 3000
     number_of_runs: 1
-    core_scatter: 20 1900 m
+    core_scatter: 10 1900 m
     view_cone: 0 deg 20 deg
     proton_energy_range: 20 GeV 20 TeV
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/scan_grids

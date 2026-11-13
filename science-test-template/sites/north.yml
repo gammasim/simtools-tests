@@ -15,3 +15,14 @@ required_tests:
 - saturation.scan
 array_layout_name: CTAO-North-Alpha
 camera_telescopes: [LSTN-01, LSTN-02, MSTN-01]
+telescope_configuration_overrides:
+  production.bias_curves.grid:
+    LSTN-01:
+      core_scatter: 10 1900 m
+      proton_energy_range: 3 GeV 20 TeV
+    LSTN-02:
+      core_scatter: 10 1900 m
+      proton_energy_range: 3 GeV 20 TeV
+    MSTN-01:
+      core_scatter: 10 1900 m
+      proton_energy_range: 20 GeV 20 TeV
