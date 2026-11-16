@@ -23,12 +23,12 @@ applications:
     - 10
     output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/tmp_application_output
 collection:
-- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curve_scan_grids/nsb
+- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curves_scan_grids/nsb
   files:
   - nsb/scan_config.yaml
   - nsb/scan_grid.ecsv
   - nsb/base_grid.ecsv
-- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curve_scan_grids/proton
+- output_path: __TEST_DIRECTORY__/simtools-tests/__SIMTOOLS_VERSION__/integration_tests/generated/bias_curves_scan_grids/proton
   files:
   - proton/scan_config.yaml
   - proton/scan_grid.ecsv

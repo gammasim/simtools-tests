@@ -9,11 +9,11 @@ tests:
   production.gamma:
   - __SCIENCE_CANDIDATE_SITE_PATH__/**/submission.json
   production.bias_curves.submit:
-  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/nsb/submission.json
-  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/proton/submission.json
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/nsb/*/submission.json
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/proton/*/submission.json
   production.bias_curves.collect:
-  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/nsb/submission.json
-  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/proton/submission.json
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/nsb/*/submission.json
+  - __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/*/jobs/proton/*/submission.json
   derive.bias_curves:
   - __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/*/bias_curve.ecsv
   - __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/*/bias_curve.png

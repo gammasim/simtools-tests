@@ -9,7 +9,7 @@ required_tests:
 - compare.bias_curves
 - saturation.scan
 array_layout_name: CTAO-North-Alpha
-camera_telescopes: [LSTN-01, LSTN-02, MSTN-01]
+camera_telescopes: [MSTN-01]
 telescope_configuration_overrides:
   production.bias_curves.grid:
     LSTN-01:
