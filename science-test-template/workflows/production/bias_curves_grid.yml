@@ -10,7 +10,7 @@ applications:
     azimuth_angle: 0 deg
     zenith_angle: 20 deg
     showers_per_run: 750
-    number_of_runs: 4
+    number_of_runs: 100
     core_scatter: 10 1900 m
     view_cone: 0 deg 20 deg
     proton_energy_range: 20 GeV 20 TeV

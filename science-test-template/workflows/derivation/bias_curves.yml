@@ -12,5 +12,25 @@ applications:
     nsb_table_file: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/nsb_rates.ecsv
     proton_table_file: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/proton_rates.ecsv
     output_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves
+- application: simtools-write-trigger-histograms
+  configuration:
+    production_path: __SCIENCE_CANDIDATE_SITE_PATH__/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/jobs/proton-grid
+    minimum_triggered_telescopes: 1
+    max_workers: 1
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/histograms
+- application: simtools-plot-simulated-event-distributions
+  configuration:
+    trigger_histogram_file: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/histograms/*.trigger_histograms.hdf5
+    array_layout_name: __SCIENCE_CAMERA_TELESCOPE__
+    output_path: __SCIENCE_REPORT_PATH__/__SCIENCE_CAMERA_TELESCOPE__/distributions
+collection:
+  output_path: __SCIENCE_REPORT_PATH__
+  preserve_relative_paths: true
+  files:
+  - '*/bias_curve.png'
+  - '*/bias_curve.ecsv'
+  - '*/nsb_rates.ecsv'
+  - '*/proton_rates.ecsv'
+  - '*/*_threshold/*.json'
 schema_name: application_workflow.metaschema
 schema_version: 0.7.0
