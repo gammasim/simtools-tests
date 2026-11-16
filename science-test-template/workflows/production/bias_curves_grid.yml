@@ -9,8 +9,8 @@ applications:
     simulation_software: corsika_sim_telarray
     azimuth_angle: 0 deg
     zenith_angle: 20 deg
-    showers_per_run: 3000
-    number_of_runs: 1
+    showers_per_run: 750
+    number_of_runs: 4
     core_scatter: 10 1900 m
     view_cone: 0 deg 20 deg
     proton_energy_range: 20 GeV 20 TeV
