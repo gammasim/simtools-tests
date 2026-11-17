@@ -29,7 +29,7 @@
 #       OBS-North:
 #         nsb_scaling_factor: {value: 2.0}
 # - {site: North}
-# - {simulation_software: corsika_sim_telarray}
+# - simulation_software: [corsika, sim_telarray]
 # - job_grid_summary: {core_scatter_max_configured: not available, core_scatter_max_lookup_limit: not available, core_scatter_max_used: 1900
 #       m, energy_max_configured: not available, energy_max_used: 30 GeV, energy_min_configured: not available, energy_min_lookup_limit: not
 #       available, energy_min_used: 20 GeV, showers_per_run_configured: '5', showers_per_run_configured_max: 5, showers_per_run_max: 5,

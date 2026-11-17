@@ -5,7 +5,9 @@ applications:
     site: North
     model_version: 7.0.0
     array_layout_name: LSTN-01
-    simulation_software: corsika_sim_telarray
+    simulation_software:
+    - corsika
+    - sim_telarray
     azimuth_angle: 180 deg
     zenith_angle: 30 deg
     showers_per_run: 5

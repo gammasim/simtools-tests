@@ -20,18 +20,18 @@
 # meta: !!omap
 # - cta:
 #     activity:
-#       end: '2026-11-06T11:05:10+00:00'
-#       id: 01a1b088-aa22-7538-a0cc-325688475510
+#       end: '2026-11-17T15:36:46+00:00'
+#       id: 01a1ea27-4149-7384-85b2-4f80ffc7a55a
 #       name: simtools-production-generate-grid
-#       software: {name: simtools, version: 0.39.1.dev2+g1224d6745}
-#       start: '2026-11-06T11:05:10+00:00'
+#       software: {name: simtools, version: 0.39.1.dev156+g1fcb72a69}
+#       start: '2026-11-17T15:36:46+00:00'
 #       type: software
 #     contact: {name: G.Maier, orcid: 0000-0001-9868-4700, organization: CTAO}
 #     context:
 #       application_configuration:
 #         application: production_generate_grid
 #         arguments:
-#           activity_id: 01a1b088-aa22-7538-a0cc-325688475510
+#           activity_id: 01a1ea27-4149-7384-85b2-4f80ffc7a55a
 #           application_label: production_generate_grid
 #           array_layout_name: [LSTN-01]
 #           axis:
@@ -70,12 +70,13 @@
 #           run_number_offset: 0
 #           showers_per_run: 5
 #           showers_per_run_scaling: fixed
-#           simulation_models_git_path: /workdir/external/simulation-models.git
 #           simulation_models_git_revision: v0.19.0
-#           simulation_software: corsika_sim_telarray
+#           simulation_models_path: /workdir/external/simulation-models-dev
+#           simulation_software: [corsika, sim_telarray]
 #           site: North
 #           test: false
 #           total_showers_scaling: fixed
+#           user_email: gernot.maier@desy.de
 #           user_name: G.Maier
 #           user_orcid: 0000-0001-9868-4700
 #           user_organization: DESY
@@ -94,14 +95,14 @@
 #           max_showers_per_run: default, max_total_showers_rounding_warnings: default, model_version: cli, number_of_runs: cli, output_file: cli,
 #           output_path: cli, overwrite_collection_files: default, overwrite_model_parameters: default, primary: cli, primary_id_type: default,
 #           run_number: default, run_number_offset: default, runtime_environment_file: default, show_options: default, showers_per_run: cli,
-#           showers_per_run_power_law: default, showers_per_run_scaling: default, simulation_models_git_path: cli, simulation_models_git_revision: cli,
-#           simulation_models_path: default, simulation_software: cli, site: cli, test: default, total_showers: default, total_showers_scaling: default,
-#           user_email: default, user_name: environment, user_orcid: environment, user_organization: environment, version: default, view_cone: cli,
-#           zenith_angle: default, zenith_angle_scaling_factor: default}
+#           showers_per_run_power_law: default, showers_per_run_scaling: default, simulation_models_git_path: default, simulation_models_git_revision: cli,
+#           simulation_models_path: cli, simulation_software: cli, site: cli, test: default, total_showers: default, total_showers_scaling: default,
+#           user_email: environment, user_name: environment, user_orcid: environment, user_organization: environment, version: default,
+#           view_cone: cli, zenith_angle: default, zenith_angle_scaling_factor: default}
 #     instrument: {site: North}
 #     process: {type: simulation}
 #     product:
-#       creation_time: '2026-11-06T11:05:10+00:00'
+#       creation_time: '2026-11-17T15:36:46+00:00'
 #       data:
 #         category: SIM
 #         level: R1
@@ -110,10 +111,10 @@
 #         type: Service
 #       filename: production_grid_points_horizontal.ecsv
 #       format: ecsv
-#       id: 01a1b088-af40-72e2-abb6-33f78060a435
+#       id: 01a1ea27-4c51-7685-92ba-4861610dbce7
 #     reference: {version: 2.1.0}
 # - {site: North}
-# - {simulation_software: corsika_sim_telarray}
+# - simulation_software: [corsika, sim_telarray]
 # - {coordinate_system: horizontal}
 # - {direction_grid_density: null}
 # - {direction_grid_density_unit: null}

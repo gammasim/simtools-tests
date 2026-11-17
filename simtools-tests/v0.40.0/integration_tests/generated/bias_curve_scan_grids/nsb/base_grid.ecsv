@@ -19,7 +19,7 @@
 # - {name: corsika_he_interaction, datatype: string}
 # meta: !!omap
 # - {site: North}
-# - {simulation_software: corsika_sim_telarray}
+# - simulation_software: [corsika, sim_telarray]
 # - {coordinate_system: null}
 # - {direction_grid_density: null}
 # - {direction_grid_density_unit: null}
