@@ -13,14 +13,26 @@ camera_telescopes: [LSTN-01, LSTN-02, MSTN-01]
 telescope_configuration_overrides:
   production.bias_curves.grid:
     LSTN-01:
+      proton_showers_per_run: 7500
+      proton_number_of_runs: 10
+      nsb_showers_per_run: 2000
+      nsb_number_of_runs: 38
       trigger_thresholds: [155, 10, 10]
       core_scatter: 10 1900 m
       proton_energy_range: 3 GeV 20 TeV
     LSTN-02:
+      proton_showers_per_run: 7500
+      proton_number_of_runs: 10
+      nsb_showers_per_run: 2000
+      nsb_number_of_runs: 38
       trigger_thresholds: [155, 10, 10]
       core_scatter: 10 1900 m
       proton_energy_range: 3 GeV 20 TeV
     MSTN-01:
-      trigger_thresholds: [20, 10, 2]
+      proton_showers_per_run: 7500
+      proton_number_of_runs: 10
+      nsb_showers_per_run: 2000
+      nsb_number_of_runs: 38
+      trigger_thresholds: [22, 10, 2]
       core_scatter: 10 1900 m
       proton_energy_range: 20 GeV 20 TeV
