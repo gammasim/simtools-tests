@@ -22,7 +22,7 @@ telescope_configuration_overrides:
       proton_number_of_runs: 10
       nsb_showers_per_run: 2000
       nsb_number_of_runs: 40
-      trigger_thresholds: [155, 10, 10]
+      trigger_thresholds: [220, 15, 10]
       core_scatter: 10 1900 m
       proton_energy_range: 3 GeV 20 TeV
     MSTS-01:
