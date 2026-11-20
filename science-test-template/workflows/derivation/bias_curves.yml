@@ -22,6 +22,7 @@ applications:
   configuration:
     trigger_histogram_file: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves/__SCIENCE_CAMERA_TELESCOPE__/histograms/*.trigger_histograms.hdf5
     array_layout_name: __SCIENCE_CAMERA_TELESCOPE__
+    representative_threshold: true
     output_path: __SCIENCE_REPORT_PATH__/__SCIENCE_CAMERA_TELESCOPE__/distributions
 collection:
   output_path: __SCIENCE_REPORT_PATH__
