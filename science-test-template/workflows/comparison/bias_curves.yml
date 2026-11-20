@@ -1,0 +1,12 @@
+---
+applications:
+- application: simtools-compare-science-results
+  configuration:
+    comparison_type: bias_curves
+    baseline_path: __SCIENCE_BASELINE_SITE_PATH__/derived/bias_curves
+    candidate_path: __SCIENCE_CANDIDATE_SITE_PATH__/derived/bias_curves
+    baseline_label: __SCIENCE_BASELINE_LABEL__
+    candidate_label: __SCIENCE_RELEASE_LABEL__
+    output_path: __SCIENCE_REPORT_PATH__
+schema_name: application_workflow.metaschema
+schema_version: 0.7.0

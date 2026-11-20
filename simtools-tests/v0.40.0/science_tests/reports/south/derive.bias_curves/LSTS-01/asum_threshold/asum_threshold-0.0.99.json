@@ -1,0 +1,13 @@
+{
+    "file": false,
+    "instrument": "LSTS-01",
+    "model_parameter_schema_version": "0.1.0",
+    "parameter": "asum_threshold",
+    "parameter_version": "0.0.99",
+    "schema_version": "0.4.0",
+    "site": "South",
+    "type": "float64",
+    "unique_id": "01a1f9a3-98a9-71bb-b815-a9c8c17fd231",
+    "unit": "mV",
+    "value": 337.92
+}

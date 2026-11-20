@@ -2,6 +2,11 @@
 site: south
 site_label: South
 required_tests:
+- production.bias_curves.grid
+- production.bias_curves.submit
+- production.bias_curves.collect
+- derive.bias_curves
+- compare.bias_curves
 - compare.atmospheres
 - production.gamma.collect
 - derive.trigger_histograms
@@ -10,3 +15,29 @@ required_tests:
 - saturation.scan
 array_layout_name: CTAO-South-Beta
 camera_telescopes: [LSTS-01, MSTS-01, SSTS-01]
+telescope_configuration_overrides:
+  production.bias_curves.grid:
+    LSTS-01:
+      proton_showers_per_run: 10000
+      proton_number_of_runs: 20
+      nsb_showers_per_run: 5000
+      nsb_number_of_runs: 25
+      trigger_thresholds: [220, 15, 10]
+      core_scatter: 10 1900 m
+      proton_energy_range: 3 GeV 20 TeV
+    MSTS-01:
+      proton_showers_per_run: 10000
+      proton_number_of_runs: 20
+      nsb_showers_per_run: 5000
+      nsb_number_of_runs: 25
+      trigger_thresholds: [50, 15, 2]
+      core_scatter: 10 1900 m
+      proton_energy_range: 20 GeV 20 TeV
+    SSTS-01:
+      proton_showers_per_run: 10000
+      proton_number_of_runs: 20
+      nsb_showers_per_run: 5000
+      nsb_number_of_runs: 25
+      trigger_thresholds: [6, 10, 0.5]
+      core_scatter: 10 1900 m
+      proton_energy_range: 50 GeV 20 TeV
