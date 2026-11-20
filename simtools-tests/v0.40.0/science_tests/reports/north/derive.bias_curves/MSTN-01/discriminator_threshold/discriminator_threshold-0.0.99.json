@@ -1,0 +1,13 @@
+{
+    "file": false,
+    "instrument": "MSTN-01",
+    "model_parameter_schema_version": "0.1.0",
+    "parameter": "discriminator_threshold",
+    "parameter_version": "0.0.99",
+    "schema_version": "0.4.0",
+    "site": "North",
+    "type": "float64",
+    "unique_id": "01a1f99d-0a52-743e-bba7-1a459131cada",
+    "unit": "mV",
+    "value": 32.65
+}

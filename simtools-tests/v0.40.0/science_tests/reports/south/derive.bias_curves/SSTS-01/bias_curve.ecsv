@@ -1,0 +1,20 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: threshold, datatype: float64}
+# - {name: NSB rate (Hz), datatype: float64, format: .2f}
+# - {name: NSB error (Hz), datatype: float64, format: .2f}
+# - {name: Proton rate (Hz), datatype: float64, format: .2f}
+# - {name: Proton error (Hz), datatype: float64, format: .2f}
+# schema: astropy-2.0
+threshold "NSB rate (Hz)" "NSB error (Hz)" "Proton rate (Hz)" "Proton error (Hz)"
+6.0 227535.0 2126.3 663.91 82.87
+6.5 54160.0 629.51 533.74 54.46
+7.0 11250.0 325.88 523.02 71.51
+7.5 2425.0 140.31 503.66 69.16
+8.0 515.0 53.19 405.74 66.94
+8.5 60.0 14.65 418.46 56.34
+9.0 10.0 6.92 285.5 45.88
+9.5 10.0 6.92 187.43 29.93
+10.0 0.0 0.0 232.74 40.17
+10.5 0.0 0.0 228.82 39.94

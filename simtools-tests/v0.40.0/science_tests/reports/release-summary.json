@@ -22,19 +22,54 @@
       "id": "derive.bias_curves.north",
       "test": "derive.bias_curves",
       "site": "north",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "workflow": "workflows/derivation/bias_curves.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves",
+      "report": "reports/north/derive.bias_curves",
+      "run_id": "01a1f998-a31c-7279-83db-156eb0989411",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
+        "simulation_models": "main"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves/LSTN-01/histograms",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves/LSTN-02/histograms",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves/MSTN-01/histograms",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/LSTN-01/distributions",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/LSTN-02/distributions",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/MSTN-01/distributions"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/execution.log",
+      "publication": {
+        "file_count": 24,
+        "byte_count": 1510207
+      }
     },
     {
       "id": "production.bias_curves.collect.north",
       "test": "production.bias_curves.collect",
       "site": "north",
+      "workflow": "workflows/production/bias_curves_collect.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/production.bias_curves.collect",
       "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "run_id": "01a1f942-9e01-75b3-84f1-f89586cb177d",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
+        "simulation_models": "main"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north"
+      ],
+      "execution": "completed",
+      "status": "pass"
     },
     {
       "id": "production.bias_curves.grid.north",
@@ -119,19 +154,54 @@
       "id": "derive.bias_curves.south",
       "test": "derive.bias_curves",
       "site": "south",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "workflow": "workflows/derivation/bias_curves.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves",
+      "report": "reports/south/derive.bias_curves",
+      "run_id": "01a1f998-a31c-7279-83db-156eb0989411",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
+        "simulation_models": "main"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves/LSTS-01/histograms",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves/MSTS-01/histograms",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves/SSTS-01/histograms",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/LSTS-01/distributions",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/MSTS-01/distributions",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/SSTS-01/distributions"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/execution.log",
+      "publication": {
+        "file_count": 24,
+        "byte_count": 1459052
+      }
     },
     {
       "id": "production.bias_curves.collect.south",
       "test": "production.bias_curves.collect",
       "site": "south",
+      "workflow": "workflows/production/bias_curves_collect.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/production.bias_curves.collect",
       "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "run_id": "01a1f97b-55f9-70e0-87fa-e5ca37298563",
+      "runtime": "host (no container)",
+      "software": {
+        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
+        "simulation_models": "main"
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south"
+      ],
+      "execution": "completed",
+      "status": "pass"
     },
     {
       "id": "production.bias_curves.grid.south",

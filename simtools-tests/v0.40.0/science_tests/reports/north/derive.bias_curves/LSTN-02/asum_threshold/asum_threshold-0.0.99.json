@@ -1,0 +1,13 @@
+{
+    "file": false,
+    "instrument": "LSTN-02",
+    "model_parameter_schema_version": "0.1.0",
+    "parameter": "asum_threshold",
+    "parameter_version": "0.0.99",
+    "schema_version": "0.4.0",
+    "site": "North",
+    "type": "float64",
+    "unique_id": "01a1f99c-50b4-717b-9ca3-4a7cc3ea728f",
+    "unit": "mV",
+    "value": 333.3
+}
