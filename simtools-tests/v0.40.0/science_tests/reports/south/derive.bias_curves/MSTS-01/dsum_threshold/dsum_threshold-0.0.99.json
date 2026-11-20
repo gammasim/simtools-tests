@@ -1,0 +1,13 @@
+{
+    "file": false,
+    "instrument": "MSTS-01",
+    "model_parameter_schema_version": "0.2.0",
+    "parameter": "dsum_threshold",
+    "parameter_version": "0.0.99",
+    "schema_version": "0.4.0",
+    "site": "South",
+    "type": "int64",
+    "unique_id": "01a1f9a4-ab94-739b-81ae-8cc55da8deb2",
+    "unit": "ct",
+    "value": 61
+}

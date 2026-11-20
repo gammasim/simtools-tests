@@ -1,0 +1,13 @@
+{
+    "file": false,
+    "instrument": "SSTS-01",
+    "model_parameter_schema_version": "0.1.0",
+    "parameter": "discriminator_threshold",
+    "parameter_version": "0.0.99",
+    "schema_version": "0.4.0",
+    "site": "South",
+    "type": "float64",
+    "unique_id": "01a1f9a5-6443-76d9-9374-15107fc937d0",
+    "unit": "mV",
+    "value": 8.76
+}

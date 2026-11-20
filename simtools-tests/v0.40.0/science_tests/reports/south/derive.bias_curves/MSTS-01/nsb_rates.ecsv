@@ -1,0 +1,54 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: threshold, datatype: int64}
+# - {name: run1, datatype: int64}
+# - {name: run2, datatype: int64}
+# - {name: run3, datatype: int64}
+# - {name: run4, datatype: int64}
+# - {name: run5, datatype: int64}
+# - {name: run6, datatype: int64}
+# - {name: run7, datatype: int64}
+# - {name: run8, datatype: int64}
+# - {name: run9, datatype: int64}
+# - {name: run10, datatype: int64}
+# - {name: run11, datatype: int64}
+# - {name: run12, datatype: int64}
+# - {name: run13, datatype: int64}
+# - {name: run14, datatype: int64}
+# - {name: run15, datatype: int64}
+# - {name: run16, datatype: int64}
+# - {name: run17, datatype: int64}
+# - {name: run18, datatype: int64}
+# - {name: run19, datatype: int64}
+# - {name: run20, datatype: int64}
+# - {name: run21, datatype: int64}
+# - {name: run22, datatype: int64}
+# - {name: run23, datatype: int64}
+# - {name: run24, datatype: int64}
+# - {name: run25, datatype: int64}
+# - {name: Total trig'd, datatype: int64}
+# - {name: Out of, datatype: int64}
+# - {name: Time (s), datatype: float64, format: .2f}
+# - {name: Rate (Hz), datatype: float64, format: .2f}
+# - {name: Rate (kHz), datatype: float64, format: .2f}
+# - {name: Error (Hz), datatype: float64, format: .2f}
+# meta: !!omap
+# - comments: ['Total events: 18750000', 'Time window per event: 1.92e-07 s']
+# schema: astropy-2.0
+threshold run1 run2 run3 run4 run5 run6 run7 run8 run9 run10 run11 run12 run13 run14 run15 run16 run17 run18 run19 run20 run21 run22 run23 run24 run25 "Total trig'd" "Out of" "Time (s)" "Rate (Hz)" "Rate (kHz)" "Error (Hz)"
+50 310 285 283 307 269 308 319 334 304 305 320 316 304 321 310 279 279 296 309 295 278 290 288 319 305 7533 1250000 0.24 31387.5 31.3875 343.7352690446315
+52 162 161 152 125 170 141 156 154 162 175 158 157 151 158 173 166 140 167 155 150 166 167 165 149 163 3943 1250000 0.24 16429.166666666668 16.429166666666667 233.81646410997
+54 63 79 66 64 81 91 68 89 72 87 75 75 70 95 63 75 76 66 73 91 78 81 70 87 73 1908 1250000 0.24 7950.0 7.95 196.6075122900671
+56 38 32 34 33 36 26 37 38 41 30 39 22 43 41 38 25 35 30 36 42 41 32 39 36 48 892 1250000 0.24 3716.666666666667 3.7166666666666672 125.24859539391308
+58 21 20 10 15 12 23 22 7 17 20 18 16 21 14 14 19 19 15 16 19 15 17 16 16 14 416 1250000 0.24 1733.3333333333335 1.7333333333333336 78.15508679921348
+60 9 8 6 7 13 12 16 4 7 10 8 7 7 13 7 8 13 12 11 11 10 11 5 14 7 236 1250000 0.24 983.3333333333334 0.9833333333333334 63.95301733245998
+62 1 5 5 6 4 6 0 4 1 1 2 2 3 4 6 1 3 4 7 2 5 4 3 5 6 90 1250000 0.24 375.0 0.375 40.789375432190035
+64 1 1 1 2 2 0 0 2 3 2 0 0 3 4 1 3 0 0 0 0 1 2 2 1 0 31 1250000 0.24 129.16666666666669 0.12916666666666668 24.999999999999996
+66 0 0 0 3 1 2 1 2 2 2 1 0 2 1 0 0 0 1 1 3 1 0 0 0 1 24 1250000 0.24 100.0 0.1 20.376945487668344
+68 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 2 6 1250000 0.24 25.0 0.025 10.89193551483203
+70 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 4 1250000 0.24 16.666666666666668 0.01666666666666667 7.795119555779045
+72 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 2 1250000 0.24 8.333333333333334 0.008333333333333335 5.768488793693107
+74 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 3 1250000 0.24 12.5 0.0125 6.909634979907082
+76 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1250000 0.24 4.166666666666667 0.0041666666666666675 4.166666666666666
+78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1250000 0.24 0.0 0.0 0.0
