@@ -1,0 +1,175 @@
+---
+cta:
+  reference:
+    version: 2.1.0
+  contact:
+    organization: CTAO
+    name: maierg
+  product:
+    creation_time: '2026-11-25T08:48:33+00:00'
+    id: 01a211e4-71f2-74b6-8c74-8931b6503467
+    data:
+      category: SIM
+      level: R1
+      type: Service
+      model:
+        name: undefined_model_name
+        version: 0.0.0
+    format: ecsv
+    filename: 01a211d8-1a63-76d4-a661-c43cb0426831-simtools-plot-simtel-events.ecsv
+  instrument:
+    class: telescopes
+    type: MSTS
+    id: MSTS-01
+  process:
+    type: simulation
+  activity:
+    name: setting_workflow
+    type: software
+    id: 01a211cc-48e8-7212-bba1-7acdde0eeec2
+    software:
+      name: simtools
+      version: 0.39.1.dev282+g6854cbc8b
+    start: '2026-11-25T08:35:04+00:00'
+    end: '2026-11-25T08:49:14+00:00'
+    runtime_environment:
+      container_engine: apptainer
+      image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261124-v78050-v2025-11-30-rc-avx2.sif
+      environment_file: /cephfs/users/maierg/CTA/simpipe/202611/ray-tracing-review/simtools-tests/science-test-template/profiles/htcondor.env
+      options:
+      - --bind
+      - /cephfs/users/maierg/CTA/simpipe/202611/ray-tracing-review/simulation-models:/cephfs/users/maierg/CTA/simpipe/202611/ray-tracing-review/simulation-models:ro
+  context:
+    application_configuration:
+      schema_version: 2.0.0
+      application: plot_simtel_events
+      arguments:
+        simtel_file: /lustre/fs24/group/cta/science_tests/v0.40.0/south/saturation/MSTS-01/scan/simulation/run000104/sim_telarray/full_simulation_run000104_South_8.0.0_saturation_MSTS-01.simtel.zst
+        plots:
+        - all
+        number_of_pixels: 3
+        pixel_step: 10
+        half_width: 8
+        offset: 16
+        sum_threshold: 10.0
+        peak_width: 8
+        examples: 3
+        max_events: 50
+        average_events: true
+        gain: high
+        pedestal_source: waveform
+        save_pngs: false
+        flat_fielding: false
+        figure_dpi: 300
+        telescope: MSTS-01
+        output_path: /lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01/events/3000000/high
+        output_file: 01a211d8-1a63-76d4-a661-c43cb0426831-simtools-plot-simtel-events.ecsv
+        output_file_format: ecsv
+        skip_output_validation: false
+        env_file: .env
+        activity_id: 01a211d8-1a63-76d4-a661-c43cb0426831
+        test: false
+        label: simtools-plot-simtel-events
+        log_level: info
+        disable_log_file: true
+        figure_format:
+        - png
+        figure_png_palette: false
+        ignore_runtime_environment: false
+        overwrite_collection_files: false
+        output_file_from_default: true
+        application_label: plot_simtel_events
+      sources:
+        simtel_file: cli
+        plots: default
+        number_of_pixels: default
+        pixel_step: default
+        max_pixels: default
+        vmax: default
+        half_width: default
+        offset: default
+        sum_threshold: default
+        peak_width: default
+        examples: default
+        timing_bins: default
+        distance: default
+        event_id: default
+        max_events: cli
+        average_events: cli
+        gain: default
+        pedestal_source: default
+        save_pngs: default
+        flat_fielding: default
+        figure_dpi: default
+        site: default
+        telescope: cli
+        output_path: cli
+        output_file: default
+        output_file_format: default
+        skip_output_validation: default
+        config: default
+        env_file: default
+        activity_id: cli
+        test: default
+        label: cli
+        log_level: default
+        log_file: default
+        log_file_path: default
+        disable_log_file: cli
+        figure_format: default
+        figure_png_palette: default
+        export_build_info: default
+        version: default
+        build_info: default
+        runtime_environment_file: default
+        apptainer_image: default
+        ignore_runtime_environment: default
+        overwrite_collection_files: default
+        show_options: default
+        user_name: default
+        user_organization: default
+        user_email: default
+        user_orcid: default
+    associated_activities:
+    - activity_name: simtools-simulate-flasher
+      activity_id: 01a211d8-1a63-76d4-a661-c42dae900c2e
+    - activity_name: simtools-simulate-flasher
+      activity_id: 01a211d8-1a63-76d4-a661-c42ed74adbae
+    - activity_name: simtools-simulate-flasher
+      activity_id: 01a211d8-1a63-76d4-a661-c42f7378fda6
+    - activity_name: simtools-analyze-flasher-response
+      activity_id: 01a211d8-1a63-76d4-a661-c43046acba41
+    - activity_name: simtools-analyze-flasher-response
+      activity_id: 01a211d8-1a63-76d4-a661-c431f5a47353
+    - activity_name: simtools-analyze-flasher-response
+      activity_id: 01a211d8-1a63-76d4-a661-c43213e4727e
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c433091c610b
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c4348d5520ba
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c43504b7d7ab
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c436b4e6bc7a
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c437453fe655
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c4389d568f2a
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c439ab86b631
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c43a37c08d5a
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c43b722b6bc0
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c43cb0426831
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c43d1d4cb388
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c43eab66461f
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c43f601a2427
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c4403c6dfc8a
+    - activity_name: simtools-plot-simtel-events
+      activity_id: 01a211d8-1a63-76d4-a661-c44156519144

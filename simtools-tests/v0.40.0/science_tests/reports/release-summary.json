@@ -6,7 +6,7 @@
     "south"
   ],
   "dry_run": false,
-  "campaign_sha256": "6fd32b40837db5fd5729911ae029bccf37aa8ba66fa7175dee80d6e4c16a2afc",
+  "campaign_sha256": "a6cb30df65a16db1d25974349f3b0eda43ed095d50a145bc1955aeb87f5fb35c",
   "qualified": false,
   "results": [
     {
@@ -16,130 +16,90 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "reason": "Not selected or not executed."
     },
     {
       "id": "derive.bias_curves.north",
       "test": "derive.bias_curves",
       "site": "north",
-      "workflow": "workflows/derivation/bias_curves.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves",
-      "report": "reports/north/derive.bias_curves",
-      "run_id": "01a1f998-a31c-7279-83db-156eb0989411",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves/LSTN-01/histograms",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves/LSTN-02/histograms",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/derived/bias_curves/MSTN-01/histograms",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/LSTN-01/distributions",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/LSTN-02/distributions",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/MSTN-01/distributions"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/derive.bias_curves/execution.log",
-      "publication": {
-        "file_count": 24,
-        "byte_count": 1510207
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.bias_curves.collect.north",
       "test": "production.bias_curves.collect",
       "site": "north",
-      "workflow": "workflows/production/bias_curves_collect.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/production.bias_curves.collect",
       "report": null,
-      "run_id": "01a1f942-9e01-75b3-84f1-f89586cb177d",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north"
-      ],
-      "execution": "completed",
-      "status": "pass"
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.bias_curves.grid.north",
       "test": "production.bias_curves.grid",
       "site": "north",
-      "workflow": "workflows/production/bias_curves_grid.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/production.bias_curves.grid",
       "report": null,
-      "run_id": "01a1f8b7-2fa2-7186-8fef-759ae37b93a6",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261120-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/LSTN-01/scan_grids",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/LSTN-02/scan_grids",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/MSTN-01/scan_grids"
-      ],
-      "execution": "not_run",
       "status": "not_run",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/production.bias_curves.grid/execution.log",
-      "reason": "Upstream evidence changed; rerun required."
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.bias_curves.submit.north",
       "test": "production.bias_curves.submit",
       "site": "north",
-      "workflow": "workflows/production/bias_curves_submit.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/production.bias_curves.submit",
       "report": null,
-      "run_id": "01a1f8b8-d233-73b5-a6e1-ac78343fc0cd",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/LSTN-01/jobs/nsb",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/LSTN-02/jobs/nsb",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/MSTN-01/jobs/nsb",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/LSTN-01/jobs/proton",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/LSTN-02/jobs/proton",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/bias_curves/MSTN-01/jobs/proton"
-      ],
-      "execution": "submitted",
-      "status": "submitted",
-      "dependency_compatibility": {
-        "default": "v0.19.0",
-        "allowed": ">=0.18.0",
-        "policy": "target catalog range",
-        "source": "/lustre/fs24/group/cta/science_tests/simulation-models-dev",
-        "status": "development; not production-qualified",
-        "target_simtools": "0.39.0+gbee720f"
-      },
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/production.bias_curves.submit/execution.log",
-      "reason": "Jobs submitted; run the collection test after they finish."
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "saturation.scan.north",
       "test": "saturation.scan",
       "site": "north",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "workflow": "workflows/saturation/scan.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan",
+      "report": "reports/north/saturation.scan",
+      "run_id": "01a211cc-4934-73fd-b40d-ed46c0a598f3",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261124-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.39.1.dev282+g6854cbc8b",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/saturation/LSTN-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/saturation/LSTN-02/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/north/saturation/MSTN-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-02",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/MSTN-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-01/events/30000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-01/events/100000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-01/events/300000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-01/events/1000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-01/events/3000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-02/events/30000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-02/events/100000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-02/events/300000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-02/events/1000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/LSTN-02/events/3000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/MSTN-01/events/30000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/MSTN-01/events/100000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/MSTN-01/events/300000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/MSTN-01/events/1000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/MSTN-01/events/3000000/high"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan/execution.log",
+      "publication": {
+        "file_count": 35,
+        "byte_count": 3099960,
+        "warning": "Publication is larger than the compact-report guidance."
+      }
     },
     {
       "id": "compare.bias_curves.south",
@@ -148,130 +108,90 @@
       "report": null,
       "status": "not_run",
       "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "reason": "Not selected or not executed."
     },
     {
       "id": "derive.bias_curves.south",
       "test": "derive.bias_curves",
       "site": "south",
-      "workflow": "workflows/derivation/bias_curves.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves",
-      "report": "reports/south/derive.bias_curves",
-      "run_id": "01a1f998-a31c-7279-83db-156eb0989411",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves/LSTS-01/histograms",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves/MSTS-01/histograms",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/derived/bias_curves/SSTS-01/histograms",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/LSTS-01/distributions",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/MSTS-01/distributions",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/SSTS-01/distributions"
-      ],
-      "execution": "completed",
-      "status": "pass",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/derive.bias_curves/execution.log",
-      "publication": {
-        "file_count": 24,
-        "byte_count": 1459052
-      }
+      "report": null,
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.bias_curves.collect.south",
       "test": "production.bias_curves.collect",
       "site": "south",
-      "workflow": "workflows/production/bias_curves_collect.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/production.bias_curves.collect",
       "report": null,
-      "run_id": "01a1f97b-55f9-70e0-87fa-e5ca37298563",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south"
-      ],
-      "execution": "completed",
-      "status": "pass"
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.bias_curves.grid.south",
       "test": "production.bias_curves.grid",
       "site": "south",
-      "workflow": "workflows/production/bias_curves_grid.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/production.bias_curves.grid",
       "report": null,
-      "run_id": "01a1f8b7-2fa2-7186-8fef-759ae37b93a6",
-      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261120-v78050-v2025-11-30-rc-avx2.sif)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/LSTS-01/scan_grids",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/MSTS-01/scan_grids",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/SSTS-01/scan_grids"
-      ],
-      "execution": "not_run",
       "status": "not_run",
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/production.bias_curves.grid/execution.log",
-      "reason": "Upstream evidence changed; rerun required."
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "production.bias_curves.submit.south",
       "test": "production.bias_curves.submit",
       "site": "south",
-      "workflow": "workflows/production/bias_curves_submit.yml",
-      "baseline": "v0.39.0",
-      "candidate": "v0.40.0",
-      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/production.bias_curves.submit",
       "report": null,
-      "run_id": "01a1f8b8-d233-73b5-a6e1-ac78343fc0cd",
-      "runtime": "host (no container)",
-      "software": {
-        "simtools": "0.39.1.dev95+g2488d2fb8.d20261113",
-        "simulation_models": "main"
-      },
-      "output_paths": [
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/LSTS-01/jobs/nsb",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/MSTS-01/jobs/nsb",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/SSTS-01/jobs/nsb",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/LSTS-01/jobs/proton",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/MSTS-01/jobs/proton",
-        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/bias_curves/SSTS-01/jobs/proton"
-      ],
-      "execution": "submitted",
-      "status": "submitted",
-      "dependency_compatibility": {
-        "default": "v0.19.0",
-        "allowed": ">=0.18.0",
-        "policy": "target catalog range",
-        "source": "/lustre/fs24/group/cta/science_tests/simulation-models-dev",
-        "status": "development; not production-qualified",
-        "target_simtools": "0.39.0+gbee720f"
-      },
-      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/production.bias_curves.submit/execution.log",
-      "reason": "Jobs submitted; run the collection test after they finish."
+      "status": "not_run",
+      "execution": "not_run",
+      "reason": "Not selected or not executed."
     },
     {
       "id": "saturation.scan.south",
       "test": "saturation.scan",
       "site": "south",
-      "report": null,
-      "status": "not_run",
-      "execution": "not_run",
-      "reason": "Upstream evidence changed; rerun required."
+      "workflow": "workflows/saturation/scan.yml",
+      "baseline": "v0.39.0",
+      "candidate": "v0.40.0",
+      "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan",
+      "report": "reports/south/saturation.scan",
+      "run_id": "01a211cc-4934-73fd-b40d-ed46c0a598f3",
+      "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261124-v78050-v2025-11-30-rc-avx2.sif)",
+      "software": {
+        "simtools": "0.39.1.dev282+g6854cbc8b",
+        "simulation_models": null
+      },
+      "output_paths": [
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/saturation/LSTS-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/saturation/MSTS-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/south/saturation/SSTS-01/scan/simulation",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/LSTS-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/SSTS-01",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/LSTS-01/events/30000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/LSTS-01/events/100000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/LSTS-01/events/300000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/LSTS-01/events/1000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/LSTS-01/events/3000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01/events/30000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01/events/100000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01/events/300000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01/events/1000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/MSTS-01/events/3000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/SSTS-01/events/30000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/SSTS-01/events/100000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/SSTS-01/events/300000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/SSTS-01/events/1000000/high",
+        "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/SSTS-01/events/3000000/high"
+      ],
+      "execution": "completed",
+      "status": "pass",
+      "execution_log": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan/execution.log",
+      "publication": {
+        "file_count": 37,
+        "byte_count": 3269076,
+        "warning": "Publication is larger than the compact-report guidance."
+      }
     }
   ],
   "production_history": [
