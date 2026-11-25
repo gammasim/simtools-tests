@@ -4,18 +4,18 @@ Qualified: False
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
-| north | compare.bias_curves | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| north | derive.bias_curves | completed | pass | - | [report](north/derive.bias_curves) |
-| north | production.bias_curves.collect | completed | pass | - | - |
-| north | production.bias_curves.grid | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| north | production.bias_curves.submit | submitted | submitted | Jobs submitted; run the collection test after they finish. | - |
-| north | saturation.scan | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| south | compare.bias_curves | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| south | derive.bias_curves | completed | pass | - | [report](south/derive.bias_curves) |
-| south | production.bias_curves.collect | completed | pass | - | - |
-| south | production.bias_curves.grid | not_run | not_run | Upstream evidence changed; rerun required. | - |
-| south | production.bias_curves.submit | submitted | submitted | Jobs submitted; run the collection test after they finish. | - |
-| south | saturation.scan | not_run | not_run | Upstream evidence changed; rerun required. | - |
+| north | compare.bias_curves | not_run | not_run | Not selected or not executed. | - |
+| north | derive.bias_curves | not_run | not_run | Not selected or not executed. | - |
+| north | production.bias_curves.collect | not_run | not_run | Not selected or not executed. | - |
+| north | production.bias_curves.grid | not_run | not_run | Not selected or not executed. | - |
+| north | production.bias_curves.submit | not_run | not_run | Not selected or not executed. | - |
+| north | saturation.scan | completed | pass | - | [report](north/saturation.scan) |
+| south | compare.bias_curves | not_run | not_run | Not selected or not executed. | - |
+| south | derive.bias_curves | not_run | not_run | Not selected or not executed. | - |
+| south | production.bias_curves.collect | not_run | not_run | Not selected or not executed. | - |
+| south | production.bias_curves.grid | not_run | not_run | Not selected or not executed. | - |
+| south | production.bias_curves.submit | not_run | not_run | Not selected or not executed. | - |
+| south | saturation.scan | completed | pass | - | [report](south/saturation.scan) |
 
 ## Production history
 
