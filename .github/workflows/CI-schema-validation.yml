@@ -37,7 +37,7 @@ jobs:
         run: |
           # Use the matching simtools branch until its schema changes reach main.
           python -m pip install \
-            "git+https://github.com/gammasim/simtools.git@202611-ray-tracing-review"
+            "git+https://github.com/gammasim/simtools.git@main"
 
       - name: Workflow and science-test config validation
         env:
