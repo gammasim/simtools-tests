@@ -1,5 +1,8 @@
 Running simtools applications
-simtools version: 0.39.1.dev2+g1224d6745
+Runtime environment: None
+Simulation models source options: {'simulation_models_git_path': PosixPath('/workdir/external/simulation-models.git'), 'simulation_models_git_revision': 'v0.19.0'}
+Simulation models commit: 66f14d2d911c7e9cb72dcfc87f81dd3be2ae7c3d (source: /workdir/external/simulation-models.git, revision: v0.19.0)
+simtools version: 0.39.1.dev288+g081f43def
 Model source: None
 sim_telarray version: 2025.246.0
 sim_telarray exe: /workdir/simulation_software/sim_telarray/bin/sim_telarray
@@ -67,6 +70,6 @@ Name: SSTS-39	 Model: SSTS-39
 Name: SSTS-40	 Model: SSTS-40
 
 STDERR:
-INFO: simtools application generate_array_config started with activity ID 01a1b088-aa1d-7517-bd0e-13c1af4d3e5f
-INFO: simtools: 0.39.1.dev2+g1224d6745 CORSIKA: 78010 sim_telarray: v2025-11-30-rc
+INFO: simtools application generate_array_config started with activity ID 01a211fa-8c88-7765-899b-d9cde96ca775
+INFO: simtools: 0.39.1.dev288+g081f43def CORSIKA: 78010 sim_telarray: v2025-11-30-rc
 INFO: Writing array configuration file into /workdir/external/simtools-tests/simtools-tests/v0.40.0/integration_tests/tmp_application_output/model/7.0.0/CTAO-South-CTAO-South-Beta.cfg

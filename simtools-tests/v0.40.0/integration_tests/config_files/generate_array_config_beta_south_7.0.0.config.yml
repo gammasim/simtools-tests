@@ -8,6 +8,7 @@ applications:
     output_path: __INTEGRATION_TESTS_DIRECTORY__/tmp_application_output
     site: South
     label: test
+    zenith_angle: 40.
 collection:
   output_path: __INTEGRATION_TESTS_DIRECTORY__/generated/sim_telarray_configurations/7.0.0
   files:
