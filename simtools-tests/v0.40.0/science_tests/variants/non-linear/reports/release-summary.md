@@ -4,5 +4,5 @@ Qualified: False
 
 | Site | Test | Execution | Status | Reason | Report |
 | --- | --- | --- | --- | --- | --- |
-| north | saturation.scan | completed | pass | - | [report](north/saturation.scan) |
-| south | saturation.scan | not_run | not_run | Not selected or not executed. | - |
+| north | flasher_response.scan | completed | pass | - | [report](north/flasher_response.scan) |
+| south | flasher_response.scan | not_run | not_run | Not selected or not executed. | - |

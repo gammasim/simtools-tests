@@ -114,10 +114,10 @@ tests:
     runtime_role: analysis
     depends_on: [telescope_throughput]
     result_status_file: __SCIENCE_REPORT_PATH__/science-comparison.json
-  saturation.scan:
+  flasher_response.scan:
     expand_flasher_scan: true
     # Full-simulation intensity scan of every telescope in the site's camera_telescopes.
-    workflow: workflows/saturation/scan.yml
+    workflow: workflows/flasher_response/scan.yml
     sites: [north, south]
     tier: release-light
     runtime_role: camera

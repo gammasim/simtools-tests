@@ -20,8 +20,8 @@ applications:
     - 300000
     - 1000000
     - 3000000
-    label: saturation
-    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation
+    label: flasher_response
+    output_path: __SCIENCE_CANDIDATE_SITE_PATH__/flasher_response/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation
     sim_telarray_seed:
     - 101
     - 102
@@ -29,7 +29,7 @@ applications:
 - application: simtools-analyze-flasher-response
   configuration:
     simtel_files:
-    - __SCIENCE_CANDIDATE_SITE_PATH__/saturation/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/run__FLASHER_RUN__/sim_telarray/full_simulation_run__FLASHER_RUN_____SCIENCE_SITE_____SCIENCE_MODEL_VERSION___saturation___SCIENCE_CAMERA_TELESCOPE__.simtel.zst
+    - __SCIENCE_CANDIDATE_SITE_PATH__/flasher_response/__SCIENCE_CAMERA_TELESCOPE__/scan/simulation/run__FLASHER_RUN__/sim_telarray/full_simulation_run__FLASHER_RUN_____SCIENCE_SITE_____SCIENCE_MODEL_VERSION___flasher_response___SCIENCE_CAMERA_TELESCOPE__.simtel.zst
     telescope: __SCIENCE_CAMERA_TELESCOPE__
     pixels:
     - 0
