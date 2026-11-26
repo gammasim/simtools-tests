@@ -9,13 +9,13 @@ Qualified: False
 | north | production.bias_curves.collect | not_run | not_run | Not selected or not executed. | - |
 | north | production.bias_curves.grid | not_run | not_run | Not selected or not executed. | - |
 | north | production.bias_curves.submit | not_run | not_run | Not selected or not executed. | - |
-| north | saturation.scan | completed | pass | - | [report](north/saturation.scan) |
+| north | flasher_response.scan | completed | pass | - | [report](north/flasher_response.scan) |
 | south | compare.bias_curves | not_run | not_run | Not selected or not executed. | - |
 | south | derive.bias_curves | not_run | not_run | Not selected or not executed. | - |
 | south | production.bias_curves.collect | not_run | not_run | Not selected or not executed. | - |
 | south | production.bias_curves.grid | not_run | not_run | Not selected or not executed. | - |
 | south | production.bias_curves.submit | not_run | not_run | Not selected or not executed. | - |
-| south | saturation.scan | completed | pass | - | [report](south/saturation.scan) |
+| south | flasher_response.scan | completed | pass | - | [report](south/flasher_response.scan) |
 
 ## Production history
 

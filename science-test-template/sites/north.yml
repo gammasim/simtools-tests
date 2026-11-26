@@ -12,7 +12,7 @@ required_tests:
 - derive.trigger_histograms
 - compare.trigger_histograms
 - compare.compute_resources
-- saturation.scan
+- flasher_response.scan
 array_layout_name: CTAO-North-Alpha
 camera_telescopes: [LSTN-01, LSTN-02, MSTN-01]
 telescope_configuration_overrides:

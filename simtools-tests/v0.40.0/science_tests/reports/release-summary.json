@@ -55,14 +55,14 @@
       "reason": "Not selected or not executed."
     },
     {
-      "id": "saturation.scan.north",
-      "test": "saturation.scan",
+      "id": "flasher_response.scan.north",
+      "test": "flasher_response.scan",
       "site": "north",
-      "workflow": "workflows/saturation/scan.yml",
+      "workflow": "workflows/flasher_response/scan.yml",
       "baseline": "v0.39.0",
       "candidate": "v0.40.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/north/saturation.scan",
-      "report": "reports/north/saturation.scan",
+      "report": "reports/north/flasher_response.scan",
       "run_id": "01a211cc-4934-73fd-b40d-ed46c0a598f3",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261124-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
@@ -147,14 +147,14 @@
       "reason": "Not selected or not executed."
     },
     {
-      "id": "saturation.scan.south",
-      "test": "saturation.scan",
+      "id": "flasher_response.scan.south",
+      "test": "flasher_response.scan",
       "site": "south",
-      "workflow": "workflows/saturation/scan.yml",
+      "workflow": "workflows/flasher_response/scan.yml",
       "baseline": "v0.39.0",
       "candidate": "v0.40.0",
       "execution_provenance": "/lustre/fs24/group/cta/science_tests/v0.40.0/work/science-tests/south/saturation.scan",
-      "report": "reports/south/saturation.scan",
+      "report": "reports/south/flasher_response.scan",
       "run_id": "01a211cc-4934-73fd-b40d-ed46c0a598f3",
       "runtime": "apptainer (image: /lustre/fs24/group/cta/science_tests/v0.40.0/simtools-prod_20261124-v78050-v2025-11-30-rc-avx2.sif)",
       "software": {
